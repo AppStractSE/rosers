@@ -47,7 +47,7 @@ const Navigation = () => {
           className={`${futuraStd.className} flex-row-reverse lg:flex-row order-1 lg:order-0 justify-start lg:justify-start flex gap-4 transition-all duration-500 ease-in-out items-center text-xs 2xl:text-base md:py-4 flex-1`}
         >
           <button
-            className="p-4 text-3xl md:text-2xl scale-x-[-1] lg:scale-x-[1]"
+            className="py-4 text-3xl md:text-2xl scale-x-[-1] lg:scale-x-[1]"
             onClick={() => setIsDrawerOpen(!isDrawerOpen)}
           >
             <BiMenuAltLeft />

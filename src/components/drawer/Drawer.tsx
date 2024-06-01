@@ -160,8 +160,8 @@ const Logo = () => (
 );
 
 const Drawer = ({ isOpen, setIsOpen }: Props) => {
-  const [isMobile, setIsMobile] = useState(false);
-  const [mounted, setMounted] = useState(false);
+  const [isMobile, setIsMobile] = useState<boolean>(false);
+  const [mounted, setMounted] = useState<boolean>(false);
   const pathname = usePathname();
 
   useEffect(() => {
@@ -170,15 +170,17 @@ const Drawer = ({ isOpen, setIsOpen }: Props) => {
   }, [isOpen]);
 
   useEffect(() => {
+    const resizeHandler = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    resizeHandler();
+
     window.addEventListener("resize", resizeHandler);
     return () => {
       window.removeEventListener("resize", resizeHandler);
     };
   }, []);
-
-  const resizeHandler = () => {
-    setIsMobile(window.innerWidth < 768);
-  };
 
   const handleToggle = () => {
     setIsOpen(!isOpen);

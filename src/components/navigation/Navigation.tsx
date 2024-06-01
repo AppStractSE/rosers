@@ -1,59 +1,75 @@
 "use client";
 
+import { futuraStd, garamond } from "@/util/fonts";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
+import { BiMenuAltLeft } from "react-icons/bi";
+import Drawer from "../drawer/Drawer";
 import { NavItem, navItems } from "./data";
-import styles from "./style.module.scss";
 
-const NavigationLink = ({ href, label, isActive, isScrolled }: NavItem) => (
-  <Link
-    href={href}
-    className={`relative p-4
-    ${
-      isScrolled
-        ? `${isActive ? `${styles.active} scroll+active` : "scroll-active"}`
-        : `${isActive ? `${styles.active} nonscroll+active` : "nonscroll-active"}`
-    }`}
-  >
-    {label}
-  </Link>
-);
+const NavigationLink = ({ href, label, isActive }: NavItem) => {
+  const baseClassNames = "p-2 uppercase min-w-fit";
+  const isActiveClassNames = isActive ? "text-[#8B7257] underline underline-offset-4" : "";
+  const linkClassNames = `${baseClassNames} ${isActiveClassNames} hidden md:block`;
+  return (
+    <Link href={href} className={linkClassNames}>
+      {label}
+    </Link>
+  );
+};
+
+const Divider = () => <div className="hidden md:block h-6 bg-[#a286688e] min-w-[1.5px]" />;
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
   const pathname = usePathname();
-  const handleScroll = () => {
-    if (window.scrollY > 0) setIsScrolled(true);
-    else setIsScrolled(false);
-  };
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, [isScrolled]);
 
+  useEffect(() => {
+    setIsDrawerOpen(false);
+  }, [pathname]);
+
+  const handleScroll = () => {
+    if (window.scrollY > 0) setIsScrolled(true);
+    else setIsScrolled(false);
+  };
+
   return (
-    <header
-      className={`fixed top-0 w-full px-16 flex items-center justify-between transition-all duration-1000 ease-in-out
-    ${isScrolled ? "bg-black" : "bg-transparent"}
-    `}
-    >
-      <div className="rounded bg-black h-fit w-fit p-2">logo</div>
-      <nav
-        className={`flex gap-4 transition-all duration-500 ease-in-out ${isScrolled ? "" : "py-4"}`}
-      >
-        {navItems.map(({ href, label }) => (
-          <NavigationLink
-            key={label}
-            href={href}
-            label={label}
-            isActive={pathname === href}
-            isScrolled={isScrolled}
-          />
-        ))}
-      </nav>
-    </header>
+    <>
+      <header className="fixed top-0 w-full px-4 2xl:px-16 flex items-center justify-between transition-all duration-1000 ease-in-out bg-[#2e2b29]">
+        <nav
+          className={`${futuraStd.className} flex-row-reverse lg:flex-row order-1 lg:order-0 justify-start lg:justify-start flex gap-4 transition-all duration-500 ease-in-out items-center text-xs 2xl:text-base md:py-4 flex-1`}
+        >
+          <button
+            className="p-4 text-3xl md:text-2xl scale-x-[-1] lg:scale-x-[1]"
+            onClick={() => setIsDrawerOpen(!isDrawerOpen)}
+          >
+            <BiMenuAltLeft />
+          </button>
+          <Divider />
+          {navItems.map(({ href, label }) => (
+            <NavigationLink key={label} href={href} label={label} isActive={pathname === href} />
+          ))}
+        </nav>
+        <h2
+          className={`${garamond.className} lg:order-1 flex flex-1 lg:justify-center text-2xl md:text-4xl uppercase tracking-widest`}
+        >
+          Rosers
+        </h2>
+        <div
+          className={`${futuraStd.className} hidden lg:flex order-2 flex-1 justify-end uppercase text-xs`}
+        >
+          Svenska
+        </div>
+      </header>
+      <Drawer isOpen={isDrawerOpen} setIsOpen={setIsDrawerOpen} />
+    </>
   );
 };
 

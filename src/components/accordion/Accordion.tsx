@@ -7,9 +7,12 @@ import { BsChevronDown } from "react-icons/bs";
 interface Props {
   title: string;
   content?: React.ReactNode;
+  titleColor?: string;
+  borderColor?: string;
+  uppercaseTitle?: boolean;
 }
 
-const Accordion = ({ title, content }: Props) => {
+const Accordion = ({ title, content, titleColor, borderColor, uppercaseTitle }: Props) => {
   const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname();
 
@@ -19,17 +22,23 @@ const Accordion = ({ title, content }: Props) => {
 
   return (
     <div
-      className="overflow-hidden transition-all duration-300 ease-in-out cursor-pointer py-6 border-b border-[#8B7257]"
+      className={`overflow-hidden transition-all duration-300 ease-in-out cursor-pointer py-6 border-b ${
+        borderColor ? borderColor : "border-[#8B7257]"
+      }`}
       onClick={() => setIsOpen(!isOpen)}
     >
       <div className="flex items-center justify-between">
         <h6
-          className={`${futuraStd.className} uppercase tracking-wide text-base font-bold text-[#8B7257]`}
+          className={`${futuraStd.className} ${
+            uppercaseTitle ? "uppercase" : ""
+          } tracking-wide text-base font-bold ${titleColor ? titleColor : "text-[#8B7257]"}`}
         >
           {title}
         </h6>
         <div
-          className={`transform transition-transform duration-300 ${isOpen ? "rotate-180" : ""}`}
+          className={`transform transition-transform duration-300 ${
+            titleColor ? titleColor : "text-[#8B7257]"
+          } ${isOpen ? "rotate-180" : ""}`}
         >
           <BsChevronDown />
         </div>

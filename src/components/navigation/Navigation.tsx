@@ -42,7 +42,7 @@ const Navigation = () => {
 
   return (
     <>
-      <header className="fixed top-0 w-full px-4 2xl:px-16 flex items-center justify-between transition-all duration-1000 ease-in-out bg-[#2e2b29]">
+      <header className="sticky z-10 top-0 w-full px-4 2xl:px-16 flex items-center justify-between transition-all duration-1000 ease-in-out bg-[#2e2b29]">
         <nav
           className={`${futuraStd.className} flex-row-reverse lg:flex-row order-1 lg:order-0 justify-start lg:justify-start flex gap-4 transition-all duration-500 ease-in-out items-center text-xs 2xl:text-base md:py-4 flex-1`}
         >

@@ -1,6 +1,26 @@
 import localFont from "next/font/local";
+// const garamond = localFont({
+//   src: "../../public/fonts/GaramondPremrPro.otf",
+// });
+
 const garamond = localFont({
-  src: "../../public/fonts/GaramondPremrPro.otf",
+  src: [
+    {
+      path: "../../public/fonts/GaramondPremrPro-Subh.otf",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../../public/fonts/GaramondPremrPro-Disp.otf",
+      weight: "200",
+      style: "normal",
+    },
+    {
+      path: "../../public/fonts/GaramondPremrPro-LtDisp.otf",
+      weight: "100",
+      style: "normal",
+    },
+  ],
 });
 
 const futuraStd = localFont({

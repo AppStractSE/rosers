@@ -50,22 +50,27 @@ const Navigation = () => {
             className="py-4 text-3xl md:text-2xl scale-x-[-1] lg:scale-x-[1]"
             onClick={() => setIsDrawerOpen(!isDrawerOpen)}
           >
-            <BiMenuAltLeft />
-          </button>
-          <Divider />
-          {navItems.map(({ href, label }) => (
-            <NavigationLink key={label} href={href} label={label} isActive={pathname === href} />
-          ))}
-        </nav>
-        <h2
-          className={`${garamond.className} lg:order-1 flex flex-1 lg:justify-center text-2xl md:text-4xl uppercase tracking-widest`}
-        >
-          Rosers
-        </h2>
-        <div
-          className={`${futuraStd.className} hidden lg:flex order-2 flex-1 justify-end uppercase text-xs`}
-        >
-          Svenska
+            <button
+              className="py-4 text-3xl md:text-2xl scale-x-[-1] lg:scale-x-[1]"
+              onClick={() => setIsDrawerOpen(!isDrawerOpen)}
+            >
+              <BiMenuAltLeft />
+            </button>
+            <Divider />
+            {navItems.map(({ href, label }) => (
+              <NavigationLink key={label} href={href} label={label} isActive={pathname === href} />
+            ))}
+          </nav>
+          <h2
+            className={`${garamond.className} lg:order-1 flex flex-1 lg:justify-center text-2xl md:text-4xl uppercase tracking-widest`}
+          >
+            Rosers
+          </h2>
+          <div
+            className={`${futuraStd.className} hidden lg:flex order-2 flex-1 justify-end uppercase text-xs`}
+          >
+            Svenska
+          </div>
         </div>
       </header>
       <Drawer isOpen={isDrawerOpen} setIsOpen={setIsDrawerOpen} />

@@ -67,6 +67,7 @@ const SecondaryLinks = ({ isMobile }: SecondaryLinksProps) => {
           <nav className={`${futuraStd.className} text-sm font-thin tracking-widest space-y-2`}>
             {subLinks.map(({ label, links }) => (
               <Accordion
+                uppercaseTitle
                 key={label}
                 title={label}
                 content={
@@ -96,6 +97,7 @@ const SecondaryLinks = ({ isMobile }: SecondaryLinksProps) => {
             ))}
             <Accordion
               title="Language"
+              uppercaseTitle
               content={
                 <>
                   <div className="block text-[#F5CEA4] hover:underline hover:underline-offset-4 py-2 transition-all duration-200 ease-in-out hover:text-[#8B7257]">

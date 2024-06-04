@@ -30,16 +30,16 @@ const subLinks: SubDrawerLink[] = [
   {
     label: "About",
     links: [
-      { href: "/what-we-do", label: "What we do" },
-      { href: "/who-we-are", label: "Who we are" },
-      { href: "/our-history", label: "Our history" },
+      { href: "/about/what-we-do", label: "What we do" },
+      { href: "/about/who-we-are", label: "Who we are" },
+      { href: "/about/our-history", label: "Our history" },
     ],
   },
   {
     label: "Our creativity",
     links: [
-      { href: "/vision", label: "Vision" },
-      { href: "/inspiration", label: "Inspiration" },
+      { href: "/our-creativity/vision", label: "Vision" },
+      { href: "/our-creativity/inspiration", label: "Inspiration" },
     ],
   },
   {

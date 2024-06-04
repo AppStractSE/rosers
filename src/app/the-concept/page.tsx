@@ -1,11 +1,11 @@
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Events",
+  title: "The Concept",
 };
 
 const page = () => {
-  return <div>Events</div>;
+  return <div>The Concept</div>;
 };
 
 export default page;

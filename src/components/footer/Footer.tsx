@@ -9,7 +9,7 @@ import { subLinks } from "../drawer/drawerData";
 
 const Divider = () => {
   return (
-    <div className="my-12 hidden md:block h-[1px] w-full bg-gradient-to-r from-transparent via-[#24212185] to-transparent" />
+    <div className="my-12 hidden md:block h-[1px] w-full bg-gradient-to-r from-transparent via-brass to-transparent" />
   );
 };
 
@@ -28,12 +28,12 @@ const Footer = () => {
     };
   }, []);
   return (
-    <footer className="bg-gradient-to-br from-[#AF8F6E] to-[#866D54]">
+    <footer className="bg-charcoal-700">
       <div className="px-4 py-8 2xl:pt-12 pb-8 2xl:px-16 mx-auto max-w-screen-2xl">
         <Divider />
         <div className="lg:mb-8">
           <h2
-            className={`text-[#242121] ${garamond.className} text-3xl md:text-5xl uppercase tracking-widest`}
+            className={"text-3xl md:text-5xl uppercase tracking-widest ".concat(garamond.className)}
           >
             Rosers
           </h2>
@@ -41,11 +41,15 @@ const Footer = () => {
         <>
           {isMobile ? (
             <>
-              <nav className={`${futuraStd.className} text-sm font-thin tracking-widest space-y-2`}>
+              <nav
+                className={"text-sm font-thin tracking-widest space-y-2 ".concat(
+                  futuraStd.className,
+                )}
+              >
                 {subLinks.map(({ label, links }) => (
                   <Accordion
-                    titleColor="text-[#242121]"
-                    borderColor="border-[#242121]"
+                    titleColor="text-brass"
+                    borderColor="border-brass"
                     key={label}
                     title={label}
                     uppercaseTitle={false}
@@ -56,7 +60,7 @@ const Footer = () => {
                             key={label}
                             href={href}
                             target={externalLink ? "_blank" : "_self"}
-                            className="block text-[#242121] hover:underline hover:underline-offset-4 py-2 transition-all duration-200 ease-in-out hover:text-[#242121]"
+                            className="block hover:underline text-brass hover:underline-offset-4 py-2 transition-all duration-200 ease-in-out"
                           >
                             {externalLink ? (
                               <span className="flex items-center gap-2">
@@ -79,20 +83,26 @@ const Footer = () => {
           ) : (
             <div className="flex justify-between flex-wrap gap-4 mt-6">
               {subLinks.map(({ label, links }, index) => (
-                <div key={label} className={`my-6`}>
+                <div key={label} className="my-6">
                   <div className="w-fit">
-                    <h6 className={`${futuraStd.className} tracking-wide text-base text-[#242121]`}>
+                    <h6
+                      className={futuraStd.className.concat(
+                        " tracking-wide font-medium text-xl text-brass",
+                      )}
+                    >
                       {label}
                     </h6>
                     <nav
-                      className={`${futuraStd.className} text-sm font-thin tracking-widest mt-4 space-y-2`}
+                      className={futuraStd.className.concat(
+                        " text-sm font-thin tracking-widest mt-4 space-y-2",
+                      )}
                     >
                       {links.map(({ href, label, externalLink }) => (
                         <Link
                           key={label}
                           href={href}
                           target={externalLink ? "_blank" : "_self"}
-                          className="block text-[#242121] hover:underline hover:underline-offset-4 transition-all duration-200 ease-in-out hover:text-[#363434]"
+                          className="block py-2 tracking-wider text-brass hover:underline hover:underline-offset-4 transition-all duration-200 ease-in-out"
                         >
                           {externalLink ? (
                             <span className="flex items-center gap-2">
@@ -111,11 +121,7 @@ const Footer = () => {
                 </div>
               ))}
               <div className="w-full lg:basis-1/12 flex items-center justify-center ">
-                <img
-                  src="/rosers_black.svg"
-                  alt="Rosers logo"
-                  className="w-full h-auto max-w-[150px]"
-                />
+                <img src="/rosers.svg" alt="Rosers logo" className="w-full h-auto max-w-[150px]" />
               </div>
             </div>
           )}
@@ -125,7 +131,9 @@ const Footer = () => {
           <Link
             target="_blank"
             href="https://www.appstract.se"
-            className={`${futuraStd.className} text-[#242121] uppercase text-xs font-normal hover:underline hover:underline-offset-4`}
+            className={futuraStd.className.concat(
+              " text-brass uppercase text-xs font-normal hover:underline hover:underline-offset-4",
+            )}
           >
             Web design by Appstract
           </Link>

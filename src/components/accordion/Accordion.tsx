@@ -22,31 +22,32 @@ const Accordion = ({ title, content, titleColor, borderColor, uppercaseTitle }: 
 
   return (
     <div
-      className={`overflow-hidden transition-all duration-300 ease-in-out cursor-pointer py-6 border-b ${
-        borderColor ? borderColor : "border-[#8B7257]"
-      }`}
+      className={"overflow-hidden transition-all duration-300 ease-in-out cursor-pointer py-6 border-b ".concat(
+        borderColor ? borderColor : "border-[#8B7257]",
+      )}
       onClick={() => setIsOpen(!isOpen)}
     >
       <div className="flex items-center justify-between">
         <h6
-          className={`${futuraStd.className} ${
-            uppercaseTitle ? "uppercase" : ""
-          } tracking-wide text-base font-bold ${titleColor ? titleColor : "text-[#8B7257]"}`}
+          className={"tracking-wide text-base font-bold "
+            .concat(futuraStd.className)
+            .concat(uppercaseTitle ? " uppercase " : "")
+            .concat(titleColor ? titleColor : "text-[#8B7257]")}
         >
           {title}
         </h6>
         <div
-          className={`transform transition-transform duration-300 ${
-            titleColor ? titleColor : "text-[#8B7257]"
-          } ${isOpen ? "rotate-180" : ""}`}
+          className={"transform transition-transform duration-300 "
+            .concat(titleColor ? titleColor : "text-[#8B7257]")
+            .concat(isOpen ? " rotate-180" : "")}
         >
           <BsChevronDown />
         </div>
       </div>
       <div
-        className={`overflow-hidden duration-300 ease-in-out ${
-          isOpen ? "max-h-[1000px] mt-4" : "max-h-0"
-        }`}
+        className={"overflow-hidden duration-300 ease-in-out ".concat(
+          isOpen ? "max-h-[1000px] mt-4" : " max-h-0",
+        )}
       >
         {content}
       </div>

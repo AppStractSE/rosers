@@ -50,24 +50,25 @@ const ContactForm = () => {
   };
 
   const baseClasses =
-    "text-[#f5cea4] text-sm focus-visible:placeholder:text-[#f5cea4] placeholder:text-[#8B7257] bg-[#303030] w-full p-4 rounded-sm focus:outline-none focus-visible:outline-[#8B7257] font-thin tracking-widest ring-0 focus-visible:outline-1 focus-visible:text-[#f5cea4] focus-visible:outline-offset-0 focus:bg-[#3f3f3f] transition-all duration-500 ease-in-out";
+    " text-[#f5cea4] text-base focus-visible:placeholder:text-[#f5cea4] placeholder:text-[#8B7257] bg-[#303030] w-full p-4 rounded-sm focus:outline-none focus-visible:outline-[#8B7257] font-thin tracking-widest ring-0 focus-visible:outline-1 focus-visible:text-[#f5cea4] focus-visible:outline-offset-0 focus:bg-[#3f3f3f] transition-all duration-500 ease-in-out ";
 
-  const errorClass = "outline outline-1 outline-offset-0 outline-red-700 placeholder:text-red-500";
+  const errorClass =
+    " outline outline-1 outline-offset-0 outline-red-700 placeholder:text-red-500 ";
   const errorTextBaseClass =
-    "text-red-500 text-xs font-thin tracking-widest transition-all duration-500 ease-in-out";
-  const errorTextHiddenClasses = " opacity-0 max-h-0";
-  const errorTextVisibleClasses = " mt-2 mb-6 opacity-100 max-h-full";
+    " text-red-500 text-xs font-thin tracking-widest transition-all duration-500 ease-in-out ";
+  const errorTextHiddenClasses = " opacity-0 max-h-0 ";
+  const errorTextVisibleClasses = " mt-2 mb-6 opacity-100 max-h-full ";
 
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}
-      className={`mx-auto max-w-xl ${futuraStd.className}`}
+      className={futuraStd.className.concat(" mx-auto max-w-xl")}
       name="contact-form"
     >
       <input type="hidden" name="required-field" value="contact-form" />
       <div className="w-full mb-3">
         <input
-          className={`${baseClasses} ${errors["FullName"] ? errorClass : ""}`}
+          className={baseClasses.concat(errors["FullName"] ? errorClass : "")}
           type="text"
           placeholder="Full name*"
           {...register("FullName", {
@@ -85,7 +86,7 @@ const ContactForm = () => {
         <p
           role="alert"
           className={errorTextBaseClass.concat(
-            `${errors["FullName"] ? errorTextVisibleClasses : errorTextHiddenClasses}`,
+            errors["FullName"] ? errorTextVisibleClasses : errorTextHiddenClasses,
           )}
         >
           {errors.FullName?.message}
@@ -93,7 +94,7 @@ const ContactForm = () => {
       </div>
       <div className="w-full mb-3">
         <input
-          className={`${baseClasses} ${errors["Email"] ? errorClass : ""}`}
+          className={baseClasses.concat(errors["Email"] ? errorClass : "")}
           type="email"
           placeholder="Email*"
           {...register("Email", {
@@ -107,7 +108,7 @@ const ContactForm = () => {
         <p
           role="alert"
           className={errorTextBaseClass.concat(
-            `${errors["Email"] ? errorTextVisibleClasses : errorTextHiddenClasses}`,
+            errors["Email"] ? errorTextVisibleClasses : errorTextHiddenClasses,
           )}
         >
           {errors.Email?.message}
@@ -124,7 +125,7 @@ const ContactForm = () => {
           <p
             role="alert"
             className={errorTextBaseClass.concat(
-              `${errors["BusinessName"] ? errorTextVisibleClasses : errorTextHiddenClasses}`,
+              errors["BusinessName"] ? errorTextVisibleClasses : errorTextHiddenClasses,
             )}
           >
             {errors.BusinessName?.message}
@@ -132,7 +133,7 @@ const ContactForm = () => {
         </div>
         <div className="w-full">
           <input
-            className={`${baseClasses} ${errors["PhoneNumber"] ? errorClass : ""}`}
+            className={baseClasses.concat(errors["PhoneNumber"] ? errorClass : "")}
             type="tel"
             placeholder="Phone number*"
             {...register("PhoneNumber", {
@@ -157,7 +158,7 @@ const ContactForm = () => {
           <p
             role="alert"
             className={errorTextBaseClass.concat(
-              `${errors["PhoneNumber"] ? errorTextVisibleClasses : errorTextHiddenClasses}`,
+              errors["PhoneNumber"] ? errorTextVisibleClasses : errorTextHiddenClasses,
             )}
           >
             {errors.PhoneNumber?.message}
@@ -168,9 +169,9 @@ const ContactForm = () => {
         <textarea
           maxLength={500}
           placeholder="Message*"
-          className={`${baseClasses.concat(" resize-none h-32 focus-visible:h-64")} ${
-            errors["Message"] ? errorClass : ""
-          }`}
+          className={"resize-none h-32 focus-visible:h-64 "
+            .concat(baseClasses)
+            .concat(errors["Message"] ? errorClass : "")}
           {...register("Message", {
             required: "Message is required",
             minLength: {
@@ -186,7 +187,7 @@ const ContactForm = () => {
         <p
           role="alert"
           className={errorTextBaseClass.concat(
-            `${errors["Message"] ? errorTextVisibleClasses : errorTextHiddenClasses}`,
+            errors["Message"] ? errorTextVisibleClasses : errorTextHiddenClasses,
           )}
         >
           {errors.Message?.message}
@@ -195,7 +196,7 @@ const ContactForm = () => {
       <button
         disabled={!isDirty || !isValid}
         type="submit"
-        className="w-full leading-normal text-center flex justify-center items-center text-xs lg:text-base p-4 rounded-sm tracking-[0.15em] bg-[#8B7257] text-[#303030]"
+        className="w-full leading-normal text-center flex justify-center items-center text-base p-4 rounded-sm tracking-[0.15em] bg-[#8B7257] text-[#303030]"
       >
         {isSubmitting ? (
           <Spinner

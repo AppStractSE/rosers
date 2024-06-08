@@ -23,6 +23,10 @@ body {
 }
 
 .drawer-bg {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  --webkit-scrollbar-width: none;
+
   @media screen and (min-width: 673px) {
     @apply border-r border-[#a286688e]
   }

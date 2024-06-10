@@ -6,9 +6,9 @@ import ContactForm from "../forms/ContactForm";
 
 const ContactSection = () => {
   return (
-    <section>
-      <div className="mx-auto py-8 lg:py-24 px-4">
-        <div className="lg:space-y-8 space-y-4 mb-8 lg:mb-16 max-w-lg">
+    <section className="mx-auto max-w-full">
+      <div className="max-w-lg mx-auto px-4 2xl:px-0">
+        <div className="lg:space-y-8 space-y-4 mb-8 lg:mb-16  mx-auto">
           <h2 className={futuraStd.className.concat(" lg:text-center text-3xl lg:text-6xl")}>
             Need help? Contact us today!
           </h2>
@@ -18,7 +18,7 @@ const ContactSection = () => {
           </p>
         </div>
         <ContactForm />
-        <div className="mt-8 space-y-4">
+        <div className="mt-8 space-y-4 mx-auto">
           <Link
             href="mailto:info@rosers.se"
             className={garamond.className.concat(

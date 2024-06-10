@@ -29,7 +29,7 @@ const Footer = () => {
   }, []);
   return (
     <footer className="bg-charcoal-700">
-      <div className="px-4 py-8 2xl:pt-12 pb-8 2xl:px-16 mx-auto max-w-screen-2xl">
+      <div className="px-4 py-8 2xl:pt-12 pb-8 2xl:px-16 mx-auto max-w-screen-xl">
         <Divider />
         <div className="lg:mb-8">
           <h2

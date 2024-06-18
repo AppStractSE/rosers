@@ -1,21 +1,19 @@
 import TextsAndImageSections from "@/components/TextsAndImageSections";
-import FullwidthCarousel from "@/components/carousels/FullwidthCarousel";
+import Divider from "@/components/divider/Divider";
+import ConceptSection from "@/components/sections/ConceptSection";
 import ContactSection from "@/components/sections/ContactSection";
 import HeroSection from "@/components/sections/HeroSection";
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between">
+    <main>
       <HeroSection />
-      <section className="">Section 1</section>
-      <section className="">Section 2</section>
-      <section className="">Section 3</section>
-      <section className="">Section 4</section>
-      <section className="">Section 5</section>
+      <Divider />
       <TextsAndImageSections />
+      <Divider />
+      <ConceptSection />
+      <Divider />
       <ContactSection />
-      <section className="w-full">
-        <FullwidthCarousel />
-      </section>
+      <Divider />
     </main>
   );
 }

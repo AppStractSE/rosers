@@ -28,19 +28,21 @@ const TextsAndImageSections = () => {
     },
   ];
   return (
-    <>
-      {data.map((item, index) => (
-        <TextAndImageSection
-          key={index}
-          rtl={item.rtl}
-          title={item.title}
-          subTitle={item.subTitle}
-          text={item.text}
-          image={item.image}
-          button={item.button}
-        />
-      ))}
-    </>
+    <section>
+      <div className="mx-auto max-w-screen-xl px-4 2xl:px-0 space-y-24">
+        {data.map((item, index) => (
+          <TextAndImageSection
+            key={index}
+            rtl={item.rtl}
+            title={item.title}
+            subTitle={item.subTitle}
+            text={item.text}
+            image={item.image}
+            button={item.button}
+          />
+        ))}
+      </div>
+    </section>
   );
 };
 

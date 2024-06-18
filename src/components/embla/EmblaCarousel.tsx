@@ -25,7 +25,7 @@ const EmblaCarousel = ({ slides, options }: Props) => {
           {slides.map((slide, index) => (
             <div
               key={index}
-              className="shrink-0 grow-0 basis-full h-[20rem] lg:h-[30rem] xl:h-[40rem] bg-center bg-no-repeat bg-cover"
+              className={`shrink-0 grow-0 basis-full h-[20rem] lg:h-[30rem] xl:h-[40rem] bg-center bg-no-repeat bg-cover`}
               style={{ backgroundImage: `url('${slide}')` }}
             />
           ))}
@@ -36,9 +36,8 @@ const EmblaCarousel = ({ slides, options }: Props) => {
           <DotButton
             key={index}
             onClick={() => onDotButtonClick(index)}
-            className={"w-2 h-2 lg:h-3 lg:w-3 xl:h-4 xl:w-4 transform rotate-45 rounded-sm ".concat(
-              index === selectedIndex ? " bg-[#F5CEA4]" : "bg-[#8B7257]",
-            )}
+            className={`w-2 h-2 lg:h-3 lg:w-3 xl:h-4 xl:w-4 transform rotate-45 rounded-sm
+            ${index === selectedIndex ? " bg-[#F5CEA4]" : "bg-[#8B7257]"}`}
           />
         ))}
       </div>

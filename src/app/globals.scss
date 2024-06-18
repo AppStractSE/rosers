@@ -36,3 +36,39 @@ body {
   }
 
 }
+
+.embla {
+  @apply m-auto;
+}
+
+.embla__viewport {
+  @apply overflow-hidden;
+}
+
+.embla__container {
+  backface-visibility: hidden;
+  display: flex;
+  align-items: stretch;
+  touch-action: pan-y pinch-zoom;
+}
+
+.embla__slide {
+  flex: 0 0 100%;
+  @apply px-4 2xl:px-0 flex min-w-0 w-full;
+}
+
+.embla__slide__img {
+  @apply block w-full object-cover h-full rounded-sm border border-brass;
+}
+
+.embla__buttons {
+  @apply justify-center flex gap-8 items-center mt-4 lg:mt-12;
+}
+
+.embla__button {
+  @apply text-2xl border rounded-full p-4 border-gold hidden lg:block;
+}
+
+.embla__slide__img {
+  user-select: none;
+}

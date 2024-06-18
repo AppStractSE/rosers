@@ -62,7 +62,7 @@ const ContactForm = () => {
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}
-      className={futuraStd.className.concat(" mx-auto max-w-xl")}
+      className={futuraStd.className.concat(" mx-auto")}
       name="contact-form"
     >
       <input type="hidden" name="required-field" value="contact-form" />

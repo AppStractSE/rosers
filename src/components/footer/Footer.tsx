@@ -1,11 +1,11 @@
 "use client";
 
 import { futuraStd, garamond } from "@/util/fonts";
+import { useLocale, useTranslations } from "next-intl";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { MdArrowOutward } from "react-icons/md";
 import Accordion from "../accordion/Accordion";
-import { subLinks } from "../drawer/drawerData";
 
 const Divider = () => {
   return (
@@ -15,6 +15,9 @@ const Divider = () => {
 
 const Footer = () => {
   const [isMobile, setIsMobile] = useState<boolean>(false);
+  const locale = useLocale();
+  const translation = useTranslations();
+  const subLinks = translation.raw("Drawer.subLinks");
   useEffect(() => {
     const resizeHandler = () => {
       setIsMobile(window.innerWidth < 768);
@@ -46,31 +49,31 @@ const Footer = () => {
                   futuraStd.className,
                 )}
               >
-                {subLinks.map(({ label, links }) => (
+                {subLinks.map((subLink: any) => (
                   <Accordion
                     titleColor="text-brass"
                     borderColor="border-brass"
-                    key={label}
-                    title={label}
+                    key={subLink.label}
+                    title={subLink.label}
                     uppercaseTitle={false}
                     content={
                       <>
-                        {links.map(({ href, label, externalLink }) => (
+                        {subLink.links.map((link: any) => (
                           <Link
-                            key={label}
-                            href={href}
-                            target={externalLink ? "_blank" : "_self"}
+                            key={link.label}
+                            href={link.externalLink ? link.href : `/${locale}${link.href}`}
+                            target={link.externalLink ? "_blank" : "_self"}
                             className="block hover:underline text-brass hover:underline-offset-4 py-2 transition-all duration-200 ease-in-out"
                           >
-                            {externalLink ? (
+                            {link.externalLink ? (
                               <span className="flex items-center gap-2">
                                 <div className="text-xl">
                                   <MdArrowOutward />
                                 </div>
-                                {label}
+                                {link.label}
                               </span>
                             ) : (
-                              <span>{label}</span>
+                              <span>{link.label}</span>
                             )}
                           </Link>
                         ))}
@@ -82,37 +85,37 @@ const Footer = () => {
             </>
           ) : (
             <div className="flex justify-between flex-wrap gap-4 mt-6">
-              {subLinks.map(({ label, links }, index) => (
-                <div key={label} className="my-6">
+              {subLinks.map((subLink: any, index: number) => (
+                <div key={subLink.label} className="my-6">
                   <div className="w-fit">
                     <h6
                       className={futuraStd.className.concat(
                         " tracking-wide font-medium text-xl text-brass",
                       )}
                     >
-                      {label}
+                      {subLink.label}
                     </h6>
                     <nav
                       className={futuraStd.className.concat(
                         " text-sm font-thin tracking-widest mt-4 space-y-2",
                       )}
                     >
-                      {links.map(({ href, label, externalLink }) => (
+                      {subLink.links.map((link: any) => (
                         <Link
-                          key={label}
-                          href={href}
-                          target={externalLink ? "_blank" : "_self"}
+                          key={link.label}
+                          href={link.externalLink ? link.href : `/${locale}${link.href}`}
+                          target={link.externalLink ? "_blank" : "_self"}
                           className="block py-2 tracking-wider text-brass hover:underline hover:underline-offset-4 transition-all duration-200 ease-in-out"
                         >
-                          {externalLink ? (
+                          {link.externalLink ? (
                             <span className="flex items-center gap-2">
                               <div className="text-xl">
                                 <MdArrowOutward />
                               </div>
-                              {label}
+                              {link.label}
                             </span>
                           ) : (
-                            <span>{label}</span>
+                            <span>{link.label}</span>
                           )}
                         </Link>
                       ))}
@@ -135,7 +138,7 @@ const Footer = () => {
               " text-brass uppercase text-xs font-normal hover:underline hover:underline-offset-4",
             )}
           >
-            Web design by Appstract
+            {translation("WebDesignBy")}
           </Link>
         </div>
       </div>

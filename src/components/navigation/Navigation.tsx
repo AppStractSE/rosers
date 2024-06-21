@@ -1,19 +1,21 @@
 "use client";
 
 import { futuraStd, garamond } from "@/util/fonts";
+import { useLocale, useTranslations } from "next-intl";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { BiMenuAltLeft } from "react-icons/bi";
 import Drawer from "../drawer/Drawer";
-import { NavItem, navItems } from "./data";
+import { NavItem } from "./data";
 
 const NavigationLink = ({ href, label, isActive }: NavItem) => {
+  const locale = useLocale();
   const baseClassNames = "p-2 uppercase min-w-fit text-xs";
   const isActiveClassNames = isActive ? "text-brass underline underline-offset-4" : "";
   const linkClassNames = `${baseClassNames} ${isActiveClassNames} hidden md:block`;
   return (
-    <Link href={href} className={linkClassNames}>
+    <Link href={`/${locale}${href}`} className={linkClassNames}>
       {label}
     </Link>
   );
@@ -40,6 +42,11 @@ const Navigation = () => {
     else setIsScrolled(false);
   };
 
+  const locale = useLocale();
+
+  const translation = useTranslations();
+  const navItems = translation.raw("NavItems");
+
   return (
     <>
       <header className="fixed z-10 top-0 w-full px-4 2xl:px-16 bg-charcoal-800 bg-opacity-90 backdrop-blur-sm lg:backdrop-blur-md">
@@ -56,8 +63,13 @@ const Navigation = () => {
               <BiMenuAltLeft />
             </button>
             <Divider />
-            {navItems.map(({ href, label }) => (
-              <NavigationLink key={label} href={href} label={label} isActive={pathname === href} />
+            {navItems.map((item: NavItem) => (
+              <NavigationLink
+                key={item.label}
+                href={item.href}
+                label={item.label}
+                isActive={pathname === `/${locale}${item.href}`}
+              />
             ))}
           </nav>
           <h2

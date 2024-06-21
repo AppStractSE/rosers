@@ -1,6 +1,7 @@
 "use client";
 
 import { futuraStd } from "@/util/fonts";
+import { useTranslations } from "next-intl";
 import { encode } from "querystring";
 import { useForm } from "react-hook-form";
 import Spinner from "../loaders/Spinner";
@@ -14,6 +15,7 @@ interface IContactForm {
 }
 
 const ContactForm = () => {
+  const translation = useTranslations("ContactForm");
   const {
     register,
     handleSubmit,
@@ -70,16 +72,16 @@ const ContactForm = () => {
         <input
           className={baseClasses.concat(errors["FullName"] ? errorClass : "")}
           type="text"
-          placeholder="Full name*"
+          placeholder={translation("placeholders.FullName")}
           {...register("FullName", {
-            required: "Full name is required",
+            required: translation("validationMessages.FullName.required"),
             minLength: {
               value: 2,
-              message: "Name must be at least 2 characters",
+              message: translation("validationMessages.FullName.minLength"),
             },
             maxLength: {
               value: 50,
-              message: "Name must be less than 50 characters",
+              message: translation("validationMessages.FullName.maxLength"),
             },
           })}
         />
@@ -96,12 +98,12 @@ const ContactForm = () => {
         <input
           className={baseClasses.concat(errors["Email"] ? errorClass : "")}
           type="email"
-          placeholder="Email*"
+          placeholder={translation("placeholders.Email")}
           {...register("Email", {
-            required: "Email is required",
+            required: translation("validationMessages.Email.required"),
             pattern: {
               value: /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,
-              message: "Invalid email address",
+              message: translation("validationMessages.Email.pattern"),
             },
           })}
         />
@@ -119,7 +121,7 @@ const ContactForm = () => {
           <input
             type="text"
             className={baseClasses}
-            placeholder="Business name"
+            placeholder={translation("placeholders.BusinessName")}
             {...register("BusinessName", {})}
           />
           <p
@@ -135,23 +137,23 @@ const ContactForm = () => {
           <input
             className={baseClasses.concat(errors["PhoneNumber"] ? errorClass : "")}
             type="tel"
-            placeholder="Phone number*"
+            placeholder={translation("placeholders.PhoneNumber")}
             {...register("PhoneNumber", {
               onChange: (e) => {
                 e.target.value = e.target.value.replace(/[^0-9]/g, "");
               },
-              required: "Phone number is required",
+              required: translation("validationMessages.PhoneNumber.required"),
               pattern: {
                 value: /^[0-9]+$/,
-                message: "Please enter a number",
+                message: translation("validationMessages.PhoneNumber.pattern"),
               },
               minLength: {
                 value: 10,
-                message: "Phone number must be at least 10 characters",
+                message: translation("validationMessages.PhoneNumber.minLength"),
               },
               maxLength: {
                 value: 15,
-                message: "Phone number must be less than 15 characters",
+                message: translation("validationMessages.PhoneNumber.maxLength"),
               },
             })}
           />
@@ -168,19 +170,19 @@ const ContactForm = () => {
       <div className="mb-3">
         <textarea
           maxLength={500}
-          placeholder="Message*"
+          placeholder={translation("placeholders.Message")}
           className={"resize-none h-32 focus-visible:h-64 "
             .concat(baseClasses)
             .concat(errors["Message"] ? errorClass : "")}
           {...register("Message", {
-            required: "Message is required",
+            required: translation("validationMessages.Message.required"),
             minLength: {
               value: 10,
-              message: "Message must be at least 10 characters",
+              message: translation("validationMessages.Message.minLength"),
             },
             maxLength: {
               value: 500,
-              message: "Message must be less than 500 characters",
+              message: translation("validationMessages.Message.maxLength"),
             },
           })}
         ></textarea>
@@ -207,7 +209,7 @@ const ContactForm = () => {
             width={24}
           />
         ) : (
-          "Submit"
+          translation("buttons.submit")
         )}
       </button>
     </form>

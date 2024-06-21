@@ -1,13 +1,14 @@
 "use client";
 
 import { futuraStd, garamond } from "@/util/fonts";
+import { useLocale, useTranslations } from "next-intl";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { MdArrowOutward } from "react-icons/md";
 import { TfiClose } from "react-icons/tfi";
+import LocaleSwitcher from "../LocaleSwitcher";
 import Accordion from "../accordion/Accordion";
-import { mainLinks, subLinks } from "./drawerData";
 
 interface Props {
   isOpen: boolean;
@@ -17,8 +18,15 @@ interface Props {
 interface MainLinksProps {
   currentPath: string;
 }
+interface MainLink {
+  label: string;
+  href: string;
+}
 
 const MainLinks = ({ currentPath }: MainLinksProps) => {
+  const locale = useLocale();
+  const translation = useTranslations("Drawer");
+  const mainLinks = translation.raw("mainLinks");
   return (
     <>
       <h6
@@ -26,27 +34,31 @@ const MainLinks = ({ currentPath }: MainLinksProps) => {
           " uppercase tracking-wide text-base font-bold text-brass",
         )}
       >
-        Menu
+        {translation("menu")}
       </h6>
       <nav
         className={futuraStd.className.concat(
           " text-3xl font-semibold tracking-widest mt-4 space-y-4",
         )}
       >
-        {mainLinks.map(({ href, label }) => {
-          const isActive = currentPath === href;
+        {mainLinks.map((mainLink: MainLink) => {
+          const isHome = mainLink.href === "/" && currentPath === `/${locale}`;
+          const isActive = () => {
+            if (isHome) return true;
+            else return currentPath === `/${locale}${mainLink.href}`;
+          };
           const baseClassNames =
             "uppercase block hover:underline transition-all duration-200 ease-in-out hover:text-brass flex items-center justify-between group";
 
-          const { isActiveClassNames, activeDiamond } = isActiveDiamond(isActive);
+          const { isActiveClassNames, activeDiamond } = isActiveDiamond(isActive());
 
           const classNames = `
               ${baseClassNames}
               ${isActiveClassNames}`;
 
           return (
-            <Link key={label} href={href} className={classNames}>
-              <span>{label}</span>
+            <Link key={mainLink.label} href={`/${locale}${mainLink.href}`} className={classNames}>
+              <span>{mainLink.label}</span>
               <div className={activeDiamond}></div>
             </Link>
           );
@@ -61,7 +73,19 @@ interface SecondaryLinksProps {
   currentPath: string;
 }
 
+interface SubLink {
+  label: string;
+  links: {
+    href: string;
+    label: string;
+    externalLink: boolean;
+  }[];
+}
+
 const SecondaryLinks = ({ isMobile, currentPath }: SecondaryLinksProps) => {
+  const locale = useLocale();
+  const translation = useTranslations("Drawer");
+  const subLinks = translation.raw("subLinks");
   return (
     <>
       {isMobile ? (
@@ -69,36 +93,36 @@ const SecondaryLinks = ({ isMobile, currentPath }: SecondaryLinksProps) => {
           <nav
             className={"text-sm font-thin tracking-widest space-y-2 ".concat(futuraStd.className)}
           >
-            {subLinks.map(({ label, links }) => {
+            {subLinks.map((subLink: SubLink) => {
               return (
                 <Accordion
                   titleColor="text-gold"
                   borderColor="border-brass"
                   uppercaseTitle
-                  key={label}
-                  title={label}
+                  key={subLink.label}
+                  title={subLink.label}
                   content={
                     <>
-                      {links.map(({ href, label, externalLink }) => {
-                        const isActive = currentPath === href;
+                      {subLink.links.map((link: any) => {
+                        const isActive = currentPath === `/${locale}${link.href}`;
                         return (
                           <Link
-                            key={label}
-                            href={href}
-                            target={externalLink ? "_blank" : "_self"}
+                            key={link.label}
+                            href={`/${locale}${link.href}`}
+                            target={link.externalLink ? "_blank" : "_self"}
                             className={"block text-gold hover:underline hover:underline-offset-4 py-2 transition-all duration-200 ease-in-out hover:text-brass ".concat(
                               isActive ? "underline underline-offset-4 text-brass" : "",
                             )}
                           >
-                            {externalLink ? (
+                            {link.externalLink ? (
                               <span className="flex items-center gap-2">
                                 <div className="text-xl">
                                   <MdArrowOutward />
                                 </div>
-                                {label}
+                                {link.label}
                               </span>
                             ) : (
-                              <span>{label}</span>
+                              <span>{link.label}</span>
                             )}
                           </Link>
                         );
@@ -110,28 +134,19 @@ const SecondaryLinks = ({ isMobile, currentPath }: SecondaryLinksProps) => {
             })}
 
             <Accordion
-              title="Language"
+              title={translation("Language")}
               uppercaseTitle
               titleColor="text-gold"
               borderColor="border-brass"
-              content={
-                <>
-                  <div className="block text-[#F5CEA4] hover:underline hover:underline-offset-4 py-2 transition-all duration-200 ease-in-out hover:text-brass">
-                    English
-                  </div>
-                  <div className="block text-[#F5CEA4] hover:underline hover:underline-offset-4 py-2 transition-all duration-200 ease-in-out hover:text-brass">
-                    Svenska
-                  </div>
-                </>
-              }
+              content={<LocaleSwitcher showAsCol />}
             />
           </nav>
         </>
       ) : (
         <div className="flex justify-between flex-wrap mt-6">
-          {subLinks.map(({ label, links }, index) => (
+          {subLinks.map((subLink: SubLink, index: number) => (
             <div
-              key={label}
+              key={subLink.label}
               className={"my-6 ".concat(index % 2 === 0 ? "basis-7/12" : "basis-5/12")}
             >
               <div className="w-fit">
@@ -140,32 +155,37 @@ const SecondaryLinks = ({ isMobile, currentPath }: SecondaryLinksProps) => {
                     futuraStd.className,
                   )}
                 >
-                  {label}
+                  {subLink.label}
                 </h6>
                 <nav
                   className={"text-sm font-thin tracking-widest mt-4 space-y-2 ".concat(
                     futuraStd.className,
                   )}
                 >
-                  {links.map(({ href, label, externalLink }) => (
-                    <Link
-                      key={label}
-                      href={href}
-                      target={externalLink ? "_blank" : "_self"}
-                      className="block text-[#F5CEA4] hover:underline hover:underline-offset-4 transition-all duration-200 ease-in-out hover:text-brass"
-                    >
-                      {externalLink ? (
-                        <span className="flex items-center gap-2">
-                          <div className="text-xl">
-                            <MdArrowOutward />
-                          </div>
-                          {label}
-                        </span>
-                      ) : (
-                        <span>{label}</span>
-                      )}
-                    </Link>
-                  ))}
+                  {subLink.links.map((link) => {
+                    const isActive = currentPath === `/${locale}${link.href}`;
+                    return (
+                      <Link
+                        key={link.label}
+                        href={link.externalLink ? link.href : `/${locale}${link.href}`}
+                        target={link.externalLink ? "_blank" : "_self"}
+                        className={"block text-[#F5CEA4] hover:underline hover:underline-offset-4 transition-all duration-200 ease-in-out hover:text-brass ".concat(
+                          isActive ? "underline underline-offset-4 text-brass" : "",
+                        )}
+                      >
+                        {link.externalLink ? (
+                          <span className="flex items-center gap-2">
+                            <div className="text-xl">
+                              <MdArrowOutward />
+                            </div>
+                            {link.label}
+                          </span>
+                        ) : (
+                          <span>{link.label}</span>
+                        )}
+                      </Link>
+                    );
+                  })}
                 </nav>
               </div>
             </div>
@@ -266,14 +286,8 @@ const Drawer = ({ isOpen, setIsOpen }: Props) => {
           {isMobile ? (
             <></>
           ) : (
-            <div
-              className={"uppercase text-xs flex gap-2 font-extralight tracking-widest mt-4 ".concat(
-                futuraStd.className,
-              )}
-            >
-              <p>English</p>
-              <span className="before:content-['•'] text-[6px]"></span>
-              <p>Svenska</p>
+            <div>
+              <LocaleSwitcher />
             </div>
           )}
         </div>

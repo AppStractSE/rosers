@@ -1,8 +1,10 @@
 import Rosers from "@/util/Rosers";
 import { futuraStd, garamond } from "@/util/fonts";
+import { useTranslations } from "next-intl";
 import { IoChevronDownSharp } from "react-icons/io5";
 
 const HeroSection = () => {
+  const translation = useTranslations("Home");
   return (
     <div className="text-center flex flex-col items-center justify-between h-dynamic w-full bg-charcoal-800 px-4">
       <div className="flex-grow flex items-center justify-center text-brass max-w-[620px] mx-auto">
@@ -12,16 +14,14 @@ const HeroSection = () => {
           </div>
           <div className="space-y-12">
             <h1 className={futuraStd.className.concat(" text-4xl md:text-5xl text-balance")}>
-              Unforgettable dining experiences for all occasions
+              {translation("HeroSection.title")}
             </h1>
             <p
               className={garamond.className.concat(
                 " max-w-lg mx-auto text-xl md:text-2xl text-balance",
               )}
             >
-              We curate unforgettable dining experiences for all occasions. From small gatherings of
-              six to grand events of 40,000 attendees - join us in redefining the art of dining, one
-              exquisite moment at a time.
+              {translation("HeroSection.description")}
             </p>
           </div>
         </div>
@@ -32,7 +32,7 @@ const HeroSection = () => {
             " text-brass uppercase tracking-[0.2em] font-thin text-xxs",
           )}
         >
-          Explore Rosers
+          {translation("HeroSection.buttonText")}
         </p>
         <IoChevronDownSharp className="text-brass text-2xl md:text-4xl animate-pulse" />
       </div>

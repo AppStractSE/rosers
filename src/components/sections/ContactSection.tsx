@@ -1,20 +1,25 @@
 import { futuraStd, garamond } from "@/util/fonts";
+import { useTranslations } from "next-intl";
 import Link from "next/link";
 import { FaPhone } from "react-icons/fa6";
 import { TbMailFilled } from "react-icons/tb";
 import ContactForm from "../forms/ContactForm";
 
 const ContactSection = () => {
+  const translation = useTranslations("ContactForm");
   return (
     <section className="mx-auto max-w-full">
       <div className="max-w-lg mx-auto px-4 2xl:px-0">
         <div className="lg:space-y-8 space-y-4 mb-8 lg:mb-16  mx-auto">
-          <h2 className={futuraStd.className.concat(" lg:text-center text-3xl lg:text-6xl")}>
-            Need help? Contact us today!
+          <h2 className={futuraStd.className.concat(" lg:text-center text-3xl lg:text-5xl")}>
+            {translation("title")}
           </h2>
-          <p className={garamond.className.concat(" lg:text-center text-xl font-thin lg:text-2xl")}>
-            Fill in the form below and we will get back to you as soon as possible. You may also
-            reach us via phone or email.
+          <p
+            className={garamond.className.concat(
+              " lg:text-center text-xl font-thin lg:text-2xl text-balance",
+            )}
+          >
+            {translation("description")}
           </p>
         </div>
         <ContactForm />

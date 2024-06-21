@@ -5,7 +5,7 @@ export const metadata: Metadata = {
 };
 
 const page = () => {
-  return <div>The Concept</div>;
+  return <div className="min-h-screen">The Concept</div>;
 };
 
 export default page;

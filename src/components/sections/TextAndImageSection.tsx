@@ -1,6 +1,7 @@
 "use client";
 
 import { futuraStd, garamond } from "@/util/fonts";
+import { useLocale } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -17,6 +18,7 @@ interface Props {
 }
 
 const TextAndImageSection = ({ rtl, title, subTitle, text, image, button }: Props) => {
+  const locale = useLocale();
   const imageBaseClasses = "h-full w-full object-cover duration-500 transition-all ease-in-out";
   const loadingClasses =
     " data-[loaded=false]:animate-pulse data-[loaded=false]:bg-gray-100/10 data-[loaded=false]:blur-md";
@@ -54,7 +56,7 @@ const TextAndImageSection = ({ rtl, title, subTitle, text, image, button }: Prop
         </p>
         <div className="flex md:justify-end">
           <Link
-            href={button.link}
+            href={`/${locale}${button.link}`}
             className={"sm:w-fit w-full text-center inline-block py-2.5 sm:px-12 sm:py-4 border sm:text-[#A28668] sm:bg-transparent transition-all duration-200 ease-in-out border-[#A28668] rounded-sm tracking-[0.2em] mt-12 sm:mt-16 text-sm sm:text-base bg-[#A28668] text-[#232323] hover:bg-[#A28668] hover:text-[#232323] ".concat(
               futuraStd.className,
             )}

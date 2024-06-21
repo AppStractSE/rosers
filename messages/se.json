@@ -1,0 +1,167 @@
+{
+  "Home": {
+    "HeroSection": {
+      "title": "Oförglömliga matupplevelser för alla tillfällen",
+      "description": "Vi skapar oförglömliga matupplevelser för alla tillfällen. Från små sammankomster på sex personer till storslagna evenemang med 40 000 deltagare – följ med oss i att omdefiniera konsten att äta, en utsökt stund i taget.",
+      "buttonText": "Utforska Rosers"
+    }
+  },
+  "LocaleSwitcher": {
+    "label": "Byt språk",
+    "locale": "{locale, select, se {🇸🇪 Svenska} en {🇺🇸 English} other {Unknown}}"
+  },
+  "Drawer": {
+    "language": "Språk",
+    "menu": "Meny",
+    "mainLinks": [
+      {
+        "href": "/",
+        "label": "Hem"
+      },
+      {
+        "href": "/konceptet",
+        "label": "Konceptet"
+      },
+      {
+        "href": "/om-oss",
+        "label": "Om oss"
+      },
+      {
+        "href": "/nyheter",
+        "label": "Nyheter"
+      },
+      {
+        "href": "/evenemang",
+        "label": "Evenemang"
+      },
+      {
+        "href": "/kontakt",
+        "label": "Kontakt"
+      }
+    ],
+    "subLinks": [
+      {
+        "label": "Upptäck konceptet",
+        "links": [
+          {
+            "href": "/konceptet/rosers-kok",
+            "label": "Rosers Kök"
+          },
+          {
+            "href": "/konceptet/globala-evenemang",
+            "label": "Rosers Globala Evenemang"
+          },
+          {
+            "href": "/konceptet/rosers-konsultering",
+            "label": "Rosers Konsultering"
+          }
+        ]
+      },
+      {
+        "label": "Om oss",
+        "links": [
+          {
+            "href": "/om-oss/vad-vi-gor",
+            "label": "Vad vi gör"
+          },
+          {
+            "href": "/om-oss/vilka-vi-ar",
+            "label": "Vilka vi är"
+          },
+          {
+            "href": "/om-oss/var-historia",
+            "label": "Vår historia"
+          }
+        ]
+      },
+      {
+        "label": "Vår kreativitet",
+        "links": [
+          {
+            "href": "/var-kreativitet/vision",
+            "label": "Vision"
+          },
+          {
+            "href": "/var-kreativitet/inspiration",
+            "label": "Inspiration"
+          }
+        ]
+      },
+      {
+        "label": "Följ oss",
+        "links": [
+          {
+            "href": "https://www.instagram.com/rosers_kitchen/",
+            "label": "Instagram",
+            "externalLink": true
+          },
+          {
+            "href": "/facebook",
+            "label": "Facebook",
+            "externalLink": true
+          },
+          {
+            "href": "/linkedin",
+            "label": "LinkedIn",
+            "externalLink": true
+          }
+        ]
+      }
+    ]
+  },
+  "NavItems": [
+    {
+      "href": "/konceptet",
+      "label": "Konceptet"
+    },
+    {
+      "href": "/om-oss",
+      "label": "Om oss"
+    },
+    {
+      "href": "/nyheter",
+      "label": "Nyheter"
+    },
+    {
+      "href": "/evenemang",
+      "label": "Evenemang"
+    }
+  ],
+  "ContactForm": {
+    "title": "Kom i kontakt med oss",
+    "description": "Vi hör gärna från dig! Fyll i formuläret nedan så återkommer vi så snart som möjligt.",
+    "placeholders": {
+      "FullName": "Fullständigt namn*",
+      "Email": "E-post*",
+      "BusinessName": "Företagsnamn",
+      "PhoneNumber": "Telefonnummer*",
+      "Message": "Meddelande*"
+    },
+    "validationMessages": {
+      "FullName": {
+        "required": "Fullständigt namn krävs",
+        "minLength": "Namnet måste vara minst 2 tecken",
+        "maxLength": "Namnet får vara högst 50 tecken"
+      },
+      "Email": {
+        "required": "E-post krävs",
+        "pattern": "Ogiltig e-postadress"
+      },
+      "PhoneNumber": {
+        "required": "Telefonnummer krävs",
+        "pattern": "Ange ett nummer",
+        "minLength": "Telefonnumret måste vara minst 10 tecken",
+        "maxLength": "Telefonnumret får vara högst 15 tecken"
+      },
+      "Message": {
+        "required": "Meddelande krävs",
+        "minLength": "Meddelandet måste vara minst 10 tecken",
+        "maxLength": "Meddelandet får vara högst 500 tecken"
+      }
+    },
+    "buttons": {
+      "submit": "Skicka"
+    }
+  },
+  "WebDesignBy": "Webbdesign av Appstract"
+}

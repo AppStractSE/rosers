@@ -134,7 +134,7 @@ const SecondaryLinks = ({ isMobile, currentPath }: SecondaryLinksProps) => {
             })}
 
             <Accordion
-              title={translation("Language")}
+              title={translation("language")}
               uppercaseTitle
               titleColor="text-gold"
               borderColor="border-brass"

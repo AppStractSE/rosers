@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     default: "Rosers | Unforgettable dining experiences for all occasions",
   },
 };
-const locales = ["en", "se"];
+const locales = ["en", "sv"];
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));

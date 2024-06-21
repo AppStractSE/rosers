@@ -8,7 +8,7 @@
   },
   "LocaleSwitcher": {
     "label": "Byt språk",
-    "locale": "{locale, select, se {🇸🇪 Svenska} en {🇺🇸 English} other {Unknown}}"
+    "locale": "{locale, select, sv {🇸🇪 Svenska} en {🇺🇸 English} other {Unknown}}"
   },
   "Drawer": {
     "language": "Språk",

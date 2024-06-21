@@ -1,0 +1,166 @@
+{
+  "Home": {
+    "HeroSection": {
+      "title": "Unforgettable dining experiences for all occasions",
+      "description": "We curate unforgettable dining experiences for all occasions. From small gatherings of six to grand events of 40,000 attendees - join us in redefining the art of dining, one exquisite moment at a time.",
+      "buttonText": "Explore Rosers"
+    }
+  },
+  "LocaleSwitcher": {
+    "locale": "{locale, select, se {🇸🇪 Svenska} en {🇺🇸 English} other {Unknown}}"
+  },
+  "Drawer": {
+    "language": "Language",
+    "menu": "Menu",
+    "mainLinks": [
+      {
+        "href": "/",
+        "label": "Home"
+      },
+      {
+        "href": "/the-concept",
+        "label": "The concept"
+      },
+      {
+        "href": "/about",
+        "label": "About"
+      },
+      {
+        "href": "/news",
+        "label": "News"
+      },
+      {
+        "href": "/events",
+        "label": "Events"
+      },
+      {
+        "href": "/contact",
+        "label": "Contact"
+      }
+    ],
+    "subLinks": [
+      {
+        "label": "Discover the concept",
+        "links": [
+          {
+            "href": "/the-concept/rosers-kitchen",
+            "label": "Rosers Kitchen"
+          },
+          {
+            "href": "/the-concept/rosers-global-events",
+            "label": "Rosers Global Events"
+          },
+          {
+            "href": "/the-concept/rosers-consulting",
+            "label": "Rosers Consulting"
+          }
+        ]
+      },
+      {
+        "label": "About",
+        "links": [
+          {
+            "href": "/about/what-we-do",
+            "label": "What we do"
+          },
+          {
+            "href": "/about/who-we-are",
+            "label": "Who we are"
+          },
+          {
+            "href": "/about/our-history",
+            "label": "Our history"
+          }
+        ]
+      },
+      {
+        "label": "Our creativity",
+        "links": [
+          {
+            "href": "/our-creativity/vision",
+            "label": "Vision"
+          },
+          {
+            "href": "/our-creativity/inspiration",
+            "label": "Inspiration"
+          }
+        ]
+      },
+      {
+        "label": "Follow us",
+        "links": [
+          {
+            "href": "https://www.instagram.com/rosers_kitchen/",
+            "label": "Instagram",
+            "externalLink": true
+          },
+          {
+            "href": "/facebook",
+            "label": "Facebook",
+            "externalLink": true
+          },
+          {
+            "href": "/linkedin",
+            "label": "LinkedIn",
+            "externalLink": true
+          }
+        ]
+      }
+    ]
+  },
+  "NavItems": [
+    {
+      "href": "/the-concept",
+      "label": "The Concept"
+    },
+    {
+      "href": "/about",
+      "label": "About"
+    },
+    {
+      "href": "/news",
+      "label": "News"
+    },
+    {
+      "href": "/events",
+      "label": "Events"
+    }
+  ],
+  "ContactForm": {
+    "title": "Get in touch with us",
+    "description": "We would love to hear from you! Please fill out the form below and we will get back to you as soon as possible.",
+    "placeholders": {
+      "FullName": "Full name*",
+      "Email": "Email*",
+      "BusinessName": "Business name",
+      "PhoneNumber": "Phone number*",
+      "Message": "Message*"
+    },
+    "validationMessages": {
+      "FullName": {
+        "required": "Full name is required",
+        "minLength": "Name must be at least 2 characters",
+        "maxLength": "Name must be less than 50 characters"
+      },
+      "Email": {
+        "required": "Email is required",
+        "pattern": "Invalid email address"
+      },
+      "PhoneNumber": {
+        "required": "Phone number is required",
+        "pattern": "Please enter a number",
+        "minLength": "Phone number must be at least 10 characters",
+        "maxLength": "Phone number must be less than 15 characters"
+      },
+      "Message": {
+        "required": "Message is required",
+        "minLength": "Message must be at least 10 characters",
+        "maxLength": "Message must be less than 500 characters"
+      }
+    },
+    "buttons": {
+      "submit": "Submit"
+    }
+  },
+  "WebDesignBy": "Web design by Appstract"
+}

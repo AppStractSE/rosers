@@ -5,6 +5,7 @@ import { EmblaCarouselType, EmblaOptionsType } from "embla-carousel";
 // import Fade from "embla-carousel-fade";
 import { futuraStd, garamond } from "@/util/fonts";
 import useEmblaCarousel from "embla-carousel-react";
+import { useLocale } from "next-intl";
 import Link from "next/link";
 import { useCallback } from "react";
 import { NextButton, PrevButton, usePrevNextButtons } from "../embla/EmblaCarouselArrowButtons";
@@ -24,7 +25,7 @@ const EmblaCarousel = () => {
       image: "/image001.png",
       button: {
         text: "Read more",
-        link: "/who-we-are",
+        link: "/about/who-we-are",
       },
     },
     {
@@ -35,7 +36,7 @@ const EmblaCarousel = () => {
       image: "/image002.png",
       button: {
         text: "Read more",
-        link: "/who-we-are",
+        link: "/about/who-we-are",
       },
     },
     {
@@ -46,11 +47,12 @@ const EmblaCarousel = () => {
       image: "/image002.png",
       button: {
         text: "Read more",
-        link: "/who-we-are",
+        link: "/about/who-we-are",
       },
     },
   ];
   const [emblaRef, emblaApi] = useEmblaCarousel(OPTIONS);
+  const locale = useLocale();
   const onNavButtonClick = useCallback((emblaApi: EmblaCarouselType) => {
     const autoplay = emblaApi?.plugins()?.autoplay;
     if (!autoplay) return;
@@ -94,7 +96,7 @@ const EmblaCarousel = () => {
                       {slide.text}
                     </p>
                     <Link
-                      href={slide.button.link}
+                      href={`/${locale}${slide.button.link}`}
                       className={"sm:w-fit w-full text-center inline-block py-2.5 sm:px-12 sm:py-4 border sm:text-[#A28668] sm:bg-transparent transition-all duration-200 ease-in-out border-[#A28668] rounded-sm tracking-[0.2em] mt-12 sm:mt-16 text-sm sm:text-base bg-[#A28668] text-[#232323] hover:bg-[#A28668] hover:text-[#232323] ".concat(
                         futuraStd.className,
                       )}

@@ -11,7 +11,7 @@ const TextsAndImageSections = () => {
       image: "/image001.png",
       button: {
         text: "Read more",
-        link: "/who-we-are",
+        link: "/about/who-we-are",
       },
     },
     {
@@ -23,7 +23,7 @@ const TextsAndImageSections = () => {
       image: "/image002.png",
       button: {
         text: "Read more",
-        link: "/who-we-are",
+        link: "/about/who-we-are",
       },
     },
   ];

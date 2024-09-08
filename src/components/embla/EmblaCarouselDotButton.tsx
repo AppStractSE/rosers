@@ -1,4 +1,9 @@
-import React, { PropsWithChildren, useCallback, useEffect, useState } from "react";
+import React, {
+  PropsWithChildren,
+  useCallback,
+  useEffect,
+  useState,
+} from "react";
 import { EmblaCarouselType } from "embla-carousel";
 
 type UseDotButtonType = {
@@ -47,7 +52,10 @@ export const useDotButton = (
 };
 
 type PropType = PropsWithChildren<
-  React.DetailedHTMLProps<React.ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement>
+  React.DetailedHTMLProps<
+    React.ButtonHTMLAttributes<HTMLButtonElement>,
+    HTMLButtonElement
+  >
 >;
 
 export const DotButton: React.FC<PropType> = (props) => {

@@ -1,5 +1,10 @@
 import { EmblaCarouselType } from "embla-carousel";
-import React, { PropsWithChildren, useCallback, useEffect, useState } from "react";
+import React, {
+  PropsWithChildren,
+  useCallback,
+  useEffect,
+  useState,
+} from "react";
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
 
 type UsePrevNextButtonsType = {
@@ -49,14 +54,21 @@ export const usePrevNextButtons = (
 };
 
 type PropType = PropsWithChildren<
-  React.DetailedHTMLProps<React.ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement>
+  React.DetailedHTMLProps<
+    React.ButtonHTMLAttributes<HTMLButtonElement>,
+    HTMLButtonElement
+  >
 >;
 
 export const PrevButton: React.FC<PropType> = (props) => {
   const { children, ...restProps } = props;
 
   return (
-    <button className="embla__button embla__button--prev" type="button" {...restProps}>
+    <button
+      className="embla__button embla__button--prev"
+      type="button"
+      {...restProps}
+    >
       <BsChevronLeft />
       {children}
     </button>
@@ -67,7 +79,11 @@ export const NextButton: React.FC<PropType> = (props) => {
   const { children, ...restProps } = props;
 
   return (
-    <button className="embla__button embla__button--next" type="button" {...restProps}>
+    <button
+      className="embla__button embla__button--next"
+      type="button"
+      {...restProps}
+    >
       <BsChevronRight />
       {children}
     </button>

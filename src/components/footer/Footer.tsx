@@ -9,7 +9,7 @@ import Accordion from "../accordion/Accordion";
 
 const Divider = () => {
   return (
-    <div className="my-12 hidden md:block h-[1px] w-full bg-gradient-to-r from-transparent via-brass to-transparent" />
+    <div className="my-12 hidden h-[1px] w-full bg-gradient-to-r from-transparent via-brass to-transparent md:block" />
   );
 };
 
@@ -32,11 +32,13 @@ const Footer = () => {
   }, []);
   return (
     <footer className="bg-charcoal-700">
-      <div className="px-4 py-8 2xl:pt-12 pb-8 2xl:px-16 mx-auto max-w-screen-xl">
+      <div className="mx-auto max-w-screen-xl px-4 py-8 pb-8 2xl:px-16 2xl:pt-12">
         <Divider />
         <div className="lg:mb-8">
           <h2
-            className={"text-3xl md:text-5xl uppercase tracking-widest ".concat(garamond.className)}
+            className={"text-3xl uppercase tracking-widest md:text-5xl"
+              .concat(" ")
+              .concat(garamond.className)}
           >
             Rosers
           </h2>
@@ -45,9 +47,9 @@ const Footer = () => {
           {isMobile ? (
             <>
               <nav
-                className={"text-sm font-thin tracking-widest space-y-2 ".concat(
-                  futuraStd.className,
-                )}
+                className={"space-y-2 text-sm font-thin tracking-widest"
+                  .concat(" ")
+                  .concat(futuraStd.className)}
               >
                 {subLinks.map((subLink: any) => (
                   <Accordion
@@ -61,9 +63,13 @@ const Footer = () => {
                         {subLink.links.map((link: any) => (
                           <Link
                             key={link.label}
-                            href={link.externalLink ? link.href : `/${locale}${link.href}`}
+                            href={
+                              link.externalLink
+                                ? link.href
+                                : `/${locale}${link.href}`
+                            }
                             target={link.externalLink ? "_blank" : "_self"}
-                            className="block hover:underline text-brass hover:underline-offset-4 py-2 transition-all duration-200 ease-in-out"
+                            className="block py-2 text-brass transition-all duration-200 ease-in-out hover:underline hover:underline-offset-4"
                           >
                             {link.externalLink ? (
                               <span className="flex items-center gap-2">
@@ -84,28 +90,34 @@ const Footer = () => {
               </nav>
             </>
           ) : (
-            <div className="flex justify-between flex-wrap gap-4 mt-6">
+            <div className="mt-6 flex flex-wrap justify-between gap-4">
               {subLinks.map((subLink: any, index: number) => (
                 <div key={subLink.label} className="my-6">
                   <div className="w-fit">
                     <h6
-                      className={futuraStd.className.concat(
-                        " tracking-wide font-medium text-xl text-brass",
-                      )}
+                      className={futuraStd.className
+                        .concat(" ")
+                        .concat("text-xl font-medium tracking-wide text-brass")}
                     >
                       {subLink.label}
                     </h6>
                     <nav
-                      className={futuraStd.className.concat(
-                        " text-sm font-thin tracking-widest mt-4 space-y-2",
-                      )}
+                      className={futuraStd.className
+                        .concat(" ")
+                        .concat(
+                          "mt-4 space-y-2 text-sm font-thin tracking-widest",
+                        )}
                     >
                       {subLink.links.map((link: any) => (
                         <Link
                           key={link.label}
-                          href={link.externalLink ? link.href : `/${locale}${link.href}`}
+                          href={
+                            link.externalLink
+                              ? link.href
+                              : `/${locale}${link.href}`
+                          }
                           target={link.externalLink ? "_blank" : "_self"}
-                          className="block py-2 tracking-wider text-brass hover:underline hover:underline-offset-4 transition-all duration-200 ease-in-out"
+                          className="block py-2 tracking-wider transition-all duration-200 ease-in-out hover:underline hover:underline-offset-4"
                         >
                           {link.externalLink ? (
                             <span className="flex items-center gap-2">
@@ -123,8 +135,12 @@ const Footer = () => {
                   </div>
                 </div>
               ))}
-              <div className="w-full lg:basis-1/12 flex items-center justify-center ">
-                <img src="/rosers.svg" alt="Rosers logo" className="w-full h-auto max-w-[150px]" />
+              <div className="flex w-full items-center justify-center lg:basis-1/12">
+                <img
+                  src="/rosers.svg"
+                  alt="Rosers logo"
+                  className="h-auto w-full max-w-[150px]"
+                />
               </div>
             </div>
           )}
@@ -134,9 +150,11 @@ const Footer = () => {
           <Link
             target="_blank"
             href="https://www.appstract.se"
-            className={futuraStd.className.concat(
-              " text-brass uppercase text-xs font-normal hover:underline hover:underline-offset-4",
-            )}
+            className={futuraStd.className
+              .concat(" ")
+              .concat(
+                "text-xs font-normal uppercase text-brass hover:underline hover:underline-offset-4",
+              )}
           >
             {translation("WebDesignBy")}
           </Link>

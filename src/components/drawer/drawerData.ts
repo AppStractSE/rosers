@@ -23,7 +23,10 @@ const subLinks: SubDrawerLink[] = [
     label: "Discover the concept",
     links: [
       { href: "/the-concept/rosers-kitchen", label: "Rosers Kitchen" },
-      { href: "/the-concept/rosers-global-events", label: "Rosers Global Events" },
+      {
+        href: "/the-concept/rosers-global-events",
+        label: "Rosers Global Events",
+      },
       { href: "/the-concept/rosers-consulting", label: "Rosers Consulting" },
     ],
   },
@@ -45,7 +48,11 @@ const subLinks: SubDrawerLink[] = [
   {
     label: "Follow us",
     links: [
-      { href: "https://www.instagram.com/rosers_kitchen/", label: "Instagram", externalLink: true },
+      {
+        href: "https://www.instagram.com/rosers_kitchen/",
+        label: "Instagram",
+        externalLink: true,
+      },
       { href: "/facebook", label: "Facebook", externalLink: true },
       { href: "/linkedin", label: "LinkedIn", externalLink: true },
     ],

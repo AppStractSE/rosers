@@ -8,7 +8,11 @@ import useEmblaCarousel from "embla-carousel-react";
 import { useLocale } from "next-intl";
 import Link from "next/link";
 import { useCallback } from "react";
-import { NextButton, PrevButton, usePrevNextButtons } from "../embla/EmblaCarouselArrowButtons";
+import {
+  NextButton,
+  PrevButton,
+  usePrevNextButtons,
+} from "../embla/EmblaCarouselArrowButtons";
 import { DotButton, useDotButton } from "../embla/EmblaCarouselDotButton";
 
 const EmblaCarousel = () => {
@@ -57,15 +61,32 @@ const EmblaCarousel = () => {
     const autoplay = emblaApi?.plugins()?.autoplay;
     if (!autoplay) return;
   }, []);
-  const { selectedIndex, scrollSnaps, onDotButtonClick } = useDotButton(emblaApi, onNavButtonClick);
-  const { prevBtnDisabled, nextBtnDisabled, onPrevButtonClick, onNextButtonClick } =
-    usePrevNextButtons(emblaApi);
+  const { selectedIndex, scrollSnaps, onDotButtonClick } = useDotButton(
+    emblaApi,
+    onNavButtonClick,
+  );
+  const {
+    prevBtnDisabled,
+    nextBtnDisabled,
+    onPrevButtonClick,
+    onNextButtonClick,
+  } = usePrevNextButtons(emblaApi);
 
   return (
     <section className="mx-auto max-w-full">
-      <div className="max-w-screen-xl mx-auto mb-12 space-y-2 px-4 2xl:px-0">
-        <h3 className={"text-4xl text-gold ".concat(futuraStd.className)}>The Rosers Concept</h3>
-        <p className={"text-xl tracking-wide font-thin ".concat(garamond.className)}>
+      <div className="mx-auto mb-12 max-w-screen-xl space-y-2 px-4 2xl:px-0">
+        <h3
+          className={"text-4xl text-gold"
+            .concat(" ")
+            .concat(futuraStd.className)}
+        >
+          The Rosers Concept
+        </h3>
+        <p
+          className={"text-xl font-thin tracking-wide"
+            .concat(" ")
+            .concat(garamond.className)}
+        >
           {`Join us as we transform dreams into reality with 'The Rosers Concept' and join a global
           voyage of epicurean delight.`}
         </p>
@@ -75,31 +96,39 @@ const EmblaCarousel = () => {
           <div className="embla__container">
             {slides.map((slide, index) => (
               <div className="embla__slide" key={index}>
-                <div className="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 md:grid-rows-1 gap-4 md:gap-12 grid-rows-2 items-stretch">
+                <div className="mx-auto grid max-w-screen-xl grid-cols-1 grid-rows-2 items-stretch gap-4 md:grid-cols-2 md:grid-rows-1 md:gap-12">
                   <img
                     className="embla__slide__img row-span-1 md:aspect-[4/3.5]"
                     src={slide.image}
                     alt="Your alt text"
                   />
-                  <div className="h-full place-self-center mx-auto row-span-1 flex flex-col md:justify-center">
-                    <h3 className={"text-xs uppercase text-brass ".concat(futuraStd.className)}>
+                  <div className="row-span-1 mx-auto flex h-full flex-col place-self-center md:justify-center">
+                    <h3
+                      className={"text-xs uppercase text-brass"
+                        .concat(" ")
+                        .concat(futuraStd.className)}
+                    >
                       {slide.subTitle}
                     </h3>
-                    <h2 className={"text-3xl md:text-4xl mt-2 ".concat(futuraStd.className)}>
+                    <h2
+                      className={"mt-2 text-3xl md:text-4xl"
+                        .concat(" ")
+                        .concat(futuraStd.className)}
+                    >
                       {slide.title}
                     </h2>
                     <p
-                      className={"text-xl tracking-wide font-thin mt-4 md:mt-8 whitespace-pre-line flex-1 sm:flex-[.75] md:flex-none ".concat(
-                        garamond.className,
-                      )}
+                      className={"mt-4 flex-1 whitespace-pre-line text-xl font-thin tracking-wide sm:flex-[.75] md:mt-8 md:flex-none"
+                        .concat(" ")
+                        .concat(garamond.className)}
                     >
                       {slide.text}
                     </p>
                     <Link
                       href={`/${locale}${slide.button.link}`}
-                      className={"sm:w-fit w-full text-center inline-block py-2.5 sm:px-12 sm:py-4 border sm:text-[#A28668] sm:bg-transparent transition-all duration-200 ease-in-out border-[#A28668] rounded-sm tracking-[0.2em] mt-12 sm:mt-16 text-sm sm:text-base bg-[#A28668] text-[#232323] hover:bg-[#A28668] hover:text-[#232323] ".concat(
-                        futuraStd.className,
-                      )}
+                      className={"mt-12 inline-block w-full rounded-sm border border-[#A28668] bg-[#A28668] py-2.5 text-center text-sm tracking-[0.2em] text-[#232323] transition-all duration-200 ease-in-out hover:bg-[#A28668] hover:text-[#232323] sm:mt-16 sm:w-fit sm:bg-transparent sm:px-12 sm:py-4 sm:text-base sm:text-[#A28668]"
+                        .concat(" ")
+                        .concat(futuraStd.className)}
                     >
                       {slide.button.text}
                     </Link>
@@ -112,19 +141,25 @@ const EmblaCarousel = () => {
 
         <div className="embla__controls">
           <div className="embla__buttons">
-            <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
-            <div className="flex items-center gap-4 py-8 justify-center">
+            <PrevButton
+              onClick={onPrevButtonClick}
+              disabled={prevBtnDisabled}
+            />
+            <div className="flex items-center justify-center gap-4 py-8">
               {scrollSnaps.map((_, index) => (
                 <DotButton
                   key={index}
                   onClick={() => onDotButtonClick(index)}
-                  className={"h-4 w-4 transform rotate-45 rounded-sm ".concat(
-                    index === selectedIndex ? " bg-gold" : "bg-brass",
-                  )}
+                  className={"h-4 w-4 rotate-45 transform rounded-sm"
+                    .concat(" ")
+                    .concat(index === selectedIndex ? "bg-gold" : "bg-brass")}
                 />
               ))}
             </div>
-            <NextButton onClick={onNextButtonClick} disabled={nextBtnDisabled} />
+            <NextButton
+              onClick={onNextButtonClick}
+              disabled={nextBtnDisabled}
+            />
           </div>
         </div>
       </div>

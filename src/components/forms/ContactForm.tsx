@@ -64,13 +64,15 @@ const ContactForm = () => {
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}
-      className={futuraStd.className.concat(" mx-auto")}
+      className={futuraStd.className.concat(" ").concat("mx-auto")}
       name="contact-form"
     >
       <input type="hidden" name="required-field" value="contact-form" />
-      <div className="w-full mb-3">
+      <div className="mb-3 w-full">
         <input
-          className={baseClasses.concat(errors["FullName"] ? errorClass : "")}
+          className={baseClasses
+            .concat(" ")
+            .concat(errors["FullName"] ? errorClass : "")}
           type="text"
           placeholder={translation("placeholders.FullName")}
           {...register("FullName", {
@@ -87,37 +89,48 @@ const ContactForm = () => {
         />
         <p
           role="alert"
-          className={errorTextBaseClass.concat(
-            errors["FullName"] ? errorTextVisibleClasses : errorTextHiddenClasses,
-          )}
+          className={errorTextBaseClass
+            .concat(" ")
+            .concat(
+              errors["FullName"]
+                ? errorTextVisibleClasses
+                : errorTextHiddenClasses,
+            )}
         >
           {errors.FullName?.message}
         </p>
       </div>
-      <div className="w-full mb-3">
+      <div className="mb-3 w-full">
         <input
-          className={baseClasses.concat(errors["Email"] ? errorClass : "")}
+          className={baseClasses
+            .concat(" ")
+            .concat(errors["Email"] ? errorClass : "")}
           type="email"
           placeholder={translation("placeholders.Email")}
           {...register("Email", {
             required: translation("validationMessages.Email.required"),
             pattern: {
-              value: /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,
+              value:
+                /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,
               message: translation("validationMessages.Email.pattern"),
             },
           })}
         />
         <p
           role="alert"
-          className={errorTextBaseClass.concat(
-            errors["Email"] ? errorTextVisibleClasses : errorTextHiddenClasses,
-          )}
+          className={errorTextBaseClass
+            .concat(" ")
+            .concat(
+              errors["Email"]
+                ? errorTextVisibleClasses
+                : errorTextHiddenClasses,
+            )}
         >
           {errors.Email?.message}
         </p>
       </div>
       <div className="flex gap-3">
-        <div className="w-full mb-3">
+        <div className="mb-3 w-full">
           <input
             type="text"
             className={baseClasses}
@@ -126,16 +139,22 @@ const ContactForm = () => {
           />
           <p
             role="alert"
-            className={errorTextBaseClass.concat(
-              errors["BusinessName"] ? errorTextVisibleClasses : errorTextHiddenClasses,
-            )}
+            className={errorTextBaseClass
+              .concat(" ")
+              .concat(
+                errors["BusinessName"]
+                  ? errorTextVisibleClasses
+                  : errorTextHiddenClasses,
+              )}
           >
             {errors.BusinessName?.message}
           </p>
         </div>
         <div className="w-full">
           <input
-            className={baseClasses.concat(errors["PhoneNumber"] ? errorClass : "")}
+            className={baseClasses
+              .concat(" ")
+              .concat(errors["PhoneNumber"] ? errorClass : "")}
             type="tel"
             placeholder={translation("placeholders.PhoneNumber")}
             {...register("PhoneNumber", {
@@ -149,19 +168,27 @@ const ContactForm = () => {
               },
               minLength: {
                 value: 10,
-                message: translation("validationMessages.PhoneNumber.minLength"),
+                message: translation(
+                  "validationMessages.PhoneNumber.minLength",
+                ),
               },
               maxLength: {
                 value: 15,
-                message: translation("validationMessages.PhoneNumber.maxLength"),
+                message: translation(
+                  "validationMessages.PhoneNumber.maxLength",
+                ),
               },
             })}
           />
           <p
             role="alert"
-            className={errorTextBaseClass.concat(
-              errors["PhoneNumber"] ? errorTextVisibleClasses : errorTextHiddenClasses,
-            )}
+            className={errorTextBaseClass
+              .concat(" ")
+              .concat(
+                errors["PhoneNumber"]
+                  ? errorTextVisibleClasses
+                  : errorTextHiddenClasses,
+              )}
           >
             {errors.PhoneNumber?.message}
           </p>
@@ -171,8 +198,10 @@ const ContactForm = () => {
         <textarea
           maxLength={500}
           placeholder={translation("placeholders.Message")}
-          className={"resize-none h-32 focus-visible:h-64 "
+          className={"h-32 resize-none focus-visible:h-64"
+            .concat(" ")
             .concat(baseClasses)
+            .concat(" ")
             .concat(errors["Message"] ? errorClass : "")}
           {...register("Message", {
             required: translation("validationMessages.Message.required"),
@@ -188,17 +217,21 @@ const ContactForm = () => {
         ></textarea>
         <p
           role="alert"
-          className={errorTextBaseClass.concat(
-            errors["Message"] ? errorTextVisibleClasses : errorTextHiddenClasses,
-          )}
+          className={errorTextBaseClass
+            .concat(" ")
+            .concat(
+              errors["Message"]
+                ? errorTextVisibleClasses
+                : errorTextHiddenClasses,
+            )}
         >
           {errors.Message?.message}
         </p>
       </div>
       <button
-        disabled={!isDirty || !isValid}
+        // disabled={!isDirty || !isValid}
         type="submit"
-        className="w-full leading-normal text-center flex justify-center items-center text-base p-4 rounded-sm tracking-[0.15em] bg-[#8B7257] text-[#303030]"
+        className="flex w-full items-center justify-center rounded-sm bg-[#8B7257] p-4 text-center text-base leading-normal tracking-[0.15em] text-[#303030] transition-all duration-200 ease-in-out hover:bg-gold"
       >
         {isSubmitting ? (
           <Spinner

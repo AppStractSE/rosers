@@ -28,21 +28,27 @@ export default function LocaleSwitcher({ showAsCol }: Props) {
   }
 
   return (
-    <div className={showAsCol ? "flex-col items-start gap-4" : "flex gap-2 items-center"}>
+    <div
+      className={
+        showAsCol ? "flex-col items-start gap-4" : "flex items-center gap-2"
+      }
+    >
       {locales.map((lang, index) => (
         <React.Fragment key={lang}>
           <button
             disabled={isPending}
             onClick={handleLocaleChange}
             value={lang}
-            className={"block uppercase text-xs font-extralight tracking-widest hover:underline underline-offset-4 py-2 "
-              .concat(locale === lang ? "underline " : "")
+            className={"block py-2 text-xs font-extralight uppercase tracking-widest hover:text-brass"
+              .concat(" ")
+              .concat(locale === lang ? "text-brass" : "")
+              .concat(" ")
               .concat(futuraStd.className)}
           >
             {translation("locale", { locale: lang })}
           </button>
           {!showAsCol && index === 0 ? (
-            <div className="h-[3px] w-[3px] bg-gold rounded-full" />
+            <div className="h-[3px] w-[3px] rounded-full bg-gold" />
           ) : null}
         </React.Fragment>
       ))}

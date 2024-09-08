@@ -11,9 +11,19 @@ const Rosers = ({ className }: Props) => {
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
     >
-      <rect y="0.492401" width="120" height="120" fill="url(#pattern0_109_23)" />
+      <rect
+        y="0.492401"
+        width="120"
+        height="120"
+        fill="url(#pattern0_109_23)"
+      />
       <defs>
-        <pattern id="pattern0_109_23" patternContentUnits="objectBoundingBox" width="1" height="1">
+        <pattern
+          id="pattern0_109_23"
+          patternContentUnits="objectBoundingBox"
+          width="1"
+          height="1"
+        >
           <use xlinkHref="#image0_109_23" transform="scale(0.00555556)" />
         </pattern>
         <image

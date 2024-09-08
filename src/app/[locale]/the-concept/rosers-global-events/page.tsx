@@ -1,3 +1,4 @@
+import Breadcrumbs from "@/components/breadcrumbs/Breadcrumbs";
 import { Metadata } from "next";
 import { unstable_setRequestLocale } from "next-intl/server";
 
@@ -7,7 +8,12 @@ export const metadata: Metadata = {
 
 const page = ({ params: { locale } }: { params: { locale: string } }) => {
   unstable_setRequestLocale(locale);
-  return <div>The Concept/Rosers Global Events</div>;
+  return (
+    <div className="mt-48">
+      {/* The Concept/Rosers Global Events */}
+      <Breadcrumbs />
+    </div>
+  );
 };
 
 export default page;

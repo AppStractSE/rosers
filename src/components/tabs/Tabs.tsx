@@ -61,7 +61,7 @@ const Tabs = () => {
           {concepts.map((concept, index) => (
             <div key={index} className="grid-item flex flex-col gap-4">
               <img
-                src="http://localhost:3000/image002.png"
+                src="/image002.png"
                 className="aspect-[1] h-full w-full object-cover"
               />
               <div className="">

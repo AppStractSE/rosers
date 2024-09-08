@@ -6,7 +6,13 @@ interface Props {
   strokeWidth?: number;
 }
 
-const Spinner = ({ primaryColor, secondaryColor, height, width, strokeWidth }: Props) => {
+const Spinner = ({
+  primaryColor,
+  secondaryColor,
+  height,
+  width,
+  strokeWidth,
+}: Props) => {
   return (
     <svg
       className="animate-spin"

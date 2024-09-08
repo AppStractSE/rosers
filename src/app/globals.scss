@@ -9,8 +9,7 @@
 }
 
 body {
-  @apply text-gold bg-charcoal-800;
-
+  @apply bg-charcoal-800 text-gold;
 }
 
 .text-balance {
@@ -23,7 +22,6 @@ body {
 }
 
 .drawer-bg {
-  @apply absolute flex flex-col justify-between left-0 top-0 shadow-xl overflow-y-auto backdrop-blur-sm bg-opacity-80 lg:bg-opacity-50 bg-charcoal-700 transition-all duration-500 ease-in-out h-full max-w-2xl px-4 py-4 md:px-12 md:py-8 transform w-full;
   scrollbar-width: none;
   -ms-overflow-style: none;
 
@@ -32,9 +30,37 @@ body {
   }
 
   @media screen and (min-width: 673px) {
-    @apply border-r border-[#a286688e]
+    @apply border-r border-[#a286688e];
+  }
+}
+
+::selection {
+  @apply bg-brass text-charcoal-700;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(1rem);
   }
 
+  100% {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+}
+
+section {
+  animation: fadeIn 1s;
+  animation-fill-mode: both;
+}
+
+@for $i from 1 through 25 {
+  section:nth-of-type(#{$i}) {
+    animation-delay: $i * 0.2s;
+  }
 }
 
 .embla {
@@ -54,19 +80,19 @@ body {
 
 .embla__slide {
   flex: 0 0 100%;
-  @apply px-4 2xl:px-0 flex min-w-0 w-full;
+  @apply flex w-full min-w-0 px-4 2xl:px-0;
 }
 
 .embla__slide__img {
-  @apply block w-full object-cover h-full rounded-sm border border-brass;
+  @apply block h-full w-full rounded-sm border border-brass object-cover;
 }
 
 .embla__buttons {
-  @apply justify-center flex gap-8 items-center mt-4 lg:mt-12;
+  @apply mt-4 flex items-center justify-center gap-8 lg:mt-12;
 }
 
 .embla__button {
-  @apply text-2xl border rounded-full p-4 border-gold hidden lg:block;
+  @apply hidden rounded-full border border-gold p-4 text-2xl lg:block;
 }
 
 .embla__slide__img {

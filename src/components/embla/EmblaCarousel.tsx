@@ -16,28 +16,33 @@ const EmblaCarousel = ({ slides, options }: Props) => {
     if (!autoplay) return;
   }, []);
 
-  const { selectedIndex, scrollSnaps, onDotButtonClick } = useDotButton(emblaApi, onNavButtonClick);
+  const { selectedIndex, scrollSnaps, onDotButtonClick } = useDotButton(
+    emblaApi,
+    onNavButtonClick,
+  );
 
   return (
     <section className="mx-auto max-w-full">
-      <div className="overflow-hidden border-t border-b border-[#8B7257]" ref={emblaRef}>
+      <div
+        className="overflow-hidden border-b border-t border-[#8B7257]"
+        ref={emblaRef}
+      >
         <div className="flex touch-pan-y touch-pinch-zoom">
           {slides.map((slide, index) => (
             <div
               key={index}
-              className={`shrink-0 grow-0 basis-full h-[20rem] lg:h-[30rem] xl:h-[40rem] bg-center bg-no-repeat bg-cover`}
+              className={`h-[20rem] shrink-0 grow-0 basis-full bg-cover bg-center bg-no-repeat lg:h-[30rem] xl:h-[40rem]`}
               style={{ backgroundImage: `url('${slide}')` }}
             />
           ))}
         </div>
       </div>
-      <div className="flex items-center gap-4 py-8 justify-center">
+      <div className="flex items-center justify-center gap-4 py-8">
         {scrollSnaps.map((_, index) => (
           <DotButton
             key={index}
             onClick={() => onDotButtonClick(index)}
-            className={`w-2 h-2 lg:h-3 lg:w-3 xl:h-4 xl:w-4 transform rotate-45 rounded-sm
-            ${index === selectedIndex ? " bg-[#F5CEA4]" : "bg-[#8B7257]"}`}
+            className={`h-2 w-2 rotate-45 transform rounded-sm lg:h-3 lg:w-3 xl:h-4 xl:w-4 ${index === selectedIndex ? "bg-[#F5CEA4]" : "bg-[#8B7257]"}`}
           />
         ))}
       </div>

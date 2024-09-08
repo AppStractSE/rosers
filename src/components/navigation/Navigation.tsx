@@ -7,13 +7,15 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { BiMenuAltLeft } from "react-icons/bi";
 import Drawer from "../drawer/Drawer";
+import Modal from "../modal/Modal";
 import { NavItem } from "./data";
 
 const NavigationLink = ({ href, label, isActive }: NavItem) => {
   const locale = useLocale();
-  const baseClassNames = "p-2 uppercase min-w-fit text-xs";
-  const isActiveClassNames = isActive ? "text-brass underline underline-offset-4" : "";
-  const linkClassNames = `${baseClassNames} ${isActiveClassNames} hidden md:block`;
+  const baseClassNames =
+    "p-2 min-w-fit text-base hover:underline hover:underline-offset-4 ";
+  // const isActiveClassNames = isActive ? "text-brass underline underline-offset-4" : "";
+  const linkClassNames = `${baseClassNames} hidden md:block`;
   return (
     <Link href={`/${locale}${href}`} className={linkClassNames}>
       {label}
@@ -21,11 +23,14 @@ const NavigationLink = ({ href, label, isActive }: NavItem) => {
   );
 };
 
-const Divider = () => <div className="hidden md:block h-6 bg-[#a286688e] min-w-[1.5px]" />;
+const Divider = () => (
+  <div className="hidden h-6 min-w-[1.5px] bg-[#a286688e] md:block" />
+);
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const pathname = usePathname();
 
   useEffect(() => {
@@ -46,18 +51,19 @@ const Navigation = () => {
 
   const translation = useTranslations();
   const navItems = translation.raw("NavItems");
+  const contactButton = translation.raw("ContactButton");
 
   return (
     <>
-      <header className="fixed z-10 top-0 w-full px-4 2xl:px-16 bg-charcoal-800 bg-opacity-90 backdrop-blur-sm lg:backdrop-blur-md">
-        <div className="mx-auto max-w-screen-xl flex items-center justify-between transition-all duration-200 ease-in-out">
+      <header className="fixed top-0 z-10 w-full border-b border-[#a286688e] bg-charcoal-800 bg-opacity-90 px-4 backdrop-blur-sm lg:backdrop-blur-md 2xl:px-16">
+        <div className="mx-auto flex max-w-screen-xl items-center justify-between transition-all duration-200 ease-in-out">
           <nav
-            className={futuraStd.className.concat(
-              " flex-row-reverse lg:flex-row order-1 lg:order-0 justify-start lg:justify-start flex gap-4 transition-all duration-500 ease-in-out items-center text-xs 2xl:text-base md:py-4 flex-1",
-            )}
+            className={"lg:order-0 order-1 flex flex-1 flex-row-reverse items-center justify-start gap-4 text-xs transition-all duration-500 ease-in-out md:py-4 lg:flex-row lg:justify-start 2xl:text-base"
+              .concat(" ")
+              .concat(futuraStd.className)}
           >
             <button
-              className="py-4 text-3xl md:text-2xl scale-x-[-1] lg:scale-x-[1]"
+              className="scale-x-[-1] py-4 text-3xl md:text-2xl lg:scale-x-[1]"
               onClick={() => setIsDrawerOpen(!isDrawerOpen)}
             >
               <BiMenuAltLeft />
@@ -72,23 +78,37 @@ const Navigation = () => {
               />
             ))}
           </nav>
-          <h2
-            className={garamond.className.concat(
-              " lg:order-1 flex flex-1 lg:justify-center text-2xl md:text-4xl uppercase tracking-widest",
-            )}
-          >
-            Rosers
-          </h2>
+          <div className="flex flex-1 lg:order-1 lg:justify-center">
+            <Link href="/" className="w-fit">
+              <h2
+                className={garamond.className
+                  .concat(" ")
+                  .concat("text-2xl uppercase tracking-widest md:text-4xl")}
+              >
+                Rosers
+              </h2>
+            </Link>
+          </div>
           <div
-            className={futuraStd.className.concat(
-              " hidden lg:flex order-2 flex-1 justify-end uppercase text-xs",
-            )}
+            className={futuraStd.className
+              .concat(" ")
+              .concat(
+                "order-2 hidden flex-1 justify-end text-xs lg:flex",
+              )}
           >
-            Svenska
+            <button
+              onClick={() => setIsModalOpen(true)}
+              className={"inline-block rounded-sm border border-gold p-2 px-4 text-center text-xs text-gold transition-all duration-200 ease-in-out hover:bg-gold hover:text-[#232323] sm:bg-transparent"
+                .concat(" ")
+                .concat(futuraStd.className)}
+            >
+              {contactButton.label}
+            </button>
           </div>
         </div>
       </header>
       <Drawer isOpen={isDrawerOpen} setIsOpen={setIsDrawerOpen} />
+      <Modal isOpen={isModalOpen} setIsOpen={setIsModalOpen} />
     </>
   );
 };

@@ -1,4 +1,68 @@
 {
+  "Breadcrumbs": {
+    "labels": [
+      {
+        "href": "/",
+        "label": "Hem"
+      },
+      {
+        "href": "/konceptet",
+        "label": "Konceptet"
+      },
+      {
+        "href": "/konceptet/rosers-kok",
+        "label": "Rosers Kök"
+      },
+      {
+        "href": "/konceptet/rosers-globala-evenemang",
+        "label": "Globala Evenemang"
+      },
+      {
+        "href": "/konceptet/rosers-konsultering",
+        "label": "Rosers Konsultering"
+      },
+      {
+        "href": "/om-oss",
+        "label": "Om Oss"
+      },
+      {
+        "href": "/om-oss/vad-vi-gor",
+        "label": "Vad Vi Gör"
+      },
+      {
+        "href": "/om-oss/vilka-vi-ar",
+        "label": "Vilka Vi Är"
+      },
+      {
+        "href": "/om-oss/var-historia",
+        "label": "Vår Historia"
+      },
+      {
+        "href": "/nyheter",
+        "label": "Nyheter"
+      },
+      {
+        "href": "/evenemang",
+        "label": "Evenemang"
+      },
+      {
+        "href": "/kontakt",
+        "label": "Kontakt"
+      },
+      {
+        "href": "/var-kreativitet",
+        "label": "Vår Kreativitet"
+      },
+      {
+        "href": "/var-kreativitet/vision",
+        "label": "Vision"
+      },
+      {
+        "href": "/var-kreativitet/inspiration",
+        "label": "Inspiration"
+      }
+    ]
+  },
   "Home": {
     "HeroSection": {
       "title": "Oförglömliga matupplevelser för alla tillfällen",
@@ -48,7 +112,7 @@
             "label": "Rosers Kök"
           },
           {
-            "href": "/konceptet/globala-evenemang",
+            "href": "/konceptet/rosers-globala-evenemang",
             "label": "Rosers Globala Evenemang"
           },
           {
@@ -127,6 +191,9 @@
       "label": "Evenemang"
     }
   ],
+  "ContactButton": {
+    "label": "Kontakt"
+  },
   "ContactForm": {
     "title": "Kom i kontakt med oss",
     "description": "Vi hör gärna från dig! Fyll i formuläret nedan så återkommer vi så snart som möjligt.",

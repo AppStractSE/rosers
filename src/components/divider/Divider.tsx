@@ -3,10 +3,10 @@ import Rosers from "@/util/Rosers";
 const Divider = () => {
   return (
     <section>
-      <div className="lg:my-6 xl:my-12 flex items-center gap-8 w-full">
-        <div className="w-full bg-[#a286688e] h-[1px]" />
+      <div className="flex w-full items-center gap-8 lg:my-6 xl:my-12">
+        <div className="h-[1px] w-full bg-[#a286688e]" />
         <Rosers className="h-32 w-32" />
-        <div className="w-full bg-[#a286688e] h-[1px]" />
+        <div className="h-[1px] w-full bg-[#a286688e]" />
       </div>
     </section>
   );

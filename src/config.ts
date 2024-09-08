@@ -13,9 +13,9 @@ export const pathnames: Pathnames<typeof locales> = {
     en: "/the-concept/rosers-kitchen",
     sv: "/konceptet/rosers-kok",
   },
-  "/the-concept/global-events": {
-    en: "/the-concept/global-events",
-    sv: "/konceptet/globala-evenemang",
+  "/the-concept/rosers-global-events": {
+    en: "/the-concept/rosers-global-events",
+    sv: "/konceptet/rosers-globala-evenemang",
   },
   "/the-concept/rosers-consulting": {
     en: "/the-concept/rosers-consulting",

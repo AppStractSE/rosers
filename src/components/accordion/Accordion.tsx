@@ -12,7 +12,13 @@ interface Props {
   uppercaseTitle?: boolean;
 }
 
-const Accordion = ({ title, content, titleColor, borderColor, uppercaseTitle }: Props) => {
+const Accordion = ({
+  title,
+  content,
+  titleColor,
+  borderColor,
+  uppercaseTitle,
+}: Props) => {
   const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname();
 
@@ -22,32 +28,37 @@ const Accordion = ({ title, content, titleColor, borderColor, uppercaseTitle }: 
 
   return (
     <div
-      className={"overflow-hidden transition-all duration-300 ease-in-out cursor-pointer py-6 border-b ".concat(
-        borderColor ? borderColor : "border-[#8B7257]",
-      )}
+      className={"cursor-pointer overflow-hidden border-b py-6 transition-all duration-300 ease-in-out"
+        .concat(" ")
+        .concat(borderColor ? borderColor : "border-[#8B7257]")}
       onClick={() => setIsOpen(!isOpen)}
     >
       <div className="flex items-center justify-between">
         <h6
-          className={"tracking-wide text-base font-bold "
+          className={"text-base font-bold tracking-wide"
+            .concat(" ")
             .concat(futuraStd.className)
-            .concat(uppercaseTitle ? " uppercase " : "")
+            .concat(" ")
+            .concat(uppercaseTitle ? "uppercase" : "")
+            .concat(" ")
             .concat(titleColor ? titleColor : "text-[#8B7257]")}
         >
           {title}
         </h6>
         <div
-          className={"transform transition-transform duration-300 "
+          className={"transform transition-transform duration-300"
+            .concat(" ")
             .concat(titleColor ? titleColor : "text-[#8B7257]")
-            .concat(isOpen ? " rotate-180" : "")}
+            .concat(" ")
+            .concat(isOpen ? "rotate-180" : "")}
         >
           <BsChevronDown />
         </div>
       </div>
       <div
-        className={"overflow-hidden duration-300 ease-in-out ".concat(
-          isOpen ? "max-h-[1000px] mt-4" : " max-h-0",
-        )}
+        className={"overflow-hidden duration-300 ease-in-out"
+          .concat(" ")
+          .concat(isOpen ? "mt-4 max-h-[1000px]" : "max-h-0")}
       >
         {content}
       </div>

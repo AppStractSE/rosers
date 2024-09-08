@@ -5,8 +5,13 @@ import ContactSection from "@/components/sections/ContactSection";
 import HeroSection from "@/components/sections/HeroSection";
 import { unstable_setRequestLocale } from "next-intl/server";
 
-export default function Index({ params: { locale } }: { params: { locale: string } }) {
+export default function Index({
+  params: { locale },
+}: {
+  params: { locale: string };
+}) {
   unstable_setRequestLocale(locale);
+
   return (
     <>
       <main>

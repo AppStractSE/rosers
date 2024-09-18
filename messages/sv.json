@@ -195,6 +195,7 @@
     "label": "Kontakt"
   },
   "ContactForm": {
+    "close": "Stäng",
     "title": "Kom i kontakt med oss",
     "description": "Vi hör gärna från dig! Fyll i formuläret nedan så återkommer vi så snart som möjligt.",
     "placeholders": {
@@ -228,6 +229,15 @@
     },
     "buttons": {
       "submit": "Skicka"
+    },
+    "messageSent": {
+      "title": "Meddelandet har skickats!",
+      "description": "Tack för ditt meddelande, {name}.\nVi kommer att kontakta Er inom kort."
+    },
+    "toasts": {
+      "success": "Meddelande skickat!",
+      "error": "Något gick fel med att skicka meddelandet. Försök igen.",
+      "loading": "Skickar meddelande..."
     }
   },
   "WebDesignBy": "Webbdesign av Appstract"

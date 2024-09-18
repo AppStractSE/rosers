@@ -264,7 +264,7 @@ const Drawer = ({ isOpen, setIsOpen }: Props) => {
   return (
     <aside>
       <div
-        className={"fixed inset-0 z-[9999999] h-full w-full transform overflow-hidden backdrop-blur-sm transition-all duration-500 ease-in-out"
+        className={"fixed inset-0 z-10 h-full w-full transform overflow-hidden backdrop-blur-sm transition-all duration-500 ease-in-out"
           .concat(" ")
           .concat(
             isOpen ? "visible opacity-100" : "invisible opacity-0 delay-200",

@@ -194,6 +194,7 @@
     "label": "Contact"
   },
   "ContactForm": {
+    "close": "Close",
     "title": "Get in touch with us",
     "description": "We would love to hear from you! Please fill out the form below and we will get back to you as soon as possible.",
     "placeholders": {
@@ -227,6 +228,15 @@
     },
     "buttons": {
       "submit": "Submit"
+    },
+    "messageSent": {
+      "title": "Message has been sent!",
+      "description": "Thank you for your message, {name}.\nWe will get back to you as soon as possible."
+    },
+    "toasts": {
+      "success": "Message sent!",
+      "error": "Something went wrong while sending the message. Please try again.",
+      "loading": "Sending message..."
     }
   },
   "WebDesignBy": "Web design by Appstract"

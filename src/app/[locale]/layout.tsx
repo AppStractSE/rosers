@@ -1,6 +1,7 @@
 import Footer from "@/components/footer/Footer";
 import Navigation from "@/components/navigation/Navigation";
 import { Metadata } from "next";
+import { Toaster } from "react-hot-toast";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, unstable_setRequestLocale } from "next-intl/server";
 import "../globals.scss";
@@ -30,6 +31,7 @@ export default async function LocaleLayout({
     <html lang={locale}>
       <body>
         <NextIntlClientProvider messages={messages}>
+          <Toaster />
           <Navigation />
           {children}
           <Footer />

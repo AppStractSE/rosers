@@ -1,9 +1,11 @@
 "use client";
 
-import { futuraStd } from "@/util/fonts";
+import { futuraStd, garamond } from "@/util/fonts";
 import { useTranslations } from "next-intl";
 import { encode } from "querystring";
+import { useState } from "react";
 import { useForm } from "react-hook-form";
+import toast from "react-hot-toast";
 import Spinner from "../loaders/Spinner";
 
 interface IContactForm {
@@ -15,6 +17,8 @@ interface IContactForm {
 }
 
 const ContactForm = () => {
+  const [formSubmitted, setFormSubmitted] = useState(false);
+  const [name, setName] = useState("");
   const translation = useTranslations("ContactForm");
   const {
     register,
@@ -41,14 +45,38 @@ const ContactForm = () => {
       message: data.Message,
     };
 
-    fetch("/forms.html", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode(formData),
-    })
-      .then(() => alert("Thank you for your submission"))
-      .catch((error) => alert(error))
-      .then(() => reset());
+    toast
+      .promise(
+        fetch("/forms.html", {
+          method: "POST",
+          headers: { "Content-Type": "application/x-www-form-urlencoded" },
+          body: encode(formData),
+        }),
+        {
+          loading: translation("toasts.loading"),
+          success: translation("toasts.success"),
+          error: translation("toasts.error"),
+        },
+        {
+          style: {
+            minWidth: "250px",
+          },
+          position: "bottom-center",
+          className: "!bg-charcoal-600 !text-gold",
+          success: {
+            duration: 8000,
+          },
+        },
+      )
+      .catch((error) => {
+        console.log(error.message);
+      })
+      .then(() => {
+        // Remove last name from name array
+        setName(formData.name.split(" ").slice(0, -1).join(" "));
+        reset();
+        setFormSubmitted(true);
+      });
   };
 
   const baseClasses =
@@ -62,121 +90,29 @@ const ContactForm = () => {
   const errorTextVisibleClasses = " mt-2 mb-6 opacity-100 max-h-full ";
 
   return (
-    <form
-      onSubmit={handleSubmit(onSubmit)}
-      className={futuraStd.className.concat(" ").concat("mx-auto")}
-      name="contact-form"
-    >
-      <input type="hidden" name="required-field" value="contact-form" />
-      <div className="mb-3 w-full">
-        <input
-          className={baseClasses
-            .concat(" ")
-            .concat(errors["FullName"] ? errorClass : "")}
-          type="text"
-          placeholder={translation("placeholders.FullName")}
-          {...register("FullName", {
-            required: translation("validationMessages.FullName.required"),
-            minLength: {
-              value: 2,
-              message: translation("validationMessages.FullName.minLength"),
-            },
-            maxLength: {
-              value: 50,
-              message: translation("validationMessages.FullName.maxLength"),
-            },
-          })}
-        />
-        <p
-          role="alert"
-          className={errorTextBaseClass
-            .concat(" ")
-            .concat(
-              errors["FullName"]
-                ? errorTextVisibleClasses
-                : errorTextHiddenClasses,
-            )}
-        >
-          {errors.FullName?.message}
-        </p>
-      </div>
-      <div className="mb-3 w-full">
-        <input
-          className={baseClasses
-            .concat(" ")
-            .concat(errors["Email"] ? errorClass : "")}
-          type="email"
-          placeholder={translation("placeholders.Email")}
-          {...register("Email", {
-            required: translation("validationMessages.Email.required"),
-            pattern: {
-              value:
-                /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,
-              message: translation("validationMessages.Email.pattern"),
-            },
-          })}
-        />
-        <p
-          role="alert"
-          className={errorTextBaseClass
-            .concat(" ")
-            .concat(
-              errors["Email"]
-                ? errorTextVisibleClasses
-                : errorTextHiddenClasses,
-            )}
-        >
-          {errors.Email?.message}
-        </p>
-      </div>
-      <div className="flex gap-3">
+    <div className="relative">
+      <form
+        onSubmit={handleSubmit(onSubmit)}
+        className={futuraStd.className.concat(" ").concat("mx-auto")}
+        name="contact-form"
+      >
+        <input type="hidden" name="required-field" value="contact-form" />
         <div className="mb-3 w-full">
-          <input
-            type="text"
-            className={baseClasses}
-            placeholder={translation("placeholders.BusinessName")}
-            {...register("BusinessName", {})}
-          />
-          <p
-            role="alert"
-            className={errorTextBaseClass
-              .concat(" ")
-              .concat(
-                errors["BusinessName"]
-                  ? errorTextVisibleClasses
-                  : errorTextHiddenClasses,
-              )}
-          >
-            {errors.BusinessName?.message}
-          </p>
-        </div>
-        <div className="w-full">
           <input
             className={baseClasses
               .concat(" ")
-              .concat(errors["PhoneNumber"] ? errorClass : "")}
-            type="tel"
-            placeholder={translation("placeholders.PhoneNumber")}
-            {...register("PhoneNumber", {
-              onChange: (e) => {
-                e.target.value = e.target.value.replace(/[^0-9]/g, "");
-              },
-              required: translation("validationMessages.PhoneNumber.required"),
-              pattern: {
-                value: /^[0-9]+$/,
-                message: translation("validationMessages.PhoneNumber.pattern"),
-              },
+              .concat(errors["FullName"] ? errorClass : "")}
+            type="text"
+            placeholder={translation("placeholders.FullName")}
+            {...register("FullName", {
+              required: translation("validationMessages.FullName.required"),
               minLength: {
-                value: 10,
-                message: translation(
-                  "validationMessages.PhoneNumber.minLength",
-                ),
+                value: 2,
+                message: translation("validationMessages.FullName.minLength"),
               },
               maxLength: {
-                value: 15,
-                message: translation(
-                  "validationMessages.PhoneNumber.maxLength",
-                ),
+                value: 50,
+                message: translation("validationMessages.FullName.maxLength"),
               },
             })}
           />
@@ -185,67 +121,204 @@ const ContactForm = () => {
             className={errorTextBaseClass
               .concat(" ")
               .concat(
-                errors["PhoneNumber"]
+                errors["FullName"]
                   ? errorTextVisibleClasses
                   : errorTextHiddenClasses,
               )}
           >
-            {errors.PhoneNumber?.message}
+            {errors.FullName?.message}
           </p>
         </div>
-      </div>
-      <div className="mb-3">
-        <textarea
-          maxLength={500}
-          placeholder={translation("placeholders.Message")}
-          className={"h-32 resize-none focus-visible:h-64"
-            .concat(" ")
-            .concat(baseClasses)
-            .concat(" ")
-            .concat(errors["Message"] ? errorClass : "")}
-          {...register("Message", {
-            required: translation("validationMessages.Message.required"),
-            minLength: {
-              value: 10,
-              message: translation("validationMessages.Message.minLength"),
-            },
-            maxLength: {
-              value: 500,
-              message: translation("validationMessages.Message.maxLength"),
-            },
-          })}
-        ></textarea>
-        <p
-          role="alert"
-          className={errorTextBaseClass
-            .concat(" ")
-            .concat(
-              errors["Message"]
-                ? errorTextVisibleClasses
-                : errorTextHiddenClasses,
-            )}
-        >
-          {errors.Message?.message}
-        </p>
-      </div>
-      <button
-        // disabled={!isDirty || !isValid}
-        type="submit"
-        className="flex w-full items-center justify-center rounded-sm bg-[#8B7257] p-4 text-center text-base leading-normal tracking-[0.15em] text-[#303030] transition-all duration-200 ease-in-out hover:bg-gold"
-      >
-        {isSubmitting ? (
-          <Spinner
-            primaryColor="#3f3f3f"
-            secondaryColor="#f5cea4"
-            strokeWidth={3}
-            height={24}
-            width={24}
+        <div className="mb-3 w-full">
+          <input
+            className={baseClasses
+              .concat(" ")
+              .concat(errors["Email"] ? errorClass : "")}
+            type="email"
+            placeholder={translation("placeholders.Email")}
+            {...register("Email", {
+              required: translation("validationMessages.Email.required"),
+              pattern: {
+                value:
+                  /^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,
+                message: translation("validationMessages.Email.pattern"),
+              },
+            })}
           />
-        ) : (
-          translation("buttons.submit")
-        )}
-      </button>
-    </form>
+          <p
+            role="alert"
+            className={errorTextBaseClass
+              .concat(" ")
+              .concat(
+                errors["Email"]
+                  ? errorTextVisibleClasses
+                  : errorTextHiddenClasses,
+              )}
+          >
+            {errors.Email?.message}
+          </p>
+        </div>
+        <div className="flex gap-3">
+          <div className="mb-3 w-full">
+            <input
+              type="text"
+              className={baseClasses}
+              placeholder={translation("placeholders.BusinessName")}
+              {...register("BusinessName", {})}
+            />
+            <p
+              role="alert"
+              className={errorTextBaseClass
+                .concat(" ")
+                .concat(
+                  errors["BusinessName"]
+                    ? errorTextVisibleClasses
+                    : errorTextHiddenClasses,
+                )}
+            >
+              {errors.BusinessName?.message}
+            </p>
+          </div>
+          <div className="w-full">
+            <input
+              className={baseClasses
+                .concat(" ")
+                .concat(errors["PhoneNumber"] ? errorClass : "")}
+              type="tel"
+              placeholder={translation("placeholders.PhoneNumber")}
+              {...register("PhoneNumber", {
+                onChange: (e) => {
+                  e.target.value = e.target.value.replace(/[^0-9]/g, "");
+                },
+                required: translation(
+                  "validationMessages.PhoneNumber.required",
+                ),
+                pattern: {
+                  value: /^[0-9]+$/,
+                  message: translation(
+                    "validationMessages.PhoneNumber.pattern",
+                  ),
+                },
+                minLength: {
+                  value: 10,
+                  message: translation(
+                    "validationMessages.PhoneNumber.minLength",
+                  ),
+                },
+                maxLength: {
+                  value: 15,
+                  message: translation(
+                    "validationMessages.PhoneNumber.maxLength",
+                  ),
+                },
+              })}
+            />
+            <p
+              role="alert"
+              className={errorTextBaseClass
+                .concat(" ")
+                .concat(
+                  errors["PhoneNumber"]
+                    ? errorTextVisibleClasses
+                    : errorTextHiddenClasses,
+                )}
+            >
+              {errors.PhoneNumber?.message}
+            </p>
+          </div>
+        </div>
+        <div className="mb-3">
+          <textarea
+            maxLength={500}
+            placeholder={translation("placeholders.Message")}
+            className={"h-32 resize-none focus-visible:h-64"
+              .concat(" ")
+              .concat(baseClasses)
+              .concat(" ")
+              .concat(errors["Message"] ? errorClass : "")}
+            {...register("Message", {
+              required: translation("validationMessages.Message.required"),
+              minLength: {
+                value: 10,
+                message: translation("validationMessages.Message.minLength"),
+              },
+              maxLength: {
+                value: 500,
+                message: translation("validationMessages.Message.maxLength"),
+              },
+            })}
+          ></textarea>
+          <p
+            role="alert"
+            className={errorTextBaseClass
+              .concat(" ")
+              .concat(
+                errors["Message"]
+                  ? errorTextVisibleClasses
+                  : errorTextHiddenClasses,
+              )}
+          >
+            {errors.Message?.message}
+          </p>
+        </div>
+        <button
+          disabled={isSubmitting || formSubmitted}
+          type="submit"
+          className="flex w-full items-center justify-center rounded-sm bg-[#8B7257] p-4 text-center text-base leading-normal tracking-[0.15em] text-[#303030] transition-all duration-200 ease-in-out hover:bg-gold"
+        >
+          {isSubmitting ? (
+            <Spinner
+              primaryColor="#3f3f3f"
+              secondaryColor="#f5cea4"
+              strokeWidth={3}
+              height={24}
+              width={24}
+            />
+          ) : (
+            translation("buttons.submit")
+          )}
+        </button>
+      </form>
+
+      <div
+        className={"absolute inset-0 left-0 top-0 -m-2 overflow-hidden rounded border-[#a286688e] bg-charcoal-800/50 backdrop-blur-sm transition-all delay-75 duration-500 ease-in-out lg:backdrop-blur-sm"
+          .concat(" ")
+          .concat(
+            formSubmitted ? "visible opacity-100" : "invisible opacity-0",
+          )}
+      >
+        <div
+          className={"flex h-full transform flex-col items-center justify-center space-y-4 transition-all duration-500 ease-in-out"
+            .concat(" ")
+            .concat(formSubmitted ? "translate-y-0" : "translate-y-[125%]")}
+        >
+          <h6
+            className={futuraStd.className
+              .concat(" ")
+              .concat("text-3xl lg:text-center lg:text-2xl")}
+          >
+            {translation("messageSent.title")}
+          </h6>
+          <p
+            className={garamond.className
+              .concat(" ")
+              .concat(
+                "text-balance whitespace-pre-line text-xl font-thin lg:text-center lg:text-xl",
+              )}
+          >
+            {translation("messageSent.description", { name: name })}
+          </p>
+          <button
+            onClick={() => setFormSubmitted(false)}
+            className={"inline-block rounded-sm border border-gold p-2 px-4 text-center text-xs text-gold transition-all duration-200 ease-in-out hover:bg-gold hover:text-[#232323] sm:bg-transparent"
+              .concat(" ")
+              .concat(futuraStd.className)}
+          >
+            {translation("close")}
+          </button>
+        </div>
+      </div>
+    </div>
   );
 };
 

@@ -1,4 +1,5 @@
 import { garamond } from "@/util/fonts";
+import { useTranslations } from "next-intl";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { TfiClose } from "react-icons/tfi";
@@ -11,6 +12,7 @@ interface Props {
 
 const Modal = ({ isOpen, setIsOpen }: Props) => {
   const [mounted, setMounted] = useState<boolean>(false);
+  const translation = useTranslations("ContactForm");
 
   useEffect(() => {
     setMounted(true);
@@ -28,7 +30,7 @@ const Modal = ({ isOpen, setIsOpen }: Props) => {
   };
   return (
     <div
-      className={"fixed inset-0 z-[9999999] h-full w-full transform overflow-hidden transition-all delay-75 duration-500 ease-in-out lg:backdrop-blur-sm"
+      className={"fixed inset-0 z-10 h-full w-full transform overflow-hidden transition-all delay-75 duration-500 ease-in-out lg:backdrop-blur-sm"
         .concat(" ")
         .concat(isOpen ? "visible opacity-100" : "invisible opacity-0")}
     >
@@ -58,12 +60,9 @@ const Modal = ({ isOpen, setIsOpen }: Props) => {
           </button>
         </div>
         <div className="flex flex-1 flex-col justify-center">
-          <h3 className="text-2xl font-bold">Contact us</h3>
-          <p className="mt-2">
-            We would love to hear from you! Please fill out the form below and
-            we will get back to you as soon as possible.
-          </p>
-          <div className="mt-4 pb-4 md:pb-0">
+          <h3 className="text-2xl font-bold">{translation("title")}</h3>
+          <p className="mt-2">{translation("description")}</p>
+          <div className="mt-12 pb-4 md:pb-0">
             <ContactForm />
           </div>
         </div>

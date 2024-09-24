@@ -1,13 +1,16 @@
 import { futuraStd, garamond } from "@/util/fonts";
-import { useTranslations } from "next-intl";
-import { IoChevronDownSharp } from "react-icons/io5";
 
-const MobileHeroSection = () => {
-  const translation = useTranslations("Home");
+interface Props {
+  title: string;
+  description: string;
+  image: string;
+}
+
+const MobileHeroSection = ({ title, description, image }: Props) => {
   return (
     <section className="block overflow-hidden lg:hidden">
       <img
-        src="/hero-frontpage.png"
+        src={image}
         className="h-full w-full border-b border-[#a286688e] object-cover"
       />
       <div className="mx-auto mt-6 max-w-screen-xl px-4 2xl:px-0">
@@ -17,25 +20,15 @@ const MobileHeroSection = () => {
               .concat(" ")
               .concat(futuraStd.className)}
           >
-            {translation("HeroSection.title")}
+            {title}
           </h1>
           <p
             className={"mx-auto text-xl md:text-2xl"
               .concat(" ")
               .concat(garamond.className)}
           >
-            {translation("HeroSection.description")}
+            {description}
           </p>
-        </div>
-        <div className="group mb-12 mt-12 grid cursor-pointer place-items-center gap-4 duration-200 ease-in-out hover:scale-110">
-          <p
-            className={futuraStd.className
-              .concat(" ")
-              .concat("text-xxs uppercase tracking-[0.2em]")}
-          >
-            {translation("HeroSection.buttonText")}
-          </p>
-          <IoChevronDownSharp className="animate-pulse text-2xl transition-all duration-200 ease-in md:text-4xl" />
         </div>
       </div>
     </section>

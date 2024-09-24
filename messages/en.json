@@ -239,5 +239,97 @@
       "loading": "Sending message..."
     }
   },
-  "WebDesignBy": "Web design by Appstract"
+  "WebDesignBy": "Web design by Appstract",
+  "ReadMore": "Read more",
+  "TheConcept": {
+    "title": "The Concept",
+    "subtitle": "Exclusive culinary experiences and events for discerning clients who value unparalleled quality",
+    "what_is_the_concept_title": "What is the concept?",
+    "what_is_the_concept_subtitle": "",
+    "what_is_the_concept_description": "Our top chefs create personalized menus tailored to your tastes. Each event is hosted in handpicked venues that exude elegance and uniqueness. Every detail is meticulously planned to reflect your style and preferences. Indulge in unparalleled dining moments crafted especially for discerning clients like you.",
+    "description": "Our top chefs create personalized menus tailored to your tastes. Each event is hosted in handpicked venues that exude elegance and uniqueness. Every detail is meticulously planned to reflect your style and preferences. Indulge in unparalleled dining moments crafted especially for discerning clients like you."
+  },
+  "OurHistory": {
+    "title": "Our History",
+    "subtitle": "The journey that shaped us",
+    "description": "Since our inception, we have been committed to delivering excellence in everything we do. Our story is one of passion, dedication, and growth."
+  },
+  "WhatWeDo": {
+    "title": "What We Do",
+    "subtitle": "Innovative solutions and services",
+    "description": "We specialize in offering unique, tailor-made solutions that meet the needs of our diverse clientele. Our goal is to ensure every experience exceeds expectations."
+  },
+  "WhoWeAre": {
+    "title": "Who We Are",
+    "subtitle": "Meet the team behind the vision",
+    "description": "Our team is comprised of passionate professionals who are experts in their fields. Together, we work to bring your vision to life."
+  },
+  "Contact": {
+    "title": "Contact Us",
+    "subtitle": "Get in touch with us",
+    "description": "We’d love to hear from you. Reach out to us with any questions, inquiries, or feedback."
+  },
+  "Events": {
+    "title": "Events",
+    "subtitle": "Discover our upcoming events",
+    "description": "Join us for exclusive events designed to inspire and engage. Stay tuned for updates on our latest happenings."
+  },
+  "News": {
+    "title": "Latest News",
+    "subtitle": "Stay informed with the latest updates",
+    "description": "Catch up on the latest news and updates from our team. We share insights, stories, and behind-the-scenes looks at what’s going on."
+  },
+  "Inspiration": {
+    "title": "Inspiration",
+    "subtitle": "Creative sparks that drive us",
+    "description": "Our creativity stems from a constant search for inspiration in everything we do. We push boundaries to deliver fresh and innovative experiences."
+  },
+  "Vision": {
+    "title": "Our Vision",
+    "subtitle": "Where we see ourselves in the future",
+    "description": "We are driven by a clear vision of success. Our future is one of innovation, growth, and endless possibilities."
+  },
+  "RosersConsulting": {
+    "title": "Rosers Consulting",
+    "subtitle": "Expert guidance and support",
+    "description": "We offer consulting services tailored to your business needs, helping you navigate complex challenges and seize new opportunities."
+  },
+  "RosersGlobalEvents": {
+    "title": "Rosers Global Events",
+    "subtitle": "Worldwide events tailored for you",
+    "description": "We host events across the globe, ensuring each one is a reflection of excellence and tailored to meet the unique expectations of our clients."
+  },
+  "RosersKitchen": {
+    "title": "Rosers Kitchen",
+    "subtitle": "Culinary experiences like no other",
+    "description": "Our kitchen is where culinary magic happens. We craft meals that delight the senses, using only the finest ingredients for discerning palates."
+  },
+  "About": {
+    "title": "About Us",
+    "subtitle": "Learn more about who we are",
+    "description": "We are a passionate team dedicated to offering high-quality experiences tailored to your needs. Our journey is rooted in excellence and driven by innovation."
+  },
+
+  "Concepts": {
+    "labels": [
+      {
+        "title": "Rosers Kitchen",
+        "subtitle": "The Cloud Kitchen",
+        "image": "/rosers-kitchen.png",
+        "link": "/the-concept/rosers-kitchen"
+      },
+      {
+        "title": "Rosers Global Events",
+        "subtitle": "Globally Renowned",
+        "image": "/rosers-global-events.png",
+        "link": "/the-concept/rosers-global-events"
+      },
+      {
+        "title": "Rosers Consulting",
+        "subtitle": "The Culinary Pioneers",
+        "image": "/rosers-consulting.png",
+        "link": "/the-concept/rosers-consulting"
+      }
+    ]
+  }
 }

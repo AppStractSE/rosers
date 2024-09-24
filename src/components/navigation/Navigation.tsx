@@ -14,10 +14,13 @@ const NavigationLink = ({ href, label, isActive }: NavItem) => {
   const locale = useLocale();
   const baseClassNames =
     "p-2 min-w-fit text-base hover:underline hover:underline-offset-4 ";
-  // const isActiveClassNames = isActive ? "text-brass underline underline-offset-4" : "";
+  const isActiveClassNames = isActive ? "underline underline-offset-4" : "";
   const linkClassNames = `${baseClassNames} hidden md:block`;
   return (
-    <Link href={`/${locale}${href}`} className={linkClassNames}>
+    <Link
+      href={`/${locale}${href}`}
+      className={linkClassNames.concat(" ").concat(isActiveClassNames)}
+    >
       {label}
     </Link>
   );

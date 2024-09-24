@@ -98,7 +98,7 @@ const EmblaCarousel = () => {
               <div className="embla__slide" key={index}>
                 <div className="mx-auto grid max-w-screen-xl grid-cols-1 grid-rows-2 items-stretch gap-4 md:grid-cols-2 md:grid-rows-1 md:gap-12">
                   <img
-                    className="embla__slide__img row-span-1 md:aspect-[4/3.5]"
+                    className="embla__slide__img row-span-1 md:aspect-[4/3.5]" 
                     src={slide.image}
                     alt="Your alt text"
                   />

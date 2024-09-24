@@ -31,9 +31,8 @@ const Footer = () => {
     };
   }, []);
   return (
-    <footer className="bg-charcoal-700">
-      <div className="mx-auto max-w-screen-xl px-4 py-8 pb-8 2xl:px-16 2xl:pt-12">
-        <Divider />
+    <footer className="bg-charcoal-800">
+      <div className="mx-auto max-w-screen-xl px-4 pb-8 pt-0 2xl:px-16">
         <div className="lg:mb-8">
           <h2
             className={"text-3xl uppercase tracking-widest md:text-5xl"
@@ -145,19 +144,26 @@ const Footer = () => {
             </div>
           )}
         </>
-        <Divider />
-        <div className="mt-8 text-right">
-          <Link
+        <div className="mt-24 flex flex-wrap items-center justify-between gap-4">
+          <div
+            className={futuraStd.className
+              .concat(" ")
+              .concat("text-xxs font-normal uppercase text-brass")}
+          >
+            All rights reserved © {new Date().getFullYear()}
+          </div>
+          <a
             target="_blank"
+            rel="noopener noreferrer"
             href="https://www.appstract.se"
             className={futuraStd.className
               .concat(" ")
               .concat(
-                "text-xs font-normal uppercase text-brass hover:underline hover:underline-offset-4",
+                "text-xxs font-normal uppercase text-brass hover:underline hover:underline-offset-4",
               )}
           >
             {translation("WebDesignBy")}
-          </Link>
+          </a>
         </div>
       </div>
     </footer>

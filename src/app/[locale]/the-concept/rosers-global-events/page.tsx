@@ -1,19 +1,48 @@
-import Breadcrumbs from "@/components/breadcrumbs/Breadcrumbs";
+import InternalButton from "@/components/buttons/InternalButton";
+import ConceptCards from "@/components/cards/ConceptCards";
+import Divider from "@/components/divider/Divider";
+import ContactSection from "@/components/sections/ContactSection";
+import HeroSubPageSection from "@/components/sections/HeroSubPageSection";
+import InfoSection from "@/components/sections/InfoSection";
 import { Metadata } from "next";
+import { useTranslations } from "next-intl";
 import { unstable_setRequestLocale } from "next-intl/server";
 
 export const metadata: Metadata = {
   title: "Rosers Global Events",
 };
 
-const page = ({ params: { locale } }: { params: { locale: string } }) => {
+export default function Index({
+  params: { locale },
+}: {
+  params: { locale: string };
+}) {
   unstable_setRequestLocale(locale);
+  const translation = useTranslations();
   return (
-    <div className="mt-48">
-      {/* The Concept/Rosers Global Events */}
-      <Breadcrumbs />
-    </div>
+    <>
+      <main>
+        <HeroSubPageSection
+          title={translation("RosersGlobalEvents.title")}
+          subtitle={translation("RosersGlobalEvents.subtitle")}
+          description={translation("RosersGlobalEvents.description")}
+          cta={
+            <InternalButton
+              title={translation("ContactForm.title")}
+              href="contact"
+            />
+          }
+        />
+        <InfoSection
+          title={translation("TheConcept.what_is_the_concept_title")}
+          subtitle={translation("TheConcept.subtitle")}
+          description={translation("TheConcept.description")}
+        />
+        <ConceptCards />
+        <Divider />
+        <ContactSection />
+        <Divider />
+      </main>
+    </>
   );
-};
-
-export default page;
+}

@@ -19,7 +19,7 @@ const InfoSection = ({ title, subtitle, description, cta }: Props) => {
             {title}
           </p>
           <h3
-            className={"text-balance mb-12 text-center text-4xl leading-tight md:text-5xl"
+            className={"text-balance mb-8 md:mb-12 text-center text-4xl leading-tight md:text-5xl"
               .concat(" ")
               .concat(futuraStd.className)}
           >

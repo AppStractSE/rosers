@@ -53,8 +53,16 @@ const subLinks: SubDrawerLink[] = [
         label: "Instagram",
         externalLink: true,
       },
-      { href: "/facebook", label: "Facebook", externalLink: true },
-      { href: "/linkedin", label: "LinkedIn", externalLink: true },
+      {
+        href: "https://www.facebook.com/pages/Rosers%20Salonger/184958138186145/",
+        label: "Facebook",
+        externalLink: true,
+      },
+      {
+        href: "https://linkedin.com/company/rosers",
+        label: "LinkedIn",
+        externalLink: true,
+      },
     ],
   },
 ];

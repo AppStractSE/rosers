@@ -1,41 +1,53 @@
+"use client";
 import { futuraStd, garamond } from "@/util/fonts";
-import { useTranslations } from "next-intl";
 
-const HeroSubPageSection = () => {
-  const translation = useTranslations("ContactForm");
+interface Props {
+  title: string;
+  subtitle: string;
+  description: string;
+  cta?: React.ReactNode;
+  image?: string;
+}
+
+const HeroSubPageSection = ({
+  title,
+  subtitle,
+  description,
+  cta,
+  image,
+}: Props) => {
   return (
-    <section className="min-h-[480px] border-b border-b-brass bg-[url('/hero-image.webp')] bg-cover bg-center bg-no-repeat">
+    <section
+      className="border-b border-b-brass bg-cover bg-center bg-no-repeat"
+      style={{ backgroundImage: `url('${image ?? "/hero-image.webp"}')` }}
+    >
       <div className="fixed inset-0 bg-charcoal-800 bg-opacity-60"></div>
-      <div className="relative mx-auto max-w-screen-xl">
-        <div className="h-32 w-full"></div>
-        <div className="mx-auto my-12 flex flex-col items-center justify-center py-12">
-          <h1
-            className={futuraStd.className
-              .concat(" ")
-              .concat(
-                "text-balance mb-8 text-center text-4xl leading-tight md:text-6xl",
-              )}
-          >
-            The Rosers Concept
-          </h1>
+      <div className="h-12 w-full md:h-24"></div>
+      <div className="mx-auto max-w-screen-md px-4 py-12 lg:py-24 xl:py-48">
+        <div className="relative mx-auto flex flex-col items-center justify-center">
           <p
-            className={"text-balance mb-16 max-w-lg whitespace-pre-line text-center text-2xl font-thin tracking-wide"
-              .concat(" ")
-              .concat(garamond.className)}
-          >
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis
-            tincidunt, felis nec facilisis tincidunt, nulla sapien ultricies
-            nunc, nec ullamcorper nunc odio nec quam
-          </p>
-          <button
-            className={"inline-block w-fit rounded-sm border border-gold bg-charcoal-900 p-2 px-4 text-center text-lg transition-all duration-200 ease-in-out hover:bg-gold hover:text-[#232323]"
+            className={"mb-4 text-sm uppercase text-brass"
               .concat(" ")
               .concat(futuraStd.className)}
           >
-            {translation("title")}
-          </button>
+            {title}
+          </p>
+          <h3
+            className={"text-balance text-3xl mb-12 text-center leading-tight md:text-4xl lg:text-5xl"
+              .concat(" ")
+              .concat(futuraStd.className)}
+          >
+            {subtitle}
+          </h3>
+          <p
+            className={"text-balance mb-12 whitespace-pre-line text-center text-xl font-thin tracking-wide md:text-2xl"
+              .concat(" ")
+              .concat(garamond.className)}
+          >
+            {description}
+          </p>
+          {cta}
         </div>
-        <div className="h-32 w-full"></div>
       </div>
     </section>
   );

@@ -5,8 +5,7 @@ import { EmblaCarouselType, EmblaOptionsType } from "embla-carousel";
 // import Fade from "embla-carousel-fade";
 import { futuraStd, garamond } from "@/util/fonts";
 import useEmblaCarousel from "embla-carousel-react";
-import { useLocale } from "next-intl";
-import Link from "next/link";
+import { useLocale, useTranslations } from "next-intl";
 import { useCallback } from "react";
 import {
   NextButton,
@@ -14,8 +13,10 @@ import {
   usePrevNextButtons,
 } from "../embla/EmblaCarouselArrowButtons";
 import { DotButton, useDotButton } from "../embla/EmblaCarouselDotButton";
+import TextAndImageSection from "./TextAndImageSection";
 
 const EmblaCarousel = () => {
+  const translation = useTranslations();
   const OPTIONS: EmblaOptionsType = {
     loop: true,
     duration: 25,
@@ -28,8 +29,8 @@ const EmblaCarousel = () => {
       text: `There's an enchantment in forging new realms of possibility, fueled by decades of mastery and boundless creativity. As stewards of culinary excellence, we embrace the mantle of mentorship, nurturing the next generation with unwavering dedication.`,
       image: "/image001.png",
       button: {
-        text: "Read more",
-        link: "/about/who-we-are",
+        text: translation("ReadMore"),
+        link: translation("RosersKitchen.href"),
       },
     },
     {
@@ -39,19 +40,19 @@ const EmblaCarousel = () => {
       text: `There's an enchantment in forging new realms of possibility, fueled by decades of mastery and boundless creativity. As stewards of culinary excellence, we embrace the mantle of mentorship, nurturing the next generation with unwavering dedication.`,
       image: "/image002.png",
       button: {
-        text: "Read more",
-        link: "/about/who-we-are",
+        text: translation("ReadMore"),
+        link: translation("RosersGlobalEvents.href"),
       },
     },
     {
       rtl: false,
-      title: "Rosers Consulting",
+      title: translation("RosersConsulting.title"),
       subTitle: "The Culinary Pioneers",
       text: `There's an enchantment in forging new realms of possibility, fueled by decades of mastery and boundless creativity. As stewards of culinary excellence, we embrace the mantle of mentorship, nurturing the next generation with unwavering dedication.`,
       image: "/image002.png",
       button: {
-        text: "Read more",
-        link: "/about/who-we-are",
+        text: translation("ReadMore"),
+        link: translation("RosersConsulting.href"),
       },
     },
   ];
@@ -80,60 +81,32 @@ const EmblaCarousel = () => {
             .concat(" ")
             .concat(futuraStd.className)}
         >
-          The Rosers Concept
+          {translation("the_rosers_concept_title")}
         </h3>
         <p
           className={"text-xl font-thin tracking-wide"
             .concat(" ")
             .concat(garamond.className)}
         >
-          {`Join us as we transform dreams into reality with 'The Rosers Concept' and join a global
-          voyage of epicurean delight.`}
+          {translation("the_rosers_concept_description")}
         </p>
       </div>
       <div className="embla">
         <div className="embla__viewport" ref={emblaRef}>
           <div className="embla__container">
             {slides.map((slide, index) => (
-              <div className="embla__slide" key={index}>
-                <div className="mx-auto grid max-w-screen-xl grid-cols-1 grid-rows-2 items-stretch gap-4 md:grid-cols-2 md:grid-rows-1 md:gap-12">
-                  <img
-                    className="embla__slide__img row-span-1 md:aspect-[4/3.5]"
-                    src={slide.image}
-                    alt="Your alt text"
-                  />
-                  <div className="row-span-1 mx-auto flex h-full flex-col place-self-center md:justify-center">
-                    <h3
-                      className={"text-xs uppercase text-brass"
-                        .concat(" ")
-                        .concat(futuraStd.className)}
-                    >
-                      {slide.subTitle}
-                    </h3>
-                    <h2
-                      className={"mt-2 text-3xl md:text-4xl"
-                        .concat(" ")
-                        .concat(futuraStd.className)}
-                    >
-                      {slide.title}
-                    </h2>
-                    <p
-                      className={"mt-4 flex-1 whitespace-pre-line text-xl font-thin tracking-wide sm:flex-[.75] md:mt-8 md:flex-none"
-                        .concat(" ")
-                        .concat(garamond.className)}
-                    >
-                      {slide.text}
-                    </p>
-                    <Link
-                      href={`/${locale}${slide.button.link}`}
-                      className={"mt-12 inline-block w-full rounded-sm border border-[#A28668] bg-[#A28668] py-2.5 text-center text-sm tracking-[0.2em] text-[#232323] transition-all duration-200 ease-in-out hover:bg-[#A28668] hover:text-[#232323] sm:mt-16 sm:w-fit sm:bg-transparent sm:px-12 sm:py-4 sm:text-base sm:text-[#A28668]"
-                        .concat(" ")
-                        .concat(futuraStd.className)}
-                    >
-                      {slide.button.text}
-                    </Link>
-                  </div>
-                </div>
+              <div className="embla__slide justify-center" key={index}>
+                <TextAndImageSection
+                  className="mx-auto max-w-screen-xl px-4 2xl:px-0"
+                  title={translation("OurHistory.secondary_title")}
+                  subTitle={translation("OurHistory.title")}
+                  text={translation("OurHistory.secondary_description")}
+                  image="/our-history.png"
+                  button={{
+                    text: translation("ReadMore"),
+                    link: translation("OurHistory.href"),
+                  }}
+                />
               </div>
             ))}
           </div>

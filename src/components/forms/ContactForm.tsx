@@ -1,8 +1,6 @@
 "use client";
-
 import { futuraStd, garamond } from "@/util/fonts";
 import { useTranslations } from "next-intl";
-import { encode } from "querystring";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import toast from "react-hot-toast";
@@ -24,7 +22,7 @@ const ContactForm = () => {
     register,
     handleSubmit,
     reset,
-    formState: { errors, isSubmitting, isDirty, isValid },
+    formState: { errors, isSubmitting, isDirty, isValid, isSubmitted },
   } = useForm({
     defaultValues: {
       FullName: "",
@@ -35,22 +33,29 @@ const ContactForm = () => {
     },
     mode: "onTouched",
   });
+
+  function generateEmailHTML(data: IContactForm) {
+    const formattedMessage = data.Message.replace(/\n/g, "<br>");
+    return `<div><p><strong>Namn:</strong></p><p>${data.FullName}</p><p><strong>Email:</strong></p><p><a href="mailto:${data.Email}">${data.Email}</a></p><p><strong>Telefon:</strong></p><p><a href="tel:${data.PhoneNumber}">${data.PhoneNumber}</a></p><p><strong>Företag:</strong></p><p>${data.BusinessName}</p><p><strong>Meddelande:</strong></p><p>${formattedMessage}</p></div>`;
+  }
+
   const onSubmit = async (data: IContactForm) => {
     const formData = {
-      "form-name": "contact-form",
       name: data.FullName,
-      business: data.BusinessName,
       email: data.Email,
-      tel: data.PhoneNumber,
+      subject: `Kontaktformulär - ${data.FullName}`,
       message: data.Message,
+      messageHtml: generateEmailHTML(data),
     };
 
     toast
       .promise(
-        fetch("/forms.html", {
+        fetch("/api/contact-form", {
           method: "POST",
-          headers: { "Content-Type": "application/x-www-form-urlencoded" },
-          body: encode(formData),
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
         }),
         {
           loading: translation("toasts.loading"),
@@ -72,15 +77,16 @@ const ContactForm = () => {
         console.log(error.message);
       })
       .then(() => {
-        // Remove last name from name array
         setName(formData.name.split(" ").slice(0, -1).join(" "));
-        reset();
         setFormSubmitted(true);
+        setTimeout(() => {
+          reset();
+        }, 250);
       });
   };
 
   const baseClasses =
-    " text-[#f5cea4] text-base focus-visible:placeholder:text-[#f5cea4] placeholder:text-[#8B7257] bg-[#303030] w-full p-4 rounded-sm focus:outline-none focus-visible:outline-[#8B7257] font-thin tracking-widest ring-0 focus-visible:outline-1 focus-visible:text-[#f5cea4] focus-visible:outline-offset-0 focus:bg-[#3f3f3f] transition-all duration-500 ease-in-out ";
+    " text-[#f5cea4] text-base focus-visible:placeholder:text-[#f5cea4] placeholder:text-[#dab389] bg-[#2e2e2e] w-full p-4 rounded-sm focus:outline-none focus-visible:outline-[#8B7257] font-thin tracking-widest ring-0 focus-visible:outline-1 focus-visible:text-[#f5cea4] focus-visible:outline-offset-0 focus:bg-[#3f3f3f] transition-all duration-500 ease-in-out ";
 
   const errorClass =
     " outline outline-1 outline-offset-0 outline-red-700 placeholder:text-red-500 ";
@@ -231,7 +237,7 @@ const ContactForm = () => {
           <textarea
             maxLength={500}
             placeholder={translation("placeholders.Message")}
-            className={"h-32 resize-none focus-visible:h-64"
+            className={"h-32 resize-none whitespace-pre-line focus-visible:h-64"
               .concat(" ")
               .concat(baseClasses)
               .concat(" ")

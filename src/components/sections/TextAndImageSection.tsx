@@ -6,12 +6,13 @@ import Image from "next/image";
 import Link from "next/link";
 
 interface Props {
-  rtl: boolean;
+  rtl?: boolean;
   title: string;
   subTitle: string;
   text: string;
   image: string;
-  button: {
+  className?: string;
+  button?: {
     text: string;
     link: string;
   };
@@ -24,6 +25,7 @@ const TextAndImageSection = ({
   text,
   image,
   button,
+  className,
 }: Props) => {
   const locale = useLocale();
   const imageBaseClasses =
@@ -32,7 +34,13 @@ const TextAndImageSection = ({
     " data-[loaded=false]:animate-pulse data-[loaded=false]:bg-gray-100/10 data-[loaded=false]:blur-md";
   return (
     <section>
-      <div className="mx-auto mb-12 max-w-screen-xl px-4 2xl:px-0">
+      <div
+        className={
+          className
+            ? className
+            : "mx-auto my-12 max-w-screen-xl px-4 xl:my-24 2xl:px-0"
+        }
+      >
         <div
           className={"flex items-center justify-between gap-8 border-l border-[#a2866854] pl-4 md:gap-14 md:border-0 md:p-0"
             .concat(" ")
@@ -78,16 +86,20 @@ const TextAndImageSection = ({
             >
               {text}
             </p>
-            <div className="flex md:justify-end">
-              <Link
-                href={`/${locale}${button.link}`}
-                className={"mt-12 inline-block w-full rounded-sm border border-brass py-2.5 text-center text-sm tracking-[0.2em] transition-all duration-200 ease-in-out hover:bg-brass hover:text-[#232323] sm:mt-16 sm:w-fit sm:bg-transparent sm:px-12 sm:py-4 sm:text-base sm:text-brass"
-                  .concat(" ")
-                  .concat(futuraStd.className)}
-              >
-                {button.text}
-              </Link>
-            </div>
+            {button ? (
+              <div className="flex md:justify-end">
+                <Link
+                  href={`/${locale}${button.link}`}
+                  className={"mt-12 inline-block w-full rounded-sm border border-brass py-2.5 text-center text-sm tracking-[0.2em] transition-all duration-200 ease-in-out hover:bg-brass hover:text-[#232323] sm:mt-16 sm:w-fit sm:bg-transparent sm:px-12 sm:py-4 sm:text-base sm:text-brass"
+                    .concat(" ")
+                    .concat(futuraStd.className)}
+                >
+                  {button.text}
+                </Link>
+              </div>
+            ) : (
+              <></>
+            )}
           </div>
         </div>
       </div>

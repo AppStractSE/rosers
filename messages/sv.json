@@ -160,12 +160,12 @@
             "externalLink": true
           },
           {
-            "href": "/facebook",
+            "href": "https://www.facebook.com/pages/Rosers%20Salonger/184958138186145/",
             "label": "Facebook",
             "externalLink": true
           },
           {
-            "href": "/linkedin",
+            "href": "https://se.linkedin.com/company/rosers",
             "label": "LinkedIn",
             "externalLink": true
           }
@@ -240,5 +240,121 @@
       "loading": "Skickar meddelande..."
     }
   },
-  "WebDesignBy": "Webbdesign av Appstract"
+  "WebDesignBy": "Webbdesign av Appstract",
+  "ReadMore": "Läs mer",
+  "the_rosers_concept_title": "Rosers Koncept",
+  "the_rosers_concept_description": "Följ med oss när vi förvandlar drömmar till verklighet med 'Rosers Koncept' under en global resa av epikurisk förtjusning.",
+  "TheConcept": {
+    "href": "/konceptet",
+    "title": "Konceptet",
+    "subtitle": "Exklusiva evenemang för dig som söker oöverträffad kvalitet",
+    "secondary_title": "Rosers Koncept",
+    "secondary_description": "Följ med oss när vi förvandlar drömmar till verklighet med 'Rosers Koncept' under en global resa av epikurisk förtjusning.",
+    "what_is_the_concept_title": "Vad är konceptet?",
+    "what_is_the_concept_subtitle": "",
+    "what_is_the_concept_description": "Rosers koncept är rotat i kultur, kulinarisk expertis och kräsna kunders behov. Vi skapar oförglömliga matupplevelser för alla tillfällen. Från intima sammankomster på sex personer till storslagna evenemang med 40 000 deltagare – följ med oss när vi omdefinierar konsten att äta, en utsökt stund i taget.",
+    "description": "Vi skapar oförglömliga matupplevelser för alla tillfällen. Från intima sammankomster på sex personer till storslagna evenemang med 40 000 deltagare – följ med oss när vi omdefinierar konsten att äta, en utsökt stund i taget."
+  },
+  "OurHistory": {
+    "href": "/om-oss/var-historia",
+    "title": "Vår historia",
+    "secondary_title": "Ett halvt sekel av kulinarisk expertis",
+    "secondary_description": "Rosers Kitchens rötter sträcker sig tillbaka till en motståndskraftig restaurangfamilj som har överlevt prövningar och format kulinariska landskap i över 50 år. Idag står vårt kärnteam, lett av Bengt Roser, redo att omdefiniera matupplevelser med orubblig passion och expertis.\n\nFölj med oss på en resa där varje ögonblick avnjuts och varje detalj förfinas.",
+    "subtitle": "Resan som formade oss",
+    "description": "Sedan vår start har vi varit engagerade i att leverera excellens i allt vi gör. Vår berättelse är en om passion, engagemang och tillväxt."
+  },
+  "WhatWeDo": {
+    "href": "/om-oss/vad-vi-gor",
+    "title": "Vad vi gör",
+    "secondary_title": "Excellens i varje aspekt",
+    "secondary_description": "Vi specialiserar oss på att erbjuda unika, skräddarsydda lösningar som möter behoven hos vår mångsidiga kundbas. Vårt mål är att säkerställa att varje upplevelse överträffar förväntningarna.\n\nVi är på väg att omdefiniera konsten att äta, och vi har skapat ett värld där varje bit berättar en historia, och varje måltid är en oförglömlig resa. Vår kreativitet är drivs av en ständig sökning efter inspiration, som gör gränser för att leverera nya och innovativa upplevelser.",
+    "subtitle": "Innovativa lösningar och tjänster",
+    "description": "Vi specialiserar oss på att erbjuda unika, skräddarsydda lösningar som möter behoven hos vår mångsidiga kundbas. Vårt mål är att säkerställa att varje upplevelse överträffar förväntningarna."
+  },
+  "WhoWeAre": {
+    "href": "/om-oss/vilka-vi-ar",
+    "title": "Vilka vi är",
+    "secondary_title": "Rosers",
+    "secondary_description": "Vi är mer än bara en kulinarisk team; vi är pionerare av  oförglömliga matupplevelser. Med en äldre spanning över 50  år, vår passion för kulinarisk utmaning drivar oss till att omdefiniera konsten att äta. Led av vårt visionär fantasier Bengt Roser, vårt team är dedikerade till att skapa måltider som övergår smaklök, förändrar vanliga  samlingar till extraordinära möten.\n\nVälkommen till en värld där varje bit berättar en historia, och varje måltid är en oförglömlig resa.",
+    "subtitle": "Möt teamet bakom visionen",
+    "description": "Vårt team består av passionerade yrkesverksamma som är experter inom sina områden. Tillsammans arbetar vi för att förverkliga din vision."
+  },
+  "Contact": {
+    "href": "/kontakt",
+    "title": "Kontakta Oss",
+    "subtitle": "Kom i kontakt med oss",
+    "description": "Vi vill gärna höra från dig. Kontakta oss med frågor, förfrågningar eller feedback."
+  },
+  "Events": {
+    "href": "/evenemang",
+    "title": "Evenemang",
+    "secondary_title": "Globala evenemang och upplevelser",
+    "secondary_description": "Vi arrangerar evenemang över hela världen, så att varje evenemang speglar excellens och är skräddarsytt för att möta våra kunders unika förväntningar.\n\nFå reda på våra kunders upplevelser och upptäck våra evenemang.",
+    "subtitle": "Upptäck våra kommande evenemang",
+    "description": "Delta i våra exklusiva evenemang utformade för att inspirera och engagera. Håll dig uppdaterad om våra senaste händelser."
+  },
+  "News": {
+    "href": "/nyheter",
+    "title": "Nyheter",
+    "subtitle": "Håll dig informerad med de senaste uppdateringarna",
+    "description": "Ta del av de senaste nyheterna och uppdateringarna från vårt team. Vi delar insikter, berättelser och bakom kulisserna inblickar i vad som händer."
+  },
+  "Inspiration": {
+    "href": "/var-kreativitet/inspiration",
+    "title": "Inspiration",
+    "subtitle": "Kreativa gnistor som driver oss",
+    "description": "Vår kreativitet kommer från en ständig sökning efter inspiration i allt vi gör. Vi tänjer på gränserna för att leverera nya och innovativa upplevelser."
+  },
+  "Vision": {
+    "href": "/var-kreativitet/vision",
+    "title": "Vår vision",
+    "subtitle": "Vart vi ser oss själva i framtiden",
+    "description": "Vi drivs av en tydlig vision om framgång. Vår framtid präglas av innovation, tillväxt och oändliga möjligheter."
+  },
+  "RosersConsulting": {
+    "href": "/konceptet/rosers-konsultering",
+    "title": "Rosers Consulting",
+    "subtitle": "Expertvägledning och stöd",
+    "description": "Vi erbjuder konsulttjänster skräddarsydda efter dina affärsbehov, och hjälper dig att navigera genom komplexa utmaningar och ta tillvara på nya möjligheter."
+  },
+  "RosersGlobalEvents": {
+    "href": "/konceptet/rosers-globala-evenemang",
+    "title": "Rosers Globala Event",
+    "subtitle": "Globala evenemang skräddarsydda för dig",
+    "description": "Vi arrangerar evenemang över hela världen, och ser till att varje evenemang speglar excellens och är skräddarsytt för att möta våra kunders unika förväntningar."
+  },
+  "RosersKitchen": {
+    "href": "/konceptet/rosers-kok",
+    "title": "Rosers Kök",
+    "subtitle": "Kulinariska upplevelser som ingen annan",
+    "description": "Vårt kök är där kulinarisk magi sker. Vi skapar måltider som gläder sinnena, med endast de finaste ingredienserna för kräsna smaklökar."
+  },
+  "About": {
+    "href": "/om-oss",
+    "title": "Om Oss",
+    "subtitle": "Lär dig mer om vilka vi är",
+    "description": "Vi är ett passionerat team som är dedikerade till att erbjuda högkvalitativa upplevelser skräddarsydda efter dina behov. Vår resa är rotad i excellens och drivs av innovation."
+  },
+  "Concepts": {
+    "labels": [
+      {
+        "title": "Rosers Kök",
+        "subtitle": "Molnköket",
+        "image": "/rosers-kitchen.png",
+        "link": "/konceptet/rosers-kok"
+      },
+      {
+        "title": "Rosers Globala Evenemang",
+        "subtitle": "Globalt förtroende",
+        "image": "/rosers-global-events.png",
+        "link": "/konceptet/rosers-globala-evenemang"
+      },
+      {
+        "title": "Rosers Konsultering",
+        "subtitle": "Kulinariska pionjärer",
+        "image": "/rosers-consulting.png",
+        "link": "/konceptet/rosers-konsultering"
+      }
+    ]
+  }
 }

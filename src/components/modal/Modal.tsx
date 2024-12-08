@@ -1,5 +1,5 @@
 import { garamond } from "@/util/fonts";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { TfiClose } from "react-icons/tfi";
@@ -13,6 +13,7 @@ interface Props {
 const Modal = ({ isOpen, setIsOpen }: Props) => {
   const [mounted, setMounted] = useState<boolean>(false);
   const translation = useTranslations("ContactForm");
+  const locale = useLocale();
 
   useEffect(() => {
     setMounted(true);
@@ -46,7 +47,7 @@ const Modal = ({ isOpen, setIsOpen }: Props) => {
           .concat(isOpen ? "translate-y-0" : "translate-y-[125%]")}
       >
         <div className="flex items-center justify-between">
-          <Link href="/" onClick={handleToggle}>
+          <Link href={`/${locale}`} onClick={handleToggle}>
             <h2
               className={"flex flex-1 justify-center text-3xl uppercase tracking-widest"
                 .concat(" ")

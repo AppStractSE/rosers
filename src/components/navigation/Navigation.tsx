@@ -82,7 +82,7 @@ const Navigation = () => {
             ))}
           </nav>
           <div className="flex flex-1 lg:order-1 lg:justify-center">
-            <Link href="/" className="w-fit">
+            <Link href={`/${locale}`} className="w-fit">
               <h2
                 className={garamond.className
                   .concat(" ")

@@ -232,6 +232,7 @@ const Drawer = ({ isOpen, setIsOpen }: Props) => {
   const [isMobile, setIsMobile] = useState<boolean>(false);
   const [mounted, setMounted] = useState<boolean>(false);
   const pathname = usePathname();
+  const locale = useLocale();
 
   useEffect(() => {
     setMounted(true);
@@ -284,7 +285,7 @@ const Drawer = ({ isOpen, setIsOpen }: Props) => {
             )}
         >
           <div className="flex items-center justify-between">
-            <Link href="/">
+            <Link href={`/${locale}`}>
               <h2
                 className={"flex flex-1 justify-center text-3xl uppercase tracking-widest"
                   .concat(" ")

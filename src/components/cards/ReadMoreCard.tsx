@@ -1,5 +1,5 @@
 import { futuraStd } from "@/util/fonts";
-import { useLocale, useTranslations } from "next-intl";
+import { useLocale } from "next-intl";
 import Link from "next/link";
 import { IoMdArrowForward } from "react-icons/io";
 interface Props {
@@ -12,9 +12,9 @@ interface Props {
 
 const ReadMoreCard = ({ title, subtitle, image, link, className }: Props) => {
   const locale = useLocale();
-  const translation = useTranslations();
   return (
     <Link
+      prefetch={true}
       href={`/${locale}${link}`}
       className={"group relative overflow-hidden rounded-sm border border-brass"
         .concat(" ")

@@ -1,9 +1,10 @@
 import ExploreButton from "@/components/buttons/ExploreButton";
+import ConceptCards from "@/components/cards/ConceptCards";
 import Divider from "@/components/divider/Divider";
-import ConceptSection from "@/components/sections/ConceptSection";
 import ContactSection from "@/components/sections/ContactSection";
 import HeroSection from "@/components/sections/HeroSection";
 import TextAndImageSection from "@/components/sections/TextAndImageSection";
+import { futuraStd, garamond } from "@/util/fonts";
 import { useTranslations } from "next-intl";
 import { unstable_setRequestLocale } from "next-intl/server";
 
@@ -49,7 +50,23 @@ export default function Index({
           }}
         />
         <Divider />
-        <ConceptSection />
+        <div className="mx-auto mb-12 max-w-screen-xl space-y-2 px-4 2xl:px-0">
+          <h3
+            className={"text-4xl text-gold"
+              .concat(" ")
+              .concat(futuraStd.className)}
+          >
+            {translation("the_rosers_concept_title")}
+          </h3>
+          <p
+            className={"text-xl font-thin tracking-wide"
+              .concat(" ")
+              .concat(garamond.className)}
+          >
+            {translation("the_rosers_concept_description")}
+          </p>
+        </div>
+        <ConceptCards />
         <Divider />
         <TextAndImageSection
           rtl

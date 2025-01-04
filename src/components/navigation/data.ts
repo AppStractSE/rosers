@@ -15,10 +15,6 @@ export const navItems: NavItem[] = [
     label: "About",
   },
   {
-    href: "/news",
-    label: "News",
-  },
-  {
     href: "/events",
     label: "Events",
   },

@@ -13,7 +13,6 @@ const mainLinks: DrawerLink[] = [
   { href: "/", label: "Home" },
   { href: "/the-concept", label: "The concept" },
   { href: "/about", label: "About" },
-  { href: "/news", label: "News" },
   { href: "/events", label: "Events" },
   { href: "/contact", label: "Contact" },
 ];

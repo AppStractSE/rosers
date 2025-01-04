@@ -38,10 +38,6 @@
         "label": "Vår Historia"
       },
       {
-        "href": "/nyheter",
-        "label": "Nyheter"
-      },
-      {
         "href": "/evenemang",
         "label": "Evenemang"
       },
@@ -89,10 +85,6 @@
       {
         "href": "/om-oss",
         "label": "Om oss"
-      },
-      {
-        "href": "/nyheter",
-        "label": "Nyheter"
       },
       {
         "href": "/evenemang",
@@ -181,10 +173,6 @@
     {
       "href": "/om-oss",
       "label": "Om oss"
-    },
-    {
-      "href": "/nyheter",
-      "label": "Nyheter"
     },
     {
       "href": "/evenemang",
@@ -292,12 +280,6 @@
     "secondary_description": "Vi arrangerar evenemang över hela världen, så att varje evenemang speglar excellens och är skräddarsytt för att möta våra kunders unika förväntningar.\n\nFå reda på våra kunders upplevelser och upptäck våra evenemang.",
     "subtitle": "Upptäck våra kommande evenemang",
     "description": "Delta i våra exklusiva evenemang utformade för att inspirera och engagera. Håll dig uppdaterad om våra senaste händelser."
-  },
-  "News": {
-    "href": "/nyheter",
-    "title": "Nyheter",
-    "subtitle": "Håll dig informerad med de senaste uppdateringarna",
-    "description": "Ta del av de senaste nyheterna och uppdateringarna från vårt team. Vi delar insikter, berättelser och bakom kulisserna inblickar i vad som händer."
   },
   "Inspiration": {
     "href": "/var-kreativitet/inspiration",

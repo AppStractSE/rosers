@@ -37,10 +37,6 @@ export const pathnames: Pathnames<typeof locales> = {
     en: "/about/our-history",
     sv: "/om-oss/var-historia",
   },
-  "/news": {
-    en: "/news",
-    sv: "/nyheter",
-  },
   "/events": {
     en: "/events",
     sv: "/evenemang",

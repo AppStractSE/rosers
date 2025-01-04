@@ -38,10 +38,6 @@
         "label": "Our History"
       },
       {
-        "href": "/news",
-        "label": "News"
-      },
-      {
         "href": "/events",
         "label": "Events"
       },
@@ -88,10 +84,6 @@
       {
         "href": "/about",
         "label": "About"
-      },
-      {
-        "href": "/news",
-        "label": "News"
       },
       {
         "href": "/events",
@@ -180,10 +172,6 @@
     {
       "href": "/about",
       "label": "About"
-    },
-    {
-      "href": "/news",
-      "label": "News"
     },
     {
       "href": "/events",
@@ -291,12 +279,6 @@
     "secondary_description": "We host events across the globe, ensuring each one is a reflection of excellence and tailored to meet the unique expectations of our clients.\n\nFind out about our clientele’s experiences and discover the world of Rosers events.",
     "subtitle": "Discover our upcoming events",
     "description": "Join us for exclusive events designed to inspire and engage. Stay tuned for updates on our latest happenings."
-  },
-  "News": {
-    "href": "/news",
-    "title": "Latest News",
-    "subtitle": "Stay informed with the latest updates",
-    "description": "Catch up on the latest news and updates from our team. We share insights, stories, and behind-the-scenes looks at what’s going on."
   },
   "Inspiration": {
     "href": "/our-creativity/inspiration",

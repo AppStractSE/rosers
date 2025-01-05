@@ -1,4 +1,5 @@
 import CTAButton from "@/components/buttons/CTAButton";
+import ConceptCards from "@/components/cards/ConceptCards";
 import Divider from "@/components/divider/Divider";
 import ContactSection from "@/components/sections/ContactSection";
 import HeroSubPageSection from "@/components/sections/HeroSubPageSection";
@@ -67,6 +68,8 @@ export default function Index({
             link: translation("OurHistory.href"),
           }}
         />
+        <Divider />
+        <ConceptCards showHeader />
         <Divider />
         <ContactSection />
         <Divider />

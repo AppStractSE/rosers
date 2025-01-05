@@ -59,7 +59,7 @@ section {
 
 @for $i from 1 through 25 {
   section:nth-of-type(#{$i}) {
-    animation-delay: $i * 0.2s;
+    animation-delay: $i * 0.1s;
   }
 }
 

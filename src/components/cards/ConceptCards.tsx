@@ -2,6 +2,7 @@
 
 import { futuraStd, garamond } from "@/util/fonts";
 import { useTranslations } from "next-intl";
+import { twMerge } from "tailwind-merge";
 import ReadMoreCard from "./ReadMoreCard";
 
 interface ConceptItem {
@@ -24,23 +25,26 @@ const ConceptCards = ({ showHeader }: Props) => {
       {showHeader && (
         <div className="mx-auto mb-12 max-w-screen-xl space-y-2 px-4 2xl:px-0">
           <h3
-            className={"text-xs uppercase text-brass"
-              .concat(" ")
-              .concat(futuraStd.className)}
+            className={twMerge(
+              "text-xs uppercase text-brass",
+              futuraStd.className,
+            )}
           >
             {translation("TheConcept.our_concept")}
           </h3>
           <h3
-            className={"text-3xl text-gold md:text-4xl"
-              .concat(" ")
-              .concat(futuraStd.className)}
+            className={twMerge(
+              "text-3xl text-gold md:text-4xl",
+              futuraStd.className,
+            )}
           >
             {translation("the_rosers_concept_title")}
           </h3>
           <p
-            className={"text-xl font-thin tracking-wide"
-              .concat(" ")
-              .concat(garamond.className)}
+            className={twMerge(
+              "text-xl font-thin tracking-wide",
+              garamond.className,
+            )}
           >
             {translation("the_rosers_concept_description")}
           </p>

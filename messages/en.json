@@ -249,9 +249,35 @@
     "title": "Our History",
     "label": "Read more about our history",
     "secondary_title": "Half a century of culinary expertise",
-    "secondary_description": "The roots of Rosers Kitchen trace back to a resilient restaurant family, weathering storms and shaping culinary landscapes for over 50  years. Today, our core team, led by Bengt Roser, stands poised to  redefine dining experiences with unwavering passion and expertise.\n\nJoin  us on a journey where every moment is savored and every detail perfected.",
+    "secondary_description": "Since the 1970s, Bengt Roser, with his passionate interest in gastronomy, has built a prominent catering business that has set the standard for quality and customer experience.\n\nOver the years, he has taken on prestigious assignments, including the Swedish pavilion at the 2010 Shanghai World Expo. His commitment to sustainability and innovation has led to a well-established company that today offers tailor-made dining experiences for both private and large events.",
     "subtitle": "The journey that shaped us",
-    "description": "Since our inception, we have been committed to delivering excellence in everything we do. Our story is one of passion, dedication, and growth."
+    "description": "Since our inception, we have been committed to delivering excellence in everything we do. Our story is one of passion, dedication, and growth.",
+    "sections": [
+      {
+        "title": "From idea to reality",
+        "subtitle": "A passion for food that founded Rosers",
+        "description": "Bengt Roser began his career in the catering and restaurant industry at a young age. His commitment to quality and passion for food led him to start his first catering company. In the first few years, he built a strong reputation in the industry and quickly received assignments from both companies and individuals.",
+        "image": "/our-history.png"
+      },
+      {
+        "title": "Building a successful business",
+        "subtitle": "A vision that came true",
+        "description": "With determination and a focus on quality, Rosers grew rapidly. The company supplied both small and large events and soon gained a reputation for always delivering the highest quality dining experiences. His success lay in his ability to always exceed customer expectations.",
+        "image": "/bengt-roser-black-and-white.jpeg"
+      },
+      {
+        "title": "From city hotel to global catering",
+        "subtitle": "City Hotel of Skara",
+        "description": "The Roser family took over the city hotel of Skara in 1966 and ran it successfully until 2020. Under their leadership, the business expanded into catering and events, with assignments that included the Swedish pavilion at the 2010 Shanghai World Expo.\n\nDuring their time at the hotel, it became a focal point for both local and international events.",
+        "image": "/skara-stadshotell.jpg"
+      },
+      {
+        "title": "Leader in the catering industry",
+        "subtitle": "Rosers becomes a brand to be reckoned with",
+        "description": "Over the years, Rosers has become a synonymous name for high-class catering. The company has served at both national and international events and has continued to be a leading player in the industry. Rosers' passion for food and service has made them a sought-after name.",
+        "image": "/IMG_2813.jpeg"
+      }
+    ]
   },
   "WhatWeDo": {
     "href": "/about/what-we-do",
@@ -327,19 +353,19 @@
       {
         "title": "Rosers Kitchen",
         "subtitle": "The Cloud Kitchen",
-        "image": "19. _00A8153.jpg",
+        "image": "/rosers-kitchen.jpg",
         "link": "/the-concept/rosers-kitchen"
       },
       {
         "title": "Rosers Global Events",
         "subtitle": "Globally Renowned",
-        "image": "/IMG_6786.JPG",
+        "image": "/rosers-global-events.jpg",
         "link": "/the-concept/rosers-global-events"
       },
       {
         "title": "Rosers Consulting",
         "subtitle": "The Culinary Pioneers",
-        "image": "/6. _00A8641s.jpg",
+        "image": "/rosers-consulting.jpg",
         "link": "/the-concept/rosers-consulting"
       }
     ]

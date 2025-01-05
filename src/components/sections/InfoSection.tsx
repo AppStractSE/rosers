@@ -12,7 +12,7 @@ const InfoSection = ({ title, subtitle, description, cta }: Props) => {
       <div className="mx-auto my-12 max-w-screen-md px-4 xl:my-24">
         <div className="relative mx-auto flex flex-col items-center justify-center">
           <p
-            className={"mb-4 text-sm uppercase text-brass"
+            className={"mb-4 text-xs md:text-sm uppercase text-brass"
               .concat(" ")
               .concat(futuraStd.className)}
           >
@@ -26,7 +26,7 @@ const InfoSection = ({ title, subtitle, description, cta }: Props) => {
             {subtitle}
           </h3>
           <p
-            className={"text-balance whitespace-pre-line text-center text-2xl font-thin tracking-wide"
+            className={"text-balance whitespace-pre-line text-center text-xl md:text-2xl font-thin tracking-wide"
               .concat(" ")
               .concat(garamond.className)}
           >

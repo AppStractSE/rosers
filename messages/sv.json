@@ -235,6 +235,7 @@
   "TheConcept": {
     "href": "/konceptet",
     "title": "Konceptet",
+    "our_concept": "Vårt koncept",
     "subtitle": "Exklusiva evenemang för dig som söker oöverträffad kvalitet",
     "secondary_title": "Rosers Koncept",
     "secondary_description": "Följ med oss när vi förvandlar drömmar till verklighet med 'Rosers Koncept' under en global resa av epikurisk förtjusning.",
@@ -253,6 +254,7 @@
   },
   "WhatWeDo": {
     "href": "/om-oss/vad-vi-gor",
+    "label": "Läs mer om vad vi gör",
     "title": "Vad vi gör",
     "secondary_title": "Excellens i varje aspekt",
     "secondary_description": "Vi specialiserar oss på att erbjuda unika, skräddarsydda lösningar som möter behoven hos vår mångsidiga kundbas. Vårt mål är att säkerställa att varje upplevelse överträffar förväntningarna.\n\nVi är på väg att omdefiniera konsten att äta, och vi har skapat ett värld där varje bit berättar en historia, och varje måltid är en oförglömlig resa. Vår kreativitet är drivs av en ständig sökning efter inspiration, som gör gränser för att leverera nya och innovativa upplevelser.",
@@ -261,9 +263,10 @@
   },
   "WhoWeAre": {
     "href": "/om-oss/vilka-vi-ar",
+    "label": "Läs mer om oss",
     "title": "Vilka vi är",
-    "secondary_title": "Rosers",
-    "secondary_description": "Vi är mer än bara en kulinarisk team; vi är pionerare av  oförglömliga matupplevelser. Med en äldre spanning över 50  år, vår passion för kulinarisk utmaning drivar oss till att omdefiniera konsten att äta. Led av vårt visionär fantasier Bengt Roser, vårt team är dedikerade till att skapa måltider som övergår smaklök, förändrar vanliga  samlingar till extraordinära möten.\n\nVälkommen till en värld där varje bit berättar en historia, och varje måltid är en oförglömlig resa.",
+    "secondary_title": "Vi är Rosers",
+    "secondary_description": "Vi är mer än bara ett kulinariskt team – vi är pionjärer inom oförglömliga matupplevelser. Med ett arv som sträcker sig över 50 år drivs vi av vår passion för kulinarisk excellens och en strävan att omdefiniera konsten att njuta av mat. Under ledning av vår visionära grundare Bengt Roser är vårt team engagerat i att skapa stunder som går bortom smaken och förvandlar vanliga sammankomster till extraordinära upplevelser.",
     "subtitle": "Möt teamet bakom visionen",
     "description": "Vårt team består av passionerade yrkesverksamma som är experter inom sina områden. Tillsammans arbetar vi för att förverkliga din vision."
   },
@@ -322,19 +325,19 @@
       {
         "title": "Rosers Kök",
         "subtitle": "Molnköket",
-        "image": "/rosers-kitchen.png",
+        "image": "19. _00A8153.jpg",
         "link": "/konceptet/rosers-kok"
       },
       {
         "title": "Rosers Globala Evenemang",
         "subtitle": "Globalt förtroende",
-        "image": "/rosers-global-events.png",
+        "image": "/IMG_6786.JPG",
         "link": "/konceptet/rosers-globala-evenemang"
       },
       {
         "title": "Rosers Konsultering",
         "subtitle": "Kulinariska pionjärer",
-        "image": "/rosers-consulting.png",
+        "image": "/6. _00A8641s.jpg",
         "link": "/konceptet/rosers-konsultering"
       }
     ]

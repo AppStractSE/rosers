@@ -234,6 +234,7 @@
   "TheConcept": {
     "href": "/the-concept",
     "title": "The Concept",
+    "our_concept": "Our concept",
     "subtitle": "Exclusive culinary experiences and events for discerning clients who value unparalleled quality",
     "secondary_title": "The Rosers Concept",
     "secondary_description": "Join us as we transform dreams into reality with 'The Rosers Concept' and join a global voyage of epicurean delight.",
@@ -252,6 +253,7 @@
   },
   "WhatWeDo": {
     "href": "/about/what-we-do",
+    "label": "Read more about what we do",
     "title": "What We Do",
     "secondary_title": "Excellence in every aspect",
     "secondary_description": "We specialize in offering unique, tailor-made solutions that meet the needs of our diverse clientele. Our goal is to ensure every  experience exceeds expectations.\n\nIn our quest to redefine the art of  dining, we've created a world where every bite tells a story, and every meal is an unforgettable  journey. Our creativity is fueled by a constant search for inspiration, pushing  boundaries to deliver fresh and innovative experiences.",
@@ -260,6 +262,7 @@
   },
   "WhoWeAre": {
     "href": "/about/who-we-are",
+    "label": "Read more about us",
     "title": "Who We Are",
     "secondary_title": "The Rosers",
     "secondary_description": "We are more than just a culinary team; we are pioneers of  unforgettable dining experiences. With a legacy spanning over 50 years,  our passion for culinary excellence drives us to redefine the art of  dining. Led by our visionary founder Bengt Roser, our team is dedicated  to crafting moments that transcend taste, transforming ordinary  gatherings into extraordinary occasions.\n\nWelcome to a world where every  bite tells a story, and every meal is an unforgettable journey.",
@@ -322,19 +325,19 @@
       {
         "title": "Rosers Kitchen",
         "subtitle": "The Cloud Kitchen",
-        "image": "/rosers-kitchen.png",
+        "image": "19. _00A8153.jpg",
         "link": "/the-concept/rosers-kitchen"
       },
       {
         "title": "Rosers Global Events",
         "subtitle": "Globally Renowned",
-        "image": "/rosers-global-events.png",
+        "image": "/IMG_6786.JPG",
         "link": "/the-concept/rosers-global-events"
       },
       {
         "title": "Rosers Consulting",
         "subtitle": "The Culinary Pioneers",
-        "image": "/rosers-consulting.png",
+        "image": "/6. _00A8641s.jpg",
         "link": "/the-concept/rosers-consulting"
       }
     ]

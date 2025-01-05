@@ -73,7 +73,7 @@ const TextAndImageSection = ({
               {subTitle}
             </h3>
             <h2
-              className={"mt-2 text-4xl"
+              className={"mt-2 text-3xl md:text-4xl"
                 .concat(" ")
                 .concat(futuraStd.className)}
             >

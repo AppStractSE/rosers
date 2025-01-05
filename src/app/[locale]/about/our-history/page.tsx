@@ -22,12 +22,7 @@ export default function Index({
   return (
     <>
       <main>
-        <HeroSubPageSection
-          title={translation("OurHistory.title")}
-          subtitle={translation("OurHistory.subtitle")}
-          description={translation("OurHistory.description")}
-          image="/hero-image-our-history.webp"
-        />
+        <HeroSubPageSection image="/hero-image-our-history.webp" />
         <InfoSection
           title={translation("OurHistory.secondary_title")}
           subtitle={translation("OurHistory.title")}

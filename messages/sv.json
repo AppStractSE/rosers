@@ -230,6 +230,7 @@
   },
   "WebDesignBy": "Webbdesign av Appstract",
   "ReadMore": "Läs mer",
+  "GetInTouch": "Kom i kontakt med oss",
   "the_rosers_concept_title": "Rosers Koncept",
   "the_rosers_concept_description": "Följ med oss när vi förvandlar drömmar till verklighet med 'Rosers Koncept' under en global resa av epikurisk förtjusning.",
   "TheConcept": {
@@ -246,6 +247,7 @@
   },
   "OurHistory": {
     "href": "/om-oss/var-historia",
+    "label": "Läs mer om vår historia",
     "title": "Vår historia",
     "secondary_title": "Ett halvt sekel av kulinarisk expertis",
     "secondary_description": "Rosers Kitchens rötter sträcker sig tillbaka till en motståndskraftig restaurangfamilj som har överlevt prövningar och format kulinariska landskap i över 50 år. Idag står vårt kärnteam, lett av Bengt Roser, redo att omdefiniera matupplevelser med orubblig passion och expertis.\n\nFölj med oss på en resa där varje ögonblick avnjuts och varje detalj förfinas.",
@@ -317,8 +319,8 @@
   "About": {
     "href": "/om-oss",
     "title": "Om Oss",
-    "subtitle": "Lär dig mer om vilka vi är",
-    "description": "Vi är ett passionerat team som är dedikerade till att erbjuda högkvalitativa upplevelser skräddarsydda efter dina behov. Vår resa är rotad i excellens och drivs av innovation."
+    "subtitle": "Passion för smak och perfektion",
+    "description": "Vi kombinerar tradition och innovation för att skapa minnesvärda matupplevelser. Med rötter i decennier av framgångsrik matlagning och eventhantering levererar vi catering av högsta kvalitet, oavsett om det gäller mindre privata tillställningar eller stora internationella evenemang.\n\nFrån kungliga bröllop till världsomspännande projekt som världsutställningen i Shanghai – vi har erfarenheten och engagemanget för att göra varje måltid speciell. Låt oss skapa något unikt för ditt nästa event."
   },
   "Concepts": {
     "labels": [

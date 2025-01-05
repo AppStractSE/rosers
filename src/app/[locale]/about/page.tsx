@@ -1,4 +1,4 @@
-import InternalButton from "@/components/buttons/InternalButton";
+import CTAButton from "@/components/buttons/CTAButton";
 import Divider from "@/components/divider/Divider";
 import ContactSection from "@/components/sections/ContactSection";
 import HeroSubPageSection from "@/components/sections/HeroSubPageSection";
@@ -22,29 +22,38 @@ export default function Index({
   return (
     <>
       <main>
-        <HeroSubPageSection image="/hero-image-our-history.webp" />
+        <HeroSubPageSection image="/herotest_bw.png" />
         <InfoSection
-          title={translation("TheConcept.what_is_the_concept_title")}
-          subtitle={translation("TheConcept.subtitle")}
-          description={translation("TheConcept.description")}
-        />
+          title={translation("About.title")}
+          subtitle={translation("About.subtitle")}
+          description={translation("About.description")}
+        >
+          <CTAButton
+            label={translation("GetInTouch")}
+            href={`/${locale}${translation("Contact.href")}`}
+          />
+        </InfoSection>
         <Divider />
         <TextAndImageSection
           rtl
-          title={translation("OurHistory.secondary_title")}
-          subTitle={translation("OurHistory.title")}
-          text={translation("OurHistory.secondary_description")}
-          image="/bengt-roser-black-and-white.jpeg"
+          title={translation("WhatWeDo.secondary_title")}
+          subTitle={translation("WhatWeDo.title")}
+          text={translation("WhatWeDo.secondary_description")}
+          image="/14_15._00A8688.jpg"
+          button={{
+            text: translation("WhatWeDo.label"),
+            link: translation("WhatWeDo.href"),
+          }}
         />
         <Divider />
         <TextAndImageSection
-          title={translation("OurHistory.secondary_title")}
-          subTitle={translation("OurHistory.title")}
-          text={translation("OurHistory.secondary_description")}
-          image="/IMG_3614.jpeg"
+          title={translation("WhoWeAre.secondary_title")}
+          subTitle={translation("WhoWeAre.title")}
+          text={translation("WhoWeAre.secondary_description")}
+          image="/_00A8854ss.jpg"
           button={{
-            text: "Read more",
-            link: "/about/our-history",
+            text: translation("WhoWeAre.label"),
+            link: translation("WhoWeAre.href"),
           }}
         />
         <TextAndImageSection
@@ -54,8 +63,8 @@ export default function Index({
           text={translation("OurHistory.secondary_description")}
           image="/bengt-roser-black-and-white.jpeg"
           button={{
-            text: "Read more",
-            link: "/about/our-history",
+            text: translation("OurHistory.label"),
+            link: translation("OurHistory.href"),
           }}
         />
         <Divider />

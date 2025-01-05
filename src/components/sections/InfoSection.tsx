@@ -4,9 +4,9 @@ interface Props {
   title: string;
   subtitle: string;
   description: string;
-  cta?: React.ReactNode;
+  children?: React.ReactNode;
 }
-const InfoSection = ({ title, subtitle, description, cta }: Props) => {
+const InfoSection = ({ title, subtitle, description, children }: Props) => {
   return (
     <section>
       <div className="mx-auto my-12 max-w-screen-md px-4 xl:my-24">
@@ -32,7 +32,7 @@ const InfoSection = ({ title, subtitle, description, cta }: Props) => {
           >
             {description}
           </p>
-          {cta}
+          {children}
         </div>
       </div>
     </section>

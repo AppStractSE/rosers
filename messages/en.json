@@ -229,6 +229,7 @@
   },
   "WebDesignBy": "Web design by Appstract",
   "ReadMore": "Read more",
+  "GetInTouch": "Get in touch",
   "the_rosers_concept_title": "The Rosers Concept",
   "the_rosers_concept_description": "Join us as we transform dreams into reality with 'The Rosers Concept' and join a global voyage of epicurean delight.",
   "TheConcept": {
@@ -246,6 +247,7 @@
   "OurHistory": {
     "href": "/about/our-history",
     "title": "Our History",
+    "label": "Read more about our history",
     "secondary_title": "Half a century of culinary expertise",
     "secondary_description": "The roots of Rosers Kitchen trace back to a resilient restaurant family, weathering storms and shaping culinary landscapes for over 50  years. Today, our core team, led by Bengt Roser, stands poised to  redefine dining experiences with unwavering passion and expertise.\n\nJoin  us on a journey where every moment is savored and every detail perfected.",
     "subtitle": "The journey that shaped us",
@@ -316,8 +318,8 @@
   "About": {
     "href": "/about",
     "title": "About Us",
-    "subtitle": "Learn more about who we are",
-    "description": "We are a passionate team dedicated to offering high-quality experiences tailored to your needs. Our journey is rooted in excellence and driven by innovation."
+    "subtitle": "A passion for flavor and perfection",
+    "description": "We combine tradition and innovation to create unforgettable dining experiences. With decades of expertise in culinary excellence and event management, we deliver top-quality catering for every occasion – from intimate gatherings to large international events.\n\nFrom royal weddings to global projects like the World Expo in Shanghai, our experience and dedication ensure every meal is extraordinary. Let us craft something unique for your next event."
   },
 
   "Concepts": {

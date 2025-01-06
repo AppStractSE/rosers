@@ -22,32 +22,30 @@ export default function Index({
   const translation = useTranslations();
   const sections = translation.raw("OurHistory.sections");
   return (
-    <>
-      <main>
-        <HeroSubPageSection image="/hero-image-our-history.webp" />
-        <InfoSection
-          title={translation("OurHistory.secondary_title")}
-          subtitle={translation("OurHistory.title")}
-          description={translation("OurHistory.secondary_description")}
-        />
-        <Divider />
-        {sections.map((section: any, index: number) => (
-          <React.Fragment key={index}>
-            <TextAndImageSection
-              rtl={index % 2 === 0}
-              title={section.title}
-              subTitle={section.subtitle}
-              text={section.description}
-              image={section.image}
-            />
-            <Divider />
-          </React.Fragment>
-        ))}
-        <ConceptCards showHeader />
-        <Divider />
-        <ContactSection />
-        <Divider />
-      </main>
-    </>
+    <main>
+      <HeroSubPageSection image="/hero-image-our-history.webp" />
+      <InfoSection
+        title={translation("OurHistory.secondary_title")}
+        subtitle={translation("OurHistory.title")}
+        description={translation("OurHistory.secondary_description")}
+      />
+      <Divider />
+      {sections.map((section: any, index: number) => (
+        <React.Fragment key={index}>
+          <TextAndImageSection
+            rtl={index % 2 === 0}
+            title={section.title}
+            subTitle={section.subtitle}
+            text={section.description}
+            image={section.image}
+          />
+          <Divider />
+        </React.Fragment>
+      ))}
+      <ConceptCards showHeader />
+      <Divider />
+      <ContactSection />
+      <Divider />
+    </main>
   );
 }

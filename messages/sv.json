@@ -322,7 +322,33 @@
     "secondary_title": "Vi är Rosers",
     "secondary_description": "Vi är mer än bara ett kulinariskt team – vi är pionjärer inom oförglömliga matupplevelser. Med ett arv som sträcker sig över 50 år drivs vi av vår passion för kulinarisk excellens och en strävan att omdefiniera konsten att njuta av mat. Under ledning av vår visionära grundare Bengt Roser är vårt team engagerat i att skapa stunder som går bortom smaken och förvandlar vanliga sammankomster till extraordinära upplevelser.",
     "subtitle": "Möt teamet bakom visionen",
-    "description": "Vårt team består av passionerade yrkesverksamma som är experter inom sina områden. Tillsammans arbetar vi för att förverkliga din vision."
+    "description": "Vårt team består av passionerade yrkesverksamma som är experter inom sina områden. Tillsammans arbetar vi för att förverkliga din vision.",
+    "sections": [
+      {
+        "title": "Storskalig catering och evenemang",
+        "subtitle": "Experthantering av stora sammankomster",
+        "description": "Rosers specialiserar sig på catering för storskaliga evenemang och hanterar allt från intima middagar till evenemang som serverar tusentals gäster. Från mässor till företagsgalor, vi levererar felfri service för olika kundbehov.",
+        "image": "/IMG_2816.jpeg"
+      },
+      {
+        "title": "Internationella och nationella evenemang",
+        "subtitle": "Catering över gränserna",
+        "description": "Rosers serverar högprofilerade evenemang både i Sverige och internationellt. Oavsett om det är i Shanghais svenska paviljong på Expo 2010 eller större evenemang som Volvo Ocean Race, deras förmåga att genomföra stora cateringverksamheter över hela världen skiljer dem åt.",
+        "image": "/IMG_2813.jpeg"
+      },
+      {
+        "title": "Anpassade evenemangslösningar",
+        "subtitle": "Skräddarsydda tjänster för varje evenemang",
+        "description": "Oavsett om det gäller en utställning, ett bröllop eller en kunglig bankett, skapar Rosers skräddarsydda cateringupplevelser. Deras expertis sträcker sig till att erbjuda specialiserade tjänster för utställningar, vilket säkerställer att både utställare och besökare får förstklassig mat och service.",
+        "image": "/IMG_2607.png"
+      },
+      {
+        "title": "Betrodd av högprofilerade kunder",
+        "subtitle": "Tjänar royalty- och industrijättar",
+        "description": "Med en imponerande bakgrund av att ha arbetat med högprofilerade kunder som Sveriges kungafamilj, Saab, Volvo och försvarssektorn, har vi byggt upp ett oöverträffat förtroende för att hantera prestigefyllda evenemang med högsta precision och excellens. Vårt rykte för kvalitet är omskrivet världen över.",
+        "image": "/IMG_0200.jpeg"
+      }
+    ]
   },
   "Contact": {
     "href": "/kontakt",

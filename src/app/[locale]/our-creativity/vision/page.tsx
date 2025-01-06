@@ -23,17 +23,7 @@ export default function Index({
   return (
     <>
       <main>
-        <HeroSubPageSection
-          title={translation("Vision.title")}
-          subtitle={translation("Vision.subtitle")}
-          description={translation("Vision.description")}
-          cta={
-            <InternalButton
-              title={translation("ContactForm.title")}
-              href="contact"
-            />
-          }
-        />
+        <HeroSubPageSection image="/hero-image-our-history.webp" />
         <InfoSection
           title={translation("TheConcept.what_is_the_concept_title")}
           subtitle={translation("TheConcept.subtitle")}

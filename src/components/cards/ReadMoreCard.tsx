@@ -1,7 +1,8 @@
 import { futuraStd } from "@/util/fonts";
-import { useLocale, useTranslations } from "next-intl";
+import { useLocale } from "next-intl";
 import Link from "next/link";
 import { IoMdArrowForward } from "react-icons/io";
+import { twMerge } from "tailwind-merge";
 interface Props {
   title: string;
   subtitle: string;
@@ -12,13 +13,14 @@ interface Props {
 
 const ReadMoreCard = ({ title, subtitle, image, link, className }: Props) => {
   const locale = useLocale();
-  const translation = useTranslations();
   return (
     <Link
+      prefetch={true}
       href={`/${locale}${link}`}
-      className={"group relative overflow-hidden rounded-sm border border-brass"
-        .concat(" ")
-        .concat(className ?? "")}
+      className={twMerge(
+        "group relative overflow-hidden rounded-sm border border-brass",
+        className,
+      )}
     >
       <img
         src={image}
@@ -32,9 +34,10 @@ const ReadMoreCard = ({ title, subtitle, image, link, className }: Props) => {
               {subtitle}
             </p>
             <h3
-              className={"text-lg text-gold lg:text-xl xl:text-2xl"
-                .concat(" ")
-                .concat(futuraStd.className)}
+              className={twMerge(
+                "text-lg text-gold lg:text-xl xl:text-2xl",
+                futuraStd.className,
+              )}
             >
               {title}
             </h3>

@@ -1,4 +1,3 @@
-import NextSectionButton from "@/components/buttons/NextSectionButton";
 import Divider from "@/components/divider/Divider";
 import ContactSection from "@/components/sections/ContactSection";
 import HeroSubPageSection from "@/components/sections/HeroSubPageSection";
@@ -20,12 +19,7 @@ export default function Index({
   return (
     <>
       <main>
-        <HeroSubPageSection
-          title={translation("Contact.title")}
-          subtitle={translation("Contact.subtitle")}
-          description={translation("Contact.description")}
-          cta={<NextSectionButton title={translation("ContactForm.title")} />}
-        />
+        <HeroSubPageSection image="/hero-image-our-history.webp" />
         <Divider />
         <ContactSection />
         <Divider />

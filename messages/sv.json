@@ -38,10 +38,6 @@
         "label": "Vår Historia"
       },
       {
-        "href": "/nyheter",
-        "label": "Nyheter"
-      },
-      {
         "href": "/evenemang",
         "label": "Evenemang"
       },
@@ -89,10 +85,6 @@
       {
         "href": "/om-oss",
         "label": "Om oss"
-      },
-      {
-        "href": "/nyheter",
-        "label": "Nyheter"
       },
       {
         "href": "/evenemang",
@@ -183,10 +175,6 @@
       "label": "Om oss"
     },
     {
-      "href": "/nyheter",
-      "label": "Nyheter"
-    },
-    {
       "href": "/evenemang",
       "label": "Evenemang"
     }
@@ -242,11 +230,13 @@
   },
   "WebDesignBy": "Webbdesign av Appstract",
   "ReadMore": "Läs mer",
+  "GetInTouch": "Kom i kontakt med oss",
   "the_rosers_concept_title": "Rosers Koncept",
   "the_rosers_concept_description": "Följ med oss när vi förvandlar drömmar till verklighet med 'Rosers Koncept' under en global resa av epikurisk förtjusning.",
   "TheConcept": {
     "href": "/konceptet",
     "title": "Konceptet",
+    "our_concept": "Vårt koncept",
     "subtitle": "Exklusiva evenemang för dig som söker oöverträffad kvalitet",
     "secondary_title": "Rosers Koncept",
     "secondary_description": "Följ med oss när vi förvandlar drömmar till verklighet med 'Rosers Koncept' under en global resa av epikurisk förtjusning.",
@@ -257,27 +247,108 @@
   },
   "OurHistory": {
     "href": "/om-oss/var-historia",
+    "label": "Läs mer om vår historia",
     "title": "Vår historia",
     "secondary_title": "Ett halvt sekel av kulinarisk expertis",
-    "secondary_description": "Rosers Kitchens rötter sträcker sig tillbaka till en motståndskraftig restaurangfamilj som har överlevt prövningar och format kulinariska landskap i över 50 år. Idag står vårt kärnteam, lett av Bengt Roser, redo att omdefiniera matupplevelser med orubblig passion och expertis.\n\nFölj med oss på en resa där varje ögonblick avnjuts och varje detalj förfinas.",
+    "secondary_description": "Sedan 1970-talet har Bengt Roser, med sitt brinnande intresse för gastronomi, byggt upp en framstående cateringverksamhet som har satt standarden för kvalitet och kundupplevelse.\n\nGenom åren har han tagit sig an prestigefyllda uppdrag, inklusive den svenska paviljongen på världsutställningen i Shanghai 2010. Hans engagemang för hållbarhet och innovation har lett till ett väletablerat företag som idag erbjuder skräddarsydda matupplevelser för både privata och stora evenemang.",
     "subtitle": "Resan som formade oss",
-    "description": "Sedan vår start har vi varit engagerade i att leverera excellens i allt vi gör. Vår berättelse är en om passion, engagemang och tillväxt."
+    "description": "Sedan vår start har vi varit engagerade i att leverera excellens i allt vi gör. Vår berättelse är en om passion, engagemang och tillväxt.",
+    "sections": [
+      {
+        "title": "Från idé till verklighet",
+        "subtitle": "En passion för mat som grundade Rosers",
+        "description": "Bengt Roser började sin karriär inom catering och restaurangbranschen redan som ung. Hans engagemang för kvalitet och passion för mat gjorde att han startade sitt första cateringföretag. Under de första åren byggde han ett starkt rykte inom branschen och fick snabbt uppdrag från både företag och privatpersoner.",
+        "image": "/our-history.png"
+      },
+      {
+        "title": "Byggandet av en framgångsrik verksamhet",
+        "subtitle": "En vision som förverkligades",
+        "description": "Med målmedvetenhet och ett fokus på kvalitet växte Rosers snabbt. Företaget levererade till både små och stora evenemang och fick snart ett rykte för att alltid leverera matupplevelser av högsta kvalitet. Hans framgång låg i förmågan att alltid överträffa kundernas förväntningar.",
+        "image": "/bengt-roser-black-and-white.jpeg"
+      },
+      {
+        "title": "Från stadshotell till global catering",
+        "subtitle": "Skara Stadshotell",
+        "description": "Familjen Roser tog över Skara Stadshotell 1966 och drev det framgångsrikt fram till 2020. Under deras ledning breddades verksamheten till catering och event, med uppdrag som inkluderade den svenska paviljongen vid världsutställningen i Shanghai 2010.\n\nUnder deras tid på hotellet blev det en central punkt för både lokala och internationella evenemang.",
+        "image": "/skara-stadshotell.jpg"
+      },
+      {
+        "title": "Ledande inom cateringbranschen",
+        "subtitle": "Rosers blir ett varumärke att räkna med",
+        "description": "Genom åren har Rosers blivit ett synonymt namn för högklassig catering. Företaget har serverat på både nationella och internationella evenemang och har fortsatt att vara en ledande aktör inom branschen. Rosers passion för mat och service har gjort dem till ett eftertraktat namn.",
+        "image": "/IMG_2813.jpeg"
+      }
+    ]
   },
   "WhatWeDo": {
     "href": "/om-oss/vad-vi-gor",
+    "label": "Läs mer om vad vi gör",
     "title": "Vad vi gör",
     "secondary_title": "Excellens i varje aspekt",
     "secondary_description": "Vi specialiserar oss på att erbjuda unika, skräddarsydda lösningar som möter behoven hos vår mångsidiga kundbas. Vårt mål är att säkerställa att varje upplevelse överträffar förväntningarna.\n\nVi är på väg att omdefiniera konsten att äta, och vi har skapat ett värld där varje bit berättar en historia, och varje måltid är en oförglömlig resa. Vår kreativitet är drivs av en ständig sökning efter inspiration, som gör gränser för att leverera nya och innovativa upplevelser.",
     "subtitle": "Innovativa lösningar och tjänster",
-    "description": "Vi specialiserar oss på att erbjuda unika, skräddarsydda lösningar som möter behoven hos vår mångsidiga kundbas. Vårt mål är att säkerställa att varje upplevelse överträffar förväntningarna."
+    "description": "Vi specialiserar oss på att erbjuda unika, skräddarsydda lösningar som möter behoven hos vår mångsidiga kundbas. Vårt mål är att säkerställa att varje upplevelse överträffar förväntningarna.",
+    "sections": [
+      {
+        "title": "Storskalig catering och evenemang",
+        "subtitle": "Experthantering av stora sammankomster",
+        "description": "Rosers specialiserar sig på catering för storskaliga evenemang och hanterar allt från intima middagar till evenemang som serverar tusentals gäster. Från mässor till företagsgalor, vi levererar felfri service för olika kundbehov.",
+        "image": "/IMG_2816.jpeg"
+      },
+      {
+        "title": "Internationella och nationella evenemang",
+        "subtitle": "Catering över gränserna",
+        "description": "Rosers serverar högprofilerade evenemang både i Sverige och internationellt. Oavsett om det är i Shanghais svenska paviljong på Expo 2010 eller större evenemang som Volvo Ocean Race, deras förmåga att genomföra stora cateringverksamheter över hela världen skiljer dem åt.",
+        "image": "/IMG_2813.jpeg"
+      },
+      {
+        "title": "Anpassade evenemangslösningar",
+        "subtitle": "Skräddarsydda tjänster för varje evenemang",
+        "description": "Oavsett om det gäller en utställning, ett bröllop eller en kunglig bankett, skapar Rosers skräddarsydda cateringupplevelser. Deras expertis sträcker sig till att erbjuda specialiserade tjänster för utställningar, vilket säkerställer att både utställare och besökare får förstklassig mat och service.",
+        "image": "/IMG_2607.png"
+      },
+      {
+        "title": "Betrodd av högprofilerade kunder",
+        "subtitle": "Tjänar royalty- och industrijättar",
+        "description": "Med en imponerande bakgrund av att ha arbetat med högprofilerade kunder som Sveriges kungafamilj, Saab, Volvo och försvarssektorn, har vi byggt upp ett oöverträffat förtroende för att hantera prestigefyllda evenemang med högsta precision och excellens. Vårt rykte för kvalitet är omskrivet världen över.",
+        "image": "/IMG_0200.jpeg"
+      }
+    ]
   },
   "WhoWeAre": {
     "href": "/om-oss/vilka-vi-ar",
+    "label": "Läs mer om oss",
     "title": "Vilka vi är",
-    "secondary_title": "Rosers",
-    "secondary_description": "Vi är mer än bara en kulinarisk team; vi är pionerare av  oförglömliga matupplevelser. Med en äldre spanning över 50  år, vår passion för kulinarisk utmaning drivar oss till att omdefiniera konsten att äta. Led av vårt visionär fantasier Bengt Roser, vårt team är dedikerade till att skapa måltider som övergår smaklök, förändrar vanliga  samlingar till extraordinära möten.\n\nVälkommen till en värld där varje bit berättar en historia, och varje måltid är en oförglömlig resa.",
+    "secondary_title": "Vi är Rosers",
+    "secondary_description": "Vi är mer än bara ett kulinariskt team – vi är pionjärer inom oförglömliga matupplevelser. Med ett arv som sträcker sig över 50 år drivs vi av vår passion för kulinarisk excellens och en strävan att omdefiniera konsten att njuta av mat. Under ledning av vår visionära grundare Bengt Roser är vårt team engagerat i att skapa stunder som går bortom smaken och förvandlar vanliga sammankomster till extraordinära upplevelser.",
     "subtitle": "Möt teamet bakom visionen",
-    "description": "Vårt team består av passionerade yrkesverksamma som är experter inom sina områden. Tillsammans arbetar vi för att förverkliga din vision."
+    "description": "Vårt team består av passionerade yrkesverksamma som är experter inom sina områden. Tillsammans arbetar vi för att förverkliga din vision.",
+    "sections": [
+      {
+        "title": "Storskalig catering och evenemang",
+        "subtitle": "Experthantering av stora sammankomster",
+        "description": "Rosers specialiserar sig på catering för storskaliga evenemang och hanterar allt från intima middagar till evenemang som serverar tusentals gäster. Från mässor till företagsgalor, vi levererar felfri service för olika kundbehov.",
+        "image": "/IMG_2816.jpeg"
+      },
+      {
+        "title": "Internationella och nationella evenemang",
+        "subtitle": "Catering över gränserna",
+        "description": "Rosers serverar högprofilerade evenemang både i Sverige och internationellt. Oavsett om det är i Shanghais svenska paviljong på Expo 2010 eller större evenemang som Volvo Ocean Race, deras förmåga att genomföra stora cateringverksamheter över hela världen skiljer dem åt.",
+        "image": "/IMG_2813.jpeg"
+      },
+      {
+        "title": "Anpassade evenemangslösningar",
+        "subtitle": "Skräddarsydda tjänster för varje evenemang",
+        "description": "Oavsett om det gäller en utställning, ett bröllop eller en kunglig bankett, skapar Rosers skräddarsydda cateringupplevelser. Deras expertis sträcker sig till att erbjuda specialiserade tjänster för utställningar, vilket säkerställer att både utställare och besökare får förstklassig mat och service.",
+        "image": "/IMG_2607.png"
+      },
+      {
+        "title": "Betrodd av högprofilerade kunder",
+        "subtitle": "Tjänar royalty- och industrijättar",
+        "description": "Med en imponerande bakgrund av att ha arbetat med högprofilerade kunder som Sveriges kungafamilj, Saab, Volvo och försvarssektorn, har vi byggt upp ett oöverträffat förtroende för att hantera prestigefyllda evenemang med högsta precision och excellens. Vårt rykte för kvalitet är omskrivet världen över.",
+        "image": "/IMG_0200.jpeg"
+      }
+    ]
   },
   "Contact": {
     "href": "/kontakt",
@@ -292,12 +363,6 @@
     "secondary_description": "Vi arrangerar evenemang över hela världen, så att varje evenemang speglar excellens och är skräddarsytt för att möta våra kunders unika förväntningar.\n\nFå reda på våra kunders upplevelser och upptäck våra evenemang.",
     "subtitle": "Upptäck våra kommande evenemang",
     "description": "Delta i våra exklusiva evenemang utformade för att inspirera och engagera. Håll dig uppdaterad om våra senaste händelser."
-  },
-  "News": {
-    "href": "/nyheter",
-    "title": "Nyheter",
-    "subtitle": "Håll dig informerad med de senaste uppdateringarna",
-    "description": "Ta del av de senaste nyheterna och uppdateringarna från vårt team. Vi delar insikter, berättelser och bakom kulisserna inblickar i vad som händer."
   },
   "Inspiration": {
     "href": "/var-kreativitet/inspiration",
@@ -332,27 +397,27 @@
   "About": {
     "href": "/om-oss",
     "title": "Om Oss",
-    "subtitle": "Lär dig mer om vilka vi är",
-    "description": "Vi är ett passionerat team som är dedikerade till att erbjuda högkvalitativa upplevelser skräddarsydda efter dina behov. Vår resa är rotad i excellens och drivs av innovation."
+    "subtitle": "Passion för smak och perfektion",
+    "description": "Vi kombinerar tradition och innovation för att skapa minnesvärda matupplevelser. Med rötter i decennier av framgångsrik matlagning och eventhantering levererar vi catering av högsta kvalitet, oavsett om det gäller mindre privata tillställningar eller stora internationella evenemang.\n\nFrån kungliga bröllop till världsomspännande projekt som världsutställningen i Shanghai – vi har erfarenheten och engagemanget för att göra varje måltid speciell. Låt oss skapa något unikt för ditt nästa event."
   },
   "Concepts": {
     "labels": [
       {
         "title": "Rosers Kök",
         "subtitle": "Molnköket",
-        "image": "/rosers-kitchen.png",
+        "image": "/rosers-kitchen.jpg",
         "link": "/konceptet/rosers-kok"
       },
       {
         "title": "Rosers Globala Evenemang",
         "subtitle": "Globalt förtroende",
-        "image": "/rosers-global-events.png",
+        "image": "/rosers-global-events.jpg",
         "link": "/konceptet/rosers-globala-evenemang"
       },
       {
         "title": "Rosers Konsultering",
         "subtitle": "Kulinariska pionjärer",
-        "image": "/rosers-consulting.png",
+        "image": "/rosers-consulting.jpg",
         "link": "/konceptet/rosers-konsultering"
       }
     ]

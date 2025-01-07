@@ -257,25 +257,25 @@
         "title": "From idea to reality",
         "subtitle": "A passion for food that founded Rosers",
         "description": "Bengt Roser began his career in the catering and restaurant industry at a young age. His commitment to quality and passion for food led him to start his first catering company. In the first few years, he built a strong reputation in the industry and quickly received assignments from both companies and individuals.",
-        "image": "/our-history.png"
+        "image": "/bengt001.webp"
       },
       {
         "title": "Building a successful business",
         "subtitle": "A vision that came true",
         "description": "With determination and a focus on quality, Rosers grew rapidly. The company supplied both small and large events and soon gained a reputation for always delivering the highest quality dining experiences. His success lay in his ability to always exceed customer expectations.",
-        "image": "/bengt-roser-black-and-white.jpeg"
+        "image": "/bengt002.webp"
       },
       {
         "title": "From city hotel to global catering",
         "subtitle": "City Hotel of Skara",
         "description": "The Roser family took over the city hotel of Skara in 1966 and ran it successfully until 2020. Under their leadership, the business expanded into catering and events, with assignments that included the Swedish pavilion at the 2010 Shanghai World Expo.\n\nDuring their time at the hotel, it became a focal point for both local and international events.",
-        "image": "/skara-stadshotell.jpg"
+        "image": "/skara-stadshotell.webp"
       },
       {
         "title": "Leader in the catering industry",
         "subtitle": "Rosers becomes a brand to be reckoned with",
         "description": "Over the years, Rosers has become a synonymous name for high-class catering. The company has served at both national and international events and has continued to be a leading player in the industry. Rosers' passion for food and service has made them a sought-after name.",
-        "image": "/IMG_2813.jpeg"
+        "image": "/event003.webp"
       }
     ]
   },
@@ -292,13 +292,13 @@
         "title": "Large-scale catering & events",
         "subtitle": "Expert handling of large gatherings",
         "description": "Rosers specializes in catering for large-scale events, handling everything from intimate dinners to events serving thousands of guests. From trade shows to corporate galas, they deliver flawless service for diverse client needs.",
-        "image": "/IMG_2816.jpeg"
+        "image": "/event005.webp"
       },
       {
         "title": "International & national events",
         "subtitle": "Catering across borders",
         "description": "Rosers serves high-profile events both in Sweden and internationally. Whether in Shanghai's Swedish Pavilion at Expo 2010 or major events like Volvo Ocean Race, their ability to execute large catering operations worldwide sets them apart.",
-        "image": "/IMG_2813.jpeg"
+        "image": "/event003.webp"
       },
       {
         "title": "Customized event solutions",
@@ -310,7 +310,7 @@
         "title": "Trusted by high-profile clients",
         "subtitle": "Serving royalty & industry giants",
         "description": "With an impressive track record of working with high-profile clients including the Swedish royal family, Saab, Volvo, and defense sector, we have built an unparalleled trust in handling prestigious events with utmost precision and excellence. Our reputation for quality is renowned globally.",
-        "image": "/IMG_0200.jpeg"
+        "image": "/event001.webp"
       }
     ]
   },
@@ -327,13 +327,13 @@
         "title": "Large-scale catering & events",
         "subtitle": "Expert handling of large gatherings",
         "description": "Rosers specializes in catering for large-scale events, handling everything from intimate dinners to events serving thousands of guests. From trade shows to corporate galas, they deliver flawless service for diverse client needs.",
-        "image": "/IMG_2816.jpeg"
+        "image": "/event005.webp"
       },
       {
         "title": "International & national events",
         "subtitle": "Catering across borders",
         "description": "Rosers serves high-profile events both in Sweden and internationally. Whether in Shanghai's Swedish Pavilion at Expo 2010 or major events like Volvo Ocean Race, their ability to execute large catering operations worldwide sets them apart.",
-        "image": "/IMG_2813.jpeg"
+        "image": "/event003.webp"
       },
       {
         "title": "Customized event solutions",
@@ -345,7 +345,7 @@
         "title": "Trusted by high-profile clients",
         "subtitle": "Serving royalty & industry giants",
         "description": "With an impressive track record of working with high-profile clients including the Swedish royal family, Saab, Volvo, and defense sector, we have built an unparalleled trust in handling prestigious events with utmost precision and excellence. Our reputation for quality is renowned globally.",
-        "image": "/IMG_0200.jpeg"
+        "image": "/event001.webp"
       }
     ]
   },
@@ -405,19 +405,19 @@
       {
         "title": "Rosers Kitchen",
         "subtitle": "The Cloud Kitchen",
-        "image": "/rosers-kitchen.jpg",
+        "image": "/rosers-kitchen.webp",
         "link": "/the-concept/rosers-kitchen"
       },
       {
         "title": "Rosers Global Events",
         "subtitle": "Globally Renowned",
-        "image": "/rosers-global-events.jpg",
+        "image": "/rosers-global-events.webp",
         "link": "/the-concept/rosers-global-events"
       },
       {
         "title": "Rosers Consulting",
         "subtitle": "The Culinary Pioneers",
-        "image": "/rosers-consulting.jpg",
+        "image": "/rosers-consulting.webp",
         "link": "/the-concept/rosers-consulting"
       }
     ]

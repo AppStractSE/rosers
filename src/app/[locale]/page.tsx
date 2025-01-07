@@ -20,7 +20,7 @@ export default function Index({
         <HeroSection
           title={translation("Home.HeroSection.title")}
           description={translation("Home.HeroSection.description")}
-          image="/herotest.png"
+          image="/hero-image-homepage.webp"
           showLogo
         />
         <Divider />
@@ -28,7 +28,7 @@ export default function Index({
           title={translation("WhoWeAre.secondary_title")}
           subTitle={translation("WhoWeAre.title")}
           text={translation("WhoWeAre.secondary_description")}
-          image="/_00A8854ss.jpg"
+          image="/bengt.webp"
           button={{
             text: translation("WhoWeAre.label"),
             link: translation("WhoWeAre.href"),
@@ -39,7 +39,7 @@ export default function Index({
           title={translation("WhatWeDo.secondary_title")}
           subTitle={translation("WhatWeDo.title")}
           text={translation("WhatWeDo.secondary_description")}
-          image="/14_15._00A8688.jpg"
+          image="/staff001.webp"
           button={{
             text: translation("WhatWeDo.label"),
             link: translation("WhatWeDo.href"),
@@ -53,7 +53,7 @@ export default function Index({
           title={translation("OurHistory.secondary_title")}
           subTitle={translation("OurHistory.title")}
           text={translation("OurHistory.secondary_description")}
-          image="/our-history.png"
+          image="/bengt001.webp"
           button={{
             text: translation("ReadMore"),
             link: translation("OurHistory.href"),
@@ -63,7 +63,7 @@ export default function Index({
           title={translation("Events.secondary_title")}
           subTitle={translation("Events.title")}
           text={translation("Events.secondary_description")}
-          image="/DSC_5910.jpg"
+          image="/event001.webp"
           button={{
             text: translation("ReadMore"),
             link: translation("Events.href"),

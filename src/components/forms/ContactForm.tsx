@@ -86,12 +86,12 @@ const ContactForm = () => {
   };
 
   const baseClasses =
-    " text-[#f5cea4] text-base focus-visible:placeholder:text-[#f5cea4] placeholder:text-[#dab389] bg-[#2e2e2e] w-full p-4 rounded-sm focus:outline-none focus-visible:outline-[#8B7257] font-thin tracking-widest ring-0 focus-visible:outline-1 focus-visible:text-[#f5cea4] focus-visible:outline-offset-0 focus:bg-[#3f3f3f] transition-all duration-500 ease-in-out ";
+    " text-[#f5cea4] text-base focus-visible:placeholder:text-[#f5cea4] placeholder:text-[#dab389] bg-[#2e2e2e] w-full p-4 rounded-sm focus:outline-none focus-visible:outline-[#8B7257] font-thin tracking-widest ring-0 focus-visible:outline-1 focus-visible:text-[#f5cea4] focus-visible:outline-offset-0 focus:bg-[#3f3f3f] transition-all duration-300 ease-in-out ";
 
   const errorClass =
     " outline outline-1 outline-offset-0 outline-red-700 placeholder:text-red-500 ";
   const errorTextBaseClass =
-    " text-red-500 text-xs font-thin tracking-widest transition-all duration-500 ease-in-out ";
+    " text-red-500 text-xs font-thin tracking-widest transition-all duration-300 ease-in-out ";
   const errorTextHiddenClasses = " opacity-0 max-h-0 ";
   const errorTextVisibleClasses = " mt-2 mb-6 opacity-100 max-h-full ";
 
@@ -287,14 +287,14 @@ const ContactForm = () => {
       </form>
 
       <div
-        className={"absolute inset-0 left-0 top-0 -m-2 overflow-hidden rounded border-[#a286688e] bg-charcoal-800/50 backdrop-blur-sm transition-all delay-75 duration-500 ease-in-out lg:backdrop-blur-sm"
+        className={"absolute inset-0 left-0 top-0 -m-2 overflow-hidden rounded border-[#a286688e] bg-charcoal-800/50 backdrop-blur-sm transition-all delay-75 duration-300 ease-in-out lg:backdrop-blur-sm"
           .concat(" ")
           .concat(
             formSubmitted ? "visible opacity-100" : "invisible opacity-0",
           )}
       >
         <div
-          className={"flex h-full transform flex-col items-center justify-center space-y-4 transition-all duration-500 ease-in-out"
+          className={"flex h-full transform flex-col items-center justify-center space-y-4 transition-all duration-300 ease-in-out"
             .concat(" ")
             .concat(formSubmitted ? "translate-y-0" : "translate-y-[125%]")}
         >

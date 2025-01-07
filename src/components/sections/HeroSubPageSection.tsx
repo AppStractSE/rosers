@@ -1,13 +1,34 @@
+"use client";
+import Image from "next/image";
+import { twMerge } from "tailwind-merge";
+
 interface Props {
   image?: string;
 }
 
 const HeroSubPageSection = ({ image }: Props) => {
+  const imageBaseClasses =
+    "h-auto max-h-[72.5vh] object-cover w-full object-cover transition-all ease-in-out";
+  const loadingClasses =
+    " data-[loaded=false]:animate-pulse data-[loaded=false]:bg-gray-100/10 data-[loaded=false]:blur-sm";
   return (
-    <section
-      className="aspect-[21/9] h-auto max-h-[70vh] w-full border-b border-b-brass bg-cover bg-center bg-no-repeat"
-      style={{ backgroundImage: `url('${image ?? "/hero-image.webp"}')` }}
-    ></section>
+    <section className="w-full border-b border-b-brass">
+      <Image
+        data-loaded="false"
+        onLoad={(event) => {
+          event.currentTarget.setAttribute("data-loaded", "true");
+        }}
+        className={twMerge(imageBaseClasses, loadingClasses)}
+        src={image ?? "/hero-image.webp"}
+        priority
+        height={1080}
+        width={1920}
+        quality={100}
+        alt="Hero image"
+        blurDataURL={image}
+        placeholder="blur"
+      />
+    </section>
   );
 };
 

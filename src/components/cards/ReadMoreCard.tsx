@@ -24,10 +24,10 @@ const ReadMoreCard = ({ title, subtitle, image, link, className }: Props) => {
     >
       <img
         src={image}
-        className="h-[300px] w-full object-cover transition-all duration-500 ease-in-out md:h-[450px] lg:h-[550px]"
+        className="h-[300px] w-full object-cover transition-all duration-300 ease-in-out md:h-[450px] lg:h-[550px]"
       />
       <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-b from-charcoal-950/50 to-charcoal-950 p-4 backdrop-blur-sm">
-        <div className="-ml-12 flex items-center gap-4 transition-all duration-500 ease-in-out group-hover:ml-0">
+        <div className="-ml-12 flex items-center gap-4 transition-all duration-300 ease-in-out group-hover:ml-0">
           <IoMdArrowForward className="duration-250 -translate-x-2 text-4xl opacity-0 transition-all ease-in-out group-hover:translate-x-0 group-hover:opacity-100" />
           <div>
             <p className="text-sm uppercase text-brass lg:text-xs">

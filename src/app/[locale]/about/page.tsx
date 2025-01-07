@@ -23,7 +23,7 @@ export default function Index({
   return (
     <>
       <main>
-        <HeroSubPageSection image="/herotest_bw.png" />
+        <HeroSubPageSection image="/hero-image-about.webp" />
         <InfoSection
           title={translation("About.title")}
           subtitle={translation("About.subtitle")}
@@ -40,7 +40,7 @@ export default function Index({
           title={translation("WhatWeDo.secondary_title")}
           subTitle={translation("WhatWeDo.title")}
           text={translation("WhatWeDo.secondary_description")}
-          image="/14_15._00A8688.jpg"
+          image="/staff001.webp"
           button={{
             text: translation("WhatWeDo.label"),
             link: translation("WhatWeDo.href"),
@@ -51,7 +51,7 @@ export default function Index({
           title={translation("WhoWeAre.secondary_title")}
           subTitle={translation("WhoWeAre.title")}
           text={translation("WhoWeAre.secondary_description")}
-          image="/_00A8854ss.jpg"
+          image="/bengt.webp"
           button={{
             text: translation("WhoWeAre.label"),
             link: translation("WhoWeAre.href"),
@@ -62,7 +62,7 @@ export default function Index({
           title={translation("OurHistory.secondary_title")}
           subTitle={translation("OurHistory.title")}
           text={translation("OurHistory.secondary_description")}
-          image="/bengt-roser-black-and-white.jpeg"
+          image="/bengt002.webp"
           button={{
             text: translation("OurHistory.label"),
             link: translation("OurHistory.href"),

@@ -31,18 +31,22 @@ const Modal = ({ isOpen, setIsOpen }: Props) => {
   };
   return (
     <div
-      className={"fixed inset-0 z-10 h-full w-full transform overflow-hidden transition-all delay-75 duration-500 ease-in-out lg:backdrop-blur-sm"
+      className={"fixed inset-0 z-10 h-full w-full transform overflow-hidden transition-all delay-75 duration-300 ease-in-out lg:backdrop-blur-sm"
         .concat(" ")
-        .concat(isOpen ? "visible opacity-100" : "invisible opacity-0")}
+        .concat(
+          isOpen
+            ? "visible opacity-100"
+            : "pointer-events-none invisible opacity-0",
+        )}
     >
       <div
-        className={"h-full w-screen overflow-hidden bg-black transition-all duration-500"
+        className={"h-full w-screen overflow-hidden bg-black transition-all duration-300"
           .concat(" ")
           .concat(isOpen ? "opacity-50" : "opacity-0")}
         onClick={handleToggle}
       />
       <div
-        className={"absolute inset-0 left-0 right-0 top-0 mx-auto my-auto flex h-full max-w-xl transform flex-col justify-between overflow-y-auto border-[#a286688e] bg-charcoal-700 px-4 py-4 shadow-xl transition-all duration-500 ease-in-out sm:border md:max-h-[90vh] md:px-12 md:py-8 lg:bg-opacity-80"
+        className={"absolute inset-0 left-0 right-0 top-0 mx-auto my-auto flex h-full max-w-xl transform flex-col justify-between overflow-y-auto border-[#a286688e] bg-charcoal-700 px-4 py-4 shadow-xl transition-all duration-300 ease-in-out sm:border md:max-h-[90vh] md:px-12 md:py-8 lg:bg-opacity-80"
           .concat(" ")
           .concat(isOpen ? "translate-y-0" : "translate-y-[125%]")}
       >

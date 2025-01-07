@@ -25,6 +25,7 @@ export default function Index({
     <main>
       <HeroSubPageSection image="/hero-image-our-history.webp" />
       <InfoSection
+        showBreadcrumbs
         title={translation("OurHistory.secondary_title")}
         subtitle={translation("OurHistory.title")}
         description={translation("OurHistory.secondary_description")}

@@ -221,7 +221,7 @@ const Logo = () => (
 
 function isActiveDiamond(isActive: boolean) {
   const activeDiamond =
-    "w-3 h-3 bg-[#8B7257] transform rotate-45 rounded-sm transition-all duration-500 ease-in-out  "
+    "w-3 h-3 bg-[#8B7257] transform rotate-45 rounded-sm transition-all duration-300 ease-in-out  "
       .concat(" ")
       .concat(isActive ? "opacity-100" : "opacity-0 group-hover:opacity-100");
   const isActiveClassNames = isActive && "text-brass";
@@ -231,8 +231,13 @@ function isActiveDiamond(isActive: boolean) {
 const Drawer = ({ isOpen, setIsOpen }: Props) => {
   const [isMobile, setIsMobile] = useState<boolean>(false);
   const [mounted, setMounted] = useState<boolean>(false);
+  const [currentPath, setCurrentPath] = useState<string>("");
   const pathname = usePathname();
   const locale = useLocale();
+
+  useEffect(() => {
+    setCurrentPath(pathname);
+  }, [pathname]);
 
   useEffect(() => {
     setMounted(true);
@@ -268,17 +273,19 @@ const Drawer = ({ isOpen, setIsOpen }: Props) => {
         className={"fixed inset-0 z-10 h-full w-full transform overflow-hidden backdrop-blur-sm transition-all duration-500 ease-in-out"
           .concat(" ")
           .concat(
-            isOpen ? "visible opacity-100" : "invisible opacity-0 delay-200",
+            isOpen
+              ? "visible opacity-100"
+              : "pointer-events-none invisible opacity-0 delay-200",
           )}
       >
         <div
-          className={"h-full w-screen overflow-hidden bg-black transition-all duration-500"
+          className={"h-full w-screen overflow-hidden bg-black transition-all duration-300"
             .concat(" ")
             .concat(isOpen ? "opacity-50" : "opacity-0")}
           onClick={handleToggle}
         />
         <div
-          className={"absolute left-0 top-0 flex h-full w-full max-w-2xl transform flex-col justify-between overflow-auto border-[#a286688e] bg-charcoal-700 bg-opacity-80 px-4 py-4 shadow-xl transition-all duration-500 ease-in-out md:border-r md:px-12 md:py-8 lg:bg-opacity-80"
+          className={"absolute left-0 top-0 flex h-full w-full max-w-2xl transform flex-col justify-between overflow-auto border-[#a286688e] bg-charcoal-700 bg-opacity-80 px-4 py-4 shadow-xl transition-all duration-300 ease-in-out md:border-r md:px-12 md:py-8 lg:bg-opacity-80"
             .concat(" ")
             .concat(
               isOpen ? "w-screen translate-x-0" : "w-0 -translate-x-full",
@@ -299,9 +306,9 @@ const Drawer = ({ isOpen, setIsOpen }: Props) => {
             </button>
           </div>
           <div className="mt-4">
-            <MainLinks currentPath={pathname} />
+            <MainLinks currentPath={currentPath} />
             <Logo />
-            <SecondaryLinks currentPath={pathname} isMobile={isMobile} />
+            <SecondaryLinks currentPath={currentPath} isMobile={isMobile} />
           </div>
           {isMobile ? (
             <></>

@@ -27,11 +27,11 @@
       },
       {
         "href": "/om-oss/vad-vi-gor",
-        "label": "Vad Vi Gör"
+        "label": "Vad vi gör"
       },
       {
         "href": "/om-oss/vilka-vi-ar",
-        "label": "Vilka Vi Är"
+        "label": "Vilka vi är"
       },
       {
         "href": "/om-oss/var-historia",
@@ -258,25 +258,25 @@
         "title": "Från idé till verklighet",
         "subtitle": "En passion för mat som grundade Rosers",
         "description": "Bengt Roser började sin karriär inom catering och restaurangbranschen redan som ung. Hans engagemang för kvalitet och passion för mat gjorde att han startade sitt första cateringföretag. Under de första åren byggde han ett starkt rykte inom branschen och fick snabbt uppdrag från både företag och privatpersoner.",
-        "image": "/our-history.png"
+        "image": "/bengt001.webp"
       },
       {
         "title": "Byggandet av en framgångsrik verksamhet",
         "subtitle": "En vision som förverkligades",
         "description": "Med målmedvetenhet och ett fokus på kvalitet växte Rosers snabbt. Företaget levererade till både små och stora evenemang och fick snart ett rykte för att alltid leverera matupplevelser av högsta kvalitet. Hans framgång låg i förmågan att alltid överträffa kundernas förväntningar.",
-        "image": "/bengt-roser-black-and-white.jpeg"
+        "image": "/bengt002.webp"
       },
       {
         "title": "Från stadshotell till global catering",
         "subtitle": "Skara Stadshotell",
         "description": "Familjen Roser tog över Skara Stadshotell 1966 och drev det framgångsrikt fram till 2020. Under deras ledning breddades verksamheten till catering och event, med uppdrag som inkluderade den svenska paviljongen vid världsutställningen i Shanghai 2010.\n\nUnder deras tid på hotellet blev det en central punkt för både lokala och internationella evenemang.",
-        "image": "/skara-stadshotell.jpg"
+        "image": "/skara-stadshotell.webp"
       },
       {
         "title": "Ledande inom cateringbranschen",
         "subtitle": "Rosers blir ett varumärke att räkna med",
         "description": "Genom åren har Rosers blivit ett synonymt namn för högklassig catering. Företaget har serverat på både nationella och internationella evenemang och har fortsatt att vara en ledande aktör inom branschen. Rosers passion för mat och service har gjort dem till ett eftertraktat namn.",
-        "image": "/IMG_2813.jpeg"
+        "image": "/event003.webp"
       }
     ]
   },
@@ -293,13 +293,13 @@
         "title": "Storskalig catering och evenemang",
         "subtitle": "Experthantering av stora sammankomster",
         "description": "Rosers specialiserar sig på catering för storskaliga evenemang och hanterar allt från intima middagar till evenemang som serverar tusentals gäster. Från mässor till företagsgalor, vi levererar felfri service för olika kundbehov.",
-        "image": "/IMG_2816.jpeg"
+        "image": "/event005.webp"
       },
       {
         "title": "Internationella och nationella evenemang",
         "subtitle": "Catering över gränserna",
         "description": "Rosers serverar högprofilerade evenemang både i Sverige och internationellt. Oavsett om det är i Shanghais svenska paviljong på Expo 2010 eller större evenemang som Volvo Ocean Race, deras förmåga att genomföra stora cateringverksamheter över hela världen skiljer dem åt.",
-        "image": "/IMG_2813.jpeg"
+        "image": "/event003.webp"
       },
       {
         "title": "Anpassade evenemangslösningar",
@@ -311,7 +311,7 @@
         "title": "Betrodd av högprofilerade kunder",
         "subtitle": "Tjänar royalty- och industrijättar",
         "description": "Med en imponerande bakgrund av att ha arbetat med högprofilerade kunder som Sveriges kungafamilj, Saab, Volvo och försvarssektorn, har vi byggt upp ett oöverträffat förtroende för att hantera prestigefyllda evenemang med högsta precision och excellens. Vårt rykte för kvalitet är omskrivet världen över.",
-        "image": "/IMG_0200.jpeg"
+        "image": "/event001.webp"
       }
     ]
   },
@@ -328,13 +328,13 @@
         "title": "Storskalig catering och evenemang",
         "subtitle": "Experthantering av stora sammankomster",
         "description": "Rosers specialiserar sig på catering för storskaliga evenemang och hanterar allt från intima middagar till evenemang som serverar tusentals gäster. Från mässor till företagsgalor, vi levererar felfri service för olika kundbehov.",
-        "image": "/IMG_2816.jpeg"
+        "image": "/event005.webp"
       },
       {
         "title": "Internationella och nationella evenemang",
         "subtitle": "Catering över gränserna",
         "description": "Rosers serverar högprofilerade evenemang både i Sverige och internationellt. Oavsett om det är i Shanghais svenska paviljong på Expo 2010 eller större evenemang som Volvo Ocean Race, deras förmåga att genomföra stora cateringverksamheter över hela världen skiljer dem åt.",
-        "image": "/IMG_2813.jpeg"
+        "image": "/event003.webp"
       },
       {
         "title": "Anpassade evenemangslösningar",
@@ -346,7 +346,7 @@
         "title": "Betrodd av högprofilerade kunder",
         "subtitle": "Tjänar royalty- och industrijättar",
         "description": "Med en imponerande bakgrund av att ha arbetat med högprofilerade kunder som Sveriges kungafamilj, Saab, Volvo och försvarssektorn, har vi byggt upp ett oöverträffat förtroende för att hantera prestigefyllda evenemang med högsta precision och excellens. Vårt rykte för kvalitet är omskrivet världen över.",
-        "image": "/IMG_0200.jpeg"
+        "image": "/event001.webp"
       }
     ]
   },
@@ -405,19 +405,19 @@
       {
         "title": "Rosers Kök",
         "subtitle": "Molnköket",
-        "image": "/rosers-kitchen.jpg",
+        "image": "/rosers-kitchen.webp",
         "link": "/konceptet/rosers-kok"
       },
       {
         "title": "Rosers Globala Evenemang",
         "subtitle": "Globalt förtroende",
-        "image": "/rosers-global-events.jpg",
+        "image": "/rosers-global-events.webp",
         "link": "/konceptet/rosers-globala-evenemang"
       },
       {
         "title": "Rosers Konsultering",
         "subtitle": "Kulinariska pionjärer",
-        "image": "/rosers-consulting.jpg",
+        "image": "/rosers-consulting.webp",
         "link": "/konceptet/rosers-konsultering"
       }
     ]

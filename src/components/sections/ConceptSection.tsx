@@ -101,7 +101,7 @@ const EmblaCarousel = () => {
                   title={translation("OurHistory.secondary_title")}
                   subTitle={translation("OurHistory.title")}
                   text={translation("OurHistory.secondary_description")}
-                  image="/our-history.png"
+                  image="/bengt001.webp"
                   button={{
                     text: translation("ReadMore"),
                     link: translation("OurHistory.href"),

@@ -1,4 +1,3 @@
-import InternalButton from "@/components/buttons/InternalButton";
 import ConceptCards from "@/components/cards/ConceptCards";
 import Divider from "@/components/divider/Divider";
 import ContactSection from "@/components/sections/ContactSection";
@@ -35,7 +34,7 @@ export default function Index({
           title={translation("OurHistory.secondary_title")}
           subTitle={translation("OurHistory.title")}
           text={translation("OurHistory.secondary_description")}
-          image="/bengt-roser-black-and-white.jpeg"
+          image="/bengt002.webp"
         />
         <Divider />
         <TextAndImageSection
@@ -53,7 +52,7 @@ export default function Index({
           title={translation("OurHistory.secondary_title")}
           subTitle={translation("OurHistory.title")}
           text={translation("OurHistory.secondary_description")}
-          image="/bengt-roser-black-and-white.jpeg"
+          image="/bengt002.webp"
           button={{
             text: "Read more",
             link: "/about/our-history",

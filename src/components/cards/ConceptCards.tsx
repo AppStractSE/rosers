@@ -55,7 +55,7 @@ const ConceptCards = ({ showHeader }: Props) => {
           {concepts.map((concept: ConceptItem, index: number) => (
             <ReadMoreCard
               key={index}
-              className="flex basis-full flex-col gap-4 transition-all duration-500 ease-in-out lg:basis-4/12 lg:hover:basis-6/12"
+              className="flex basis-full flex-col gap-4 transition-all duration-300 ease-in-out lg:basis-4/12 lg:hover:basis-6/12"
               title={concept.title}
               subtitle={concept.subtitle}
               image={concept.image}

@@ -35,6 +35,10 @@ const Navigation = () => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const pathname = usePathname();
+  const [currentPath, setCurrentPath] = useState<string>("");
+  useEffect(() => {
+    setCurrentPath(pathname);
+  }, [pathname]);
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
@@ -61,7 +65,7 @@ const Navigation = () => {
       <header className="sticky top-0 z-10 w-full border-b border-[#a286688e] bg-charcoal-800 bg-opacity-90 px-4 backdrop-blur-sm lg:backdrop-blur-md 2xl:px-16">
         <div className="mx-auto flex max-w-screen-xl items-center justify-between transition-all duration-200 ease-in-out">
           <nav
-            className={"lg:order-0 order-1 flex flex-1 flex-row-reverse items-center justify-start gap-4 text-xs transition-all duration-500 ease-in-out md:py-4 lg:flex-row lg:justify-start 2xl:text-base"
+            className={"lg:order-0 order-1 flex flex-1 flex-row-reverse items-center justify-start gap-4 text-xs transition-all duration-300 ease-in-out md:py-4 lg:flex-row lg:justify-start 2xl:text-base"
               .concat(" ")
               .concat(futuraStd.className)}
           >
@@ -77,7 +81,7 @@ const Navigation = () => {
                 key={item.label}
                 href={item.href}
                 label={item.label}
-                isActive={pathname === `/${locale}${item.href}`}
+                isActive={currentPath === `/${locale}${item.href}`}
               />
             ))}
           </nav>

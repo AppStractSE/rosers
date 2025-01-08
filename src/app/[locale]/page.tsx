@@ -15,64 +15,62 @@ export default function Index({
   const translation = useTranslations();
 
   return (
-    <>
-      <main>
-        <HeroSection
-          title={translation("Home.HeroSection.title")}
-          description={translation("Home.HeroSection.description")}
-          image="/hero-image-homepage.webp"
-          showLogo
-        />
-        <Divider />
-        <TextAndImageSection
-          title={translation("WhoWeAre.secondary_title")}
-          subTitle={translation("WhoWeAre.title")}
-          text={translation("WhoWeAre.secondary_description")}
-          image="/bengt.webp"
-          button={{
-            text: translation("WhoWeAre.label"),
-            link: translation("WhoWeAre.href"),
-          }}
-        />
-        <TextAndImageSection
-          rtl
-          title={translation("WhatWeDo.secondary_title")}
-          subTitle={translation("WhatWeDo.title")}
-          text={translation("WhatWeDo.secondary_description")}
-          image="/staff001.webp"
-          button={{
-            text: translation("WhatWeDo.label"),
-            link: translation("WhatWeDo.href"),
-          }}
-        />
-        <Divider />
-        <ConceptCards showHeader />
-        <Divider />
-        <TextAndImageSection
-          rtl
-          title={translation("OurHistory.secondary_title")}
-          subTitle={translation("OurHistory.title")}
-          text={translation("OurHistory.secondary_description")}
-          image="/bengt001.webp"
-          button={{
-            text: translation("ReadMore"),
-            link: translation("OurHistory.href"),
-          }}
-        />
-        <TextAndImageSection
-          title={translation("Events.secondary_title")}
-          subTitle={translation("Events.title")}
-          text={translation("Events.secondary_description")}
-          image="/event001.webp"
-          button={{
-            text: translation("ReadMore"),
-            link: translation("Events.href"),
-          }}
-        />
-        <Divider />
-        <ContactSection />
-        <Divider />
-      </main>
-    </>
+    <main>
+      <HeroSection
+        title={translation("Home.HeroSection.title")}
+        description={translation("Home.HeroSection.description")}
+        image="/hero-image-homepage.webp"
+        showLogo
+      />
+      <Divider />
+      <TextAndImageSection
+        title={translation("WhoWeAre.secondary_title")}
+        subTitle={translation("WhoWeAre.title")}
+        text={translation("WhoWeAre.secondary_description")}
+        image="/bengt.webp"
+        button={{
+          text: translation("WhoWeAre.label"),
+          link: translation("WhoWeAre.href"),
+        }}
+      />
+      <TextAndImageSection
+        rtl
+        title={translation("WhatWeDo.secondary_title")}
+        subTitle={translation("WhatWeDo.title")}
+        text={translation("WhatWeDo.secondary_description")}
+        image="/staff001.webp"
+        button={{
+          text: translation("WhatWeDo.label"),
+          link: translation("WhatWeDo.href"),
+        }}
+      />
+      <Divider />
+      <ConceptCards showHeader />
+      <Divider />
+      <TextAndImageSection
+        rtl
+        title={translation("OurHistory.secondary_title")}
+        subTitle={translation("OurHistory.title")}
+        text={translation("OurHistory.secondary_description")}
+        image="/bengt001.webp"
+        button={{
+          text: translation("ReadMore"),
+          link: translation("OurHistory.href"),
+        }}
+      />
+      <TextAndImageSection
+        title={translation("Events.secondary_title")}
+        subTitle={translation("Events.title")}
+        text={translation("Events.secondary_description")}
+        image="/event001.webp"
+        button={{
+          text: translation("ReadMore"),
+          link: translation("Events.href"),
+        }}
+      />
+      <Divider />
+      <ContactSection />
+      <Divider />
+    </main>
   );
 }

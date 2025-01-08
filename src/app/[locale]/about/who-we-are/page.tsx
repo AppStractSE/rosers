@@ -22,7 +22,6 @@ export default function Index({
   const translation = useTranslations();
   const sections = translation.raw("WhoWeAre.sections");
   return (
-    <>
       <main>
         <HeroSubPageSection image="/hero-image-our-history.webp" />
         <InfoSection
@@ -49,6 +48,5 @@ export default function Index({
         <ContactSection />
         <Divider />
       </main>
-    </>
   );
 }

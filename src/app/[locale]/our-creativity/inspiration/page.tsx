@@ -7,9 +7,10 @@ import TextAndImageSection from "@/components/sections/TextAndImageSection";
 import { Metadata } from "next";
 import { useTranslations } from "next-intl";
 import { unstable_setRequestLocale } from "next-intl/server";
+import React from "react";
 
 export const metadata: Metadata = {
-  title: "Inspiration",
+  title: "The Concept",
 };
 
 export default function Index({
@@ -19,51 +20,33 @@ export default function Index({
 }) {
   unstable_setRequestLocale(locale);
   const translation = useTranslations();
+  const sections = translation.raw("OurHistory.sections");
   return (
-    <>
-      <main>
-        <HeroSubPageSection image="/hero-image-our-history.webp" />
-        <InfoSection
-          title={translation("TheConcept.what_is_the_concept_title")}
-          subtitle={translation("TheConcept.subtitle")}
-          description={translation("TheConcept.description")}
-        />
-        <Divider />
-        <TextAndImageSection
-          rtl
-          title={translation("OurHistory.secondary_title")}
-          subTitle={translation("OurHistory.title")}
-          text={translation("OurHistory.secondary_description")}
-          image="/bengt002.webp"
-        />
-        <Divider />
-        <TextAndImageSection
-          title={translation("OurHistory.secondary_title")}
-          subTitle={translation("OurHistory.title")}
-          text={translation("OurHistory.secondary_description")}
-          image="/IMG_3614.jpeg"
-          button={{
-            text: "Read more",
-            link: "/about/our-history",
-          }}
-        />
-        <TextAndImageSection
-          rtl
-          title={translation("OurHistory.secondary_title")}
-          subTitle={translation("OurHistory.title")}
-          text={translation("OurHistory.secondary_description")}
-          image="/bengt002.webp"
-          button={{
-            text: "Read more",
-            link: "/about/our-history",
-          }}
-        />
-        <Divider />
-        <ConceptCards />
-        <Divider />
-        <ContactSection />
-        <Divider />
-      </main>
-    </>
+    <main>
+      <HeroSubPageSection image="/hero-image-our-history.webp" />
+      <InfoSection
+        showBreadcrumbs
+        title={translation("OurHistory.secondary_title")}
+        subtitle={translation("OurHistory.title")}
+        description={translation("OurHistory.secondary_description")}
+      />
+      <Divider />
+      {sections.map((section: any, index: number) => (
+        <React.Fragment key={index}>
+          <TextAndImageSection
+            rtl={index % 2 === 0}
+            title={section.title}
+            subTitle={section.subtitle}
+            text={section.description}
+            image={section.image}
+          />
+          <Divider />
+        </React.Fragment>
+      ))}
+      <ConceptCards showHeader />
+      <Divider />
+      <ContactSection />
+      <Divider />
+    </main>
   );
 }

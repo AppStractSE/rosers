@@ -1,3 +1,4 @@
+import CTAButton from "@/components/buttons/CTAButton";
 import ConceptCards from "@/components/cards/ConceptCards";
 import Divider from "@/components/divider/Divider";
 import ContactSection from "@/components/sections/ContactSection";
@@ -20,50 +21,45 @@ export default function Index({
   unstable_setRequestLocale(locale);
   const translation = useTranslations();
   return (
-    <>
-      <main>
-        <HeroSubPageSection image="/hero-image-our-history.webp" />
-        <InfoSection
-          title={translation("TheConcept.what_is_the_concept_title")}
-          subtitle={translation("TheConcept.subtitle")}
-          description={translation("TheConcept.description")}
+    <main>
+      <HeroSubPageSection image="/hero-image-events.webp" />
+      <InfoSection
+        title={translation("Events.title")}
+        subtitle={translation("Events.subtitle")}
+        description={translation("Events.description")}
+      >
+        <CTAButton
+          label={translation("GetInTouch")}
+          href={`/${locale}${translation("Contact.href")}`}
         />
-        <Divider />
-        <TextAndImageSection
-          rtl
-          title={translation("OurHistory.secondary_title")}
-          subTitle={translation("OurHistory.title")}
-          text={translation("OurHistory.secondary_description")}
-          image="/bengt002.webp"
-        />
-        <Divider />
-        <TextAndImageSection
-          title={translation("OurHistory.secondary_title")}
-          subTitle={translation("OurHistory.title")}
-          text={translation("OurHistory.secondary_description")}
-          image="/IMG_3614.jpeg"
-          button={{
-            text: "Read more",
-            link: "/about/our-history",
-          }}
-        />
-        <TextAndImageSection
-          rtl
-          title={translation("OurHistory.secondary_title")}
-          subTitle={translation("OurHistory.title")}
-          text={translation("OurHistory.secondary_description")}
-          image="/bengt002.webp"
-          button={{
-            text: "Read more",
-            link: "/about/our-history",
-          }}
-        />
-        <Divider />
-        <ConceptCards />
-        <Divider />
-        <ContactSection />
-        <Divider />
-      </main>
-    </>
+      </InfoSection>
+      <Divider />
+      <TextAndImageSection
+        rtl
+        title={translation("WhatWeDo.secondary_title")}
+        subTitle={translation("WhatWeDo.title")}
+        text={translation("WhatWeDo.secondary_description")}
+        image="/staff001.webp"
+      />
+      <Divider />
+      <TextAndImageSection
+        title={translation("WhoWeAre.secondary_title")}
+        subTitle={translation("WhoWeAre.title")}
+        text={translation("WhoWeAre.secondary_description")}
+        image="/bengt.webp"
+      />
+      <TextAndImageSection
+        rtl
+        title={translation("OurHistory.secondary_title")}
+        subTitle={translation("OurHistory.title")}
+        text={translation("OurHistory.secondary_description")}
+        image="/bengt002.webp"
+      />
+      <Divider />
+      <ConceptCards showHeader />
+      <Divider />
+      <ContactSection />
+      <Divider />
+    </main>
   );
 }

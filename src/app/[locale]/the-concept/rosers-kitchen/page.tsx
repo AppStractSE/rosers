@@ -20,7 +20,7 @@ export default function Index({
 }) {
   unstable_setRequestLocale(locale);
   const translation = useTranslations();
-  const sections = translation.raw("OurHistory.sections");
+  const sections = translation.raw("RosersKitchen.sections");
   return (
     <main>
       <HeroSubPageSection image="/hero-image-our-history.webp" />

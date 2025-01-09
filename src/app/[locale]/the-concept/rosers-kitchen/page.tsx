@@ -26,12 +26,12 @@ export default function Index({
       <HeroSubPageSection image="/hero-image-our-history.webp" />
       <InfoSection
         showBreadcrumbs
-        title={translation("OurHistory.secondary_title")}
-        subtitle={translation("OurHistory.title")}
-        description={translation("OurHistory.secondary_description")}
+        title={translation("RosersKitchen.subtitle")}
+        subtitle={translation("RosersKitchen.title")}
+        description={translation("RosersKitchen.description")}
       />
       <Divider />
-      {sections.map((section: any, index: number) => (
+      {/* {sections.map((section: any, index: number) => (
         <React.Fragment key={index}>
           <TextAndImageSection
             rtl={index % 2 === 0}
@@ -42,7 +42,7 @@ export default function Index({
           />
           <Divider />
         </React.Fragment>
-      ))}
+      ))} */}
       <ConceptCards showHeader />
       <Divider />
       <ContactSection />

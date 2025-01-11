@@ -44,18 +44,6 @@
       {
         "href": "/kontakt",
         "label": "Kontakt"
-      },
-      {
-        "href": "/var-kreativitet",
-        "label": "Vår Kreativitet"
-      },
-      {
-        "href": "/var-kreativitet/vision",
-        "label": "Vision"
-      },
-      {
-        "href": "/var-kreativitet/inspiration",
-        "label": "Inspiration"
       }
     ]
   },
@@ -127,19 +115,6 @@
           {
             "href": "/om-oss/var-historia",
             "label": "Vår historia"
-          }
-        ]
-      },
-      {
-        "label": "Vår kreativitet",
-        "links": [
-          {
-            "href": "/var-kreativitet/vision",
-            "label": "Vision"
-          },
-          {
-            "href": "/var-kreativitet/inspiration",
-            "label": "Inspiration"
           }
         ]
       },
@@ -361,44 +336,52 @@
     "title": "Evenemang",
     "secondary_title": "Globala evenemang och upplevelser",
     "secondary_description": "Vi arrangerar evenemang över hela världen, så att varje evenemang speglar excellens och är skräddarsytt för att möta våra kunders unika förväntningar.\n\nFå reda på våra kunders upplevelser och upptäck våra evenemang.",
-    "subtitle": "Upptäck våra evenemang",
-    "description": "Delta i våra exklusiva evenemang utformade för att inspirera och engagera. Håll dig uppdaterad om våra senaste händelser."
-  },
-  "Inspiration": {
-    "href": "/var-kreativitet/inspiration",
-    "title": "Inspiration",
-    "subtitle": "Kreativa gnistor som driver oss",
-    "description": "Vår kreativitet kommer från en ständig sökning efter inspiration i allt vi gör. Vi tänjer på gränserna för att leverera nya och innovativa upplevelser."
-  },
-  "Vision": {
-    "href": "/var-kreativitet/vision",
-    "title": "Vår vision",
-    "subtitle": "Vart vi ser oss själva i framtiden",
-    "description": "Vi drivs av en tydlig vision om framgång. Vår framtid präglas av innovation, tillväxt och oändliga möjligheter."
+    "subtitle": "Rosers ikoniska evenemang",
+    "description": "Utforska de storslagna evenemang vi har haft äran att organisera. Från det sagolika kungliga bröllopet mellan prins Carl Philip och prinsessan Sofia, där vi bidrog till att skapa en minnesvärd dag fylld av elegans och precision, till de actionfyllda scenerna under Volvo Ocean Race, där vi levererade upplevelser i världsklass både på land och till sjöss. Vi har också varit en del av den globala spänningen under de olympiska vinterspelen i Sydkorea, där vi säkerställde att varje detalj speglade den högsta standarden av kvalitet och innovation.\n\nMed Rosers vid rodret har våra kunder fått uppleva evenemang som inte bara engagerar utan också lever kvar i minnet länge efter att applåderna tystnat.",
+    "sections": [
+      {
+        "title": "Prins Carl Philip & prinsessan Sofia",
+        "subtitle": "Ett sagolikt bröllop",
+        "description": "Rosers hade äran att vara en del av det kungliga bröllopet mellan prins Carl Philip och prinsessan Sofia. Vi bidrog till att skapa en minnesvärd dag fylld av elegans och precision, där varje detalj var noga planerad och utförd. Vårt team arbetade tätt tillsammans med brudparet för att säkerställa att varje gäst fick en oförglömlig upplevelse.",
+        "image": "/event001.webp"
+      },
+      {
+        "title": "Volvo Ocean Race",
+        "subtitle": "Actionfyllda scener",
+        "description": "Rosers har varit en del av Volvo Ocean Race och levererat upplevelser i världsklass både på land och till sjöss. Vårt team har säkerställt att varje detalj, från mat till service, har varit av högsta kvalitet. Vi är stolta över att ha bidragit till detta prestigefyllda evenemang.",
+        "image": "/event001.webp"
+      },
+      {
+        "title": "Vinter-OS i Sydkorea",
+        "subtitle": "Global spänning",
+        "description": "Rosers var en del av den globala spänningen under de olympiska vinterspelen i Sydkorea. Vi säkerställde att varje detalj speglade den högsta standarden av kvalitet och innovation. Vårt team arbetade tätt tillsammans med arrangörerna för att skapa en minnesvärd upplevelse för alla deltagare.",
+        "image": "/event001.webp"
+      }
+    ]
   },
   "RosersConsulting": {
     "href": "/konceptet/rosers-konsultering",
-    "title": "Rosers Consulting",
+    "title": "Rosers Konsultering",
     "subtitle": "Från bra till bättre",
-    "description": "I den gastronomiska världen finns det en sällsynt typ av professionella kallade köksbrigad - en klassisk och väletablerad struktur i restauranger. Hos oss på Rosers har vi tagit detta koncept till nya höjder med vår senior köksbrigad. Denna elitgrupp delar med sig sin omfattande kunskap och expertis som konsulter, samarbetar med ambitiösa hotell, restauranger och kedjerestauranger som vill effektivisera och utveckla sin verksamhet.\n\nDet finns en speciell magi i att skapa något som ännu inte existerar - att använda lång erfarenhet, bred kunskap och kavla upp ärmarna för att bana nya vägar för framtiden. När man når en punkt där det blir av yttersta vikt att dela sin kunskap och sina insikter med nästa generation, är tiden inne att bilda något unikt. Det är precis vad vi har gjort: skapat en senior köks- och logistikbrigad.\n\nVårt teams samlande vishet spänner över decennier av gastronomisk excellens, från boutique-restauranger till etablerade storkök. Vi skapar inte bara mat - vi formar upplevelser, vi innoverar och vi överskrider gränser.",
+    "description": "Vi på Rosers har tagit konceptet köksbrigad till nya höjder med vår seniora köksbrigad. Vi delar vår omfattande expertis som konsulter och samarbetar med hotell, restauranger och kedjerestauranger för att effektivisera och utveckla deras verksamhet.\n\nVi har skapat en senior köks- och logistikbrigad för att dela vår kunskap med nästa generation. Vårt teams erfarenhet spänner över decennier av gastronomisk excellens, från boutique-restauranger till storkök. Vi formar inte bara mat - vi skapar upplevelser, innoverar och överskrider gränser.",
     "sections": [
       {
-        "title": "",
-        "subtitle": "",
-        "description": "",
-        "image": "/staff002.webp"
+        "title": "Expertis i handling",
+        "subtitle": "Bringer innovation till ditt kök",
+        "description": "Rosers Consulting bringer årsavlagda erfarenheter och expertis direkt till din verksamhet. Våra konsulter arbetar tätt tillsammans med dig för att identifiera områden för förbättring och implementera innovativa lösningar anpassade efter dina specifika behov.",
+        "image": "/rosers-consulting.webp"
       },
       {
-        "title": "",
-        "subtitle": "",
-        "description": "",
-        "image": "/food001.webp"
+        "title": "Anpassade lösningar",
+        "subtitle": "Personaliserad support för din verksamhet",
+        "description": "Oavsett om du letar efter att effektivisera ditt operativt arbete eller utöka dina menyerbjudanden, erbjuder Rosers Consulting personlig vägledning för att hjälpa dig uppnå dina mål. Från personalutbildning till menyutveckling, ger vi omfattande support.",
+        "image": "/staff001.webp"
       },
       {
-        "title": "",
-        "subtitle": "",
-        "description": "",
-        "image": "/breakfast.webp"
+        "title": "Logistisk support",
+        "subtitle": "Effektivitet genom experter i ledningen",
+        "description": "Våra konsulttjänster sträcker sig långt bortom gastronomisk expertis och inkluderar även logistikstöd. Vi kan assistera med lagerhantering, optimering av leveranskedjan och implementering av effektiva system för att höja din övergripande operativa effektivitet.",
+        "image": "/event003.webp"
       }
     ]
   },
@@ -409,21 +392,21 @@
     "description": "Mat är en konst som i bästa fall skapar starka band mellan människor runt bordet. Vi på Rosers är specialiserar oss på att arrangera storskaliga och avancerade evenemang med upp till 40 000 deltagare. Med internationella kunder och ett etablerat nätverk har vi byggt upp en välrenommerad verksamhet där catering och event står i centrum. Vår kärngrupp är känd för sina framstående prestationer och sitt engagemang för perfektion.\n\nVad gör Rosers unikt? Det är svårt att beskriva för den som ännu inte har upplevt det. Men låt oss ge en inblick i vår värld genom verkliga exempel – möten och evenemang där vi har fått skapa minnesvärda ögonblick under evenemang som Prins Carl Philips och prinsessan Sofias kungliga bröllop, Volvo Ocean Race, IKEA samt vinter-OS i Sydkorea för att nämna några.",
     "sections": [
       {
-        "title": "",
-        "subtitle": "",
-        "description": "",
-        "image": "/staff002.webp"
+        "title": "Exklusiva evenemang",
+        "subtitle": "Skapa oöverträffeliga upplevelser",
+        "description": "Från intima sammankomster till storskaliga spektakler förvandlar Rosers gastronomisk excellence varje evenemang till en unik upplevelse. Vår expertis säkerställer att varje detalj noga planeras och genomförs, vilket resulterar i verkligt minnesvärda ögonblick för deltagarna.",
+        "image": "/rosers-global-events.webp"
       },
       {
-        "title": "",
-        "subtitle": "",
-        "description": "",
+        "title": "Konstnärlig expression",
+        "subtitle": "Där kreativitet möter matkultur",
+        "description": "Vid Rosers tror vi att mat och konst går hand i hand. Våra köksmäster kombinerar smaker och tekniker för att skapa visuellt imponerande rätter som njuter både örat och ögat. Från intricate iskonst till anpassade menydesigns, gör vi varje måltid till ett mästerverk.",
         "image": "/event002.webp"
       },
       {
-        "title": "",
-        "subtitle": "",
-        "description": "",
+        "title": "Global närvaro",
+        "subtitle": "Förbinder människor världen över",
+        "description": "Med ett globalt kundbas och ett anseende för excellens har Rosers blivit synonymt med högkvalitativa evenemang. Oavsett om det är ett företagsmöte, en välgörenhetsgalafest eller en kulturell celebration, förbinder vi människor från hela jorden med våra exceptionella gastronomiska erbjudanden.",
         "image": "/event001.webp"
       }
     ]
@@ -435,21 +418,21 @@
     "description": "Idén till Rosers kök föddes under pandemin, när restriktionerna för restaurangbesök blev allt striktare. I tider av förändring, särskilt när illusionen av stabilitet utmanas, blir innovation avgörande. Med Rosers kök har vi utvecklat en unik lösning för våra lokala kunder i Sverige: ett sätt att njuta av gourmetmat i hemmet eller på jobbet.\n\nGenom vårt innovativa molnkök kan kunder beställa, hämta och servera måltider av högsta kvalitet. Företag kan dessutom prenumerera på exklusiva tjänster som fika, fruktkorgar och frukostleveranser direkt till dörren. Genom att omfamna ny teknik och sömlös logistik omdefinierar Rosers Kök bekvämlighet och tar ett modigt steg in i framtiden.",
     "sections": [
       {
-        "title": "",
-        "subtitle": "",
-        "description": "",
+        "title": "Engagerad personal",
+        "subtitle": "Människorna bakom Rosers Kök",
+        "description": "Vår personal är kärnan i Rosers Kök. Med passion för innovation och service arbetar vårt team för att leverera gourmetupplevelser till hem och arbetsplats. Vi har kombinerat teknik och tradition för att skapa något unikt.",
         "image": "/staff002.webp"
       },
       {
-        "title": "",
-        "subtitle": "",
-        "description": "",
+        "title": "Gourmetmat för alla",
+        "subtitle": "Smaker för alla tillfällen",
+        "description": "Rosers Kök erbjuder gourmetmat av högsta kvalitet, tillagat i vårt innovativa molnkök. Perfekt för avhämtning eller servering hemma och på jobbet. Våra menyer är designade för att möta alla smakpreferenser med en modern twist.",
         "image": "/food001.webp"
       },
       {
-        "title": "",
-        "subtitle": "",
-        "description": "",
+        "title": "Frukostleveranser",
+        "subtitle": "Starta dagen med något extra",
+        "description": "Börja dagen på bästa sätt med Rosers Köks frukostleveranser. Vi erbjuder färska och näringsrika alternativ, direkt levererade till din dörr. Perfekt för företag som vill erbjuda sina anställda en bättre start på dagen.",
         "image": "/breakfast.webp"
       }
     ]

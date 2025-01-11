@@ -8,6 +8,7 @@ import TextAndImageSection from "@/components/sections/TextAndImageSection";
 import { Metadata } from "next";
 import { useTranslations } from "next-intl";
 import { unstable_setRequestLocale } from "next-intl/server";
+import React from "react";
 
 export const metadata: Metadata = {
   title: "Events",
@@ -20,6 +21,7 @@ export default function Index({
 }) {
   unstable_setRequestLocale(locale);
   const translation = useTranslations();
+  const sections = translation.raw("Events.sections");
   return (
     <main>
       <HeroSubPageSection image="/hero-image-events.webp" />
@@ -34,28 +36,18 @@ export default function Index({
         />
       </InfoSection>
       <Divider />
-      <TextAndImageSection
-        rtl
-        title={translation("WhatWeDo.secondary_title")}
-        subTitle={translation("WhatWeDo.title")}
-        text={translation("WhatWeDo.secondary_description")}
-        image="/staff001.webp"
-      />
-      <Divider />
-      <TextAndImageSection
-        title={translation("WhoWeAre.secondary_title")}
-        subTitle={translation("WhoWeAre.title")}
-        text={translation("WhoWeAre.secondary_description")}
-        image="/bengt.webp"
-      />
-      <TextAndImageSection
-        rtl
-        title={translation("OurHistory.secondary_title")}
-        subTitle={translation("OurHistory.title")}
-        text={translation("OurHistory.secondary_description")}
-        image="/bengt002.webp"
-      />
-      <Divider />
+      {sections.map((section: any, index: number) => (
+        <React.Fragment key={index}>
+          <TextAndImageSection
+            rtl={index % 2 === 0}
+            title={section.title}
+            subTitle={section.subtitle}
+            text={section.description}
+            image={section.image}
+          />
+          <Divider />
+        </React.Fragment>
+      ))}
       <ConceptCards showHeader />
       <Divider />
       <ContactSection />

@@ -20,7 +20,7 @@ export default function Index({
 }) {
   unstable_setRequestLocale(locale);
   const translation = useTranslations();
-  const sections = translation.raw("OurHistory.sections");
+  const sections = translation.raw("RosersConsulting.sections");
   return (
     <main>
       <HeroSubPageSection image="/hero-image-our-history.webp" />
@@ -31,7 +31,7 @@ export default function Index({
         description={translation("RosersConsulting.description")}
       />
       <Divider />
-      {/* {sections.map((section: any, index: number) => (
+      {sections.map((section: any, index: number) => (
         <React.Fragment key={index}>
           <TextAndImageSection
             rtl={index % 2 === 0}
@@ -42,7 +42,7 @@ export default function Index({
           />
           <Divider />
         </React.Fragment>
-      ))} */}
+      ))}
       <ConceptCards showHeader />
       <Divider />
       <ContactSection />

@@ -38,13 +38,6 @@ const subLinks: SubDrawerLink[] = [
     ],
   },
   {
-    label: "Our creativity",
-    links: [
-      { href: "/our-creativity/vision", label: "Vision" },
-      { href: "/our-creativity/inspiration", label: "Inspiration" },
-    ],
-  },
-  {
     label: "Follow us",
     links: [
       {

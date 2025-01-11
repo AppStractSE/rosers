@@ -39,7 +39,7 @@ const TextAndImageSection = ({
         className={
           className
             ? className
-            : "mx-auto my-12 max-w-screen-xl px-4 xl:my-24 2xl:px-0"
+            : "mx-auto my-12 max-w-screen-xl px-4 2xl:px-0"
         }
       >
         <div

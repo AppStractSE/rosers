@@ -31,7 +31,7 @@ export default function Index({
         description={translation("RosersKitchen.description")}
       />
       <Divider />
-      {/* {sections.map((section: any, index: number) => (
+      {sections.map((section: any, index: number) => (
         <React.Fragment key={index}>
           <TextAndImageSection
             rtl={index % 2 === 0}
@@ -42,7 +42,7 @@ export default function Index({
           />
           <Divider />
         </React.Fragment>
-      ))} */}
+      ))}
       <ConceptCards showHeader />
       <Divider />
       <ContactSection />

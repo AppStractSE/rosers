@@ -44,25 +44,13 @@
       {
         "href": "/contact",
         "label": "Contact"
-      },
-      {
-        "href": "/our-creativity",
-        "label": "Our Creativity"
-      },
-      {
-        "href": "/our-creativity/vision",
-        "label": "Vision"
-      },
-      {
-        "href": "/our-creativity/inspiration",
-        "label": "Inspiration"
       }
     ]
   },
   "Home": {
     "HeroSection": {
       "title": "Unforgettable dining experiences for all occasions",
-      "description": "We curate unforgettable dining experiences for all occasions. From small gatherings of six to grand events of 40,000 attendees - join us in redefining the art of dining, one exquisite moment at a time.",
+      "description": "We curate unforgettable dining experiences for all occasions. From small gatherings of six to grand events of 60,000 attendees - join us in redefining the art of dining, one exquisite moment at a time.",
       "buttonText": "Explore Rosers"
     }
   },
@@ -86,7 +74,7 @@
         "label": "About"
       },
       {
-        "href": "/events",
+        "href": "/the-concept/rosers-global-events",
         "label": "Events"
       },
       {
@@ -130,19 +118,6 @@
         ]
       },
       {
-        "label": "Our creativity",
-        "links": [
-          {
-            "href": "/our-creativity/vision",
-            "label": "Vision"
-          },
-          {
-            "href": "/our-creativity/inspiration",
-            "label": "Inspiration"
-          }
-        ]
-      },
-      {
         "label": "Follow us",
         "links": [
           {
@@ -174,7 +149,7 @@
       "label": "About"
     },
     {
-      "href": "/events",
+      "href": "/the-concept/rosers-global-events",
       "label": "Events"
     }
   ],
@@ -254,6 +229,12 @@
     "description": "Since our inception, we have been committed to delivering excellence in everything we do. Our story is one of passion, dedication, and growth.",
     "sections": [
       {
+        "title": "From city hotel to global catering",
+        "subtitle": "City Hotel of Skara",
+        "description": "The Roser family took over the city hotel of Skara in 1966 and ran it successfully until 2020. Under their leadership, the business expanded into catering and events, with assignments that included the Swedish pavilion at the 2010 Shanghai World Expo.\n\nDuring their time at the hotel, it became a focal point for both local and international events.",
+        "image": "/skara-stadshotell.webp"
+      },
+      {
         "title": "From idea to reality",
         "subtitle": "A passion for food that founded Rosers",
         "description": "Bengt Roser began his career in the catering and restaurant industry at a young age. His commitment to quality and passion for food led him to start his first catering company. In the first few years, he built a strong reputation in the industry and quickly received assignments from both companies and individuals.",
@@ -262,14 +243,8 @@
       {
         "title": "Building a successful business",
         "subtitle": "A vision that came true",
-        "description": "With determination and a focus on quality, Rosers grew rapidly. The company supplied both small and large events and soon gained a reputation for always delivering the highest quality dining experiences. His success lay in his ability to always exceed customer expectations.",
+        "description": "With determination and a focus on quality, Rosers grew rapidly. The company supplied both small and large events and soon gained a reputation for always delivering the highest quality dining experiences. Rosers success lay in the ability to always exceed customer expectations.",
         "image": "/bengt002.webp"
-      },
-      {
-        "title": "From city hotel to global catering",
-        "subtitle": "City Hotel of Skara",
-        "description": "The Roser family took over the city hotel of Skara in 1966 and ran it successfully until 2020. Under their leadership, the business expanded into catering and events, with assignments that included the Swedish pavilion at the 2010 Shanghai World Expo.\n\nDuring their time at the hotel, it became a focal point for both local and international events.",
-        "image": "/skara-stadshotell.webp"
       },
       {
         "title": "Leader in the catering industry",
@@ -317,35 +292,23 @@
   "WhoWeAre": {
     "href": "/about/who-we-are",
     "label": "Read more about us",
-    "title": "Who We Are",
-    "secondary_title": "The Rosers",
-    "secondary_description": "We are more than just a culinary team; we are pioneers of  unforgettable dining experiences. With a legacy spanning over 50 years,  our passion for culinary excellence drives us to redefine the art of  dining. Led by our visionary founder Bengt Roser, our team is dedicated  to crafting moments that transcend taste, transforming ordinary  gatherings into extraordinary occasions.\n\nWelcome to a world where every  bite tells a story, and every meal is an unforgettable journey.",
+    "title": "Who we are",
+    "secondary_title": "We are Rosers",
+    "secondary_description": "We are more than just a culinary team – we are pioneers in unforgettable dining experiences. With a heritage spanning over 50 years, we are driven by our passion for culinary excellence and a quest to redefine the art of enjoying food. Led by our visionary founder Bengt Roser, our team is committed to creating moments that go beyond taste and transform ordinary gatherings into extraordinary experiences.",
     "subtitle": "Meet the team behind the vision",
-    "description": "Our team is comprised of passionate professionals who are experts in their fields. Together, we work to bring your vision to life.",
+    "description": "Rosers has its roots in a restaurant family that has run everything from hotels and restaurants to catering and events with passion and the highest quality for over 50 years. We are taking this solid foundation with us into a new, exciting era, where we have refined our expertise into an even clearer and more passionate concept.",
     "sections": [
       {
-        "title": "Large-scale catering & events",
-        "subtitle": "Expert handling of large gatherings",
-        "description": "Rosers specializes in catering for large-scale events, handling everything from intimate dinners to events serving thousands of guests. From trade shows to corporate galas, they deliver flawless service for diverse client needs.",
-        "image": "/event005.webp"
+        "title": "The team behind the success",
+        "subtitle": "Precision, creativity & passion in every project",
+        "description": "Our core team consists of four people, who together run every project with precision and creativity.\n\nBengt Roser is the operations manager who meets you as a customer, listens and leads every event from start to finish. Benny is responsible for the culinary vision and takes the presentation to new heights. Sofia is our expert in selecting ingredients with care for taste and quality, and Derwas is the master of logistics, keeping an eye on the details and creating smooth schedules.",
+        "image": "/staff003.webp"
       },
       {
-        "title": "International & national events",
-        "subtitle": "Catering across borders",
-        "description": "Rosers serves high-profile events both in Sweden and internationally. Whether in Shanghai's Swedish Pavilion at Expo 2010 or major events like Volvo Ocean Race, their ability to execute large catering operations worldwide sets them apart.",
-        "image": "/event003.webp"
-      },
-      {
-        "title": "Customized event solutions",
-        "subtitle": "Tailored services for every event",
-        "description": "Whether for an exhibition, a wedding, or a royal banquet, Rosers creates bespoke catering experiences. Their expertise extends to offering specialized services for exhibitions, ensuring both exhibitors and visitors receive top-notch food and service.",
-        "image": "/event002.webp"
-      },
-      {
-        "title": "Trusted by high-profile clients",
-        "subtitle": "Serving royalty & industry giants",
-        "description": "With an impressive track record of working with high-profile clients including the Swedish royal family, Saab, Volvo, and defense sector, we have built an unparalleled trust in handling prestigious events with utmost precision and excellence. Our reputation for quality is renowned globally.",
-        "image": "/event001.webp"
+        "title": "A well-oiled machine",
+        "subtitle": "Quality and finesse in every serving",
+        "description": "Together we function like a well-oiled machine, ready to deliver with high quality, efficiency and a little extra creative finesse. It is just as important to us that ten sandwiches turn out amazing, as it is to be able to serve 600 portions of cod loin, steaming and perfectly assembled in 18 minutes.",
+        "image": "/food004.webp"
       }
     ]
   },
@@ -358,40 +321,134 @@
   "Events": {
     "href": "/events",
     "title": "Events",
+    "readMore": "Read more about our events",
     "secondary_title": "Global events and experiences",
-    "secondary_description": "We host events across the globe, ensuring each one is a reflection of excellence and tailored to meet the unique expectations of our clients.\n\nFind out about our clientele’s experiences and discover the world of Rosers events.",
-    "subtitle": "Discover our events",
-    "description": "Join us for exclusive events designed to inspire and engage. Stay tuned for updates on our latest happenings."
-  },
-  "Inspiration": {
-    "href": "/our-creativity/inspiration",
-    "title": "Inspiration",
-    "subtitle": "Creative sparks that drive us",
-    "description": "Our creativity stems from a constant search for inspiration in everything we do. We push boundaries to deliver fresh and innovative experiences."
-  },
-  "Vision": {
-    "href": "/our-creativity/vision",
-    "title": "Our Vision",
-    "subtitle": "Where we see ourselves in the future",
-    "description": "We are driven by a clear vision of success. Our future is one of innovation, growth, and endless possibilities."
+    "secondary_description": "We organize events all over the world, ensuring that each event reflects excellence and is tailored to meet the unique expectations of our clients. Below we have collected a selection of the events we have had the honor of making our mark on.",
+    "subtitle": "Rosers iconic events",
+    "description": "Discover the extraordinary events we’ve had the privilege to organize. From the fairy-tale royal wedding of Prince Carl Philip and Princess Sofia, where we crafted an unforgettable day filled with elegance and precision, to the exhilarating scenes of the Volvo Ocean Race, where we delivered world-class experiences both on land and at sea. We’ve also been part of the global excitement at the Winter Olympics in South Korea, ensuring every detail reflected the highest standards of quality and innovation.",
+    "third_title": "Our previous events",
+    "sections": [
+      {
+        "title": "Prince Carl Philip & Princess Sofia",
+        "subtitle": "A fairytale wedding",
+        "description": "Rosers had the honour of being part of the royal wedding of Prince Carl Philip and Princess Sofia. We helped create a memorable day filled with elegance and precision, where every detail was carefully planned and executed. Our team worked closely with the bride and groom to ensure that every guest had an unforgettable experience.",
+        "image": "/event001.webp",
+        "size": "row-span-2 col-span-12 sm:col-span-6 lg:col-span-6 lg:row-span-3"
+      },
+      {
+        "title": "Volvo Ocean Race",
+        "subtitle": "Action-packed scenes",
+        "description": "Rosers has been part of the Volvo Ocean Race, delivering world-class experiences both on land and at sea. Our team has ensured that every detail, from food to service, has been of the highest quality. We are proud to have contributed to this prestigious event.",
+        "image": "/event001.webp",
+        "size": "row-span-2 col-span-12 sm:col-span-6 lg:col-span-6 lg:row-span-2"
+      },
+      {
+        "title": "Princess Victoria & Prince Daniel",
+        "subtitle": "Global excitement",
+        "description": "Rosers was part of the global excitement during the Winter Olympics in South Korea. We ensured that every detail reflected the highest standards of quality and innovation. Our team worked closely with the organizers to create a memorable experience for all participants.",
+        "image": "/event001.webp",
+        "size": "row-span-2 col-span-12 sm:col-span-6 lg:col-span-6 lg:row-span-3"
+      },
+      {
+        "title": "SAAB",
+        "subtitle": "Global excitement",
+        "description": "Rosers was part of the global excitement during the Winter Olympics in South Korea. We ensured that every detail reflected the highest standards of quality and innovation. Our team worked closely with the organizers to create a memorable experience for all participants.",
+        "image": "/event001.webp",
+        "size": "row-span-2 col-span-12 sm:col-span-6 lg:col-span-6 lg:row-span-2"
+      },
+      {
+        "title": "IKEA",
+        "subtitle": "Global excitement",
+        "description": "Rosers was part of the global excitement during the Winter Olympics in South Korea. We ensured that every detail reflected the highest standards of quality and innovation. Our team worked closely with the organizers to create a memorable experience for all participants.",
+        "image": "/event001.webp",
+        "size": "row-span-2 col-span-12 sm:col-span-6 lg:col-span-7 lg:row-span-2"
+      },
+      {
+        "title": "South Korea Winter Olympics",
+        "subtitle": "Global Excitement",
+        "description": "Rosers was part of the global excitement of the South Korea Winter Olympics. We ensured that every detail reflected the highest standards of quality and innovation. Our team worked closely with the organizers to create a memorable experience for all participants.",
+        "image": "/event001.webp",
+        "size": "row-span-2 col-span-12 sm:col-span-6 lg:col-span-5 lg:row-span-2"
+      }
+    ]
   },
   "RosersConsulting": {
     "href": "/the-concept/rosers-consulting",
     "title": "Rosers Consulting",
-    "subtitle": "Expert guidance and support",
-    "description": "We offer consulting services tailored to your business needs, helping you navigate complex challenges and seize new opportunities."
+    "subtitle": "From good to better",
+    "description": "In the culinary world, there exists a rare breed of professionals called the kitchen brigade - a classic and well-established structure found in restaurants. At Rosers, we have taken this concept to new heights with our senior kitchen brigade. This elite group shares its extensive knowledge and expertise as consultants, collaborating with ambitious hotels, restaurants, and chain restaurants who wish to streamline and develop their operations.\n\nThere's a special magic in creating something that doesn't yet exist - using long experience, broad knowledge, and rolling up sleeves to pave new paths for the future. When one reaches a point where it becomes crucial to share knowledge and insights with the next generation, the time has come to form something unique. That's exactly what we've done: created a senior kitchen and logistics brigade.\n\nOur team's collective wisdom spans decades of culinary excellence, from boutique restaurants to established large kitchens. We don't just create food - we form experiences, innovate, and push boundaries.",
+    "sections": [
+      {
+        "title": "Expertise in Action",
+        "subtitle": "Bringing innovation to your kitchen",
+        "description": "Rosers Consulting brings years of experience and expertise directly to your operation. Our consultants work closely with you to identify areas for improvement and implement innovative solutions tailored to your specific needs.",
+        "image": "/rosers-consulting.webp"
+      },
+      {
+        "title": "Tailored Solutions",
+        "subtitle": "Customized support for your business",
+        "description": "Whether you're looking to streamline operations or expand your menu offerings, Rosers Consulting provides personalized guidance to help you achieve your goals. From staff training to menu development, we offer comprehensive support.",
+        "image": "/staff001.webp"
+      },
+      {
+        "title": "Logistical Support",
+        "subtitle": "Efficiency through expert management",
+        "description": "Our consulting services extend beyond culinary expertise to include logistical support. We can assist with inventory management, supply chain optimization, and implementing efficient systems to enhance your overall operational efficiency.",
+        "image": "/event003.webp"
+      }
+    ]
   },
   "RosersGlobalEvents": {
     "href": "/the-concept/rosers-global-events",
     "title": "Rosers Global Events",
-    "subtitle": "Worldwide events tailored for you",
-    "description": "We host events across the globe, ensuring each one is a reflection of excellence and tailored to meet the unique expectations of our clients."
+    "subtitle": "International presence",
+    "description": "Food is an art form that, at its best, creates strong bonds between people around the table. At Rosers, we specialize in organizing large-scale and sophisticated events with up to 60,000 attendees. With international clients and an established network, we have built a reputable operation centered around catering and events. Our core group is known for its outstanding performances and commitment to perfection.\n\nWhat makes Rosers unique? It's difficult to describe for those who haven't experienced it yet. However, let us give you a glimpse into our world through real-life examples – meetings and events where we've had the privilege of creating memorable moments like the Royal Wedding of Prince Carl Philip and Princess Sofia, Volvo Ocean Race, IKEA, and the Olympic Winter Games in South Korea, to name just a few.",
+    "sections": [
+      {
+        "title": "Exclusive events",
+        "subtitle": "Creating unforgettable experiences",
+        "description": "From intimate gatherings to grand spectacles, Rosers brings culinary excellence to every event. Our team of experts ensures every detail is meticulously planned and executed, resulting in truly unforgettable experiences for guests.",
+        "image": "/rosers-global-events.webp"
+      },
+      {
+        "title": "Artistic expression",
+        "subtitle": "Where creativity meets cuisine",
+        "description": "At Rosers, we believe that food and art go hand in hand. Our chefs combine flavors and techniques to create visually stunning dishes that delight both the palate and the eye. From intricate ice sculptures to bespoke menu designs, we turn every meal into a masterpiece.",
+        "image": "/event002.webp"
+      },
+      {
+        "title": "Global reach",
+        "subtitle": "Bringing people together worldwide",
+        "description": "With a global client base and a reputation for excellence, Rosers has become synonymous with high-end events. Whether it's a corporate gathering, a charity gala, or a cultural celebration, we bring people together from all corners of the globe with our exceptional culinary offerings.",
+        "image": "/event001.webp"
+      }
+    ]
   },
   "RosersKitchen": {
     "href": "/the-concept/rosers-kitchen",
     "title": "Rosers Kitchen",
-    "subtitle": "Culinary experiences like no other",
-    "description": "Our kitchen is where culinary magic happens. We craft meals that delight the senses, using only the finest ingredients for discerning palates."
+    "subtitle": "Comfort meets quality",
+    "description": "The concept for Rosers Kitchen was born during the pandemic, when restaurant restrictions became increasingly stringent. In times of change, especially when the illusion of stability is challenged, innovation becomes paramount. With Rosers Kitchen, we have developed a unique solution for our local customers in Sweden: a way to enjoy gourmet food at home or in the office.\n\nThrough our innovative cloud kitchen, customers can order, collect, and serve meals of the highest quality. Businesses can also subscribe to exclusive services such as coffee breaks, fruit baskets, and breakfast deliveries right to their doorstep. By embracing new technology and seamless logistics, Rosers Kitchen redefines convenience and takes a bold step into the future.",
+    "sections": [
+      {
+        "title": "Committed staff",
+        "subtitle": "The people behind Rosers Kitchen",
+        "description": "Our staff is the heart of Rosers Kitchen. With a passion for innovation and service, our team works tirelessly to deliver gourmet experiences to homes and workplaces. We've combined technology and tradition to create something truly unique.",
+        "image": "/staff002.webp"
+      },
+      {
+        "title": "Gourmet food for everyone",
+        "subtitle": "Flavors for every occasion",
+        "description": "Rosers Kitchen offers high-quality gourmet food, prepared in our innovative cloud kitchen. Perfect for takeout or serving at home and at work. Our menus are designed to meet all taste preferences with a modern twist.",
+        "image": "/food001.webp"
+      },
+      {
+        "title": "Breakfast deliveries",
+        "subtitle": "Start your day with something extra",
+        "description": "Begin your day on the right foot with Rosers Kitchen's breakfast deliveries. We offer fresh and nutritious alternatives, delivered directly to your door. Ideal for companies looking to offer their employees a better start to the day.",
+        "image": "/breakfast.webp"
+      }
+    ]
   },
   "About": {
     "href": "/about",

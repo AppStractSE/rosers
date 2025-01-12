@@ -18,13 +18,13 @@ const InfoSection = ({
 }: Props) => {
   return (
     <section>
-      <div className="mx-auto my-12 max-w-screen-md px-4">
+      <div className="mx-auto my-6 max-w-screen-md px-4 lg:my-12">
         <div className="relative mx-auto flex flex-col items-center justify-center">
           {showBreadcrumbs && <Breadcrumbs />}
           <p
             className={twMerge(
               "mb-4 text-xs uppercase text-brass md:text-sm",
-              showBreadcrumbs ? "mt-6 md:mt-12" : "",
+              showBreadcrumbs ? "mt-6" : "",
               futuraStd.className,
             )}
           >

@@ -20,15 +20,15 @@ export default function Index({
 }) {
   unstable_setRequestLocale(locale);
   const translation = useTranslations();
-  const sections = translation.raw("OurHistory.sections");
+  const sections = translation.raw("RosersConsulting.sections");
   return (
     <main>
-      <HeroSubPageSection image="/hero-image-our-history.webp" />
+      <HeroSubPageSection image="/hero-image-about.webp" />
       <InfoSection
         showBreadcrumbs
-        title={translation("OurHistory.secondary_title")}
-        subtitle={translation("OurHistory.title")}
-        description={translation("OurHistory.secondary_description")}
+        title={translation("RosersConsulting.subtitle")}
+        subtitle={translation("RosersConsulting.title")}
+        description={translation("RosersConsulting.description")}
       />
       <Divider />
       {sections.map((section: any, index: number) => (

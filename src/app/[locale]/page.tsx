@@ -33,6 +33,7 @@ export default function Index({
           link: translation("WhoWeAre.href"),
         }}
       />
+      <Divider />
       <TextAndImageSection
         rtl
         title={translation("WhatWeDo.secondary_title")}
@@ -48,6 +49,17 @@ export default function Index({
       <ConceptCards showHeader />
       <Divider />
       <TextAndImageSection
+        title={translation("Events.secondary_title")}
+        subTitle={translation("Events.third_title")}
+        text={translation("Events.description")}
+        image="/event001.webp"
+        button={{
+          text: translation("ReadMore"),
+          link: translation("RosersGlobalEvents.href"),
+        }}
+      />
+      <Divider />
+      <TextAndImageSection
         rtl
         title={translation("OurHistory.secondary_title")}
         subTitle={translation("OurHistory.title")}
@@ -56,16 +68,6 @@ export default function Index({
         button={{
           text: translation("ReadMore"),
           link: translation("OurHistory.href"),
-        }}
-      />
-      <TextAndImageSection
-        title={translation("Events.secondary_title")}
-        subTitle={translation("Events.title")}
-        text={translation("Events.secondary_description")}
-        image="/event001.webp"
-        button={{
-          text: translation("ReadMore"),
-          link: translation("Events.href"),
         }}
       />
       <Divider />

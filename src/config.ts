@@ -45,18 +45,6 @@ export const pathnames: Pathnames<typeof locales> = {
     en: "/contact",
     sv: "/kontakt",
   },
-  "/our-creativity": {
-    en: "/our-creativity",
-    sv: "/var-kreativitet",
-  },
-  "/our-creativity/vision": {
-    en: "/our-creativity/vision",
-    sv: "/var-kreativitet/vision",
-  },
-  "/our-creativity/inspiration": {
-    en: "/our-creativity/inspiration",
-    sv: "/var-kreativitet/inspiration",
-  },
 };
 
 export const localePrefix: LocalePrefix<typeof locales> = "always";

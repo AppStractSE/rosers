@@ -23,7 +23,7 @@ const ConceptCards = ({ showHeader }: Props) => {
   return (
     <section>
       {showHeader && (
-        <div className="mx-auto mb-12 max-w-screen-xl space-y-2 px-4 2xl:px-0">
+        <div className="mx-auto mb-6 max-w-screen-xl space-y-2 px-4 md:mb-8 2xl:px-0">
           <h3
             className={twMerge(
               "text-xs uppercase text-brass",
@@ -42,7 +42,7 @@ const ConceptCards = ({ showHeader }: Props) => {
           </h3>
           <p
             className={twMerge(
-              "text-xl font-thin tracking-wide",
+              "max-w-2xl text-xl font-thin tracking-wide",
               garamond.className,
             )}
           >

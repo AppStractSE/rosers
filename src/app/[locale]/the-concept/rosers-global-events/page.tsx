@@ -1,6 +1,7 @@
 import ConceptCards from "@/components/cards/ConceptCards";
 import Divider from "@/components/divider/Divider";
 import ContactSection from "@/components/sections/ContactSection";
+import GallerySection from "@/components/sections/GallerySection";
 import HeroSubPageSection from "@/components/sections/HeroSubPageSection";
 import InfoSection from "@/components/sections/InfoSection";
 import TextAndImageSection from "@/components/sections/TextAndImageSection";
@@ -23,7 +24,7 @@ export default function Index({
   const sections = translation.raw("RosersGlobalEvents.sections");
   return (
     <main>
-      <HeroSubPageSection image="/hero-image-our-history.webp" />
+      <HeroSubPageSection image="/hero-image-global-events.webp" />
       <InfoSection
         showBreadcrumbs
         title={translation("RosersGlobalEvents.subtitle")}
@@ -43,6 +44,8 @@ export default function Index({
           <Divider />
         </React.Fragment>
       ))}
+      <GallerySection showHeader />
+      <Divider />
       <ConceptCards showHeader />
       <Divider />
       <ContactSection />

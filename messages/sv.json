@@ -50,7 +50,7 @@
   "Home": {
     "HeroSection": {
       "title": "Oförglömliga matupplevelser för alla tillfällen",
-      "description": "Vi skapar oförglömliga matupplevelser för alla tillfällen. Från små sammankomster på sex personer till storslagna evenemang med 40 000 deltagare – följ med oss i att omdefiniera konsten att äta, en utsökt stund i taget.",
+      "description": "Vi skapar oförglömliga matupplevelser för alla tillfällen. Från små sammankomster på sex personer till storslagna evenemang med 60 000 deltagare – följ med oss i att omdefiniera konsten att äta, en utsökt stund i taget.",
       "buttonText": "Utforska Rosers"
     }
   },
@@ -75,7 +75,7 @@
         "label": "Om oss"
       },
       {
-        "href": "/evenemang",
+        "href": "/konceptet/rosers-globala-evenemang",
         "label": "Evenemang"
       },
       {
@@ -150,7 +150,7 @@
       "label": "Om oss"
     },
     {
-      "href": "/evenemang",
+      "href": "/konceptet/rosers-globala-evenemang",
       "label": "Evenemang"
     }
   ],
@@ -217,8 +217,8 @@
     "secondary_description": "Följ med oss när vi förvandlar drömmar till verklighet med 'Rosers Koncept' under en global resa av epikurisk förtjusning.",
     "what_is_the_concept_title": "Vad är konceptet?",
     "what_is_the_concept_subtitle": "",
-    "what_is_the_concept_description": "Rosers koncept är rotat i kultur, kulinarisk expertis och kräsna kunders behov. Vi skapar oförglömliga matupplevelser för alla tillfällen. Från intima sammankomster på sex personer till storslagna evenemang med 40 000 deltagare – följ med oss när vi omdefinierar konsten att äta, en utsökt stund i taget.",
-    "description": "Vi skapar oförglömliga matupplevelser för alla tillfällen. Från intima sammankomster på sex personer till storslagna evenemang med 40 000 deltagare – följ med oss när vi omdefinierar konsten att äta, en utsökt stund i taget."
+    "what_is_the_concept_description": "Rosers koncept är rotat i kultur, kulinarisk expertis och kräsna kunders behov. Vi skapar oförglömliga matupplevelser för alla tillfällen. Från intima sammankomster på sex personer till storslagna evenemang med 60 000 deltagare – följ med oss när vi omdefinierar konsten att äta, en utsökt stund i taget.",
+    "description": "Vi skapar oförglömliga matupplevelser för alla tillfällen. Från intima sammankomster på sex personer till storslagna evenemang med 60 000 deltagare – följ med oss när vi omdefinierar konsten att äta, en utsökt stund i taget."
   },
   "OurHistory": {
     "href": "/om-oss/var-historia",
@@ -230,6 +230,12 @@
     "description": "Sedan vår start har vi varit engagerade i att leverera excellens i allt vi gör. Vår berättelse är en om passion, engagemang och tillväxt.",
     "sections": [
       {
+        "title": "Från stadshotell till global catering",
+        "subtitle": "Skara Stadshotell",
+        "description": "Familjen Roser tog över Skara Stadshotell 1966 och drev det framgångsrikt fram till 2020. Under deras ledning breddades verksamheten till catering och event, med uppdrag som inkluderade den svenska paviljongen vid världsutställningen i Shanghai 2010.\n\nUnder deras tid på hotellet blev det en central punkt för både lokala och internationella evenemang.",
+        "image": "/skara-stadshotell.webp"
+      },
+      {
         "title": "Från idé till verklighet",
         "subtitle": "En passion för mat som grundade Rosers",
         "description": "Bengt Roser började sin karriär inom catering och restaurangbranschen redan som ung. Hans engagemang för kvalitet och passion för mat gjorde att han startade sitt första cateringföretag. Under de första åren byggde han ett starkt rykte inom branschen och fick snabbt uppdrag från både företag och privatpersoner.",
@@ -238,14 +244,8 @@
       {
         "title": "Byggandet av en framgångsrik verksamhet",
         "subtitle": "En vision som förverkligades",
-        "description": "Med målmedvetenhet och ett fokus på kvalitet växte Rosers snabbt. Företaget levererade till både små och stora evenemang och fick snart ett rykte för att alltid leverera matupplevelser av högsta kvalitet. Hans framgång låg i förmågan att alltid överträffa kundernas förväntningar.",
+        "description": "Med målmedvetenhet och ett fokus på kvalitet växte Rosers snabbt. Företaget levererade till både små och stora evenemang och fick snart ett rykte för att alltid leverera matupplevelser av högsta kvalitet. Rosers framgång låg i förmågan att alltid överträffa kundernas förväntningar.",
         "image": "/bengt002.webp"
-      },
-      {
-        "title": "Från stadshotell till global catering",
-        "subtitle": "Skara Stadshotell",
-        "description": "Familjen Roser tog över Skara Stadshotell 1966 och drev det framgångsrikt fram till 2020. Under deras ledning breddades verksamheten till catering och event, med uppdrag som inkluderade den svenska paviljongen vid världsutställningen i Shanghai 2010.\n\nUnder deras tid på hotellet blev det en central punkt för både lokala och internationella evenemang.",
-        "image": "/skara-stadshotell.webp"
       },
       {
         "title": "Ledande inom cateringbranschen",
@@ -297,31 +297,19 @@
     "secondary_title": "Vi är Rosers",
     "secondary_description": "Vi är mer än bara ett kulinariskt team – vi är pionjärer inom oförglömliga matupplevelser. Med ett arv som sträcker sig över 50 år drivs vi av vår passion för kulinarisk excellens och en strävan att omdefiniera konsten att njuta av mat. Under ledning av vår visionära grundare Bengt Roser är vårt team engagerat i att skapa stunder som går bortom smaken och förvandlar vanliga sammankomster till extraordinära upplevelser.",
     "subtitle": "Möt teamet bakom visionen",
-    "description": "Vårt team består av passionerade yrkesverksamma som är experter inom sina områden. Tillsammans arbetar vi för att förverkliga din vision.",
+    "description": "Rosers har sina rötter i en restaurangfamilj som med passion och högsta kvalitet har drivit allt från hotell och restauranger till catering och evenemang i över 50 år. Denna stabila grund tar vi med oss in i en ny, spännande era, där vi har förfinat vår kompetens till ett ännu tydligare och mer passionerat koncept.",
     "sections": [
       {
-        "title": "Storskalig catering och evenemang",
-        "subtitle": "Experthantering av stora sammankomster",
-        "description": "Rosers specialiserar sig på catering för storskaliga evenemang och hanterar allt från intima middagar till evenemang som serverar tusentals gäster. Från mässor till företagsgalor, vi levererar felfri service för olika kundbehov.",
-        "image": "/event005.webp"
+        "title": "Teamet bakom framgången",
+        "subtitle": "Precision, kreativitet & passion i varje projekt",
+        "description": "Vårt kärnteam består av fyra personer, som tillsammans driver varje projekt med precision och kreativitet.\n\nBengt Roser är verksamhetsledaren som möter dig som kund, lyssnar och leder varje evenemang från början till slut. Benny står för den kulinariska visionen och tar presentationen till nya höjder. Sofia är vår expert på att välja ingredienser med omsorg om smak och kvalitet, och Derwas är logistikens mästare, som håller koll på detaljerna och skapar smidiga scheman.",
+        "image": "/staff003.webp"
       },
       {
-        "title": "Internationella och nationella evenemang",
-        "subtitle": "Catering över gränserna",
-        "description": "Rosers serverar högprofilerade evenemang både i Sverige och internationellt. Oavsett om det är i Shanghais svenska paviljong på Expo 2010 eller större evenemang som Volvo Ocean Race, deras förmåga att genomföra stora cateringverksamheter över hela världen skiljer dem åt.",
-        "image": "/event003.webp"
-      },
-      {
-        "title": "Anpassade evenemangslösningar",
-        "subtitle": "Skräddarsydda tjänster för varje evenemang",
-        "description": "Oavsett om det gäller en utställning, ett bröllop eller en kunglig bankett, skapar Rosers skräddarsydda cateringupplevelser. Deras expertis sträcker sig till att erbjuda specialiserade tjänster för utställningar, vilket säkerställer att både utställare och besökare får förstklassig mat och service.",
-        "image": "/event002.webp"
-      },
-      {
-        "title": "Betrodd av högprofilerade kunder",
-        "subtitle": "Tjänar royalty- och industrijättar",
-        "description": "Med en imponerande bakgrund av att ha arbetat med högprofilerade kunder som Sveriges kungafamilj, Saab, Volvo och försvarssektorn, har vi byggt upp ett oöverträffat förtroende för att hantera prestigefyllda evenemang med högsta precision och excellens. Vårt rykte för kvalitet är omskrivet världen över.",
-        "image": "/event001.webp"
+        "title": "Ett väloljat maskineri",
+        "subtitle": "Kvalitet och finess i varje servering",
+        "description": "Tillsammans fungerar vi som ett väloljat maskineri, redo att leverera med hög kvalitet, effektivitet och lite extra kreativ finess. Det är lika viktigt för oss att tio smörgåsar blir fantastiska, som att klara av att servera 600 portioner torskrygg, ångande och perfekt monterad på 18 minuter.",
+        "image": "/food004.webp"
       }
     ]
   },
@@ -334,28 +322,54 @@
   "Events": {
     "href": "/evenemang",
     "title": "Evenemang",
+    "readMore": "Läs mer om våra event",
     "secondary_title": "Globala evenemang och upplevelser",
-    "secondary_description": "Vi arrangerar evenemang över hela världen, så att varje evenemang speglar excellens och är skräddarsytt för att möta våra kunders unika förväntningar.\n\nFå reda på våra kunders upplevelser och upptäck våra evenemang.",
+    "secondary_description": "Vi arrangerar evenemang över hela världen, så att varje evenemang speglar excellens och är skräddarsytt för att möta våra kunders unika förväntningar. Nedan har vi samlat ett axplock av de evenemang vi fått äran att sätta vår prägel på.",
     "subtitle": "Rosers ikoniska evenemang",
     "description": "Utforska de storslagna evenemang vi har haft äran att organisera. Från det sagolika kungliga bröllopet mellan prins Carl Philip och prinsessan Sofia, där vi bidrog till att skapa en minnesvärd dag fylld av elegans och precision, till de actionfyllda scenerna under Volvo Ocean Race, där vi levererade upplevelser i världsklass både på land och till sjöss. Vi har också varit en del av den globala spänningen under de olympiska vinterspelen i Sydkorea, där vi säkerställde att varje detalj speglade den högsta standarden av kvalitet och innovation.\n\nMed Rosers vid rodret har våra kunder fått uppleva evenemang som inte bara engagerar utan också lever kvar i minnet länge efter att applåderna tystnat.",
+    "third_title": "Våra tidigare evenemang",
     "sections": [
       {
         "title": "Prins Carl Philip & prinsessan Sofia",
         "subtitle": "Ett sagolikt bröllop",
         "description": "Rosers hade äran att vara en del av det kungliga bröllopet mellan prins Carl Philip och prinsessan Sofia. Vi bidrog till att skapa en minnesvärd dag fylld av elegans och precision, där varje detalj var noga planerad och utförd. Vårt team arbetade tätt tillsammans med brudparet för att säkerställa att varje gäst fick en oförglömlig upplevelse.",
-        "image": "/event001.webp"
+        "image": "/event001.webp",
+        "size": "row-span-2 col-span-12 sm:col-span-6 lg:col-span-6 lg:row-span-3"
       },
       {
         "title": "Volvo Ocean Race",
         "subtitle": "Actionfyllda scener",
         "description": "Rosers har varit en del av Volvo Ocean Race och levererat upplevelser i världsklass både på land och till sjöss. Vårt team har säkerställt att varje detalj, från mat till service, har varit av högsta kvalitet. Vi är stolta över att ha bidragit till detta prestigefyllda evenemang.",
-        "image": "/event001.webp"
+        "image": "/event001.webp",
+        "size": "row-span-2 col-span-12 sm:col-span-6 lg:col-span-6 lg:row-span-2"
+      },
+      {
+        "title": "Prinsessan Victoria & prins Daniel",
+        "subtitle": "Global spänning",
+        "description": "Rosers var en del av den globala spänningen under de olympiska vinterspelen i Sydkorea. Vi säkerställde att varje detalj speglade den högsta standarden av kvalitet och innovation. Vårt team arbetade tätt tillsammans med arrangörerna för att skapa en minnesvärd upplevelse för alla deltagare.",
+        "image": "/event001.webp",
+        "size": "row-span-2 col-span-12 sm:col-span-6 lg:col-span-6 lg:row-span-3"
+      },
+      {
+        "title": "SAAB",
+        "subtitle": "Global spänning",
+        "description": "Rosers var en del av den globala spänningen under de olympiska vinterspelen i Sydkorea. Vi säkerställde att varje detalj speglade den högsta standarden av kvalitet och innovation. Vårt team arbetade tätt tillsammans med arrangörerna för att skapa en minnesvärd upplevelse för alla deltagare.",
+        "image": "/event001.webp",
+        "size": "row-span-2 col-span-12 sm:col-span-6 lg:col-span-6 lg:row-span-2"
+      },
+      {
+        "title": "IKEA",
+        "subtitle": "Global spänning",
+        "description": "Rosers var en del av den globala spänningen under de olympiska vinterspelen i Sydkorea. Vi säkerställde att varje detalj speglade den högsta standarden av kvalitet och innovation. Vårt team arbetade tätt tillsammans med arrangörerna för att skapa en minnesvärd upplevelse för alla deltagare.",
+        "image": "/event001.webp",
+        "size": "row-span-2 col-span-12 sm:col-span-6 lg:col-span-7 lg:row-span-2"
       },
       {
         "title": "Vinter-OS i Sydkorea",
         "subtitle": "Global spänning",
         "description": "Rosers var en del av den globala spänningen under de olympiska vinterspelen i Sydkorea. Vi säkerställde att varje detalj speglade den högsta standarden av kvalitet och innovation. Vårt team arbetade tätt tillsammans med arrangörerna för att skapa en minnesvärd upplevelse för alla deltagare.",
-        "image": "/event001.webp"
+        "image": "/event001.webp",
+        "size": "row-span-2 col-span-12 sm:col-span-6 lg:col-span-5 lg:row-span-2"
       }
     ]
   },
@@ -389,7 +403,7 @@
     "href": "/konceptet/rosers-globala-evenemang",
     "title": "Rosers Globala Event",
     "subtitle": "Internationell närvaro",
-    "description": "Mat är en konst som i bästa fall skapar starka band mellan människor runt bordet. Vi på Rosers är specialiserar oss på att arrangera storskaliga och avancerade evenemang med upp till 40 000 deltagare. Med internationella kunder och ett etablerat nätverk har vi byggt upp en välrenommerad verksamhet där catering och event står i centrum. Vår kärngrupp är känd för sina framstående prestationer och sitt engagemang för perfektion.\n\nVad gör Rosers unikt? Det är svårt att beskriva för den som ännu inte har upplevt det. Men låt oss ge en inblick i vår värld genom verkliga exempel – möten och evenemang där vi har fått skapa minnesvärda ögonblick under evenemang som Prins Carl Philips och prinsessan Sofias kungliga bröllop, Volvo Ocean Race, IKEA samt vinter-OS i Sydkorea för att nämna några.",
+    "description": "Mat är en konst som i bästa fall skapar starka band mellan människor runt bordet. Vi på Rosers är specialiserar oss på att arrangera storskaliga och avancerade evenemang med upp till 60 000 deltagare. Med internationella kunder och ett etablerat nätverk har vi byggt upp en välrenommerad verksamhet där catering och event står i centrum. Vår kärngrupp är känd för sina framstående prestationer och sitt engagemang för perfektion.\n\nVad gör Rosers unikt? Det är svårt att beskriva för den som ännu inte har upplevt det. Men låt oss ge en inblick i vår värld genom verkliga exempel – möten och evenemang där vi har fått skapa minnesvärda ögonblick under evenemang som Prins Carl Philips och prinsessan Sofias kungliga bröllop, Volvo Ocean Race, IKEA samt vinter-OS i Sydkorea för att nämna några.",
     "sections": [
       {
         "title": "Exklusiva evenemang",

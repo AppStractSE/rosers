@@ -56,6 +56,7 @@ export default function Index({
           link: translation("WhoWeAre.href"),
         }}
       />
+      <Divider />
       <TextAndImageSection
         rtl
         title={translation("OurHistory.secondary_title")}

@@ -23,7 +23,7 @@ export default function Index({
   const sections = translation.raw("RosersKitchen.sections");
   return (
     <main>
-      <HeroSubPageSection image="/hero-image-our-history.webp" />
+      <HeroSubPageSection image="/hero-image-kitchen.webp" />
       <InfoSection
         showBreadcrumbs
         title={translation("RosersKitchen.subtitle")}

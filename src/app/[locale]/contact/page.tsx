@@ -19,7 +19,7 @@ export default function Index({
   return (
     <>
       <main>
-        <HeroSubPageSection image="/hero-image-our-history.webp" />
+        <HeroSubPageSection image="/hero-image-contact.webp" />
         <Divider />
         <ContactSection />
         <Divider />

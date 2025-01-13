@@ -4,6 +4,7 @@ import { useTranslations } from "next-intl";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import toast from "react-hot-toast";
+import { twMerge } from "tailwind-merge";
 import Spinner from "../loaders/Spinner";
 
 interface IContactForm {
@@ -99,15 +100,16 @@ const ContactForm = () => {
     <div className="relative">
       <form
         onSubmit={handleSubmit(onSubmit)}
-        className={futuraStd.className.concat(" ").concat("mx-auto")}
+        className={twMerge("mx-auto", futuraStd.className)}
         name="contact-form"
       >
         <input type="hidden" name="required-field" value="contact-form" />
         <div className="mb-3 w-full">
           <input
-            className={baseClasses
-              .concat(" ")
-              .concat(errors["FullName"] ? errorClass : "")}
+            className={twMerge(
+              baseClasses,
+              errors["FullName"] ? errorClass : "",
+            )}
             type="text"
             placeholder={translation("placeholders.FullName")}
             {...register("FullName", {
@@ -124,22 +126,19 @@ const ContactForm = () => {
           />
           <p
             role="alert"
-            className={errorTextBaseClass
-              .concat(" ")
-              .concat(
-                errors["FullName"]
-                  ? errorTextVisibleClasses
-                  : errorTextHiddenClasses,
-              )}
+            className={twMerge(
+              errorTextBaseClass,
+              errors["FullName"]
+                ? errorTextVisibleClasses
+                : errorTextHiddenClasses,
+            )}
           >
             {errors.FullName?.message}
           </p>
         </div>
         <div className="mb-3 w-full">
           <input
-            className={baseClasses
-              .concat(" ")
-              .concat(errors["Email"] ? errorClass : "")}
+            className={twMerge(baseClasses, errors["Email"] ? errorClass : "")}
             type="email"
             placeholder={translation("placeholders.Email")}
             {...register("Email", {
@@ -153,13 +152,12 @@ const ContactForm = () => {
           />
           <p
             role="alert"
-            className={errorTextBaseClass
-              .concat(" ")
-              .concat(
-                errors["Email"]
-                  ? errorTextVisibleClasses
-                  : errorTextHiddenClasses,
-              )}
+            className={twMerge(
+              errorTextBaseClass,
+              errors["Email"]
+                ? errorTextVisibleClasses
+                : errorTextHiddenClasses,
+            )}
           >
             {errors.Email?.message}
           </p>
@@ -174,22 +172,24 @@ const ContactForm = () => {
             />
             <p
               role="alert"
-              className={errorTextBaseClass
-                .concat(" ")
-                .concat(
-                  errors["BusinessName"]
-                    ? errorTextVisibleClasses
-                    : errorTextHiddenClasses,
-                )}
+              className={twMerge(
+                errorTextBaseClass,
+
+                errors["BusinessName"]
+                  ? errorTextVisibleClasses
+                  : errorTextHiddenClasses,
+              )}
             >
               {errors.BusinessName?.message}
             </p>
           </div>
           <div className="w-full">
             <input
-              className={baseClasses
-                .concat(" ")
-                .concat(errors["PhoneNumber"] ? errorClass : "")}
+              className={twMerge(
+                baseClasses,
+
+                errors["PhoneNumber"] ? errorClass : "",
+              )}
               type="tel"
               placeholder={translation("placeholders.PhoneNumber")}
               {...register("PhoneNumber", {
@@ -221,13 +221,13 @@ const ContactForm = () => {
             />
             <p
               role="alert"
-              className={errorTextBaseClass
-                .concat(" ")
-                .concat(
-                  errors["PhoneNumber"]
-                    ? errorTextVisibleClasses
-                    : errorTextHiddenClasses,
-                )}
+              className={twMerge(
+                errorTextBaseClass,
+
+                errors["PhoneNumber"]
+                  ? errorTextVisibleClasses
+                  : errorTextHiddenClasses,
+              )}
             >
               {errors.PhoneNumber?.message}
             </p>
@@ -237,11 +237,11 @@ const ContactForm = () => {
           <textarea
             maxLength={500}
             placeholder={translation("placeholders.Message")}
-            className={"h-32 resize-none whitespace-pre-line focus-visible:h-64"
-              .concat(" ")
-              .concat(baseClasses)
-              .concat(" ")
-              .concat(errors["Message"] ? errorClass : "")}
+            className={twMerge(
+              "h-32 resize-none whitespace-pre-line focus-visible:h-64",
+              baseClasses,
+              errors["Message"] ? errorClass : "",
+            )}
             {...register("Message", {
               required: translation("validationMessages.Message.required"),
               minLength: {
@@ -256,13 +256,13 @@ const ContactForm = () => {
           ></textarea>
           <p
             role="alert"
-            className={errorTextBaseClass
-              .concat(" ")
-              .concat(
-                errors["Message"]
-                  ? errorTextVisibleClasses
-                  : errorTextHiddenClasses,
-              )}
+            className={twMerge(
+              errorTextBaseClass,
+
+              errors["Message"]
+                ? errorTextVisibleClasses
+                : errorTextHiddenClasses,
+            )}
           >
             {errors.Message?.message}
           </p>
@@ -287,38 +287,39 @@ const ContactForm = () => {
       </form>
 
       <div
-        className={"absolute inset-0 left-0 top-0 -m-2 overflow-hidden rounded border-[#a286688e] bg-charcoal-800/50 backdrop-blur-sm transition-all delay-75 duration-300 ease-in-out lg:backdrop-blur-sm"
-          .concat(" ")
-          .concat(
-            formSubmitted ? "visible opacity-100" : "invisible opacity-0",
-          )}
+        className={twMerge(
+          "absolute inset-0 left-0 top-0 -m-2 overflow-hidden rounded border-[#a286688e] bg-charcoal-800/50 backdrop-blur-sm transition-all delay-75 duration-300 ease-in-out lg:backdrop-blur-sm",
+          formSubmitted ? "visible opacity-100" : "invisible opacity-0",
+        )}
       >
         <div
-          className={"flex h-full transform flex-col items-center justify-center space-y-4 transition-all duration-300 ease-in-out"
-            .concat(" ")
-            .concat(formSubmitted ? "translate-y-0" : "translate-y-[125%]")}
+          className={twMerge(
+            "flex h-full transform flex-col items-center justify-center space-y-4 transition-all duration-300 ease-in-out",
+            formSubmitted ? "translate-y-0" : "translate-y-[125%]",
+          )}
         >
           <h6
-            className={futuraStd.className
-              .concat(" ")
-              .concat("text-3xl lg:text-center lg:text-2xl")}
+            className={twMerge(
+              "text-3xl lg:text-center lg:text-2xl",
+              futuraStd.className,
+            )}
           >
             {translation("messageSent.title")}
           </h6>
           <p
-            className={garamond.className
-              .concat(" ")
-              .concat(
-                "text-balance whitespace-pre-line text-xl font-thin lg:text-center lg:text-xl",
-              )}
+            className={twMerge(
+              "text-balance whitespace-pre-line text-xl font-thin lg:text-center lg:text-xl",
+              garamond.className,
+            )}
           >
             {translation("messageSent.description", { name: name })}
           </p>
           <button
             onClick={() => setFormSubmitted(false)}
-            className={"inline-block rounded-sm border border-gold p-2 px-4 text-center text-xs text-gold transition-all duration-200 ease-in-out hover:bg-gold hover:text-[#232323] sm:bg-transparent"
-              .concat(" ")
-              .concat(futuraStd.className)}
+            className={twMerge(
+              "inline-block rounded-sm border border-gold p-2 px-4 text-center text-xs text-gold transition-all duration-200 ease-in-out hover:bg-gold hover:text-[#232323] sm:bg-transparent",
+              futuraStd.className,
+            )}
           >
             {translation("close")}
           </button>

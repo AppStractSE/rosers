@@ -3,6 +3,7 @@ import { futuraStd } from "@/util/fonts";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { BsChevronDown } from "react-icons/bs";
+import { twMerge } from "tailwind-merge";
 
 interface Props {
   title: string;
@@ -28,37 +29,38 @@ const Accordion = ({
 
   return (
     <div
-      className={"cursor-pointer overflow-hidden border-b py-6 transition-all duration-300 ease-in-out"
-        .concat(" ")
-        .concat(borderColor ? borderColor : "border-[#8B7257]")}
+      className={twMerge(
+        "cursor-pointer overflow-hidden border-b py-6 transition-all duration-300 ease-in-out",
+        borderColor ? borderColor : "border-[#8B7257]",
+      )}
       onClick={() => setIsOpen(!isOpen)}
     >
       <div className="flex items-center justify-between">
         <h6
-          className={"text-base font-bold tracking-wide"
-            .concat(" ")
-            .concat(futuraStd.className)
-            .concat(" ")
-            .concat(uppercaseTitle ? "uppercase" : "")
-            .concat(" ")
-            .concat(titleColor ? titleColor : "text-[#8B7257]")}
+          className={twMerge(
+            "text-base font-bold tracking-wide",
+            uppercaseTitle ? "uppercase" : "",
+            titleColor ? titleColor : "text-[#8B7257]",
+            futuraStd.className,
+          )}
         >
           {title}
         </h6>
         <div
-          className={"transform transition-transform duration-300"
-            .concat(" ")
-            .concat(titleColor ? titleColor : "text-[#8B7257]")
-            .concat(" ")
-            .concat(isOpen ? "rotate-180" : "")}
+          className={twMerge(
+            "transform transition-transform duration-300",
+            titleColor ? titleColor : "text-[#8B7257]",
+            isOpen ? "rotate-180" : "",
+          )}
         >
           <BsChevronDown />
         </div>
       </div>
       <div
-        className={"overflow-hidden duration-300 ease-in-out"
-          .concat(" ")
-          .concat(isOpen ? "mt-4 max-h-[1000px]" : "max-h-0")}
+        className={twMerge(
+          "overflow-hidden duration-300 ease-in-out",
+          isOpen ? "mt-4 max-h-[1000px]" : "max-h-0",
+        )}
       >
         {content}
       </div>

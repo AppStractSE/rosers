@@ -7,6 +7,7 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { MdArrowOutward } from "react-icons/md";
 import { TfiClose } from "react-icons/tfi";
+import { twMerge } from "tailwind-merge";
 import LocaleSwitcher from "../LocaleSwitcher";
 import Accordion from "../accordion/Accordion";
 
@@ -31,16 +32,18 @@ const MainLinks = ({ currentPath }: MainLinksProps) => {
   return (
     <>
       <h6
-        className={futuraStd.className
-          .concat(" ")
-          .concat("text-base font-bold uppercase tracking-wide text-brass")}
+        className={twMerge(
+          "text-base font-bold uppercase tracking-wide text-brass",
+          futuraStd.className,
+        )}
       >
         {translation("menu")}
       </h6>
       <nav
-        className={futuraStd.className
-          .concat(" ")
-          .concat("mt-4 space-y-4 text-3xl font-semibold tracking-widest")}
+        className={twMerge(
+          "mt-4 space-y-4 text-3xl font-semibold tracking-widest",
+          futuraStd.className,
+        )}
       >
         {mainLinks.map((mainLink: MainLink) => {
           const isHome = mainLink.href === "/" && currentPath === `/${locale}`;
@@ -97,9 +100,10 @@ const SecondaryLinks = ({ isMobile, currentPath }: SecondaryLinksProps) => {
       {isMobile ? (
         <>
           <nav
-            className={"space-y-2 text-sm font-thin tracking-widest"
-              .concat(" ")
-              .concat(futuraStd.className)}
+            className={twMerge(
+              "space-y-2 text-sm font-thin tracking-widest",
+              futuraStd.className,
+            )}
           >
             {subLinks.map((subLink: SubLink) => {
               return (
@@ -119,9 +123,10 @@ const SecondaryLinks = ({ isMobile, currentPath }: SecondaryLinksProps) => {
                             key={link.label}
                             href={`/${locale}${link.href}`}
                             target={link.externalLink ? "_blank" : "_self"}
-                            className={"block py-2 text-gold transition-all duration-200 ease-in-out hover:text-brass"
-                              .concat(" ")
-                              .concat(isActive ? "text-brass" : "")}
+                            className={twMerge(
+                              "block py-2 text-gold transition-all duration-200 ease-in-out hover:text-brass",
+                              isActive ? "text-brass" : "",
+                            )}
                           >
                             {link.externalLink ? (
                               <span className="flex items-center gap-2">
@@ -156,22 +161,25 @@ const SecondaryLinks = ({ isMobile, currentPath }: SecondaryLinksProps) => {
           {subLinks.map((subLink: SubLink, index: number) => (
             <div
               key={subLink.label}
-              className={"my-6"
-                .concat(" ")
-                .concat(index % 2 === 0 ? "basis-7/12" : "basis-5/12")}
+              className={twMerge(
+                "my-6",
+                index % 2 === 0 ? "basis-7/12" : "basis-5/12",
+              )}
             >
               <div className="w-fit">
                 <h6
-                  className={"text-base font-bold uppercase tracking-wide text-brass"
-                    .concat(" ")
-                    .concat(futuraStd.className)}
+                  className={twMerge(
+                    "text-base font-bold uppercase tracking-wide text-brass",
+                    futuraStd.className,
+                  )}
                 >
                   {subLink.label}
                 </h6>
                 <nav
-                  className={"mt-4 space-y-2 text-sm font-thin tracking-widest"
-                    .concat(" ")
-                    .concat(futuraStd.className)}
+                  className={twMerge(
+                    "mt-4 space-y-2 text-sm font-thin tracking-widest",
+                    futuraStd.className,
+                  )}
                 >
                   {subLink.links.map((link) => {
                     const isActive = currentPath === `/${locale}${link.href}`;
@@ -184,9 +192,10 @@ const SecondaryLinks = ({ isMobile, currentPath }: SecondaryLinksProps) => {
                             : `/${locale}${link.href}`
                         }
                         target={link.externalLink ? "_blank" : "_self"}
-                        className={"block text-[#F5CEA4] transition-all duration-200 ease-in-out hover:text-brass"
-                          .concat(" ")
-                          .concat(isActive ? "text-brass" : "")}
+                        className={twMerge(
+                          "block text-[#F5CEA4] transition-all duration-200 ease-in-out hover:text-brass",
+                          isActive ? "text-brass" : "",
+                        )}
                       >
                         {link.externalLink ? (
                           <span className="flex items-center gap-2">
@@ -220,10 +229,10 @@ const Logo = () => (
 );
 
 function isActiveDiamond(isActive: boolean) {
-  const activeDiamond =
-    "w-3 h-3 bg-[#8B7257] transform rotate-45 rounded-sm transition-all duration-300 ease-in-out  "
-      .concat(" ")
-      .concat(isActive ? "opacity-100" : "opacity-0 group-hover:opacity-100");
+  const activeDiamond = twMerge(
+    "w-3 h-3 bg-[#8B7257] transform rotate-45 rounded-sm transition-all duration-300 ease-in-out",
+    isActive ? "opacity-100" : "opacity-0 group-hover:opacity-100",
+  );
   const isActiveClassNames = isActive && "text-brass";
   return { isActiveClassNames, activeDiamond };
 }
@@ -270,33 +279,33 @@ const Drawer = ({ isOpen, setIsOpen }: Props) => {
   return (
     <aside>
       <div
-        className={"fixed inset-0 z-10 h-full w-full transform overflow-hidden backdrop-blur-sm transition-all duration-500 ease-in-out"
-          .concat(" ")
-          .concat(
-            isOpen
-              ? "visible opacity-100"
-              : "pointer-events-none invisible opacity-0 delay-200",
-          )}
+        className={twMerge(
+          "fixed inset-0 z-10 h-full w-full transform overflow-hidden backdrop-blur-sm transition-all duration-500 ease-in-out",
+          isOpen
+            ? "visible opacity-100"
+            : "pointer-events-none invisible opacity-0 delay-200",
+        )}
       >
         <div
-          className={"h-full w-screen overflow-hidden bg-black transition-all duration-300"
-            .concat(" ")
-            .concat(isOpen ? "opacity-50" : "opacity-0")}
+          className={twMerge(
+            "h-full w-screen overflow-hidden bg-black transition-all duration-300",
+            isOpen ? "opacity-50" : "opacity-0",
+          )}
           onClick={handleToggle}
         />
         <div
-          className={"absolute left-0 top-0 flex h-full w-full max-w-2xl transform flex-col justify-between overflow-auto border-[#a286688e] bg-charcoal-700 bg-opacity-80 px-4 py-4 shadow-xl transition-all duration-300 ease-in-out md:border-r md:px-12 md:py-8 lg:bg-opacity-80"
-            .concat(" ")
-            .concat(
-              isOpen ? "w-screen translate-x-0" : "w-0 -translate-x-full",
-            )}
+          className={twMerge(
+            "absolute left-0 top-0 flex h-full w-full max-w-2xl transform flex-col justify-between overflow-auto border-[#a286688e] bg-charcoal-700 bg-opacity-80 px-4 py-4 shadow-xl transition-all duration-300 ease-in-out md:border-r md:px-12 md:py-8 lg:bg-opacity-80",
+            isOpen ? "w-screen translate-x-0" : "w-0 -translate-x-full",
+          )}
         >
           <div className="flex items-center justify-between">
             <Link href={`/${locale}`}>
               <h2
-                className={"flex flex-1 justify-center text-3xl uppercase tracking-widest"
-                  .concat(" ")
-                  .concat(garamond.className)}
+                className={twMerge(
+                  "flex flex-1 justify-center text-3xl uppercase tracking-widest",
+                  garamond.className,
+                )}
               >
                 Rosers
               </h2>

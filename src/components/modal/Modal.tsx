@@ -3,6 +3,7 @@ import { useLocale, useTranslations } from "next-intl";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { TfiClose } from "react-icons/tfi";
+import { twMerge } from "tailwind-merge";
 import ContactForm from "../forms/ContactForm";
 
 interface Props {
@@ -31,31 +32,33 @@ const Modal = ({ isOpen, setIsOpen }: Props) => {
   };
   return (
     <div
-      className={"fixed inset-0 z-10 h-full w-full transform overflow-hidden transition-all delay-75 duration-300 ease-in-out lg:backdrop-blur-sm"
-        .concat(" ")
-        .concat(
-          isOpen
-            ? "visible opacity-100"
-            : "pointer-events-none invisible opacity-0",
-        )}
+      className={twMerge(
+        "fixed inset-0 z-10 h-full w-full transform overflow-hidden transition-all delay-75 duration-300 ease-in-out lg:backdrop-blur-sm",
+        isOpen
+          ? "visible opacity-100"
+          : "pointer-events-none invisible opacity-0",
+      )}
     >
       <div
-        className={"h-full w-screen overflow-hidden bg-black transition-all duration-300"
-          .concat(" ")
-          .concat(isOpen ? "opacity-50" : "opacity-0")}
+        className={twMerge(
+          "h-full w-screen overflow-hidden bg-black transition-all duration-300",
+          isOpen ? "opacity-50" : "opacity-0",
+        )}
         onClick={handleToggle}
       />
       <div
-        className={"absolute inset-0 left-0 right-0 top-0 mx-auto my-auto flex h-full max-w-xl transform flex-col justify-between overflow-y-auto border-[#a286688e] bg-charcoal-700 px-4 py-4 shadow-xl transition-all duration-300 ease-in-out sm:border md:max-h-[90vh] md:px-12 md:py-8 lg:bg-opacity-80"
-          .concat(" ")
-          .concat(isOpen ? "translate-y-0" : "translate-y-[125%]")}
+        className={twMerge(
+          "absolute inset-0 left-0 right-0 top-0 mx-auto my-auto flex h-full max-w-xl transform flex-col justify-between overflow-y-auto border-[#a286688e] bg-charcoal-700 px-4 py-4 shadow-xl transition-all duration-300 ease-in-out sm:border md:max-h-[90vh] md:px-12 md:py-8 lg:bg-opacity-80",
+          isOpen ? "translate-y-0" : "translate-y-[125%]",
+        )}
       >
         <div className="flex items-center justify-between">
           <Link href={`/${locale}`} onClick={handleToggle}>
             <h2
-              className={"flex flex-1 justify-center text-3xl uppercase tracking-widest"
-                .concat(" ")
-                .concat(garamond.className)}
+              className={twMerge(
+                "flex flex-1 justify-center text-3xl uppercase tracking-widest",
+                garamond.className,
+              )}
             >
               Rosers
             </h2>

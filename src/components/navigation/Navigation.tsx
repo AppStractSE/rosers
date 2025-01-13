@@ -6,6 +6,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { BiMenuAltLeft } from "react-icons/bi";
+import { twMerge } from "tailwind-merge";
 import Drawer from "../drawer/Drawer";
 import Modal from "../modal/Modal";
 import { NavItem } from "./data";
@@ -19,7 +20,7 @@ const NavigationLink = ({ href, label, isActive }: NavItem) => {
   return (
     <Link
       href={`/${locale}${href}`}
-      className={linkClassNames.concat(" ").concat(isActiveClassNames)}
+      className={twMerge(linkClassNames, isActiveClassNames)}
     >
       {label}
     </Link>
@@ -65,9 +66,10 @@ const Navigation = () => {
       <header className="sticky top-0 z-10 w-full border-b border-[#a286688e] bg-charcoal-800 bg-opacity-90 px-4 backdrop-blur-sm lg:backdrop-blur-md 2xl:px-16">
         <div className="mx-auto flex max-w-screen-xl items-center justify-between transition-all duration-200 ease-in-out">
           <nav
-            className={"lg:order-0 order-1 flex flex-1 flex-row-reverse items-center justify-start gap-4 text-xs transition-all duration-300 ease-in-out md:py-4 lg:flex-row lg:justify-start 2xl:text-base"
-              .concat(" ")
-              .concat(futuraStd.className)}
+            className={twMerge(
+              "lg:order-0 order-1 flex flex-1 flex-row-reverse items-center justify-start gap-4 text-xs transition-all duration-300 ease-in-out md:py-4 lg:flex-row lg:justify-start 2xl:text-base",
+              futuraStd.className,
+            )}
           >
             <button
               className="scale-x-[-1] py-4 text-3xl md:text-2xl lg:scale-x-[1]"
@@ -88,24 +90,27 @@ const Navigation = () => {
           <div className="flex flex-1 lg:order-1 lg:justify-center">
             <Link href={`/${locale}`} className="w-fit">
               <h2
-                className={garamond.className
-                  .concat(" ")
-                  .concat("text-2xl uppercase tracking-widest md:text-4xl")}
+                className={twMerge(
+                  "text-2xl uppercase tracking-widest md:text-4xl",
+                  garamond.className,
+                )}
               >
                 Rosers
               </h2>
             </Link>
           </div>
           <div
-            className={futuraStd.className
-              .concat(" ")
-              .concat("order-2 hidden flex-1 justify-end text-xs lg:flex")}
+            className={twMerge(
+              "order-2 hidden flex-1 justify-end text-xs lg:flex",
+              futuraStd.className,
+            )}
           >
             <button
               onClick={() => setIsModalOpen(true)}
-              className={"inline-block rounded-sm border border-gold p-2 px-4 text-center text-xs text-gold transition-all duration-200 ease-in-out hover:bg-gold hover:text-[#232323] sm:bg-transparent"
-                .concat(" ")
-                .concat(futuraStd.className)}
+              className={twMerge(
+                "inline-block rounded-sm border border-gold p-2 px-4 text-center text-xs text-gold transition-all duration-200 ease-in-out hover:bg-gold hover:text-[#232323] sm:bg-transparent",
+                futuraStd.className,
+              )}
             >
               {contactButton.label}
             </button>

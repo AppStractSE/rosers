@@ -5,6 +5,7 @@ import { useLocale, useTranslations } from "next-intl";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { MdArrowOutward } from "react-icons/md";
+import { twMerge } from "tailwind-merge";
 import Accordion from "../accordion/Accordion";
 
 const Divider = () => {
@@ -35,9 +36,10 @@ const Footer = () => {
       <div className="mx-auto max-w-screen-xl px-4 pb-8 pt-0 2xl:px-16">
         <div className="lg:mb-8">
           <h2
-            className={"text-3xl uppercase tracking-widest md:text-5xl"
-              .concat(" ")
-              .concat(garamond.className)}
+            className={twMerge(
+              "text-3xl uppercase tracking-widest md:text-5xl",
+              garamond.className,
+            )}
           >
             Rosers
           </h2>
@@ -46,9 +48,10 @@ const Footer = () => {
           {isMobile ? (
             <>
               <nav
-                className={"space-y-2 text-sm font-thin tracking-widest"
-                  .concat(" ")
-                  .concat(futuraStd.className)}
+                className={twMerge(
+                  "space-y-2 text-sm font-thin tracking-widest",
+                  futuraStd.className,
+                )}
               >
                 {subLinks.map((subLink: any) => (
                   <Accordion
@@ -94,18 +97,18 @@ const Footer = () => {
                 <div key={subLink.label} className="my-6">
                   <div className="w-fit">
                     <h6
-                      className={futuraStd.className
-                        .concat(" ")
-                        .concat("text-xl font-medium tracking-wide text-brass")}
+                      className={twMerge(
+                        "text-xl font-medium tracking-wide text-brass",
+                        futuraStd.className,
+                      )}
                     >
                       {subLink.label}
                     </h6>
                     <nav
-                      className={futuraStd.className
-                        .concat(" ")
-                        .concat(
-                          "mt-4 space-y-2 text-sm font-thin tracking-widest",
-                        )}
+                      className={twMerge(
+                        "mt-4 space-y-2 text-sm font-thin tracking-widest",
+                        futuraStd.className,
+                      )}
                     >
                       {subLink.links.map((link: any) => (
                         <Link
@@ -146,9 +149,10 @@ const Footer = () => {
         </>
         <div className="mt-24 flex flex-wrap items-center justify-between gap-4">
           <div
-            className={futuraStd.className
-              .concat(" ")
-              .concat("text-xxs font-normal uppercase text-brass")}
+            className={twMerge(
+              "text-xxs font-normal uppercase text-brass",
+              futuraStd.className,
+            )}
           >
             All rights reserved © {new Date().getFullYear()}
           </div>
@@ -156,11 +160,10 @@ const Footer = () => {
             target="_blank"
             rel="noopener noreferrer"
             href="https://www.appstract.se"
-            className={futuraStd.className
-              .concat(" ")
-              .concat(
-                "text-xxs font-normal uppercase text-brass hover:underline hover:underline-offset-4",
-              )}
+            className={twMerge(
+              "text-xxs font-normal uppercase text-brass hover:underline hover:underline-offset-4",
+              futuraStd.className,
+            )}
           >
             {translation("WebDesignBy")}
           </a>

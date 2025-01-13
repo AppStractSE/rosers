@@ -50,7 +50,7 @@ const ConceptCards = ({ showHeader }: Props) => {
           </p>
         </div>
       )}
-      <div className="mx-auto max-w-screen-xl px-4 xl:px-0">
+      <div className="mx-auto max-w-screen-xl px-4 2xl:px-0">
         <div className="flex flex-col gap-4 lg:flex-row">
           {concepts.map((concept: ConceptItem, index: number) => (
             <ReadMoreCard

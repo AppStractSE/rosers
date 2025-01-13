@@ -15,7 +15,7 @@ interface Props {
 const ReadMoreCard = ({ title, subtitle, image, link, className }: Props) => {
   const locale = useLocale();
   const imageBaseClasses =
-    "h-[300px] w-full object-cover transition-all duration-300 ease-in-out md:h-[450px] lg:h-[550px] transition-all ease-in-out";
+    "h-[300px] w-full object-cover transition-opacity duration-300 ease-in-out md:h-[450px] lg:h-[550px]";
   const loadingClasses =
     " data-[loaded=false]:animate-pulse data-[loaded=false]:bg-gray-100/10 data-[loaded=false]:blur-sm";
   return (

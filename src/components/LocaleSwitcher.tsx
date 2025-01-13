@@ -5,6 +5,7 @@ import { futuraStd } from "@/util/fonts";
 import { useLocale, useTranslations } from "next-intl";
 import { useParams } from "next/navigation";
 import React, { useTransition } from "react";
+import { twMerge } from "tailwind-merge";
 
 interface Props {
   showAsCol?: boolean;
@@ -39,11 +40,11 @@ export default function LocaleSwitcher({ showAsCol }: Props) {
             disabled={isPending}
             onClick={handleLocaleChange}
             value={lang}
-            className={"block py-2 text-xs font-extralight uppercase tracking-widest hover:text-brass"
-              .concat(" ")
-              .concat(locale === lang ? "text-brass" : "")
-              .concat(" ")
-              .concat(futuraStd.className)}
+            className={twMerge(
+              "block py-2 text-xs font-extralight uppercase tracking-widest hover:text-brass",
+              locale === lang ? "text-brass" : "",
+              futuraStd.className,
+            )}
           >
             {translation("locale", { locale: lang })}
           </button>

@@ -48,9 +48,7 @@ const Breadcrumbs = () => {
                 </Link>
               ) : (
                 <span
-                  className={twMerge(
-                    "underline underline-offset-4 opacity-50",
-                  )}
+                  className="underline underline-offset-4 opacity-50"
                 >
                   {breadcrumb.label}
                 </span>

@@ -9,7 +9,6 @@ interface Props {
 
 const GallerySection = ({ showHeader }: Props) => {
   const translation = useTranslations();
-  const locale = useLocale();
   const sections = translation.raw("Events.sections");
 
   return (
@@ -34,7 +33,7 @@ const GallerySection = ({ showHeader }: Props) => {
           </h3>
           <p
             className={twMerge(
-              "whitespace-pre-line text-xl font-thin tracking-wide max-w-2xl",
+              "max-w-2xl whitespace-pre-line text-xl font-thin tracking-wide",
               garamond.className,
             )}
           >

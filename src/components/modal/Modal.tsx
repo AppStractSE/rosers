@@ -4,17 +4,24 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { TfiClose } from "react-icons/tfi";
 import { twMerge } from "tailwind-merge";
-import ContactForm from "../forms/ContactForm";
 
 interface Props {
   isOpen: boolean;
   setIsOpen: (isOpen: boolean) => void;
+  children: React.ReactNode;
+  align?: "center" | "top";
+  size?: "sm" | "md" | "lg";
 }
 
-const Modal = ({ isOpen, setIsOpen }: Props) => {
+const Modal = ({ isOpen, setIsOpen, children, align, size = "sm" }: Props) => {
   const [mounted, setMounted] = useState<boolean>(false);
   const translation = useTranslations("ContactForm");
   const locale = useLocale();
+  const sizeMap = {
+    sm: "max-w-xl",
+    md: "max-w-2xl",
+    lg: "max-w-3xl",
+  };
 
   useEffect(() => {
     setMounted(true);
@@ -33,7 +40,7 @@ const Modal = ({ isOpen, setIsOpen }: Props) => {
   return (
     <div
       className={twMerge(
-        "fixed inset-0 z-10 h-full w-full transform overflow-hidden transition-all delay-75 duration-300 ease-in-out lg:backdrop-blur-sm",
+        "fixed inset-0 z-10 h-screen w-screen transform overflow-hidden transition-all delay-75 duration-300 ease-in-out lg:backdrop-blur-sm",
         isOpen
           ? "visible opacity-100"
           : "pointer-events-none invisible opacity-0",
@@ -48,11 +55,12 @@ const Modal = ({ isOpen, setIsOpen }: Props) => {
       />
       <div
         className={twMerge(
-          "absolute inset-0 left-0 right-0 top-0 mx-auto my-auto flex h-full max-w-xl transform flex-col justify-between overflow-y-auto border-[#a286688e] bg-charcoal-700 px-4 py-4 shadow-xl transition-all duration-300 ease-in-out sm:border md:max-h-[90vh] md:px-12 md:py-8 lg:bg-opacity-80",
+          "no-scrollbar absolute inset-0 left-0 right-0 top-0 mx-auto my-auto flex h-screen transform flex-col gap-4 overflow-y-auto rounded-sm border-[#a286688e] bg-charcoal-700 shadow-xl transition-all duration-300 ease-in-out sm:border md:max-h-[90vh]",
           isOpen ? "translate-y-0" : "translate-y-[125%]",
+          sizeMap[size],
         )}
       >
-        <div className="flex items-center justify-between">
+        <div className="sticky top-0 flex items-center justify-between border-b border-[#a286688e] bg-charcoal-700 px-4 py-4 md:px-8">
           <Link href={`/${locale}`} onClick={handleToggle}>
             <h2
               className={twMerge(
@@ -67,12 +75,13 @@ const Modal = ({ isOpen, setIsOpen }: Props) => {
             <TfiClose />
           </button>
         </div>
-        <div className="flex flex-1 flex-col justify-center">
-          <h3 className="text-2xl font-bold">{translation("title")}</h3>
-          <p className="mt-2">{translation("description")}</p>
-          <div className="mt-12 pb-4 md:pb-0">
-            <ContactForm />
-          </div>
+        <div
+          className={twMerge(
+            "flex flex-col bg-charcoal-700 px-4 py-4 md:px-8 md:pb-8",
+            align === "top" ? "justify-start" : "justify-center",
+          )}
+        >
+          {children}
         </div>
       </div>
     </div>

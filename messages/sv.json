@@ -56,7 +56,7 @@
   },
   "LocaleSwitcher": {
     "label": "Byt språk",
-    "locale": "{locale, select, sv {🇸🇪 Svenska} en {🇺🇸 English} other {Unknown}}"
+    "locale": "{locale, select, sv {/se.svg, Svenska} en {/us.svg, English} other {Unknown}}"
   },
   "Drawer": {
     "language": "Språk",
@@ -478,5 +478,32 @@
         "link": "/konceptet/rosers-konsultering"
       }
     ]
-  }
+  },
+  "Reviews": [
+    {
+      "title": "Genom åren har jag fått den största tillit till bröderna Stig och Bengt från den lilla staden Skara, där de står med båda fötterna på jorden. Tillsammans med Rosers kan jag för mitt företag se stora möjligheter till att åstadkomma många former för framtida samarbeten.",
+      "name": "Lasse Kronér",
+      "company": "TV-programledare & entreprenör"
+    },
+    {
+      "title": "Rosers gör sin del bakom scenen i köket och framför scenen i restaurangen, och jag utför min magi på scenen. Som underhållare uppskattar jag förmågan hos Rosers team att med punktlighet kunna sköta sin del av helheten utan longörer - mat och dryck. Så har jag helt tryggt kunnat sköta min del - det magiska.",
+      "name": "Joe Labero",
+      "company": "Illusionist & magiker"
+    },
+    {
+      "title": "Med kräsna chefer och förväntansfulla gäster, då det gällde mat och dryck, kändes det mycket tryggt att ha Bengt Roser och hans team att tillgå.",
+      "name": "Gunilla Solheim",
+      "company": "Projektledare Ericsson AB, Volvo Ocean Race"
+    },
+    {
+      "title": "Genom sin generösa och positiva inställning till arbetet inom nöjesbranschen har Rosers intagit en framträdande plats, då det gäller att arrangera events av skilda slag och då inte enbart i Skara utan numera lite varstans i världen. Jag är imponerad över deras förmåga att utveckla och driva sådan verksamhet.",
+      "name": "Bert Karlsson",
+      "company": "Entreprenör, TV-profil & Skara-profil"
+    },
+    {
+      "title": "600 personer skulle serveras en trerättersmiddag med spets vad gäller allt. Vips så var förrätten framme. Vips så var den uppäten och avdukad. Därefter samma med varmrätt och efterrätt. Det var så pass fascinerande att jag var tvungen att smita bakom kulisserna för att se hur fan de bar sig åt, och mitt i alltihop rörde sig Bengt med ett upphöjt lugn. Imponerande.",
+      "name": "Stefan Sauk",
+      "company": "Skådespelare"
+    }
+  ]
 }

@@ -8,6 +8,7 @@ import { useEffect, useState } from "react";
 import { BiMenuAltLeft } from "react-icons/bi";
 import { twMerge } from "tailwind-merge";
 import Drawer from "../drawer/Drawer";
+import ContactForm from "../forms/ContactForm";
 import Modal from "../modal/Modal";
 import { NavItem } from "./data";
 
@@ -91,11 +92,19 @@ const Navigation = () => {
             <Link href={`/${locale}`} className="w-fit">
               <h2
                 className={twMerge(
-                  "text-2xl uppercase tracking-widest md:text-4xl",
+                  "text-2xl uppercase tracking-widest md:text-center md:text-4xl",
                   garamond.className,
                 )}
               >
                 Rosers
+              </h2>
+              <h2
+                className={twMerge(
+                  "text-xxxs uppercase tracking-widest md:text-center md:text-sm",
+                  garamond.className,
+                )}
+              >
+                Event & Catering
               </h2>
             </Link>
           </div>
@@ -118,7 +127,15 @@ const Navigation = () => {
         </div>
       </header>
       <Drawer isOpen={isDrawerOpen} setIsOpen={setIsDrawerOpen} />
-      <Modal isOpen={isModalOpen} setIsOpen={setIsModalOpen} />
+      <Modal isOpen={isModalOpen} setIsOpen={setIsModalOpen}>
+        <h3 className="text-2xl font-bold">
+          {translation("ContactForm.title")}
+        </h3>
+        <p className="mt-2">{translation("ContactForm.description")}</p>
+        <div className="mt-12 pb-4 md:pb-0">
+          <ContactForm />
+        </div>
+      </Modal>
     </>
   );
 };

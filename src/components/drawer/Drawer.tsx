@@ -295,7 +295,7 @@ const Drawer = ({ isOpen, setIsOpen }: Props) => {
         />
         <div
           className={twMerge(
-            "absolute left-0 top-0 flex h-full w-full max-w-2xl transform flex-col justify-between overflow-auto border-[#a286688e] bg-charcoal-700 bg-opacity-80 px-4 py-4 shadow-xl transition-all duration-300 ease-in-out md:border-r md:px-12 md:py-8 lg:bg-opacity-80",
+            "no-scrollbar absolute left-0 top-0 flex h-full w-full max-w-2xl transform flex-col justify-between overflow-auto border-[#a286688e] bg-charcoal-700 bg-opacity-80 px-4 py-4 shadow-xl transition-all duration-300 ease-in-out md:border-r md:px-12 md:py-8 lg:bg-opacity-80",
             isOpen ? "w-screen translate-x-0" : "w-0 -translate-x-full",
           )}
         >

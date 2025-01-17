@@ -9,16 +9,27 @@
 }
 
 body {
+  scroll-behavior: smooth;
   @apply bg-charcoal-800 text-gold;
+}
+
+body::-webkit-scrollbar, .no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+section {
+  animation: fadeIn 1s;
+  animation-fill-mode: both;
+}
+
+@for $i from 1 through 50 {
+  section:nth-of-type(#{$i}) {
+    animation-delay: $i * 0.1s;
+  }
 }
 
 .text-balance {
   text-wrap: balance;
-}
-
-.h-dynamic {
-  min-height: 80vh;
-  min-height: 80svh;
 }
 
 .drawer-bg {
@@ -50,51 +61,4 @@ body {
     visibility: visible;
     transform: translateY(0);
   }
-}
-
-section {
-  animation: fadeIn 1s;
-  animation-fill-mode: both;
-}
-
-@for $i from 1 through 25 {
-  section:nth-of-type(#{$i}) {
-    animation-delay: $i * 0.1s;
-  }
-}
-
-.embla {
-  @apply m-auto;
-}
-
-.embla__viewport {
-  @apply overflow-hidden;
-}
-
-.embla__container {
-  backface-visibility: hidden;
-  display: flex;
-  align-items: stretch;
-  touch-action: pan-y pinch-zoom;
-}
-
-.embla__slide {
-  flex: 0 0 100%;
-  @apply flex w-full min-w-0 px-4 2xl:px-0;
-}
-
-.embla__slide__img {
-  @apply block h-full w-full rounded-sm border border-brass object-cover;
-}
-
-.embla__buttons {
-  @apply mt-4 flex items-center justify-center gap-8 lg:mt-12;
-}
-
-.embla__button {
-  @apply hidden rounded-full border border-gold p-4 text-2xl lg:block;
-}
-
-.embla__slide__img {
-  user-select: none;
 }

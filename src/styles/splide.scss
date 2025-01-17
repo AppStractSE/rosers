@@ -1,0 +1,35 @@
+.splide__wrapper {
+    @apply flex flex-col gap-12 #{!important};
+}
+
+.splide__pagination {
+    @apply relative bottom-0 p-0 #{!important};
+}
+
+.splide__pagination__page {
+    @apply bg-brass opacity-50 transform transition-all duration-1000 rounded-sm w-4 h-4 ease-in-out rotate-45 #{!important};
+}
+
+.splide__pagination__page.is-active {
+    @apply bg-gold opacity-100 #{!important};
+}
+
+.splide-slide-content {
+    @apply max-w-screen-md mx-auto;
+}
+
+.splide__pagination {
+    @apply gap-1 flex #{!important};
+}
+
+.splide__pagination li {
+    @apply flex h-auto #{!important};
+}
+
+.splide__progress {
+    @apply mx-auto w-full rounded-sm overflow-hidden h-1 bg-brass/50 #{!important};
+}
+
+.splide__progress__bar {
+    @apply bg-gold h-1 #{!important};
+}

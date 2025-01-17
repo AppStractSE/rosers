@@ -1,4 +1,5 @@
 import ConceptCards from "@/components/cards/ConceptCards";
+import SplideReviewCarousel from "@/components/carousels/SplideReviewCarousel";
 import Divider from "@/components/divider/Divider";
 import ContactSection from "@/components/sections/ContactSection";
 import HeroSection from "@/components/sections/HeroSection";
@@ -70,6 +71,8 @@ export default function Index({
           link: translation("OurHistory.href"),
         }}
       />
+      <Divider />
+      <SplideReviewCarousel />
       <Divider />
       <ContactSection />
       <Divider />

@@ -55,7 +55,7 @@
     }
   },
   "LocaleSwitcher": {
-    "locale": "{locale, select, sv {🇸🇪 Svenska} en {🇺🇸 English} other {Unknown}}"
+    "locale": "{locale, select, sv {/se.svg, Svenska} en {/us.svg, English} other {Unknown}}"
   },
   "Drawer": {
     "language": "Language",
@@ -478,5 +478,32 @@
         "link": "/the-concept/rosers-consulting"
       }
     ]
-  }
+  },
+  "Reviews": [
+    {
+      "title": "Over the years, I have developed the greatest trust in the brothers Stig and Bengt from the small town of Skara, where they keep both feet firmly on the ground. Together with Rosers, I can see great opportunities for my company to achieve many forms of future collaborations.",
+      "name": "Lasse Kronér",
+      "company": "Swedish TV host & entrepreneur"
+    },
+    {
+      "title": "Rosers plays their part behind the scenes in the kitchen and in front of the stage in the restaurant, while I perform my magic on stage. As an entertainer, I greatly appreciate the ability of the Rosers team to manage their part of the whole—food and drink—with punctuality and without delays. This has allowed me to confidently focus on my part—the magic.",
+      "name": "Joe Labero",
+      "company": "Illusionist & magician"
+    },
+    {
+      "title": "With demanding managers and expectant guests when it came to food and beverages, it felt incredibly reassuring to have Bengt Roser and his team on hand.",
+      "name": "Gunilla Solheim",
+      "company": "Project Manager, Ericsson AB, Volvo Ocean Race"
+    },
+    {
+      "title": "Through their generous and positive approach to work within the entertainment industry, Rosers has taken a leading role in organizing events of various kinds—not only in Skara but now also in different parts of the world. I am impressed by their ability to develop and manage such operations.",
+      "name": "Bert Karlsson",
+      "company": "Swedish entrepreneur, TV personality & Skara icon"
+    },
+    {
+      "title": "600 people were to be served a three-course meal, and everything had to be perfect. Suddenly, the starters were served. Suddenly, they were eaten and cleared away. The same went for the main course and dessert. It was so fascinating that I had to sneak backstage to see how on earth they managed it. And in the middle of it all, Bengt moved with a calm demeanor. Truly impressive.",
+      "name": "Stefan Sauk",
+      "company": "Swedish actor"
+    }
+  ]
 }

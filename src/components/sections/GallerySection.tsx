@@ -128,7 +128,7 @@ const GallerySection = ({ showHeader }: Props) => {
         isOpen={isModalOpen}
         setIsOpen={() => setIsModalOpen(!isModalOpen)}
       >
-        <div className="relative pb-12 md:pb-0">
+        <div className="relative">
           <div className="sticky left-0 right-0 top-[69px] z-50 -mt-4 mb-4 flex items-center justify-between border-b border-[#a286688e] bg-[#232323] p-2 md:hidden md:pb-2">
             <button
               onClick={handlePrevEvent}

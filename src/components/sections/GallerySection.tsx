@@ -135,13 +135,13 @@ const GallerySection = ({ showHeader }: Props) => {
               className="flex items-center gap-2 p-2"
             >
               <BsChevronLeft size={12} />
-              <span className="text-xs">Previous Event</span>
+              <span className="text-xs">{translation("Prev")}</span>
             </button>
             <button
               onClick={handleNextEvent}
               className="flex items-center gap-2 p-2"
             >
-              <span className="text-xs">Next Event</span>
+              <span className="text-xs">{translation("Next")}</span>
               <BsChevronRight size={12} />
             </button>
           </div>
@@ -193,13 +193,13 @@ const GallerySection = ({ showHeader }: Props) => {
               className="flex items-center gap-2 p-2"
             >
               <BsChevronLeft size={12} />
-              <span className="text-xs">Previous Event</span>
+              <span className="text-xs">{translation("Prev")}</span>
             </button>
             <button
               onClick={handleNextEvent}
               className="flex items-center gap-2 p-2"
             >
-              <span className="text-xs">Next Event</span>
+              <span className="text-xs">{translation("Next")}</span>
               <BsChevronRight size={12} />
             </button>
           </div>

@@ -55,7 +55,7 @@ const Modal = ({ isOpen, setIsOpen, children, align, size = "sm" }: Props) => {
       />
       <div
         className={twMerge(
-          "no-scrollbar absolute inset-0 left-0 right-0 top-0 mx-auto my-auto flex h-screen transform flex-col gap-4 overflow-y-auto rounded-sm border-[#a286688e] bg-charcoal-700 shadow-xl transition-all duration-500 ease-in-out sm:border md:h-max md:max-h-[90vh]",
+          "no-scrollbar mobile-safe-area absolute inset-0 left-0 right-0 top-0 mx-auto my-auto flex h-screen transform flex-col gap-4 overflow-y-auto rounded-sm border-[#a286688e] bg-charcoal-700 shadow-xl transition-all duration-500 ease-in-out sm:border md:h-max md:max-h-[90vh]",
           isOpen ? "translate-y-0" : "translate-y-[125%]",
           sizeMap[size],
         )}
@@ -81,7 +81,7 @@ const Modal = ({ isOpen, setIsOpen, children, align, size = "sm" }: Props) => {
             align === "top" ? "justify-start" : "justify-center",
           )}
         >
-          {children}
+          <div className="relative">{children}</div>
         </div>
       </div>
     </div>

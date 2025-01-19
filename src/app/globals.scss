@@ -13,7 +13,8 @@ body {
   @apply bg-charcoal-800 text-gold;
 }
 
-body::-webkit-scrollbar, .no-scrollbar::-webkit-scrollbar {
+body::-webkit-scrollbar,
+.no-scrollbar::-webkit-scrollbar {
   display: none;
 }
 

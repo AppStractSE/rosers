@@ -11,6 +11,7 @@ interface Props {
   size: string;
   description: string;
   onClick?: () => void;
+  onHover?: () => void;
 }
 
 const GalleryImage = ({
@@ -20,14 +21,16 @@ const GalleryImage = ({
   image,
   description,
   onClick,
+  onHover,
 }: Props) => {
   const imageBaseClasses =
-    "h-full w-full object-cover transition-all duration-300 ease-in-out transition-all ease-in-out";
+    "h-full w-full object-cover transition-all duration-300 ease-in-out transition-opacity ease-in-out";
   const loadingClasses =
     " data-[loaded=false]:animate-pulse data-[loaded=false]:bg-gray-100/10 data-[loaded=false]:blur-sm";
   return (
     <div
       onClick={onClick}
+      onMouseOver={onHover}
       className={twMerge(
         "flex flex-1 basis-full flex-col gap-4 object-cover transition-all duration-300 ease-in-out",
         "group relative overflow-hidden rounded-sm border border-brass hover:cursor-pointer",
@@ -38,7 +41,7 @@ const GalleryImage = ({
         <div className="-translate-y-full transform opacity-0 transition-all delay-100 duration-500 ease-out group-hover:translate-y-0 group-hover:opacity-100">
           <p
             className={twMerge(
-              "text-balance whitespace-pre-line text-lg",
+              "text-balance whitespace-pre-line text-lg line-clamp-[10]",
               garamond.className,
             )}
           >

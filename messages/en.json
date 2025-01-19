@@ -226,14 +226,14 @@
     "title": "Our History",
     "label": "Read more about our history",
     "secondary_title": "Half a century of culinary expertise",
-    "secondary_description": "Since the 1970s, Bengt Roser, with his passionate interest in gastronomy, has built a prominent catering business that has set the standard for quality and customer experience.\n\nOver the years, he has taken on prestigious assignments, including the Swedish pavilion at the 2010 Shanghai World Expo. His commitment to sustainability and innovation has led to a well-established company that today offers tailor-made dining experiences for both private and large events.",
+    "secondary_description": "Since the 1970s, Bengt Roser, with his passionate interest in gastronomy, has built a prominent catering business that has set the standard for quality and customer experience.\n\nOver the years, he has taken on prestigious assignments, including the swedish pavilion at the 2010 Shanghai World Expo. His commitment to sustainability and innovation has led to a well-established company that today offers tailor-made dining experiences for both private and large events.",
     "subtitle": "The journey that shaped us",
     "description": "Since our inception, we have been committed to delivering excellence in everything we do. Our story is one of passion, dedication, and growth.",
     "sections": [
       {
         "title": "From city hotel to global catering",
         "subtitle": "City Hotel of Skara",
-        "description": "The Roser family took over the city hotel of Skara in 1966 and ran it successfully until 2020. Under their leadership, the business expanded into catering and events, with assignments that included the Swedish pavilion at the 2010 Shanghai World Expo.\n\nDuring their time at the hotel, it became a focal point for both local and international events.",
+        "description": "The Roser family took over the city hotel of Skara in 1966 and ran it successfully until 2020. Under their leadership, the business expanded into catering and events, with assignments that included the swedish pavilion at the 2010 Shanghai World Expo.\n\nDuring their time at the hotel, it became a focal point for both local and international events.",
         "image": "/skara-stadshotell.webp"
       },
       {
@@ -274,7 +274,7 @@
       {
         "title": "International & national events",
         "subtitle": "Catering across borders",
-        "description": "Rosers serves high-profile events both in Sweden and internationally. Whether in Shanghai's Swedish Pavilion at Expo 2010 or major events like Volvo Ocean Race, their ability to execute large catering operations worldwide sets them apart.",
+        "description": "Rosers serves high-profile events both in Sweden and internationally. Whether in Shanghai's swedish Pavilion at Expo 2010 or major events like Volvo Ocean Race, their ability to execute large catering operations worldwide sets them apart.",
         "image": "/event003.webp"
       },
       {
@@ -286,7 +286,7 @@
       {
         "title": "Trusted by high-profile clients",
         "subtitle": "Serving royalty & industry giants",
-        "description": "With an impressive track record of working with high-profile clients including the Swedish royal family, Saab, Volvo, and defense sector, we have built an unparalleled trust in handling prestigious events with utmost precision and excellence. Our reputation for quality is renowned globally.",
+        "description": "With an impressive track record of working with high-profile clients including the swedish royal family, Saab, Volvo, and defense sector, we have built an unparalleled trust in handling prestigious events with utmost precision and excellence. Our reputation for quality is renowned globally.",
         "image": "/event001.webp"
       }
     ]
@@ -340,7 +340,7 @@
       {
         "title": "Volvo Ocean Race",
         "subtitle": "Scenes Full of Action",
-        "description": "Rosers was entrusted with managing food and beverages for both the Swedish and French pavilions at all the stops during the Volvo Ocean Race. One of the most demanding aspects of this project was the extensive logistics, requiring both personnel and equipment to move from port to port. At each stop, local staff were hired, and Rosers collaborated with local suppliers to source ingredients.\n\nThe pavilions served a mix of simpler dishes and exclusive menus, tailored to the guests' needs, with a focus on flexibility and quality. The Swedish pavilion gained particular recognition for showcasing Swedish cuisine, featuring dishes like meatballs and pickled herring.",
+        "description": "Rosers was entrusted with managing food and beverages for both the swedish and French pavilions at all the stops during the Volvo Ocean Race. One of the most demanding aspects of this project was the extensive logistics, requiring both personnel and equipment to move from port to port. At each stop, local staff were hired, and Rosers collaborated with local suppliers to source ingredients.\n\nThe pavilions served a mix of simpler dishes and exclusive menus, tailored to the guests' needs, with a focus on flexibility and quality. The swedish pavilion gained particular recognition for showcasing swedish cuisine, featuring dishes like meatballs and pickled herring.",
         "image": "/volvo-ocean-race.webp",
         "size": "row-span-2 col-span-12 sm:col-span-6 lg:col-span-6 lg:row-span-2"
       },
@@ -359,17 +359,17 @@
         "size": "row-span-2 col-span-12 sm:col-span-6 lg:col-span-6 lg:row-span-2"
       },
       {
-        "title": "Shanghai World Expo",
-        "subtitle": "A Global Stage",
-        "description": "Rosers managed the restaurant in the Swedish pavilion at Expo 2010, serving 29,500 guests. The menu highlighted classic Swedish flavors like reindeer stew and cured salmon, blended with modern international elements to appeal to a global audience. The project demanded precision and flexibility to meet the ever-changing needs of a diverse international guest list.",
-        "image": "/shanghai-world-expo.webp",
+        "title": "Winter Olympics in South Korea",
+        "subtitle": "Swedish culture on display",
+        "description": "During the 2018 Winter Olympics in Pyeongchang, South Korea, Rosers proudly contributed to the swedish presence in the Sweden Arena, located in the Nations Village together with international players such as Team USA and House of Switzerland. Sweden Arena became a focal point that welcomed over 23,000 visitors, including 5,000 specially invited guests.\n\nRosers were responsible for creating an authentic swedish dining experience that reflected the country's culture and traditions. With a plan to serve approximately 6,000 portions, the menu included classics such as meatballs with lingonberry and traditional swedish 'fika' consisting of cinnamon buns, princess cake and swedish coffee. These delicacies were served in an atmosphere adorned with swedish decorations and accompanied by atmospheric music that highlighted Sweden's rich cultural heritage.\n\nSweden Arena also hosted activities such as medal celebrations, press conferences and interactive sports experiences, while guests enjoyed swedish food and followed Olympic broadcasts on large outdoor screens. With careful planning and an eye for detail, Rosers helped create a place where visitors from all over the world could discover and experience the best of Sweden.",
+        "image": "/",
         "size": "row-span-2 col-span-12 sm:col-span-6 lg:col-span-7 lg:row-span-2"
       },
       {
-        "title": "Winter Olympics in South Korea",
-        "subtitle": "Swedish Culture on Display",
-        "description": "At the Winter Olympics in South Korea, Rosers had the honor of providing food and beverages to athletes and guests in an atmosphere celebrating Swedish culture. The arena was adorned with traditional Swedish decorations and served dishes like meatballs with lingonberries and Princess Cake. The experience was enriched by Swedish music and cultural elements, offering an authentic taste of Sweden to a global audience.",
-        "image": "/event001.webp",
+        "title": "Shanghai World Expo",
+        "subtitle": "A Global Stage",
+        "description": "Rosers managed the restaurant in the swedish pavilion at Expo 2010, serving 29,500 guests. The menu highlighted classic swedish flavors like reindeer stew and cured salmon, blended with modern international elements to appeal to a global audience. The project demanded precision and flexibility to meet the ever-changing needs of a diverse international guest list.",
+        "image": "/shanghai-world-expo.webp",
         "size": "row-span-2 col-span-12 sm:col-span-6 lg:col-span-5 lg:row-span-2"
       }
     ]

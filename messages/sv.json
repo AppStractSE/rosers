@@ -339,8 +339,8 @@
       {
         "title": "Volvo Ocean Race",
         "subtitle": "Actionfyllda scener",
-        "description": "Rosers har varit en del av Volvo Ocean Race och levererat upplevelser i världsklass både på land och till sjöss. Vårt team har säkerställt att varje detalj, från mat till service, har varit av högsta kvalitet. Vi är stolta över att ha bidragit till detta prestigefyllda evenemang.",
-        "image": "/event001.webp",
+        "description": "Rosers anförtroddes uppdraget att hantera mat och dryck i både den svenska och den franska paviljongen vid alla hamnstopp under Volvo Ocean Race. En av de mest krävande aspekterna av uppdraget var den omfattande logistiken, där personal och material behövde flyttas från hamn till hamn. Vid varje stopp rekryterades även lokal personal, och Rosers samarbetade med lokala leverantörer för råvaror.\n\nPaviljongerna erbjöd både enklare rätter och exklusiva menyer, beroende på gästernas behov, med fokus på flexibilitet och kvalitet. Den svenska paviljongen blev särskilt uppmärksammad för sitt lyft av svensk gastronomi, med rätter som köttbullar och sill.",
+        "image": "/volvo-ocean-race.webp",
         "size": "row-span-2 col-span-12 sm:col-span-6 lg:col-span-6 lg:row-span-2"
       },
       {
@@ -358,16 +358,16 @@
         "size": "row-span-2 col-span-12 sm:col-span-6 lg:col-span-6 lg:row-span-2"
       },
       {
-        "title": "IKEA",
+        "title": "Shanghai World Expo",
         "subtitle": "Global spänning",
-        "description": "Rosers var en del av den globala spänningen under de olympiska vinterspelen i Sydkorea. Vi säkerställde att varje detalj speglade den högsta standarden av kvalitet och innovation. Vårt team arbetade tätt tillsammans med arrangörerna för att skapa en minnesvärd upplevelse för alla deltagare.",
-        "image": "/event001.webp",
+        "description": "Rosers ansvarade för restaurangen i den svenska paviljongen under Expo 2010 och serverade 29 500 gäster. Menyerna fokuserade på att lyfta fram klassiska svenska smaker som renskav och gravad lax, blandat med moderna internationella inslag som tilltalade en global publik. Uppdraget krävde precision och flexibilitet för att hantera de ständigt skiftande behoven hos en internationell mångfald av gäster.",
+        "image": "/shanghai-world-expo.webp",
         "size": "row-span-2 col-span-12 sm:col-span-6 lg:col-span-7 lg:row-span-2"
       },
       {
         "title": "Vinter-OS i Sydkorea",
         "subtitle": "Global spänning",
-        "description": "Rosers var en del av den globala spänningen under de olympiska vinterspelen i Sydkorea. Vi säkerställde att varje detalj speglade den högsta standarden av kvalitet och innovation. Vårt team arbetade tätt tillsammans med arrangörerna för att skapa en minnesvärd upplevelse för alla deltagare.",
+        "description": "Under vinter-OS i Sydkorea fick Rosers äran att leverera mat och dryck till idrottare och gäster i en atmosfär som hyllade svensk kultur. Arenan pryddes med traditionella svenska dekorationer och erbjöd rätter som köttbullar med lingon och prinsesstårta. Atmosfären kompletterades med svensk musik och kulturella inslag som förmedlade en autentisk upplevelse av Sverige till en global publik.",
         "image": "/event001.webp",
         "size": "row-span-2 col-span-12 sm:col-span-6 lg:col-span-5 lg:row-span-2"
       }

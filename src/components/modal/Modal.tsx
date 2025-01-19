@@ -40,7 +40,7 @@ const Modal = ({ isOpen, setIsOpen, children, align, size = "sm" }: Props) => {
   return (
     <div
       className={twMerge(
-        "fixed inset-0 z-10 h-screen w-screen transform overflow-hidden transition-all delay-75 duration-300 ease-in-out lg:backdrop-blur-sm",
+        "fixed inset-0 z-10 h-screen w-screen transform overflow-hidden transition-all delay-75 duration-500 ease-in-out lg:backdrop-blur-sm",
         isOpen
           ? "visible opacity-100"
           : "pointer-events-none invisible opacity-0",
@@ -48,19 +48,19 @@ const Modal = ({ isOpen, setIsOpen, children, align, size = "sm" }: Props) => {
     >
       <div
         className={twMerge(
-          "h-full w-screen overflow-hidden bg-black transition-all duration-300",
+          "h-full w-screen overflow-hidden bg-black transition-all duration-500",
           isOpen ? "opacity-50" : "opacity-0",
         )}
         onClick={handleToggle}
       />
       <div
         className={twMerge(
-          "no-scrollbar absolute inset-0 left-0 right-0 top-0 mx-auto my-auto flex h-screen transform flex-col gap-4 overflow-y-auto rounded-sm border-[#a286688e] bg-charcoal-700 shadow-xl transition-all duration-300 ease-in-out sm:border md:max-h-[90vh]",
+          "no-scrollbar absolute inset-0 left-0 right-0 top-0 mx-auto my-auto flex h-screen transform flex-col gap-4 overflow-y-auto rounded-sm border-[#a286688e] bg-charcoal-700 shadow-xl transition-all duration-500 ease-in-out sm:border md:h-max md:max-h-[90vh]",
           isOpen ? "translate-y-0" : "translate-y-[125%]",
           sizeMap[size],
         )}
       >
-        <div className="sticky top-0 flex items-center justify-between border-b border-[#a286688e] bg-charcoal-700 px-4 py-4 md:px-8">
+        <div className="sticky top-0 z-10 flex items-center justify-between border-b border-[#a286688e] bg-charcoal-700 p-4">
           <Link href={`/${locale}`} onClick={handleToggle}>
             <h2
               className={twMerge(
@@ -77,7 +77,7 @@ const Modal = ({ isOpen, setIsOpen, children, align, size = "sm" }: Props) => {
         </div>
         <div
           className={twMerge(
-            "flex flex-col bg-charcoal-700 px-4 py-4 md:px-8 md:pb-8",
+            "flex flex-col bg-charcoal-700",
             align === "top" ? "justify-start" : "justify-center",
           )}
         >

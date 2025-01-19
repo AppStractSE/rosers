@@ -128,12 +128,14 @@ const Navigation = () => {
       </header>
       <Drawer isOpen={isDrawerOpen} setIsOpen={setIsDrawerOpen} />
       <Modal isOpen={isModalOpen} setIsOpen={setIsModalOpen}>
-        <h3 className="text-2xl font-bold">
-          {translation("ContactForm.title")}
-        </h3>
-        <p className="mt-2">{translation("ContactForm.description")}</p>
-        <div className="mt-12 pb-4 md:pb-0">
-          <ContactForm />
+        <div className="p-4">
+          <h3 className="text-2xl font-bold">
+            {translation("ContactForm.title")}
+          </h3>
+          <p className="mt-2">{translation("ContactForm.description")}</p>
+          <div className="mt-12 pb-4 md:pb-0">
+            <ContactForm />
+          </div>
         </div>
       </Modal>
     </>

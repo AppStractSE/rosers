@@ -360,17 +360,17 @@
         "size": "row-span-2 col-span-12 sm:col-span-6 lg:col-span-6 lg:row-span-2"
       },
       {
+        "title": "Vinter-OS i Sydkorea",
+        "subtitle": "Svensk kultur visas upp",
+        "description": "Under vinter-OS 2018 i Pyeongchang, Sydkorea fick Rosers stolt bidra till den svenska närvaron i Sweden Arena, belägen i Nations Village tillsammans med internationella aktörer som Team USA och House of Switzerland. Sweden Arena blev en samlingspunkt som välkomnade över 23 000 besökare, inklusive 5 000 speciellt inbjudna gäster.\n\nRosers ansvarade för att skapa en autentisk svensk matupplevelse som speglade landets kultur och traditioner. Med en plan att servera cirka 6 000 portioner inkluderade menyn klassiker som köttbullar med lingon, kanelbullar, prinsesstårta och svenskt kaffe. Dessa delikatesser serverades i en atmosfär prydd med svenska dekorationer och ackompanjerades av stämningsfull musik som lyfte fram Sveriges rika kulturarv.\n\nSweden Arena stod också värd för aktiviteter som medaljfiranden, presskonferenser och interaktiva sportupplevelser, medan gästerna njöt av svensk mat och följde olympiska sändningar på stora utomhusskärmar. Med noggrann planering och ett öga för detaljer bidrog Rosers till att skapa en plats där besökare från hela världen kunde upptäcka och uppleva det bästa av Sverige.",
+        "image": "/winter-olympics-southkorea.webp",
+        "size": "row-span-2 col-span-12 sm:col-span-6 lg:col-span-7 lg:row-span-2"
+      },
+      {
         "title": "Shanghai World Expo",
         "subtitle": "Global spänning",
         "description": "Rosers ansvarade för restaurangen i den svenska paviljongen under Expo 2010 och serverade 29 500 gäster. Menyerna fokuserade på att lyfta fram klassiska svenska smaker som renskav och gravad lax, blandat med moderna internationella inslag som tilltalade en global publik. Uppdraget krävde precision och flexibilitet för att hantera de ständigt skiftande behoven hos en internationell mångfald av gäster.",
         "image": "/shanghai-world-expo.webp",
-        "size": "row-span-2 col-span-12 sm:col-span-6 lg:col-span-7 lg:row-span-2"
-      },
-      {
-        "title": "Vinter-OS i Sydkorea",
-        "subtitle": "Global spänning",
-        "description": "Under vinter-OS i Sydkorea fick Rosers äran att leverera mat och dryck till idrottare och gäster i en atmosfär som hyllade svensk kultur. Arenan pryddes med traditionella svenska dekorationer och erbjöd rätter som köttbullar med lingon och prinsesstårta. Atmosfären kompletterades med svensk musik och kulturella inslag som förmedlade en autentisk upplevelse av Sverige till en global publik.",
-        "image": "/event001.webp",
         "size": "row-span-2 col-span-12 sm:col-span-6 lg:col-span-5 lg:row-span-2"
       }
     ]

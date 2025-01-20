@@ -27,6 +27,7 @@ const GalleryImage = ({
     "h-full w-full object-cover transition-all duration-300 ease-in-out transition-opacity ease-in-out";
   const loadingClasses =
     " data-[loaded=false]:animate-pulse data-[loaded=false]:bg-gray-100/10 data-[loaded=false]:blur-sm";
+  const isRowSpan3 = size.includes("row-span-3");
   return (
     <div
       onClick={onClick}
@@ -41,7 +42,10 @@ const GalleryImage = ({
         <div className="-translate-y-full transform opacity-0 transition-all delay-100 duration-500 ease-out group-hover:translate-y-0 group-hover:opacity-100">
           <p
             className={twMerge(
-              "text-balance whitespace-pre-line text-lg line-clamp-[10]",
+              "text-balance whitespace-pre-line text-lg",
+              isRowSpan3
+                ? "line-clamp-[10] lg:line-clamp-[15]"
+                : "line-clamp-[10]",
               garamond.className,
             )}
           >

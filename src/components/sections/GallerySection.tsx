@@ -162,7 +162,7 @@ const GallerySection = ({ showHeader }: Props) => {
                           height={1080}
                           alt=""
                           src={event.image ?? "/image001.webp"}
-                          className="rounded-sm border border-brass object-cover object-center"
+                          className="max-h-[430px] rounded-sm border border-brass object-cover object-center"
                         />
                         <div className="flex flex-col gap-0">
                           <h3 className="text-2xl font-semibold">

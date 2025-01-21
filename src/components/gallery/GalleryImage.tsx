@@ -69,15 +69,15 @@ const GalleryImage = ({
       />
       <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-b from-charcoal-950/50 to-charcoal-950 px-4 py-2.5 backdrop-blur-sm">
         <div className="flex items-center gap-4 transition-all duration-300 ease-in-out group-hover:ml-0">
-          <div className="-ml-2 flex items-center gap-4 transition-all duration-300 ease-in-out group-hover:ml-0 lg:-ml-12">
+          <div className="-ml-2 flex items-center gap-2 md:gap-4 transition-all duration-300 ease-in-out group-hover:ml-0 lg:-ml-12">
             <IoMdArrowForward className="duration-250 text-3xl transition-all ease-in-out group-hover:translate-x-0 group-hover:opacity-100 lg:-translate-x-2 lg:text-4xl lg:opacity-0" />
             <div>
-              <p className="text-sm uppercase text-brass lg:text-xs">
+              <p className="text-xxs md:text-sm uppercase text-gold/80 lg:text-xs">
                 {subtitle}
               </p>
               <h3
                 className={twMerge(
-                  "line-clamp-1 text-lg text-gold lg:text-xl xl:text-2xl",
+                  "line-clamp-1 text-base md:text-lg text-gold lg:text-xl xl:text-2xl",
                   futuraStd.className,
                 )}
               >

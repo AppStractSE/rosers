@@ -1,6 +1,6 @@
 import Footer from "@/components/footer/Footer";
 import Navigation from "@/components/navigation/Navigation";
-import SplashScreen from "@/components/splashscreen/SplashScreen";
+// import SplashScreen from "@/components/splashscreen/SplashScreen";
 import { Metadata } from "next";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, unstable_setRequestLocale } from "next-intl/server";
@@ -32,14 +32,14 @@ export default async function LocaleLayout({
   return (
     <html lang={locale}>
       <body>
-        <SplashScreen>
+        {/* <SplashScreen> */}
           <NextIntlClientProvider messages={messages}>
             <Toaster />
             <Navigation />
             {children}
             <Footer />
           </NextIntlClientProvider>
-        </SplashScreen>
+        {/* </SplashScreen> */}
       </body>
     </html>
   );

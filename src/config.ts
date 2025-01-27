@@ -9,10 +9,6 @@ export const pathnames: Pathnames<typeof locales> = {
     en: "/the-concept",
     sv: "/konceptet",
   },
-  "/the-concept/rosers-kitchen": {
-    en: "/the-concept/rosers-kitchen",
-    sv: "/konceptet/rosers-kok",
-  },
   "/the-concept/rosers-global-events": {
     en: "/the-concept/rosers-global-events",
     sv: "/konceptet/rosers-globala-evenemang",

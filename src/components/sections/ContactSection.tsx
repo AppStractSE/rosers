@@ -32,7 +32,7 @@ const ContactSection = () => {
         <ContactForm />
         <div className="mx-auto mt-8 space-y-4">
           <Link
-            href="mailto:info@rosers.se"
+            href="mailto:bengt@rosers.se"
             className={twMerge(
               "flex w-fit items-center gap-4 text-base font-normal leading-normal tracking-wider hover:underline hover:underline-offset-4 lg:text-lg",
               garamond.className,
@@ -41,10 +41,10 @@ const ContactSection = () => {
             <div className="text-base text-[#8B7257] lg:text-lg">
               <TbMailFilled />
             </div>
-            info@rosers.se
+            bengt@rosers.se
           </Link>
           <Link
-            href="tel:+4670-123-45-67"
+            href="tel:+46705203573"
             className={twMerge(
               "flex w-fit items-center gap-4 text-base font-normal leading-normal tracking-wider hover:underline hover:underline-offset-4 lg:text-lg",
               garamond.className,
@@ -53,7 +53,7 @@ const ContactSection = () => {
             <div className="text-base text-[#8B7257] lg:text-lg">
               <FaPhone />
             </div>
-            +46 (0)70 123 45 67
+            +46 (0) 70 520 35 73
           </Link>
         </div>
       </div>

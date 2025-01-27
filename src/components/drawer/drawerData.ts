@@ -21,7 +21,6 @@ const subLinks: SubDrawerLink[] = [
   {
     label: "Discover the concept",
     links: [
-      { href: "/the-concept/rosers-kitchen", label: "Rosers Kitchen" },
       {
         href: "/the-concept/rosers-global-events",
         label: "Rosers Global Events",

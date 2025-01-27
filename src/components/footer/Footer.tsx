@@ -147,21 +147,21 @@ const Footer = () => {
             </div>
           )}
         </>
-        <div className="mt-24 flex flex-wrap items-center justify-between gap-4">
-          <div
+        <div className="mt-24 flex flex-wrap items-center justify-between gap-4 text-xxs">
+          <p
             className={twMerge(
-              "text-xxs font-normal uppercase text-brass",
+              "font-normal uppercase text-brass",
               futuraStd.className,
             )}
           >
             All rights reserved © {new Date().getFullYear()}
-          </div>
+          </p>
           <a
             target="_blank"
             rel="noopener noreferrer"
             href="https://www.appstract.se"
             className={twMerge(
-              "text-xxs font-normal uppercase text-brass hover:underline hover:underline-offset-4",
+              "font-normal uppercase text-brass hover:underline hover:underline-offset-4",
               futuraStd.className,
             )}
           >

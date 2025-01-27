@@ -121,7 +121,11 @@ const SecondaryLinks = ({ isMobile, currentPath }: SecondaryLinksProps) => {
                         return (
                           <Link
                             key={link.label}
-                            href={`/${locale}${link.href}`}
+                            href={
+                              link.externalLink
+                                ? link.href
+                                : `/${locale}${link.href}`
+                            }
                             target={link.externalLink ? "_blank" : "_self"}
                             className={twMerge(
                               "block py-2 text-gold transition-all duration-200 ease-in-out hover:text-brass",

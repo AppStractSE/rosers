@@ -39,7 +39,6 @@ const GallerySection = ({ showHeader }: Props) => {
   const sections = translation.raw("Events.sections");
 
   const handleGalleryImageClick = (index: number) => {
-    console.log(index, "index is nwo");
     mainRef.current.go(1);
     setCurrentEvent(index);
     mainRef.current.go(currentEvent);
@@ -64,7 +63,7 @@ const GallerySection = ({ showHeader }: Props) => {
   return (
     <>
       <section>
-        {showHeader && (
+        {showHeader ? (
           <div className="mx-auto mb-6 max-w-screen-xl space-y-2 px-4 md:mb-8 2xl:px-0">
             <h3
               className={twMerge(
@@ -91,7 +90,7 @@ const GallerySection = ({ showHeader }: Props) => {
               {translation("Events.secondary_description")}
             </p>
           </div>
-        )}
+        ) : null}
         <div className="mx-auto max-w-screen-xl">
           <div
             className={twMerge(

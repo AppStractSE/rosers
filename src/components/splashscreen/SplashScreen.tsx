@@ -27,7 +27,7 @@ export default function SplashScreen({ children }: Props) {
 
   return (
     <>
-      {isLoading && (
+      {isLoading ? (
         <div
           className={`fixed inset-0 z-50 flex items-center justify-center bg-[#232323] transition-opacity duration-500 ${
             fadeOut ? "pointer-events-none opacity-0" : "opacity-100"
@@ -44,7 +44,7 @@ export default function SplashScreen({ children }: Props) {
             <Image fill priority src="/rosers_logo.svg" alt="" />
           </div>
         </div>
-      )}
+      ) : null}
       <div className={`${isLoading ? "hidden" : ""}`}>{children}</div>
     </>
   );

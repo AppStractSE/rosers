@@ -1,52 +1,4 @@
 {
-  "Breadcrumbs": {
-    "labels": [
-      {
-        "href": "/",
-        "label": "Home"
-      },
-      {
-        "href": "/the-concept",
-        "label": "The Concept"
-      },
-      {
-        "href": "/the-concept/rosers-kitchen",
-        "label": "Rosers Kitchen"
-      },
-      {
-        "href": "/the-concept/rosers-global-events",
-        "label": "Global Events"
-      },
-      {
-        "href": "/the-concept/rosers-consulting",
-        "label": "Rosers Consulting"
-      },
-      {
-        "href": "/about",
-        "label": "About Us"
-      },
-      {
-        "href": "/about/what-we-do",
-        "label": "What We Do"
-      },
-      {
-        "href": "/about/who-we-are",
-        "label": "Who We Are"
-      },
-      {
-        "href": "/about/our-history",
-        "label": "Our History"
-      },
-      {
-        "href": "/events",
-        "label": "Events"
-      },
-      {
-        "href": "/contact",
-        "label": "Contact"
-      }
-    ]
-  },
   "Home": {
     "HeroSection": {
       "title": "Unforgettable dining experiences for all occasions",
@@ -86,10 +38,6 @@
       {
         "label": "Discover the concept",
         "links": [
-          {
-            "href": "/the-concept/rosers-kitchen",
-            "label": "Rosers Kitchen"
-          },
           {
             "href": "/the-concept/rosers-global-events",
             "label": "Rosers Global Events"
@@ -427,32 +375,6 @@
       }
     ]
   },
-  "RosersKitchen": {
-    "href": "/the-concept/rosers-kitchen",
-    "title": "Rosers Kitchen",
-    "subtitle": "Comfort meets quality",
-    "description": "The concept for Rosers Kitchen was born during the pandemic, when restaurant restrictions became increasingly stringent. In times of change, especially when the illusion of stability is challenged, innovation becomes paramount. With Rosers Kitchen, we have developed a unique solution for our local customers in Sweden: a way to enjoy gourmet food at home or in the office.\n\nThrough our innovative cloud kitchen, customers can order, collect, and serve meals of the highest quality. Businesses can also subscribe to exclusive services such as coffee breaks, fruit baskets, and breakfast deliveries right to their doorstep. By embracing new technology and seamless logistics, Rosers Kitchen redefines convenience and takes a bold step into the future.",
-    "sections": [
-      {
-        "title": "Committed staff",
-        "subtitle": "The people behind Rosers Kitchen",
-        "description": "Our staff is the heart of Rosers Kitchen. With a passion for innovation and service, our team works tirelessly to deliver gourmet experiences to homes and workplaces. We've combined technology and tradition to create something truly unique.",
-        "image": "/staff002.webp"
-      },
-      {
-        "title": "Gourmet food for everyone",
-        "subtitle": "Flavors for every occasion",
-        "description": "Rosers Kitchen offers high-quality gourmet food, prepared in our innovative cloud kitchen. Perfect for takeout or serving at home and at work. Our menus are designed to meet all taste preferences with a modern twist.",
-        "image": "/food001.webp"
-      },
-      {
-        "title": "Breakfast deliveries",
-        "subtitle": "Start your day with something extra",
-        "description": "Begin your day on the right foot with Rosers Kitchen's breakfast deliveries. We offer fresh and nutritious alternatives, delivered directly to your door. Ideal for companies looking to offer their employees a better start to the day.",
-        "image": "/breakfast.webp"
-      }
-    ]
-  },
   "About": {
     "href": "/about",
     "title": "About Us",
@@ -462,12 +384,6 @@
 
   "Concepts": {
     "labels": [
-      {
-        "title": "Rosers Kitchen",
-        "subtitle": "The Cloud Kitchen",
-        "image": "/rosers-kitchen.webp",
-        "link": "/the-concept/rosers-kitchen"
-      },
       {
         "title": "Rosers Global Events",
         "subtitle": "Globally Renowned",

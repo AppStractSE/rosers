@@ -10,10 +10,6 @@
         "label": "Konceptet"
       },
       {
-        "href": "/konceptet/rosers-kok",
-        "label": "Rosers Kök"
-      },
-      {
         "href": "/konceptet/rosers-globala-evenemang",
         "label": "Globala Evenemang"
       },
@@ -87,10 +83,6 @@
       {
         "label": "Upptäck konceptet",
         "links": [
-          {
-            "href": "/konceptet/rosers-kok",
-            "label": "Rosers Kök"
-          },
           {
             "href": "/konceptet/rosers-globala-evenemang",
             "label": "Rosers Globala Evenemang"
@@ -428,32 +420,6 @@
       }
     ]
   },
-  "RosersKitchen": {
-    "href": "/konceptet/rosers-kok",
-    "title": "Rosers Kök",
-    "subtitle": "Komfort möter kvalité",
-    "description": "Idén till Rosers kök föddes under pandemin, när restriktionerna för restaurangbesök blev allt striktare. I tider av förändring, särskilt när illusionen av stabilitet utmanas, blir innovation avgörande. Med Rosers kök har vi utvecklat en unik lösning för våra lokala kunder i Sverige: ett sätt att njuta av gourmetmat i hemmet eller på jobbet.\n\nGenom vårt innovativa molnkök kan kunder beställa, hämta och servera måltider av högsta kvalitet. Företag kan dessutom prenumerera på exklusiva tjänster som fika, fruktkorgar och frukostleveranser direkt till dörren. Genom att omfamna ny teknik och sömlös logistik omdefinierar Rosers Kök bekvämlighet och tar ett modigt steg in i framtiden.",
-    "sections": [
-      {
-        "title": "Engagerad personal",
-        "subtitle": "Människorna bakom Rosers Kök",
-        "description": "Vår personal är kärnan i Rosers Kök. Med passion för innovation och service arbetar vårt team för att leverera gourmetupplevelser till hem och arbetsplats. Vi har kombinerat teknik och tradition för att skapa något unikt.",
-        "image": "/staff002.webp"
-      },
-      {
-        "title": "Gourmetmat för alla",
-        "subtitle": "Smaker för alla tillfällen",
-        "description": "Rosers Kök erbjuder gourmetmat av högsta kvalitet, tillagat i vårt innovativa molnkök. Perfekt för avhämtning eller servering hemma och på jobbet. Våra menyer är designade för att möta alla smakpreferenser med en modern twist.",
-        "image": "/food001.webp"
-      },
-      {
-        "title": "Frukostleveranser",
-        "subtitle": "Starta dagen med något extra",
-        "description": "Börja dagen på bästa sätt med Rosers Köks frukostleveranser. Vi erbjuder färska och näringsrika alternativ, direkt levererade till din dörr. Perfekt för företag som vill erbjuda sina anställda en bättre start på dagen.",
-        "image": "/breakfast.webp"
-      }
-    ]
-  },
   "About": {
     "href": "/om-oss",
     "title": "Om Oss",
@@ -462,12 +428,6 @@
   },
   "Concepts": {
     "labels": [
-      {
-        "title": "Rosers Kök",
-        "subtitle": "Molnköket",
-        "image": "/rosers-kitchen.webp",
-        "link": "/konceptet/rosers-kok"
-      },
       {
         "title": "Rosers Globala Evenemang",
         "subtitle": "Globalt förtroende",

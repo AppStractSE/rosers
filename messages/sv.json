@@ -46,7 +46,7 @@
   "Home": {
     "HeroSection": {
       "title": "Oförglömliga matupplevelser för alla tillfällen",
-      "description": "Vi skapar oförglömliga matupplevelser för alla tillfällen. Från små sammankomster på sex personer till storslagna evenemang med 60 000 deltagare – följ med oss i att omdefiniera konsten att äta, en utsökt stund i taget.",
+      "description": "Vi skapar oförglömliga matupplevelser för alla tillfällen. Från små sammankomster på sex personer till storslagna evenemang med 40 000 deltagare – följ med oss i att omdefiniera konsten att äta, en utsökt stund i taget.",
       "buttonText": "Utforska Rosers"
     }
   },
@@ -212,8 +212,8 @@
     "secondary_description": "Följ med oss när vi förvandlar drömmar till verklighet med 'Rosers Koncept' under en global resa av epikurisk förtjusning.",
     "what_is_the_concept_title": "Vad är konceptet?",
     "what_is_the_concept_subtitle": "",
-    "what_is_the_concept_description": "Rosers koncept är rotat i kultur, kulinarisk expertis och kräsna kunders behov. Vi skapar oförglömliga matupplevelser för alla tillfällen. Från intima sammankomster på sex personer till storslagna evenemang med 60 000 deltagare – följ med oss när vi omdefinierar konsten att äta, en utsökt stund i taget.",
-    "description": "Vi skapar oförglömliga matupplevelser för alla tillfällen. Från intima sammankomster på sex personer till storslagna evenemang med 60 000 deltagare – följ med oss när vi omdefinierar konsten att äta, en utsökt stund i taget."
+    "what_is_the_concept_description": "Rosers koncept är rotat i kultur, kulinarisk expertis och kräsna kunders behov. Vi skapar oförglömliga matupplevelser för alla tillfällen. Från intima sammankomster på sex personer till storslagna evenemang med 40 000 deltagare – följ med oss när vi omdefinierar konsten att äta, en utsökt stund i taget.",
+    "description": "Vi skapar oförglömliga matupplevelser för alla tillfällen. Från intima sammankomster på sex personer till storslagna evenemang med 40 000 deltagare – följ med oss när vi omdefinierar konsten att äta, en utsökt stund i taget."
   },
   "OurHistory": {
     "href": "/om-oss/var-historia",
@@ -398,7 +398,7 @@
     "href": "/konceptet/rosers-globala-evenemang",
     "title": "Rosers Globala Event",
     "subtitle": "Internationell närvaro",
-    "description": "Mat är en konst som i bästa fall skapar starka band mellan människor runt bordet. Vi på Rosers är specialiserar oss på att arrangera storskaliga och avancerade evenemang med upp till 60 000 deltagare. Med internationella kunder och ett etablerat nätverk har vi byggt upp en välrenommerad verksamhet där catering och event står i centrum. Vår kärngrupp är känd för sina framstående prestationer och sitt engagemang för perfektion.\n\nVad gör Rosers unikt? Det är svårt att beskriva för den som ännu inte har upplevt det. Men låt oss ge en inblick i vår värld genom verkliga exempel – möten och evenemang där vi har fått skapa minnesvärda ögonblick under evenemang som Prins Carl Philips och prinsessan Sofias kungliga bröllop, Volvo Ocean Race, IKEA samt vinter-OS i Sydkorea för att nämna några.",
+    "description": "Mat är en konst som i bästa fall skapar starka band mellan människor runt bordet. Vi på Rosers är specialiserar oss på att arrangera storskaliga och avancerade evenemang med upp till 40 000 deltagare. Med internationella kunder och ett etablerat nätverk har vi byggt upp en välrenommerad verksamhet där catering och event står i centrum. Vår kärngrupp är känd för sina framstående prestationer och sitt engagemang för perfektion.\n\nVad gör Rosers unikt? Det är svårt att beskriva för den som ännu inte har upplevt det. Men låt oss ge en inblick i vår värld genom verkliga exempel – möten och evenemang där vi har fått skapa minnesvärda ögonblick under evenemang som Prins Carl Philips och prinsessan Sofias kungliga bröllop, Volvo Ocean Race, IKEA samt vinter-OS i Sydkorea för att nämna några.",
     "sections": [
       {
         "title": "Exklusiva evenemang",

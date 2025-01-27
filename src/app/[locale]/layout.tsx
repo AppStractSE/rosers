@@ -12,7 +12,6 @@ export const metadata: Metadata = {
     template: "%s | Rosers",
     default: "Rosers | Unforgettable dining experiences for all occasions",
   },
-  icons: ["/Logo.svg"],
 };
 const locales = ["en", "sv"];
 

@@ -4,22 +4,14 @@ import ContactSection from "@/components/sections/ContactSection";
 import HeroSubPageSection from "@/components/sections/HeroSubPageSection";
 import InfoSection from "@/components/sections/InfoSection";
 import TextAndImageSection from "@/components/sections/TextAndImageSection";
+import { Metadata } from "next";
 import { useTranslations } from "next-intl";
-import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
+import { unstable_setRequestLocale } from "next-intl/server";
 import React from "react";
 
-export async function generateMetadata({
-  params: { locale },
-}: {
-  params: { locale: string };
-}) {
-  const t = await getTranslations({ locale, namespace: "WhatWeDo" });
-
-  return {
-    title: t("title"),
-    description: t("description"),
-  };
-}
+export const metadata: Metadata = {
+  title: "The Concept",
+};
 
 export default function Index({
   params: { locale },

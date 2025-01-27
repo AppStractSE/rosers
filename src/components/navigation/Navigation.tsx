@@ -100,11 +100,11 @@ const Navigation = () => {
               </h2>
               <h2
                 className={twMerge(
-                  "text-xxxs uppercase tracking-widest md:text-center md:text-sm",
+                  "text-xxxs uppercase tracking-widest md:text-center md:text-xs",
                   garamond.className,
                 )}
               >
-                Event & Catering
+                {translation("HeaderDesc")}
               </h2>
             </Link>
           </div>

@@ -10,8 +10,11 @@ interface Props {
 export default function SplashScreen({ children }: Props) {
   const [isLoading, setIsLoading] = useState(true);
   const [fadeOut, setFadeOut] = useState(false);
+  const [isMounted, setIsMounted] = useState(false);
 
   useEffect(() => {
+    setIsMounted(true);
+
     if (document.readyState === "complete") {
       setTimeout(() => setFadeOut(true), 500);
       setTimeout(() => setIsLoading(false), 1000);
@@ -24,6 +27,8 @@ export default function SplashScreen({ children }: Props) {
       return () => window.removeEventListener("load", handleLoad);
     }
   }, []);
+
+  if (!isMounted) return null;
 
   return (
     <>
@@ -41,11 +46,17 @@ export default function SplashScreen({ children }: Props) {
                 : "-translate-y-full",
             )}
           >
-            <Image fill priority src="/rosers_logo.svg" alt="" />
+            <Image fill priority src="/rosers_logo.svg" alt="Logo" />
           </div>
         </div>
       ) : null}
-      <div className={`${isLoading ? "hidden" : ""}`}>{children}</div>
+      <div
+        className={`${
+          isLoading ? "pointer-events-none opacity-0" : "opacity-100"
+        } transition-opacity duration-500`}
+      >
+        {children}
+      </div>
     </>
   );
 }

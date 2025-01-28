@@ -3,11 +3,7 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import { twMerge } from "tailwind-merge";
 
-interface Props {
-  children: React.ReactNode;
-}
-
-export default function SplashScreen({ children }: Props) {
+export default function SplashScreen() {
   const [isLoading, setIsLoading] = useState(true);
   const [fadeOut, setFadeOut] = useState(false);
   const [isMounted, setIsMounted] = useState(false);
@@ -54,9 +50,7 @@ export default function SplashScreen({ children }: Props) {
         className={`${
           isLoading ? "pointer-events-none opacity-0" : "opacity-100"
         } transition-opacity duration-500`}
-      >
-        {children}
-      </div>
+      />
     </>
   );
 }

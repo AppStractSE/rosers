@@ -29,7 +29,7 @@ export default function Index({
   const translation = useTranslations();
   return (
     <main>
-      <HeroSubPageSection image="/hero-image-about.webp" />
+      <HeroSubPageSection image="/hero-image-concept.webp" />
       <InfoSection
         title={translation("TheConcept.title")}
         subtitle={translation("TheConcept.subtitle")}

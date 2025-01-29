@@ -47,7 +47,7 @@ export default function Index({
         title={translation("WhatWeDo.secondary_title")}
         subTitle={translation("WhatWeDo.title")}
         text={translation("WhatWeDo.secondary_description")}
-        image="/staff001.webp"
+        image="/food006.webp"
         button={{
           text: translation("WhatWeDo.label"),
           link: translation("WhatWeDo.href"),

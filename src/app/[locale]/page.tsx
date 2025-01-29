@@ -40,7 +40,7 @@ export default function Index({
         title={translation("WhatWeDo.secondary_title")}
         subTitle={translation("WhatWeDo.title")}
         text={translation("WhatWeDo.secondary_description")}
-        image="/staff001.webp"
+        image="/food006.webp"
         button={{
           text: translation("WhatWeDo.label"),
           link: translation("WhatWeDo.href"),
@@ -53,7 +53,7 @@ export default function Index({
         title={translation("Events.secondary_title")}
         subTitle={translation("Events.third_title")}
         text={translation("Events.description")}
-        image="/event001.webp"
+        image="/food005.webp"
         button={{
           text: translation("ReadMore"),
           link: translation("RosersGlobalEvents.href"),

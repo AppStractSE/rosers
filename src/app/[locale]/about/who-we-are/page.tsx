@@ -31,7 +31,7 @@ export default function Index({
   const sections = translation.raw("WhoWeAre.sections");
   return (
     <main>
-      <HeroSubPageSection image="/hero-image-about.webp" />
+      <HeroSubPageSection image="/hero-image-who-we-are.webp" />
       <InfoSection
         title={translation("WhoWeAre.title")}
         subtitle={translation("WhoWeAre.subtitle")}

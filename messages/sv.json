@@ -227,7 +227,7 @@
       {
         "title": "Från stadshotell till global catering",
         "subtitle": "Skara Stadshotell",
-        "description": "Familjen Roser tog över Skara Stadshotell 1966 och drev det framgångsrikt fram till 2020. Under deras ledning breddades verksamheten till catering och event, med uppdrag som inkluderade den svenska paviljongen vid världsutställningen i Shanghai 2010.\n\nUnder deras tid på hotellet blev det en central punkt för både lokala och internationella evenemang.",
+        "description": "Familjen Roser tog över Skara Stadshotell 1966 och drev det framgångsrikt fram till 2020. Under deras ledning breddades verksamheten till catering och evenemang, med uppdrag som inkluderade den svenska paviljongen vid världsutställningen i Shanghai 2010.\n\nUnder deras tid på hotellet blev det en central punkt för både lokala och internationella evenemang.",
         "image": "/skara-stadshotell.webp"
       },
       {
@@ -255,7 +255,7 @@
     "label": "Läs mer om vad vi gör",
     "title": "Vad vi gör",
     "secondary_title": "Excellens i varje aspekt",
-    "secondary_description": "Vi specialiserar oss på att erbjuda unika, skräddarsydda lösningar som möter behoven hos vår mångsidiga kundbas. Vårt mål är att säkerställa att varje upplevelse överträffar förväntningarna.\n\nVi är på väg att omdefiniera konsten att äta, och vi har skapat ett värld där varje bit berättar en historia, och varje måltid är en oförglömlig resa. Vår kreativitet är drivs av en ständig sökning efter inspiration, som gör gränser för att leverera nya och innovativa upplevelser.",
+    "secondary_description": "Vi specialiserar oss på att erbjuda unika, skräddarsydda lösningar som möter behoven hos vår mångsidiga kundbas. Vårt mål är att säkerställa att varje upplevelse överträffar förväntningarna.\n\nVi är på väg att omdefiniera konsten att äta, och vi har skapat en värld där varje bit berättar en historia, och varje måltid är en oförglömlig resa. Vår kreativitet är drivs av en ständig sökning efter inspiration, som gör gränser för att leverera nya och innovativa upplevelser.",
     "subtitle": "Innovativa lösningar och tjänster",
     "description": "Vi specialiserar oss på att erbjuda unika, skräddarsydda lösningar som möter behoven hos vår mångsidiga kundbas. Vårt mål är att säkerställa att varje upplevelse överträffar förväntningarna.",
     "sections": [
@@ -317,7 +317,7 @@
   "Events": {
     "href": "/evenemang",
     "title": "Evenemang",
-    "readMore": "Läs mer om våra event",
+    "readMore": "Läs mer om våra evenemang",
     "secondary_title": "Globala evenemang och upplevelser",
     "secondary_description": "Vi arrangerar evenemang över hela världen, så att varje evenemang speglar excellens och är skräddarsytt för att möta våra kunders unika förväntningar. Nedan har vi samlat ett axplock av de evenemang vi fått äran att sätta vår prägel på.",
     "subtitle": "Rosers ikoniska evenemang",
@@ -341,7 +341,7 @@
       {
         "title": "Prinsessan Victoria & prins Daniel",
         "subtitle": "Kunglig galamiddag",
-        "description": "En prestigefylld galamiddag arrangerades av den svenska regeringen i Eric Ericsonhallen i Stockholm för att fira det kommande bröllopet mellan Kronprinsessan Victoria och hennes blivande make, Daniel Westling.\n\nRosers Event & Catering fick förtroendet att ansvara för evenemanget, och vi använde vår expertis och passion för att leverera förstklassig catering och evenemangsplanering. Den historiska hallen, tidigare Skeppsholmskyrkan, förvandlades till en elegant miljö för kvällen.\n\nDekoren inkluderade världsberömd svensk glaskonst från Orrefors och Kosta Boda, fin porslin från Rörstrand och silverbestick från Mema GAB. Den kulinariska upplevelsen, skapad av köksmästare Håkan Thörnström, bestod av utsökta rätter som askad pilgrimsmussla carpaccio och örtbakad turbot, ackompanjerade av fina viner som Schloss Johannisberger Rheingau och Chablis Grand Cru.\n\nBakom kulisserna säkerställdes noggrann planering och repetition ett smidigt flöde under evenemanget, med personal som tog hand om varje gästs särskilda önskemål. Kvällens framgång berodde på felfri koordinering och exceptionell catering hos Rosers Event & Catering.",
+        "description": "En prestigefylld galamiddag arrangerades av den svenska regeringen i Eric Ericsonhallen i Stockholm för att fira det kommande bröllopet mellan Kronprinsessan Victoria och hennes blivande make, Daniel Westling.\n\nRosers Event & Gastronomi fick förtroendet att ansvara för evenemanget, och vi använde vår expertis och passion för att leverera förstklassig catering och evenemangsplanering. Den historiska hallen, tidigare Skeppsholmskyrkan, förvandlades till en elegant miljö för kvällen.\n\nDekoren inkluderade världsberömd svensk glaskonst från Orrefors och Kosta Boda, fin porslin från Rörstrand och silverbestick från Mema GAB. Den kulinariska upplevelsen, skapad av köksmästare Håkan Thörnström, bestod av utsökta rätter som askad pilgrimsmussla carpaccio och örtbakad turbot, ackompanjerade av fina viner som Schloss Johannisberger Rheingau och Chablis Grand Cru.\n\nBakom kulisserna säkerställdes noggrann planering och repetition ett smidigt flöde under evenemanget, med personal som tog hand om varje gästs särskilda önskemål. Kvällens framgång berodde på felfri koordinering och exceptionell catering hos Rosers Event & Gastronomi.",
         "image": "/princess-victoria-and-prince-daniel.webp",
         "size": "row-span-2 col-span-12 sm:col-span-6 lg:col-span-6 lg:row-span-3"
       },
@@ -377,13 +377,13 @@
       {
         "title": "Expertis i handling",
         "subtitle": "Bringer innovation till ditt kök",
-        "description": "Rosers Consulting bringer årsavlagda erfarenheter och expertis direkt till din verksamhet. Våra konsulter arbetar tätt tillsammans med dig för att identifiera områden för förbättring och implementera innovativa lösningar anpassade efter dina specifika behov.",
+        "description": "Rosers Konsultering för med sig årsavlagda erfarenheter och expertis direkt till din verksamhet. Våra konsulter arbetar tätt tillsammans med dig för att identifiera områden för förbättring och implementera innovativa lösningar anpassade efter dina specifika behov.",
         "image": "/staff002.webp"
       },
       {
         "title": "Anpassade lösningar",
         "subtitle": "Personaliserad support för din verksamhet",
-        "description": "Oavsett om du letar efter att effektivisera ditt operativt arbete eller utöka dina menyerbjudanden, erbjuder Rosers Consulting personlig vägledning för att hjälpa dig uppnå dina mål. Från personalutbildning till menyutveckling, ger vi omfattande support.",
+        "description": "Oavsett om du letar efter att effektivisera ditt operativt arbete eller utöka dina menyerbjudanden, erbjuder Rosers Konsultering personlig vägledning för att hjälpa dig uppnå dina mål. Från personalutbildning till menyutveckling, ger vi omfattande support.",
         "image": "/staff001.webp"
       },
       {
@@ -398,7 +398,7 @@
     "href": "/konceptet/rosers-globala-evenemang",
     "title": "Rosers Globala Event",
     "subtitle": "Internationell närvaro",
-    "description": "Mat är en konst som i bästa fall skapar starka band mellan människor runt bordet. Vi på Rosers är specialiserar oss på att arrangera storskaliga och avancerade evenemang med upp till 40 000 deltagare. Med internationella kunder och ett etablerat nätverk har vi byggt upp en välrenommerad verksamhet där catering och event står i centrum. Vår kärngrupp är känd för sina framstående prestationer och sitt engagemang för perfektion.\n\nVad gör Rosers unikt? Det är svårt att beskriva för den som ännu inte har upplevt det. Men låt oss ge en inblick i vår värld genom verkliga exempel – möten och evenemang där vi har fått skapa minnesvärda ögonblick under evenemang som Prins Carl Philips och prinsessan Sofias kungliga bröllop, Volvo Ocean Race, IKEA samt vinter-OS i Sydkorea för att nämna några.",
+    "description": "Mat är en konst som i bästa fall skapar starka band mellan människor runt bordet. Vi på Rosers specialiserar oss på att arrangera storskaliga och avancerade evenemang med upp till 40 000 deltagare. Med internationella kunder och ett etablerat nätverk har vi byggt upp en välrenommerad verksamhet där catering och evenemang står i centrum. Vår kärngrupp är känd för sina framstående prestationer och sitt engagemang för perfektion.\n\nVad gör Rosers unikt? Det är svårt att beskriva för den som ännu inte har upplevt det. Men låt oss ge en inblick i vår värld genom verkliga exempel – möten och evenemang där vi har fått skapa minnesvärda ögonblick under evenemang som Prins Carl Philips och prinsessan Sofias kungliga bröllop, Volvo Ocean Race, IKEA samt vinter-OS i Sydkorea för att nämna några.",
     "sections": [
       {
         "title": "Exklusiva evenemang",
@@ -424,7 +424,7 @@
     "href": "/om-oss",
     "title": "Om Oss",
     "subtitle": "Passion för smak och perfektion",
-    "description": "Vi kombinerar tradition och innovation för att skapa minnesvärda matupplevelser. Med rötter i decennier av framgångsrik matlagning och eventhantering levererar vi catering av högsta kvalitet, oavsett om det gäller mindre privata tillställningar eller stora internationella evenemang.\n\nFrån kungliga bröllop till världsomspännande projekt som världsutställningen i Shanghai – vi har erfarenheten och engagemanget för att göra varje måltid speciell. Låt oss skapa något unikt för ditt nästa event."
+    "description": "Vi kombinerar tradition och innovation för att skapa minnesvärda matupplevelser. Med rötter i decennier av framgångsrik matlagning och eventhantering levererar vi catering av högsta kvalitet, oavsett om det gäller mindre privata tillställningar eller stora internationella evenemang.\n\nFrån kungliga bröllop till världsomspännande projekt som världsutställningen i Shanghai – vi har erfarenheten och engagemanget för att göra varje måltid speciell. Låt oss skapa något unikt för ditt nästa evenemang."
   },
   "Concepts": {
     "labels": [

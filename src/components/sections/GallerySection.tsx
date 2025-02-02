@@ -21,6 +21,7 @@ const GallerySection = ({ showHeader }: Props) => {
     type: "loop",
     gap: "1rem",
     pauseOnHover: true,
+    pauseOnFocus: false,
     resetProgress: false,
     speed: 250,
     arrows: false,

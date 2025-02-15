@@ -24,6 +24,10 @@ export async function generateMetadata({
   params: { locale: string };
 }) {
   const t = await getTranslations({ locale, namespace: "Home.HeroSection" });
+  const localeMap: any = {
+    en: "en_US",
+    sv: "sv_SE",
+  };
 
   return {
     metadataBase: new URL("https://rosers.se"),
@@ -34,19 +38,19 @@ export async function generateMetadata({
     icons: ["/Logo.svg"],
     description: t("description"),
     openGraph: {
+      locale: localeMap[locale] || "en_US",
       title: `Rosers | ${t("title")}`,
       description: t("description"),
-      url: "/",
+      url: `https://rosers.se/${locale}`,
       siteName: "Rosers",
       images: [
         {
-          url: "/hero-image-homepage.webp",
+          url: `https://rosers.se/hero-image-homepage.webp`,
           width: 1200,
           height: 630,
           alt: `Rosers | ${t("title")}`,
         },
       ],
-      locale: locale,
       type: "website",
     },
     twitter: {
@@ -55,7 +59,7 @@ export async function generateMetadata({
       title: `Rosers | ${t("title")}`,
       images: [
         {
-          url: "/hero-image-homepage.webp",
+          url: "https://rosers.se/hero-image-homepage.webp",
           width: 1200,
           height: 630,
           alt: `Rosers | ${t("title")}`,

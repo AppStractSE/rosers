@@ -22,18 +22,16 @@ export async function generateMetadata({
      openGraph: {
        title: `Rosers | ${t("title")}`,
        description: t("description"),
-       url: t("href"),
+       url: `https://rosers.se/${locale}/${t("href")}`,
        siteName: "Rosers",
        images: [
          {
-           url: "/hero-image-about.webp",
+           url: "https://rosers.se/hero-image-about.webp",
            width: 1200,
            height: 630,
            alt: `Rosers | ${t("title")}`,
          },
        ],
-       locale: locale,
-       type: "website",
      },
      twitter: {
        card: "summary_large_image",
@@ -41,7 +39,7 @@ export async function generateMetadata({
        title: `Rosers | ${t("title")}`,
        images: [
          {
-           url: "/hero-image-about.webp",
+           url: "https://rosers.se/hero-image-about.webp",
            width: 1200,
            height: 630,
            alt: `Rosers | ${t("title")}`,

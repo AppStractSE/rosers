@@ -22,7 +22,7 @@ export async function generateMetadata({
      openGraph: {
        title: `Rosers | ${t("title")}`,
        description: t("description"),
-       url: `https://rosers.se/${locale}/${t("href")}`,
+       url: `https://rosers.se/${locale}${t("href")}`,
        siteName: "Rosers",
        images: [
          {

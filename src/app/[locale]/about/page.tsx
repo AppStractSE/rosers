@@ -15,38 +15,38 @@ export async function generateMetadata({
 }) {
   const t = await getTranslations({ locale, namespace: "About" });
 
-  return {
-    title: t("title"),
-    description: t("description"),
-    openGraph: {
-      title: `Rosers | ${t("title")}`,
-      description: t("description"),
-      url: `https://rosers.se/${locale}${t("href")}`,
-      siteName: "Rosers",
-      images: [
-        {
-          url: "https://rosers.se/hero-image-about.webp",
-          width: 1200,
-          height: 630,
-          alt: `Rosers | ${t("title")}`,
-        },
-      ],
-    },
-    twitter: {
-      card: "summary_large_image",
-      site: "@",
-      title: `Rosers | ${t("title")}`,
-      images: [
-        {
-          url: "https://rosers.se/hero-image-about.webp",
-          width: 1200,
-          height: 630,
-          alt: `Rosers | ${t("title")}`,
-        },
-      ],
-      description: t("description"),
-    },
-  };
+   return {
+     title: t("title"),
+     description: t("description"),
+     openGraph: {
+       title: `Rosers | ${t("title")}`,
+       description: t("description"),
+       url: `https://rosers.se/${locale}${t("href")}`,
+       siteName: "Rosers",
+       images: [
+         {
+           url: "https://rosers.se/hero-image-about.webp",
+           width: 1200,
+           height: 630,
+           alt: `Rosers | ${t("title")}`,
+         },
+       ],
+     },
+     twitter: {
+       card: "summary_large_image",
+       site: "@",
+       title: `Rosers | ${t("title")}`,
+       images: [
+         {
+           url: "https://rosers.se/hero-image-about.webp",
+           width: 1200,
+           height: 630,
+           alt: `Rosers | ${t("title")}`,
+         },
+       ],
+       description: t("description"),
+     },
+   };
 }
 
 export default function Index({

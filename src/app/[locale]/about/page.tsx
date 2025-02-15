@@ -7,6 +7,7 @@ import InfoSection from "@/components/sections/InfoSection";
 import TextAndImageSection from "@/components/sections/TextAndImageSection";
 import { useTranslations } from "next-intl";
 import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
+import Image from "next/image";
 
 export async function generateMetadata({
   params: { locale },
@@ -15,10 +16,40 @@ export async function generateMetadata({
 }) {
   const t = await getTranslations({ locale, namespace: "About" });
 
-  return {
-    title: t("title"),
-    description: t("description"),
-  };
+   return {
+     title: t("title"),
+     description: t("description"),
+     openGraph: {
+       title: `Rosers | ${t("title")}`,
+       description: t("description"),
+       url: t("href"),
+       siteName: "Rosers",
+       images: [
+         {
+           url: "/hero-image-about.webp",
+           width: 1200,
+           height: 630,
+           alt: `Rosers | ${t("title")}`,
+         },
+       ],
+       locale: locale,
+       type: "website",
+     },
+     twitter: {
+       card: "summary_large_image",
+       site: "@",
+       title: `Rosers | ${t("title")}`,
+       images: [
+         {
+           url: "/hero-image-about.webp",
+           width: 1200,
+           height: 630,
+           alt: `Rosers | ${t("title")}`,
+         },
+       ],
+       description: t("description"),
+     },
+   };
 }
 
 export default function Index({
@@ -64,6 +95,30 @@ export default function Index({
           link: translation("WhoWeAre.href"),
         }}
       />
+      <Divider />
+      <InfoSection
+        title="Kunglig Hovleverantör"
+        subtitle="En utmärkelse av högsta rang"
+        description={`Att bli utsedd till Kunglig Hovleverantör är en ära som vittnar om kvalitet, tradition och förtroende. Med årtionden av erfarenhet inom gastronomi och eventcatering är vi stolta över att få leverera matupplevelser av högsta klass till kungliga sammanhang.\n\nGenom noggrant utvalda råvaror och ett kompromisslöst hantverk skapar vi minnesvärda måltider – en kombination av tradition och innovation, värdig de mest prestigefyllda tillställningarna.`}
+      >
+        <div className="mx-auto mt-8 max-w-[250px] md:max-w-md">
+          <Image
+            // data-loaded="false"
+            // onLoad={(event) => {
+            //   event.currentTarget.setAttribute("data-loaded", "true");
+            // }}
+            src="/riksvapnet.webp"
+            priority
+            width={1920}
+            height={1080}
+            quality={100}
+            alt="Image"
+            blurDataURL="/riksvapnet.webp"
+            placeholder="blur"
+            // className={twMerge(imageBaseClasses, loadingClasses)}
+          />
+        </div>
+      </InfoSection>
       <Divider />
       <TextAndImageSection
         rtl

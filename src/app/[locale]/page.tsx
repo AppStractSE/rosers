@@ -1,8 +1,10 @@
 import ConceptCards from "@/components/cards/ConceptCards";
 import SplideReviewCarousel from "@/components/carousels/SplideReviewCarousel";
 import Divider from "@/components/divider/Divider";
+import RoyaltyImage from "@/components/royalty/RoyaltyImage";
 import ContactSection from "@/components/sections/ContactSection";
 import HeroSection from "@/components/sections/HeroSection";
+import InfoSection from "@/components/sections/InfoSection";
 import TextAndImageSection from "@/components/sections/TextAndImageSection";
 import { useTranslations } from "next-intl";
 import { unstable_setRequestLocale } from "next-intl/server";
@@ -23,6 +25,14 @@ export default function Index({
         image="/hero-image-homepage.webp"
         showLogo
       />
+      <Divider />
+      <InfoSection
+        title={translation("Royalty.title")}
+        subtitle={translation("Royalty.subtitle")}
+        description={translation("Royalty.description")}
+      >
+        <RoyaltyImage />
+      </InfoSection>
       <Divider />
       <TextAndImageSection
         title={translation("WhoWeAre.secondary_title")}

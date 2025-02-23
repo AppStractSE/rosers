@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 
+                            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+  <!-- Startsida -->
+  <url>
+    <loc>https://rosers.se/</loc>
+    <lastmod>2025-02-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.00</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rosers.se/en" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://rosers.se/sv" />
+  </url>
+
+  <!-- The Concept / Konceptet -->
+  <url>
+    <loc>https://rosers.se/the-concept</loc>
+    <lastmod>2025-02-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rosers.se/en/the-concept" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://rosers.se/sv/konceptet" />
+  </url>
+
+  <!-- About / Om oss -->
+  <url>
+    <loc>https://rosers.se/about</loc>
+    <lastmod>2025-02-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rosers.se/en/about" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://rosers.se/sv/om-oss" />
+  </url>
+
+  <!-- Rosers Global Events / Rosers Globala Evenemang -->
+  <url>
+    <loc>https://rosers.se/the-concept/rosers-global-events</loc>
+    <lastmod>2025-02-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rosers.se/en/the-concept/rosers-global-events" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://rosers.se/sv/konceptet/rosers-globala-evenemang" />
+  </url>
+
+  <!-- Contact / Kontakt -->
+  <url>
+    <loc>https://rosers.se/contact</loc>
+    <lastmod>2025-02-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rosers.se/en/contact" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://rosers.se/sv/kontakt" />
+  </url>
+
+  <!-- Rosers Consulting / Rosers Konsultering -->
+  <url>
+    <loc>https://rosers.se/the-concept/rosers-consulting</loc>
+    <lastmod>2025-02-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rosers.se/en/the-concept/rosers-consulting" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://rosers.se/sv/konceptet/rosers-konsultering" />
+  </url>
+
+  <!-- What We Do / Vad vi gör -->
+  <url>
+    <loc>https://rosers.se/about/what-we-do</loc>
+    <lastmod>2025-02-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rosers.se/en/about/what-we-do" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://rosers.se/sv/om-oss/vad-vi-gor" />
+  </url>
+
+  <!-- Who We Are / Vilka vi är -->
+  <url>
+    <loc>https://rosers.se/about/who-we-are</loc>
+    <lastmod>2025-02-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rosers.se/en/about/who-we-are" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://rosers.se/sv/om-oss/vilka-vi-ar" />
+  </url>
+
+  <!-- Our History / Vår historia -->
+  <url>
+    <loc>https://rosers.se/about/our-history</loc>
+    <lastmod>2025-02-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://rosers.se/en/about/our-history" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://rosers.se/sv/om-oss/var-historia" />
+  </url>
+
+</urlset>

@@ -298,7 +298,7 @@
         "subtitle": "Royal Gala Dinner",
         "description": "The Swedish Government organized a prestigious gala dinner at the Eric Ericsson Hall in Stockholm to celebrate the upcoming wedding of Crown Princess Victoria and her future consort, Daniel Westling.\n\nRosers Event & Catering were entrusted with the event, utilizing our expertise in and passion for high-class catering and event management. The historic hall, once a dome church, was transformed into an elegant setting for the evening.\n\nThe decor featured world-renowned Swedish glass art from Orrefors and Kosta Boda, fine porcelain from Rörstrand, and silver cutlery from Mema GAB. The culinary experience, crafted by head chef Håkan Thörnström, included exquisite dishes such as ashed scallop carpaccio and herb-baked turbot, paired with fine wines like Schloss Johannisberger Rheingau and Chablis Grand Cru.\n\nBehind the scenes, careful planning and rehearsal ensured a smooth flow of the event, with staff attending to every guest’s special requests. The evening’s success was due to flawless coordination, exceptional catering, and the skilled craftsmanship of Rosers Event & Catering.",
         "image": "/princess-victoria-and-prince-daniel.webp",
-        "size": "row-span-2 col-span-12 sm:col-span-6 lg:col-span-6 lg:row-span-3"
+        "size": "row-span-2 col-span-12 sm:col-span-6 lg:col-span-6 lg:row-span-2"
       },
       {
         "title": "SAAB",
@@ -312,14 +312,21 @@
         "subtitle": "Swedish culture on display",
         "description": "During the 2018 Winter Olympics in Pyeongchang, South Korea, Rosers proudly contributed to the Swedish presence in the Sweden Arena, located in the Nations Village together with international players such as Team USA and House of Switzerland. Sweden Arena became a focal point that welcomed over 23,000 visitors, including 5,000 specially invited guests.\n\nRosers were responsible for creating an authentic Swedish dining experience that reflected the country's culture and traditions. With a plan to serve approximately 6,000 portions, the menu included classics such as meatballs with lingonberry and traditional Swedish 'fika' consisting of cinnamon buns, princess cake and Swedish coffee. These delicacies were served in an atmosphere adorned with Swedish decorations and accompanied by atmospheric music that highlighted Sweden's rich cultural heritage.\n\nSweden Arena also hosted activities such as medal celebrations, press conferences and interactive sports experiences, while guests enjoyed Swedish food and followed Olympic broadcasts on large outdoor screens. With careful planning and an eye for detail, Rosers helped create a place where visitors from all over the world could discover and experience the best of Sweden.",
         "image": "/winter-olympics-southkorea.webp",
-        "size": "row-span-2 col-span-12 sm:col-span-6 lg:col-span-7 lg:row-span-2"
+        "size": "row-span-2 col-span-12 sm:col-span-6 lg:col-span-6 lg:row-span-2"
+      },
+      {
+        "title": "Kockums' Karlskrona",
+        "subtitle": "HMS Visby is launched",
+        "description": "On 8 June 2000, HMS Visby, the world's first stealth corvette, was christened by King Carl XVI Gustaf at the Kockums shipyard in Karlskrona. The day was a milestone for the Swedish naval industry, and Bengt Roser played a key role. His team was responsible for the lunches during the naval exhibition NAVY 2000 (6–9 June) and the ceremonial launch dinner for 474 guests in the Repslagarbanan – a historic building without water or electricity, where the kitchen was set up in a tent. They also cooked on board HMS Carlskrona for 175 international guests during a display at sea.\n\nThe assignment was a challenge that required planning and skill, but Bengt and his team delivered with elegance. “It was new and different,” says Bengt of the experience, which was the start of a collaboration with Kockums. They later handled guests at the launchings of more Visby corvettes and submarines. Kockums CEO Hans Hedman recalls: “The naming was an exceptionally fine opportunity to showcase HMS Visby and all the knowledge she represents.” For Bengt, it is one of his most memorable assignments, marked by pride and the unique marine environment.",
+        "image": "/kockums-hms-visby.webp",
+        "size": "row-span-2 col-span-12 sm:col-span-6 lg:col-span-6 lg:row-span-3"
       },
       {
         "title": "Shanghai World Expo",
         "subtitle": "A Global Stage",
         "description": "Rosers managed the restaurant in the Swedish pavilion at Expo 2010, serving 29,500 guests. The menu highlighted classic Swedish flavors like reindeer stew and cured salmon, blended with modern international elements to appeal to a global audience. The project demanded precision and flexibility to meet the ever-changing needs of a diverse international guest list.",
         "image": "/shanghai-world-expo.webp",
-        "size": "row-span-2 col-span-12 sm:col-span-6 lg:col-span-5 lg:row-span-2"
+        "size": "row-span-2 col-span-12 sm:col-span-6 lg:col-span-6 lg:row-span-2"
       }
     ]
   },

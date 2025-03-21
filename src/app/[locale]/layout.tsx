@@ -87,13 +87,14 @@ export default async function LocaleLayout({
   return (
     <html lang={locale}>
       <body>
-        <NextIntlClientProvider messages={messages}>
-          <SplashScreen />
-          <Toaster />
-          <Navigation />
-          {children}
-          <Footer />
-        </NextIntlClientProvider>
+        <SplashScreen>
+          <NextIntlClientProvider messages={messages}>
+            <Toaster />
+            <Navigation />
+            {children}
+            <Footer />
+          </NextIntlClientProvider>
+        </SplashScreen>
       </body>
     </html>
   );

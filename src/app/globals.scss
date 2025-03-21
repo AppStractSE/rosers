@@ -23,7 +23,7 @@ section {
   animation-fill-mode: both;
 }
 
-@for $i from 1 through 50 {
+@for $i from 2 through 50 {
   section:nth-of-type(#{$i}) {
     animation-delay: $i * 0.1s;
   }
@@ -54,13 +54,11 @@ section {
   0% {
     opacity: 0;
     visibility: hidden;
-    transform: translateY(1rem);
   }
 
   100% {
     opacity: 1;
     visibility: visible;
-    transform: translateY(0);
   }
 }
 

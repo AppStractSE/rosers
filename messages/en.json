@@ -123,6 +123,11 @@
         "minLength": "Name must be at least 2 characters",
         "maxLength": "Name must be less than 50 characters"
       },
+      "BusinessName": {
+        "required": "Business name is required",
+        "minLength": "Business name must be at least 2 characters",
+        "maxLength": "Business name must be less than 50 characters"
+      },
       "Email": {
         "required": "Email is required",
         "pattern": "Invalid email address"

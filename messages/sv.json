@@ -168,6 +168,11 @@
         "minLength": "Namnet måste vara minst 2 tecken",
         "maxLength": "Namnet får vara högst 50 tecken"
       },
+      "BusinessName": {
+        "required": "Företagsnamn krävs",
+        "minLength": "Företagsnamnet måste vara minst 2 tecken",
+        "maxLength": "Företagsnamnet får vara högst 50 tecken"
+      },
       "Email": {
         "required": "E-post krävs",
         "pattern": "Ogiltig e-postadress"

@@ -2,7 +2,6 @@
 
 import { futuraStd, garamond } from "@/util/fonts";
 import { useLocale, useTranslations } from "next-intl";
-import { default as Image } from "next/image";
 import { twMerge } from "tailwind-merge";
 import BookingForm from "../forms/BookingForm";
 
@@ -25,25 +24,23 @@ const JulbordSection = () => {
       <div className="mx-auto my-12 max-w-screen-xl px-4 2xl:px-0">
         <div
           className={twMerge(
-            "flex justify-between gap-8 border-l border-[#a2866854] pl-4 md:gap-14 md:border-0 md:p-0 lg:items-center",
+            "flex items-start justify-between gap-8 border-l border-[#a2866854] pl-4 md:gap-14 md:border-0 md:p-0",
             rtl ? "flex-col md:flex-row-reverse" : "flex-col md:flex-row",
           )}
         >
-          <div className="basis-12/12 relative flex aspect-[16/11] w-full flex-col justify-center overflow-hidden rounded-sm border border-[#a28668d7] md:aspect-[16/19] md:basis-6/12">
-            <Image
-              data-loaded="false"
+          <div className="basis-12/12 relative flex h-full w-full flex-col justify-center overflow-hidden rounded-sm border border-[#a28668d7] md:basis-6/12">
+            <video
               onLoad={(event) => {
                 event.currentTarget.setAttribute("data-loaded", "true");
               }}
-              fill
-              src={image}
-              priority
-              quality={100}
-              alt="Image"
-              blurDataURL={image}
-              placeholder="blur"
-              className={twMerge(imageBaseClasses, loadingClasses)}
-            />
+              className="h-full w-full"
+              src="/Julbord - 4x5 FACEBOOK.mp4"
+              autoPlay
+              crossOrigin="anonymous"
+              playsInline
+              loop
+              muted
+            ></video>
           </div>
           <div className="basis-5/12">
             <h3

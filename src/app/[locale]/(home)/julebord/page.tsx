@@ -66,18 +66,6 @@ export default function Index({
         <ScrollToNextSectionButton title={translation("Julebord.heroButton")} />
       </InfoSection>
       <Divider />
-      {/* <TextAndImageSection
-        rtl
-        title={translation("Julebord.secondary_title")}
-        subTitle={translation("Julebord.title")}
-        text={translation("Julebord.secondary_description")}
-        image="/julbord.webp"
-        button={{
-          text: translation("Julebord.secondary_button"),
-          link: translation("Julebord.externalLink"),
-        }}
-      /> */}
-      {/* <Divider /> */}
       <JulbordSection />
       <Divider />
     </main>

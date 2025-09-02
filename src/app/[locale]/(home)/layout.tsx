@@ -8,7 +8,7 @@ import {
   unstable_setRequestLocale,
 } from "next-intl/server";
 import { Toaster } from "react-hot-toast";
-import "../globals.scss";
+import "../../globals.scss";
 
 // export const metadata: Metadata = {
 //   title: {

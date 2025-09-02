@@ -171,9 +171,28 @@ const BookingForm = ({ eventName }: Props) => {
           <div className="w-full">
             <input
               type="text"
-              className={baseClasses}
-              placeholder={translation("placeholders.BusinessName")}
-              {...register("BusinessName", {})}
+              className={twMerge(
+                baseClasses,
+                errors["BusinessName"] ? errorClass : "",
+              )}
+              placeholder={translation("placeholders.BusinessName") + "*"}
+              {...register("BusinessName", {
+                required: translation(
+                  "validationMessages.BusinessName.required",
+                ),
+                minLength: {
+                  value: 2,
+                  message: translation(
+                    "validationMessages.BusinessName.minLength",
+                  ),
+                },
+                maxLength: {
+                  value: 50,
+                  message: translation(
+                    "validationMessages.BusinessName.maxLength",
+                  ),
+                },
+              })}
             />
             <p
               role="alert"
@@ -355,21 +374,19 @@ const BookingForm = ({ eventName }: Props) => {
 
                 errors["NumberOfGuests"] ? errorClass : "",
               )}
-              type="tel"
+              type="text"
+              inputMode="numeric"
               placeholder={translation("placeholders.NumberOfGuests")}
               {...register("NumberOfGuests", {
                 onChange: (e) => {
                   e.target.value = e.target.value.replace(/[^0-9]/g, "");
+                  if (parseInt(e.target.value) > 50) {
+                    e.target.value = "50";
+                  }
                 },
                 required: translation(
                   "validationMessages.NumberOfGuests.required",
                 ),
-                pattern: {
-                  value: /^[0-9]+$/,
-                  message: translation(
-                    "validationMessages.NumberOfGuests.pattern",
-                  ),
-                },
                 min: {
                   value: 1,
                   message: translation("validationMessages.NumberOfGuests.min"),

@@ -3,7 +3,6 @@ import Divider from "@/components/divider/Divider";
 import HeroSubPageSection from "@/components/sections/HeroSubPageSection";
 import InfoSection from "@/components/sections/InfoSection";
 import JulbordSection from "@/components/sections/JulbordSection";
-import TextAndImageSection from "@/components/sections/TextAndImageSection";
 import { useTranslations } from "next-intl";
 import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
 
@@ -24,7 +23,7 @@ export async function generateMetadata({
       siteName: "Rosers",
       images: [
         {
-          url: "https://rosers.se/hero-image-julebord.webp",
+          url: "https://rosers.se/hero-image-julbord.webp",
           width: 1200,
           height: 630,
           alt: `Rosers | ${t("title")}`,
@@ -37,7 +36,7 @@ export async function generateMetadata({
       title: `Rosers | ${t("title")}`,
       images: [
         {
-          url: "https://rosers.se/hero-image-julebord.webp",
+          url: "https://rosers.se/hero-image-julbord.webp",
           width: 1200,
           height: 630,
           alt: `Rosers | ${t("title")}`,
@@ -57,7 +56,7 @@ export default function Index({
   const translation = useTranslations();
   return (
     <main>
-      <HeroSubPageSection image="/hero-image-julebord.webp" />
+      <HeroSubPageSection image="/hero-image-julbord.webp" />
       <InfoSection
         title={translation("Julebord.title")}
         subtitle={translation("Julebord.subtitle")}

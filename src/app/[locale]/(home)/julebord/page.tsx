@@ -24,7 +24,7 @@ export async function generateMetadata({
       siteName: "Rosers",
       images: [
         {
-          url: "https://rosers.se/hero-image-about.webp",
+          url: "https://rosers.se/hero-image-julebord.webp",
           width: 1200,
           height: 630,
           alt: `Rosers | ${t("title")}`,
@@ -37,7 +37,7 @@ export async function generateMetadata({
       title: `Rosers | ${t("title")}`,
       images: [
         {
-          url: "https://rosers.se/hero-image-about.webp",
+          url: "https://rosers.se/hero-image-julebord.webp",
           width: 1200,
           height: 630,
           alt: `Rosers | ${t("title")}`,

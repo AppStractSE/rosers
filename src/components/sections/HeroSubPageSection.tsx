@@ -8,7 +8,7 @@ interface Props {
 
 const HeroSubPageSection = ({ image }: Props) => {
   const imageBaseClasses =
-    "h-auto max-h-[72.5vh] object-cover w-full object-cover transition-all ease-in-out";
+    "h-auto max-h-[82.5vh] object-cover w-full object-cover transition-all ease-in-out";
   const loadingClasses =
     " data-[loaded=false]:animate-pulse data-[loaded=false]:bg-gray-100/10 data-[loaded=false]:blur-sm";
   return (

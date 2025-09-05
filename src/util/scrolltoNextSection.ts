@@ -1,21 +1,24 @@
-const scrollToNextSection = (skipTo: number, marginOffset: number) => {
-  const sections = document.querySelectorAll("section");
+const scrollToNextSection = (skipTo: number = 1, marginOffset: number = 0) => {
+  const sections = Array.from(
+    document.querySelectorAll<HTMLElement>("section"),
+  );
   const headerHeight = document.querySelector("header")?.offsetHeight || 0;
   const currentScroll = window.scrollY;
 
-  for (let i = 0; i < sections.length; i++) {
-    const sectionTop = sections[i].offsetTop;
-    if (sectionTop > currentScroll) {
-      const targetIndex = Math.min(i + skipTo, sections.length - 1);
-      const targetSection = sections[targetIndex];
+  // Find the next section BELOW the current scroll
+  const nextSections = sections.filter(
+    (section) => section.offsetTop > currentScroll + 1,
+  );
 
-      window.scrollTo({
-        top: targetSection.offsetTop - headerHeight - marginOffset,
-        behavior: "smooth",
-      });
+  // If none found, just pick the last section
+  const targetSection =
+    nextSections[skipTo - 1] || sections[sections.length - 1];
 
-      break;
-    }
+  if (targetSection) {
+    window.scrollTo({
+      top: targetSection.offsetTop - headerHeight - marginOffset,
+      behavior: "smooth",
+    });
   }
 };
 

@@ -5,7 +5,7 @@ import Link from "next/link";
 
 interface Props {
   title: string;
-  href: string;
+  href?: string;
   className?: string;
   onClick?: () => void;
 }

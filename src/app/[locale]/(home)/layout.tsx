@@ -1,12 +1,14 @@
 import Footer from "@/components/footer/Footer";
 import Navigation from "@/components/navigation/Navigation";
 import SplashScreen from "@/components/splashscreen/SplashScreen";
+import { ArrowRight } from "lucide-react";
 import { NextIntlClientProvider } from "next-intl";
 import {
   getMessages,
   getTranslations,
   unstable_setRequestLocale,
 } from "next-intl/server";
+import Link from "next/link";
 import { Toaster } from "react-hot-toast";
 import "../../globals.scss";
 
@@ -90,6 +92,15 @@ export default async function LocaleLayout({
         <SplashScreen>
           <NextIntlClientProvider messages={messages}>
             <Toaster />
+            <Link
+              href={locale === "sv" ? "/sv/julbord" : "/en/julebord"}
+              className="flex items-center justify-center gap-2 border-b border-[#a2866848] bg-charcoal-600 py-2 text-center text-base transition-all duration-200 hover:bg-charcoal-500 md:py-4"
+            >
+              {locale === "sv"
+                ? "Julbord 2025! Boka här"
+                : "Julebord 2025! Book here"}
+              <ArrowRight size={20} />
+            </Link>
             <Navigation />
             {children}
             <Footer />

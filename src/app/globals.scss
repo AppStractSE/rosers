@@ -102,12 +102,3 @@ section {
     --radius: 0.5rem;
   }
 }
-
-.snowflake {
-  position: absolute;
-  border-radius: 50%;
-  background: rgb(255, 255, 255);
-  box-shadow: 0 0 4px rgba(255, 255, 255, 0.45);
-  will-change: transform;
-  pointer-events: none;
-};

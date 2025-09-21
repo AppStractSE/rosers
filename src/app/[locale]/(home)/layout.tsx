@@ -1,6 +1,5 @@
 import Footer from "@/components/footer/Footer";
 import Navigation from "@/components/navigation/Navigation";
-import Snowfall from "@/components/Snowfall";
 import SplashScreen from "@/components/splashscreen/SplashScreen";
 import { futuraStd } from "@/util/fonts";
 import { ArrowRight } from "lucide-react";
@@ -99,10 +98,9 @@ export default async function LocaleLayout({
               href={locale === "sv" ? "/sv/julbord" : "/en/julebord"}
               className={twMerge(
                 futuraStd.className,
-                "relative flex items-center justify-center gap-2 border-b border-[#571212] bg-[#0e0101] py-4 text-center text-sm uppercase text-[#FC6E6E] transition-all duration-200 hover:bg-[#160202] md:py-4 md:text-base",
+                "flex items-center justify-center gap-2 border-b border-[#571212] bg-charcoal-700 py-4 text-center text-sm uppercase text-[#f03a3a] transition-all duration-200 hover:bg-charcoal-600 md:py-4 md:text-base",
               )}
             >
-              <Snowfall count={10} />
               {locale === "sv"
                 ? "Julbord 2025! Boka här"
                 : "Julebord 2025! Book here"}

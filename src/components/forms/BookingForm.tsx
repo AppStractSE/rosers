@@ -6,6 +6,7 @@ import {
   PopoverContent,
   PopoverTrigger,
 } from "@/components/ui/popover";
+import { bookingSlots } from "@/util/bookingSlots";
 import { futuraStd, garamond } from "@/util/fonts";
 import { CalendarIcon } from "lucide-react";
 import { useLocale, useTranslations } from "next-intl";
@@ -350,7 +351,18 @@ const BookingForm = ({ eventName }: Props) => {
                     { before: new Date(2025, 11, 3) },
                     { after: new Date(2025, 11, 13) },
                     { from: new Date(2025, 11, 7), to: new Date(2025, 11, 9) },
+                    ...bookingSlots
+                      .filter((s) => s.status === "red")
+                      .map((s) => s.date),
                   ]}
+                  modifiers={{
+                    red: bookingSlots
+                      .filter((slot) => slot.status === "red")
+                      .map((slot) => slot.date),
+                    green: bookingSlots
+                      .filter((slot) => slot.status === "green")
+                      .map((slot) => slot.date),
+                  }}
                 />
               </PopoverContent>
             </Popover>

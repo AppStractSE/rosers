@@ -10,7 +10,7 @@ interface Props {
 const InfoSection = ({ title, subtitle, description, children }: Props) => {
   return (
     <section>
-      <div className="mx-auto my-6 max-w-screen-md px-4 lg:my-12">
+      <div className="mx-auto my-6 max-w-screen-lg px-4 lg:my-12">
         <div className="relative mx-auto flex flex-col items-center justify-center">
           <p
             className={twMerge(

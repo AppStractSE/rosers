@@ -15,7 +15,7 @@ import { NavItem } from "./data";
 const NavigationLink = ({ href, label, isActive }: NavItem) => {
   const locale = useLocale();
   const baseClassNames =
-    "p-2 min-w-fit text-base hover:underline hover:underline-offset-4 ";
+    "p-2 min-w-fit text-sm hover:underline hover:underline-offset-4 ";
   const isActiveClassNames = isActive ? "underline underline-offset-4" : "";
   const linkClassNames = `${baseClassNames} hidden md:block`;
   return (
@@ -65,6 +65,7 @@ const Navigation = () => {
   const translation = useTranslations();
   const navItems = translation.raw("NavItems");
   const contactButton = translation.raw("ContactButton");
+  const julebordButton = translation.raw("JulebordButton");
 
   return (
     <>
@@ -119,14 +120,28 @@ const Navigation = () => {
           </div>
           <div
             className={twMerge(
-              "order-2 hidden flex-1 justify-end text-xs lg:flex",
+              "order-2 hidden flex-1 justify-end gap-2 text-xs lg:flex",
               futuraStd.className,
             )}
           >
+            <NavigationLink
+              href={julebordButton.href}
+              label={julebordButton.label}
+              isActive={currentPath === `/${locale}${julebordButton.href}`}
+            />
+            {/* <Link
+              href={`/${locale}${julebordButton.href}`}
+              className={twMerge(
+                "inline-block rounded-sm border border-gold p-2 px-4 text-center text-xs text-gold transition-all duration-200 ease-in-out hover:bg-gold hover:text-[#232323] sm:bg-transparent",
+                futuraStd.className,
+              )}
+            >
+              {julebordButton.label}
+            </Link> */}
             <button
               onClick={() => setIsModalOpen(true)}
               className={twMerge(
-                "inline-block rounded-sm border border-gold p-2 px-4 text-center text-xs text-gold transition-all duration-200 ease-in-out hover:bg-gold hover:text-[#232323] sm:bg-transparent",
+                "inline-block rounded-sm border border-gold p-2 px-4 text-center text-sm text-gold transition-all duration-200 ease-in-out hover:bg-gold hover:text-[#232323] sm:bg-transparent",
                 futuraStd.className,
               )}
             >

@@ -6,8 +6,12 @@ import ContactSection from "@/components/sections/ContactSection";
 import HeroSection from "@/components/sections/HeroSection";
 import InfoSection from "@/components/sections/InfoSection";
 import TextAndImageSection from "@/components/sections/TextAndImageSection";
+import Video from "@/components/Video";
+import { futuraStd } from "@/util/fonts";
 import { useTranslations } from "next-intl";
 import { unstable_setRequestLocale } from "next-intl/server";
+import Link from "next/link";
+import { twMerge } from "tailwind-merge";
 
 export default function Index({
   params: { locale },
@@ -25,6 +29,28 @@ export default function Index({
         image="/hero-image-homepage.webp"
         showLogo
       />
+      <Divider />
+      <InfoSection
+        title={translation("Julebord.subtitle")}
+        subtitle={translation("Julebord.title")}
+        description={translation("Julebord.description")}
+      >
+        <div className="mt-8 flex justify-center">
+          <Video
+            src="/Julbord 16x9.mp4"
+            className="sm:basis-10/12 md:basis-full"
+          />
+        </div>
+        <Link
+          href={`${locale}${translation("Julebord.href")}`}
+          className={twMerge(
+            "mt-8 inline-block w-full rounded-sm border border-brass py-2.5 text-center text-sm tracking-[0.2em] transition-all duration-200 ease-in-out hover:bg-brass hover:text-[#232323] sm:w-fit sm:bg-transparent sm:px-12 sm:py-4 sm:text-base sm:text-brass",
+            futuraStd.className,
+          )}
+        >
+          {translation("Julebord.heroButton")}
+        </Link>
+      </InfoSection>
       <Divider />
       <InfoSection
         title={translation("Royalty.title")}

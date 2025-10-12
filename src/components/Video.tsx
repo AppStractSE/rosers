@@ -19,8 +19,8 @@ const Video = ({ src, className }: Props) => {
       src={src}
       autoPlay
       loop
-      muted
       playsInline
+      muted
       className={twMerge(videoBaseClasses, className)}
     />
   );

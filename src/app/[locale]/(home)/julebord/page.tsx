@@ -56,7 +56,7 @@ export default function Index({
   const translation = useTranslations();
   return (
     <main>
-      <HeroSubPageSection image="/hero-image-julbord.webp" />
+      <HeroSubPageSection image="/WPkPJoYo.jpeg" />
       <InfoSection
         title={translation("Julebord.title")}
         subtitle={translation("Julebord.subtitle")}

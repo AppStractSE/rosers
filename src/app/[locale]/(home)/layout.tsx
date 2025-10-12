@@ -98,7 +98,7 @@ export default async function LocaleLayout({
               href={locale === "sv" ? "/sv/julbord" : "/en/julebord"}
               className={twMerge(
                 futuraStd.className,
-                "relative flex items-center justify-center gap-2 border-b border-[#a286688e] bg-gold py-2 text-center text-sm uppercase text-charcoal-700 transition-all duration-200 hover:bg-charcoal-600 md:py-4 md:text-base",
+                "relative flex items-center justify-center gap-2 border-b border-[#a286688e] bg-gold py-2 text-center text-sm uppercase text-charcoal-700 underline-offset-4 transition-all duration-200 hover:underline md:py-4 md:text-base",
               )}
             >
               {locale === "sv"

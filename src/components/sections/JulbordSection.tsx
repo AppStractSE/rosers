@@ -46,7 +46,7 @@ const JulbordSection = () => {
             </p>
           </div>
           <div className="basis-12/12 relative mx-auto flex h-full w-full max-w-[420px] flex-col justify-center overflow-hidden rounded-md border border-[#a28668d7] bg-charcoal-600 md:mx-0 md:basis-6/12 px-2 pt-4 pb-2 sm:p-8">
-            <BookingForm eventName="Julbord 2025" />
+            <BookingForm />
           </div>
         </div>
       </div>

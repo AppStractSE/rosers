@@ -149,10 +149,6 @@
   "ContactButton": {
     "label": "Kontakt"
   },
-  "JulebordButton": {
-    "label": "Boka julbord",
-    "href": "/julbord"
-  },
   "ContactForm": {
     "close": "Stäng",
     "title": "Kom i kontakt med oss",
@@ -499,17 +495,5 @@
       "name": "Stefan Sauk",
       "company": "Skådespelare"
     }
-  ],
-  "Julebord": {
-    "href": "/julbord",
-    "title": "Julbord på Karlsfors Gård",
-    "subtitle": "En stämningsfull julkväll på Karlsfors Gård",
-    "description": "Välkommen att boka årets julbord för ditt företag! Upplev klassiska julsmaker i en unik sekelskiftesmiljö, med mat från Rosers och livemusik som skapar den perfekta julkänslan.",
-    "image": "/julebord.jpg",
-    "heroButton": "Boka nu",
-    "button": "Läs mer om Karlsfors Gård",
-    "link": "https://karlsfors.se/",
-    "secondary_title": "Karlsfors Gård x Rosers",
-    "secondary_description": "Rosers bjuder in till årets julbord – denna gång i samarbete med Karlsfors Gård. Under de stämningsfulla kvällarna förvandlas gården till en varm och inbjudande julmiljö där Rosers dukar upp klassiska julsmaker och skapar en helhetsupplevelse utöver det vanliga.\n\nDatum: 3–6 & 10–13 december (onsdag–lördag)\nPlats: Karlsfors Gård\nPris: från 995 kr + moms\n\nFyll i formuläret för att boka. Notera att valt datum kan vara fullbokat."
-  }
+  ]
 }

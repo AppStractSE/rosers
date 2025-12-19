@@ -65,7 +65,6 @@ const Navigation = () => {
   const translation = useTranslations();
   const navItems = translation.raw("NavItems");
   const contactButton = translation.raw("ContactButton");
-  const julebordButton = translation.raw("JulebordButton");
 
   return (
     <>
@@ -124,20 +123,6 @@ const Navigation = () => {
               futuraStd.className,
             )}
           >
-            <NavigationLink
-              href={julebordButton.href}
-              label={julebordButton.label}
-              isActive={currentPath === `/${locale}${julebordButton.href}`}
-            />
-            {/* <Link
-              href={`/${locale}${julebordButton.href}`}
-              className={twMerge(
-                "inline-block rounded-sm border border-gold p-2 px-4 text-center text-xs text-gold transition-all duration-200 ease-in-out hover:bg-gold hover:text-[#232323] sm:bg-transparent",
-                futuraStd.className,
-              )}
-            >
-              {julebordButton.label}
-            </Link> */}
             <button
               onClick={() => setIsModalOpen(true)}
               className={twMerge(

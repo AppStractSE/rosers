@@ -20,7 +20,7 @@ const BookingForm = () => {
     function initializeIframe(el: HTMLElement) {
       iframe = document.createElement("iframe");
       iframe.src =
-        "https://karlsfors.appstract.se?theme=LS1iYWNrZ3JvdW5kOiBva2xjaCgwLjIzOTMgMCAwKTstLWZvcmVncm91bmQ6IG9rbGNoKDAuODc0NyAwLjA3MDUgNjguNzgpOy0tcHJpbWFyeTogb2tsY2goODAuMTY3JSAwLjA5NDI1IDY3Ljg2OCk7LS1wcmltYXJ5LWZvcmVncm91bmQ6IG9rbGNoKDAuMjM5MyAwIDApOy0tc2Vjb25kYXJ5OiBva2xjaCgwLjQwMCAwIDApOy0tYWNjZW50OiBva2xjaCg4MC4xNjclIDAuMDk0MjUgNjcuODY4KTstLWJvcmRlcjogb2tsY2goODcuNDY3JSAwLjA3MDQzIDY4Ljc1MyAvIDAuNjE2KTs/";
+        "https://karlsfors.appstract.se/booking?theme=LS1iYWNrZ3JvdW5kOiBva2xjaCgwLjIzOTMgMCAwKTstLWZvcmVncm91bmQ6IG9rbGNoKDAuODc0NyAwLjA3MDUgNjguNzgpOy0tcHJpbWFyeTogb2tsY2goODAuMTY3JSAwLjA5NDI1IDY3Ljg2OCk7LS1wcmltYXJ5LWZvcmVncm91bmQ6IG9rbGNoKDAuMjM5MyAwIDApOy0tc2Vjb25kYXJ5OiBva2xjaCgwLjQwMCAwIDApOy0tYWNjZW50OiBva2xjaCg4MC4xNjclIDAuMDk0MjUgNjcuODY4KTstLWJvcmRlcjogb2tsY2goODcuNDY3JSAwLjA3MDQzIDY4Ljc1MyAvIDAuNjE2KTs/";
       iframe.style.border = "0";
       iframe.style.width = "100%";
       iframe.height = "0";

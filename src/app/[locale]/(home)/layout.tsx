@@ -1,17 +1,14 @@
 import Footer from "@/components/footer/Footer";
+import JulbordBanner from "@/components/navigation/JulbordBanner";
 import Navigation from "@/components/navigation/Navigation";
 import SplashScreen from "@/components/splashscreen/SplashScreen";
-import { futuraStd } from "@/util/fonts";
-import { ArrowRight } from "lucide-react";
 import { NextIntlClientProvider } from "next-intl";
 import {
   getMessages,
   getTranslations,
   unstable_setRequestLocale,
 } from "next-intl/server";
-import Link from "next/link";
 import { Toaster } from "react-hot-toast";
-import { twMerge } from "tailwind-merge";
 import "../../globals.scss";
 
 // export const metadata: Metadata = {
@@ -94,6 +91,7 @@ export default async function LocaleLayout({
         <SplashScreen>
           <NextIntlClientProvider messages={messages}>
             <Toaster />
+            <JulbordBanner locale={locale} />
             <Navigation />
             {children}
             <Footer />

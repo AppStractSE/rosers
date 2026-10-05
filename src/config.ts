@@ -41,6 +41,10 @@ export const pathnames: Pathnames<typeof locales> = {
     en: "/contact",
     sv: "/kontakt",
   },
+  "/julebord": {
+    en: "/julebord",
+    sv: "/julbord",
+  },
 };
 
 export const localePrefix: LocalePrefix<typeof locales> = "always";
